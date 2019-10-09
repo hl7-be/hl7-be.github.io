@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.be.core"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>BaseIG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.be.core</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium</p>
+</div></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.be.core"/>
+  <name value="BaseIG"/>
+  <title value="Belgium Base IG"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2019-10-02T22:59:28+02:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.be.core"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <grouping id="logicalmodels">
+      <name value="Logical Models"/>
+      <description value="The common Belgian Logical Models - these can be mapped to KMEHR and FHIR&#xD;&#xA;&#xD;&#xA;"/>
+    </grouping>
+    <grouping id="core">
+      <name value="Core Profiles"/>
+      <description value="Core resources to be reused in other resources&#xD;&#xA;&#xD;&#xA;"/>
+    </grouping>
+    <grouping id="communication">
+      <name value="Communication"/>
+      <description value="Communication, also known as Journal entry&#xD;&#xA;&#xD;&#xA;"/>
+    </grouping>
+    <grouping id="medication">
+      <name value="Medication"/>
+      <description value="Resource profiles defined for medication&#xD;&#xA;&#xD;&#xA;"/>
+    </grouping>
+    <grouping id="documents">
+      <name value="Documents"/>
+      <description value="Documents curated extracts of information - they represent a set of information for a given context at a given time.&#xD;&#xA;&#xD;&#xA;"/>
+    </grouping>
+    <grouping id="terminology">
+      <name value="Terminology"/>
+      <description value="Terminology resources - ValueSets and CodeSystems&#xD;&#xA;&#xD;&#xA;"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="valueset-be-diarytopic.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-diarytopic"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="ValueSet - CommunicationTopic"/>
+      <description value="The values for communication topic"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="valueset-be-contactperson.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-contactperson"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="ValueSet - Contact Person"/>
+      <description value="The values for Contact Person type"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="valueset-be-causativeagent.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-causativeagent"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="ValueSet - Contact Person"/>
+      <description value="The list of causative agents"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="valueset-be-riskmanifestation.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-riskmanifestation"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="ValueSet - Risk Manifestation"/>
+      <description value="The values for Risk Manifestation"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="lm-be-communication.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-be-communication"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Logical Model Communication"/>
+      <description value="Communication / Diary Note logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-communication.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-communication"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Communication Profile"/>
+      <description value="Communication / Diary Note profile"/>
+      <groupingId value="communication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-careplan.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-careplan"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Logical Model Care Plan"/>
+      <description value="Care Plan logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-patient.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-patient"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="BE Patient profile"/>
+      <description value="Core Belgian Patient profile"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-practitioner.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-practitioner"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="BE Practitioner profile"/>
+      <description value="Core Belgian Practitioner profile"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="valueset-be-civilstate.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-civilstate"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="ValueSet - Civil State"/>
+      <description value="The values for Civil State"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="BE Core Home Page"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifact List"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Useful Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/pagecontent"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-qa"/>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code value="path-temp"/>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code value="path-output"/>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code value="path-suppressed-warnings"/>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code value="template-html"/>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code value="template-md"/>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code value="apply-contact"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-context"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-copyright"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-jurisdiction"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-license"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-publisher"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-version"/>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

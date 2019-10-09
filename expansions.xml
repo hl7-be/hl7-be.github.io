@@ -1,0 +1,2514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="891c9ed1-9f58-4479-91b4-eba182add277"/>
+  <meta>
+    <lastUpdated value="2019-10-02T22:59:28.696+02:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"/>
+    <resource>
+      <ValueSet>
+        <id value="be-causativeagent"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 138 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://terminology.hl7.org/CodeSystem/v3-NullFlavor version 2018-08-12</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373270004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373270004">373270004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>penicilline</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260170007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260170007">260170007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Aardappel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-102261002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102261002">102261002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Aardbei</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-52454007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52454007">52454007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Albumine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-391737006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=391737006">391737006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Amandelolie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256311001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256311001">256311001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Appel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-226491003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226491003">226491003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Appelsap</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-412069004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412069004">412069004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Aroma&#x2019;s</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-11526002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11526002">11526002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>aspartaam</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256307007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256307007">256307007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Banaan</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-227344001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227344001">227344001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Boon</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-80237000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=80237000">80237000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>cacao boter</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-227252000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227252000">227252000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>champignon</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-102262009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102262009">102262009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chocolade</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-59351004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59351004">59351004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>citraat</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-102259006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102259006">102259006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Citrus</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-116273005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=116273005">116273005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>dieetproducten</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-303300008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=303300008">303300008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ei eiwit</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-102263004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102263004">102263004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>eieren</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256443002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256443002">256443002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Eiwit</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-12510000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12510000">12510000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Eucalyptus olie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-227444000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227444000">227444000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Framboos</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-72511004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=72511004">72511004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Fruit</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-278840001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=278840001">278840001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Garnalen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-227313005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227313005">227313005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gedroogde groenten</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-28230009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28230009">28230009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gevogelte</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-430503006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=430503006">430503006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Glutamaat</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-89811004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89811004">89811004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gluten</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-23182003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=23182003">23182003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Granen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-418504009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418504009">418504009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Haver</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256352005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256352005">256352005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hazelnoot</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-102264005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102264005">102264005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Kaas</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-227388008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227388008">227388008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Kaneel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256310000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256310000">256310000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Kers</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260176001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260176001">260176001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Kiwi</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-264295007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264295007">264295007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>koe melkeiwit</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-230031005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230031005">230031005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Kreeft</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-227374009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227374009">227374009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>kruiden en specerijen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-47703008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=47703008">47703008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lactose</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-59533004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59533004">59533004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>levensmiddelenadditief</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260172004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260172004">260172004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Look</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-412357001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412357001">412357001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ma&#xEF;s</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-226760005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226760005">226760005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Melkproducten</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260177005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260177005">260177005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Meloen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-51905005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=51905005">51905005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Mosterd</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-13577000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=13577000">13577000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Noten</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-230034002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230034002">230034002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Noten en granen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-227161006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227161006">227161006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Octopus</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-230032003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230032003">230032003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Oester</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256309005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256309005">256309005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Perzik</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256349002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256349002">256349002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pinda</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-762952008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=762952008">762952008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>pindanoten</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-67324005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=67324005">67324005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rijst</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-412068007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412068007">412068007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rogge</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-226915003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226915003">226915003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rood vlees</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-28647000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28647000">28647000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rood vlees</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-227146005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227146005">227146005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Schaaldieren</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256326004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256326004">256326004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Selder</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260167008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260167008">260167008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Sesamzaad</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256355007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256355007">256355007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>soja</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-7791007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=7791007">7791007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>soja-eiwit</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-227163009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227163009">227163009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Squid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-412071004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412071004">412071004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Tarwe</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256327008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256327008">256327008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Tomaat</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-227144008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227144008">227144008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Tonijn</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256323007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256323007">256323007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ui</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-226934003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226934003">226934003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Varkensvlees</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-227425007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227425007">227425007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Vijgen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-227037002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227037002">227037002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Vis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-406774009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406774009">406774009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Vis afgeleid omega-3 vetzuur</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-226359003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226359003">226359003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Visolie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-419420009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419420009">419420009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Watermeloen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256319004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256319004">256319004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Wortel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-264337003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264337003">264337003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Zaden</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-44027008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=44027008">44027008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Zeevruchten</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-412160003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412160003">412160003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Aan hechtdraad gerelateerde allergeen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-12503006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12503006">12503006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Aluminium en aluminium verbindingen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256303006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256303006">256303006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ambrosia stuifmeel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-386936005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386936005">386936005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Azela&#xEF;nezuur</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-91598004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91598004">91598004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Benzoylperoxide</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-59545008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59545008">59545008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Bestrijdingsmiddelen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-288328004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=288328004">288328004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Bijengif</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-255640000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255640000">255640000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Biocide</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256305004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256305004">256305004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Boom hars</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-412061001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412061001">412061001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Bosbessen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-9021002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9021002">9021002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Carbaryl</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-311984009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=311984009">311984009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chemicali&#xEB;n of externe</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-11894001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11894001">11894001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Clostridium Botulinetoxine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-406473004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406473004">406473004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Contact allergeen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-289122001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=289122001">289122001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cosmetica</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-289949002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=289949002">289949002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cypress stuifmeel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-406472009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406472009">406472009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dierlijke eiwitten en epidermale allergeen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-276310004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=276310004">276310004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dierlijke haren</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-264287008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264287008">264287008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dierlijke huidschilfers</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-396031000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=396031000">396031000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Dimeticon</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-387293003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=387293003">387293003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ditranol</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260156007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260156007">260156007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Eiwit van muizenurine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256419000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256419000">256419000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Epitheel van muis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-115589000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=115589000">115589000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ethanolamine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-418266005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418266005">418266005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gele paraffine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-410853002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410853002">410853002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Geperfluoreerde</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-2309006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2309006">2309006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Goud</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-412145001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412145001">412145001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Haarkleurmiddelen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260154005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260154005">260154005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hond huidschilfers</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-14402002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=14402002">14402002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hout</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128488006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128488006">128488006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Huisstof</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-406466009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406466009">406466009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Huisstof allergeen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-3829006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=3829006">3829006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ijzer</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-406470001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406470001">406470001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Insect allergeen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-280939008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=280939008">280939008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Insectengif</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260118006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260118006">260118006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Judaica stuifmeel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260152009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260152009">260152009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Kat huidschilfers</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-89889006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89889006">89889006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Katoenen vezels</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-61789006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61789006">61789006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Kleurstof</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260153004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260153004">260153004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Koe huidschilfers</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-412153009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412153009">412153009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Konijn huidschilfers</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-66925006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=66925006">66925006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Koper</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-395922006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=395922006">395922006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lanoline</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-42416001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=42416001">42416001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lanoline</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-57126000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=57126000">57126000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lijm</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-261243003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261243003">261243003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Messing</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-420111002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=420111002">420111002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Metaal</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-2799001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2799001">2799001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Methylbenzethonium chloride</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-33396006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=33396006">33396006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>nikkel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260126003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260126003">260126003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Olijfboom stuifmeel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-419604006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419604006">419604006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Onkruid stuifmeel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-119417004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=119417004">119417004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Organofosforverbinding (insecticide)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256417003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256417003">256417003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Paard huidschilfers</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-255667006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255667006">255667006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Paraffine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-418785009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418785009">418785009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Parfum</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-31006001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=31006001">31006001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Planten</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-387398009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=387398009">387398009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Podophyllin</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-256259004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256259004">256259004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pollen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-83619009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=83619009">83619009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Polyvinylalcohol</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-311846002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=311846002">311846002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pyrethro&#xEF;de insecticide</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-43230003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43230003">43230003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rubber</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-116549003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=116549003">116549003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Samengestelde organochlore (bestrijdingsmiddelen)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>
+                  <a href="http://hl7.org/fhir/R4/v3/NullFlavor/cs.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>other</td>
+                <td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).
+
+                        
+                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+
+                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"/>
+        <version value="1.0.0"/>
+        <name value="BeCausativeAgent"/>
+        <status value="draft"/>
+        <date value="2019-10-02T22:59:28+02:00"/>
+        <publisher value="HL7 Belgium"/>
+        <contact>
+          <telecom>
+            <system value="other"/>
+            <value value="http://hl7.org/Special/committees/fiwg"/>
+          </telecom>
+        </contact>
+        <description value="Codes as communicated by NIHDI differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:42bb13d2-543b-4060-9db0-497a2990269e"/>
+          <timestamp value="2019-10-02T22:59:47+02:00"/>
+          <total value="138"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueString value="-1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2018-08-12"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373270004"/>
+            <display value="penicilline"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260170007"/>
+            <display value="Aardappel"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="102261002"/>
+            <display value="Aardbei"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="52454007"/>
+            <display value="Albumine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="391737006"/>
+            <display value="Amandelolie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256311001"/>
+            <display value="Appel"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="226491003"/>
+            <display value="Appelsap"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="412069004"/>
+            <display value="Aroma&#x2019;s"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11526002"/>
+            <display value="aspartaam"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256307007"/>
+            <display value="Banaan"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227344001"/>
+            <display value="Boon"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="80237000"/>
+            <display value="cacao boter"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227252000"/>
+            <display value="champignon"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="102262009"/>
+            <display value="Chocolade"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="59351004"/>
+            <display value="citraat"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="102259006"/>
+            <display value="Citrus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="116273005"/>
+            <display value="dieetproducten"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="303300008"/>
+            <display value="Ei eiwit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="102263004"/>
+            <display value="eieren"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256443002"/>
+            <display value="Eiwit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="12510000"/>
+            <display value="Eucalyptus olie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227444000"/>
+            <display value="Framboos"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72511004"/>
+            <display value="Fruit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="278840001"/>
+            <display value="Garnalen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227313005"/>
+            <display value="Gedroogde groenten"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="28230009"/>
+            <display value="Gevogelte"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="430503006"/>
+            <display value="Glutamaat"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="89811004"/>
+            <display value="Gluten"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="23182003"/>
+            <display value="Granen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="418504009"/>
+            <display value="Haver"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256352005"/>
+            <display value="Hazelnoot"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="102264005"/>
+            <display value="Kaas"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227388008"/>
+            <display value="Kaneel"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256310000"/>
+            <display value="Kers"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260176001"/>
+            <display value="Kiwi"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="264295007"/>
+            <display value="koe melkeiwit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="230031005"/>
+            <display value="Kreeft"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227374009"/>
+            <display value="kruiden en specerijen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="47703008"/>
+            <display value="Lactose"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="59533004"/>
+            <display value="levensmiddelenadditief"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260172004"/>
+            <display value="Look"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="412357001"/>
+            <display value="Ma&#xEF;s"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="226760005"/>
+            <display value="Melkproducten"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260177005"/>
+            <display value="Meloen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="51905005"/>
+            <display value="Mosterd"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="13577000"/>
+            <display value="Noten"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="230034002"/>
+            <display value="Noten en granen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227161006"/>
+            <display value="Octopus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="230032003"/>
+            <display value="Oester"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256309005"/>
+            <display value="Perzik"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256349002"/>
+            <display value="Pinda"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="762952008"/>
+            <display value="pindanoten"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67324005"/>
+            <display value="Rijst"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="412068007"/>
+            <display value="Rogge"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="226915003"/>
+            <display value="Rood vlees"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="28647000"/>
+            <display value="Rood vlees"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227146005"/>
+            <display value="Schaaldieren"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256326004"/>
+            <display value="Selder"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260167008"/>
+            <display value="Sesamzaad"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256355007"/>
+            <display value="soja"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="7791007"/>
+            <display value="soja-eiwit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227163009"/>
+            <display value="Squid"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="412071004"/>
+            <display value="Tarwe"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256327008"/>
+            <display value="Tomaat"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227144008"/>
+            <display value="Tonijn"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256323007"/>
+            <display value="Ui"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="226934003"/>
+            <display value="Varkensvlees"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227425007"/>
+            <display value="Vijgen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="227037002"/>
+            <display value="Vis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="406774009"/>
+            <display value="Vis afgeleid omega-3 vetzuur"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="226359003"/>
+            <display value="Visolie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419420009"/>
+            <display value="Watermeloen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256319004"/>
+            <display value="Wortel"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="264337003"/>
+            <display value="Zaden"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="44027008"/>
+            <display value="Zeevruchten"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="412160003"/>
+            <display value="Aan hechtdraad gerelateerde allergeen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="12503006"/>
+            <display value="Aluminium en aluminium verbindingen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256303006"/>
+            <display value="Ambrosia stuifmeel"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="386936005"/>
+            <display value="Azela&#xEF;nezuur"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="91598004"/>
+            <display value="Benzoylperoxide"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="59545008"/>
+            <display value="Bestrijdingsmiddelen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="288328004"/>
+            <display value="Bijengif"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="255640000"/>
+            <display value="Biocide"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256305004"/>
+            <display value="Boom hars"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="412061001"/>
+            <display value="Bosbessen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="9021002"/>
+            <display value="Carbaryl"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="311984009"/>
+            <display value="Chemicali&#xEB;n of externe"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11894001"/>
+            <display value="Clostridium Botulinetoxine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="406473004"/>
+            <display value="Contact allergeen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="289122001"/>
+            <display value="Cosmetica"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="289949002"/>
+            <display value="Cypress stuifmeel"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="406472009"/>
+            <display value="Dierlijke eiwitten en epidermale allergeen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="276310004"/>
+            <display value="Dierlijke haren"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="264287008"/>
+            <display value="Dierlijke huidschilfers"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="396031000"/>
+            <display value="Dimeticon"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="387293003"/>
+            <display value="Ditranol"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260156007"/>
+            <display value="Eiwit van muizenurine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256419000"/>
+            <display value="Epitheel van muis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="115589000"/>
+            <display value="Ethanolamine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="418266005"/>
+            <display value="Gele paraffine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="410853002"/>
+            <display value="Geperfluoreerde"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="2309006"/>
+            <display value="Goud"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="412145001"/>
+            <display value="Haarkleurmiddelen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260154005"/>
+            <display value="Hond huidschilfers"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="14402002"/>
+            <display value="Hout"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128488006"/>
+            <display value="Huisstof"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="406466009"/>
+            <display value="Huisstof allergeen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="3829006"/>
+            <display value="Ijzer"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="406470001"/>
+            <display value="Insect allergeen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280939008"/>
+            <display value="Insectengif"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260118006"/>
+            <display value="Judaica stuifmeel"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260152009"/>
+            <display value="Kat huidschilfers"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="89889006"/>
+            <display value="Katoenen vezels"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="61789006"/>
+            <display value="Kleurstof"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260153004"/>
+            <display value="Koe huidschilfers"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="412153009"/>
+            <display value="Konijn huidschilfers"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="66925006"/>
+            <display value="Koper"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="395922006"/>
+            <display value="Lanoline"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="42416001"/>
+            <display value="Lanoline"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="57126000"/>
+            <display value="Lijm"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="261243003"/>
+            <display value="Messing"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="420111002"/>
+            <display value="Metaal"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="2799001"/>
+            <display value="Methylbenzethonium chloride"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="33396006"/>
+            <display value="nikkel"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260126003"/>
+            <display value="Olijfboom stuifmeel"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419604006"/>
+            <display value="Onkruid stuifmeel"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="119417004"/>
+            <display value="Organofosforverbinding (insecticide)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256417003"/>
+            <display value="Paard huidschilfers"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="255667006"/>
+            <display value="Paraffine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="418785009"/>
+            <display value="Parfum"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="31006001"/>
+            <display value="Planten"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="387398009"/>
+            <display value="Podophyllin"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256259004"/>
+            <display value="Pollen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="83619009"/>
+            <display value="Polyvinylalcohol"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="311846002"/>
+            <display value="Pyrethro&#xEF;de insecticide"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="43230003"/>
+            <display value="Rubber"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="116549003"/>
+            <display value="Samengestelde organochlore (bestrijdingsmiddelen)"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation"/>
+    <resource>
+      <ValueSet>
+        <id value="be-riskmanifestation"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 30 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://terminology.hl7.org/CodeSystem/v3-NullFlavor version 2018-08-12</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-39579001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=39579001">39579001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>anafylaxie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-41291007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=41291007">41291007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>angio-oedeem</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-195967001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=195967001">195967001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>astma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-24079001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=24079001">24079001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Atopische dermatitis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-4386001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=4386001">4386001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Bronchospasme</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-271759003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271759003">271759003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Bullous rash</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-698247007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=698247007">698247007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hartritmestoornis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-410430005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410430005">410430005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cardiorespiratoire stilstand</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-9826008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9826008">9826008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>conjonctivitis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-49727002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49727002">49727002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>hoest</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-62315008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62315008">62315008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>diarree</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-702809001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=702809001">702809001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Drug eruption met eosinofilie 
+en systemische symptomen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-162290004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=162290004">162290004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>droge ogen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-267036007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=267036007">267036007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>kortademigheid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-43116000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43116000">43116000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Eczeem</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-418363000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418363000">418363000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>jeuk</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-422587007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422587007">422587007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Misselijkheid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-359610006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=359610006">359610006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Oogbeschadigingen en/of hyperemia</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-51599000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=51599000">51599000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Oedeem van het strottenhoofd</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-271757001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271757001">271757001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Papulaire uitbarsting</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-70076002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=70076002">70076002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rinitis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-91175000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91175000">91175000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Epileptische aanval</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-76067001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=76067001">76067001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Niezen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-73442001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73442001">73442001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Stevens-Johnson syndroom</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-23924001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=23924001">23924001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>beklemmende borst</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-126485001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=126485001">126485001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>netelroos</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-31996006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=31996006">31996006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Vasculitis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1985008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1985008">1985008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>braken</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-247472004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=247472004">247472004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Huiduitslag</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>
+                  <a href="http://hl7.org/fhir/R4/v3/NullFlavor/cs.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>other</td>
+                <td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).
+
+                        
+                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+
+                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation"/>
+        <version value="1.0.0"/>
+        <name value="BeRiskManifestation"/>
+        <status value="draft"/>
+        <date value="2019-10-02T22:59:28+02:00"/>
+        <publisher value="HL7 Belgium"/>
+        <contact>
+          <telecom>
+            <system value="other"/>
+            <value value="http://hl7.org/Special/committees/fiwg"/>
+          </telecom>
+        </contact>
+        <description value="Codes as communicated by NIHDI differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:fed7e3ba-b63a-4c04-a937-f0f0edd8073d"/>
+          <timestamp value="2019-10-02T22:59:47+02:00"/>
+          <total value="30"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueString value="-1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2018-08-12"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="39579001"/>
+            <display value="anafylaxie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="41291007"/>
+            <display value="angio-oedeem"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="195967001"/>
+            <display value="astma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="24079001"/>
+            <display value="Atopische dermatitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="4386001"/>
+            <display value="Bronchospasme"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="271759003"/>
+            <display value="Bullous rash"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="698247007"/>
+            <display value="Hartritmestoornis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="410430005"/>
+            <display value="Cardiorespiratoire stilstand"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="9826008"/>
+            <display value="conjonctivitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="49727002"/>
+            <display value="hoest"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="62315008"/>
+            <display value="diarree"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="702809001"/>
+            <display value="Drug eruption met eosinofilie &#xA;en systemische symptomen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="162290004"/>
+            <display value="droge ogen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="267036007"/>
+            <display value="kortademigheid"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="43116000"/>
+            <display value="Eczeem"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="418363000"/>
+            <display value="jeuk"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="422587007"/>
+            <display value="Misselijkheid"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="359610006"/>
+            <display value="Oogbeschadigingen en/of hyperemia"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="51599000"/>
+            <display value="Oedeem van het strottenhoofd"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="271757001"/>
+            <display value="Papulaire uitbarsting"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="70076002"/>
+            <display value="Rinitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="91175000"/>
+            <display value="Epileptische aanval"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="76067001"/>
+            <display value="Niezen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="73442001"/>
+            <display value="Stevens-Johnson syndroom"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="23924001"/>
+            <display value="beklemmende borst"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="126485001"/>
+            <display value="netelroos"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="31996006"/>
+            <display value="Vasculitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1985008"/>
+            <display value="braken"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="247472004"/>
+            <display value="Huiduitslag"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

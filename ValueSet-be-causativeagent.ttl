@@ -1,0 +1,2265 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/sdc/ValueSet/be-causativeagent> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-causativeagent"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BeCausativeAgent</h2><div><p>Codes as communicated by NIHDI differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373270004\">373270004</a></td><td>penicilline</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260170007\">260170007</a></td><td>Aardappel</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102261002\">102261002</a></td><td>Aardbei</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52454007\">52454007</a></td><td>Albumine</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=391737006\">391737006</a></td><td>Amandelolie</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256311001\">256311001</a></td><td>Appel</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226491003\">226491003</a></td><td>Appelsap</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412069004\">412069004</a></td><td>Aroma’s</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11526002\">11526002</a></td><td>aspartaam</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256307007\">256307007</a></td><td>Banaan</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227344001\">227344001</a></td><td>Boon</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=80237000\">80237000</a></td><td>cacao boter</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227252000\">227252000</a></td><td>champignon</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102262009\">102262009</a></td><td>Chocolade</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59351004\">59351004</a></td><td>citraat</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102259006\">102259006</a></td><td>Citrus</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=116273005\">116273005</a></td><td>dieetproducten</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=303300008\">303300008</a></td><td>Ei eiwit</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102263004\">102263004</a></td><td>eieren</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256443002\">256443002</a></td><td>Eiwit</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12510000\">12510000</a></td><td>Eucalyptus olie</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227444000\">227444000</a></td><td>Framboos</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=72511004\">72511004</a></td><td>Fruit</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=278840001\">278840001</a></td><td>Garnalen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227313005\">227313005</a></td><td>Gedroogde groenten</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28230009\">28230009</a></td><td>Gevogelte</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=430503006\">430503006</a></td><td>Glutamaat</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89811004\">89811004</a></td><td>Gluten</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=23182003\">23182003</a></td><td>Granen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418504009\">418504009</a></td><td>Haver</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256352005\">256352005</a></td><td>Hazelnoot</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102264005\">102264005</a></td><td>Kaas</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227388008\">227388008</a></td><td>Kaneel</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256310000\">256310000</a></td><td>Kers</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260176001\">260176001</a></td><td>Kiwi</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264295007\">264295007</a></td><td>koe melkeiwit</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230031005\">230031005</a></td><td>Kreeft</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227374009\">227374009</a></td><td>kruiden en specerijen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=47703008\">47703008</a></td><td>Lactose</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59533004\">59533004</a></td><td>levensmiddelenadditief</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260172004\">260172004</a></td><td>Look</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412357001\">412357001</a></td><td>Maïs</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226760005\">226760005</a></td><td>Melkproducten</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260177005\">260177005</a></td><td>Meloen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=51905005\">51905005</a></td><td>Mosterd</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=13577000\">13577000</a></td><td>Noten</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230034002\">230034002</a></td><td>Noten en granen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227161006\">227161006</a></td><td>Octopus</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230032003\">230032003</a></td><td>Oester</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256309005\">256309005</a></td><td>Perzik</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256349002\">256349002</a></td><td>Pinda</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=762952008\">762952008</a></td><td>pindanoten</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=67324005\">67324005</a></td><td>Rijst</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412068007\">412068007</a></td><td>Rogge</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226915003\">226915003</a></td><td>Rood vlees</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28647000\">28647000</a></td><td>Rood vlees</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227146005\">227146005</a></td><td>Schaaldieren</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256326004\">256326004</a></td><td>Selder</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260167008\">260167008</a></td><td>Sesamzaad</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256355007\">256355007</a></td><td>soja</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=7791007\">7791007</a></td><td>soja-eiwit</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227163009\">227163009</a></td><td>Squid</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412071004\">412071004</a></td><td>Tarwe</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256327008\">256327008</a></td><td>Tomaat</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227144008\">227144008</a></td><td>Tonijn</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256323007\">256323007</a></td><td>Ui</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226934003\">226934003</a></td><td>Varkensvlees</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227425007\">227425007</a></td><td>Vijgen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227037002\">227037002</a></td><td>Vis</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406774009\">406774009</a></td><td>Vis afgeleid omega-3 vetzuur</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226359003\">226359003</a></td><td>Visolie</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419420009\">419420009</a></td><td>Watermeloen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256319004\">256319004</a></td><td>Wortel</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264337003\">264337003</a></td><td>Zaden</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=44027008\">44027008</a></td><td>Zeevruchten</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412160003\">412160003</a></td><td>Aan hechtdraad gerelateerde allergeen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12503006\">12503006</a></td><td>Aluminium en aluminium verbindingen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256303006\">256303006</a></td><td>Ambrosia stuifmeel</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386936005\">386936005</a></td><td>Azelaïnezuur</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91598004\">91598004</a></td><td>Benzoylperoxide</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59545008\">59545008</a></td><td>Bestrijdingsmiddelen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=288328004\">288328004</a></td><td>Bijengif</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255640000\">255640000</a></td><td>Biocide</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256305004\">256305004</a></td><td>Boom hars</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412061001\">412061001</a></td><td>Bosbessen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9021002\">9021002</a></td><td>Carbaryl</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=311984009\">311984009</a></td><td>Chemicaliën of externe</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11894001\">11894001</a></td><td>Clostridium Botulinetoxine</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406473004\">406473004</a></td><td>Contact allergeen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=289122001\">289122001</a></td><td>Cosmetica</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=289949002\">289949002</a></td><td>Cypress stuifmeel</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406472009\">406472009</a></td><td>Dierlijke eiwitten en epidermale allergeen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=276310004\">276310004</a></td><td>Dierlijke haren</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264287008\">264287008</a></td><td>Dierlijke huidschilfers</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=396031000\">396031000</a></td><td>Dimeticon</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=387293003\">387293003</a></td><td>Ditranol</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260156007\">260156007</a></td><td>Eiwit van muizenurine</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256419000\">256419000</a></td><td>Epitheel van muis</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=115589000\">115589000</a></td><td>Ethanolamine</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418266005\">418266005</a></td><td>Gele paraffine</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410853002\">410853002</a></td><td>Geperfluoreerde</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2309006\">2309006</a></td><td>Goud</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412145001\">412145001</a></td><td>Haarkleurmiddelen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260154005\">260154005</a></td><td>Hond huidschilfers</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=14402002\">14402002</a></td><td>Hout</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128488006\">128488006</a></td><td>Huisstof</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406466009\">406466009</a></td><td>Huisstof allergeen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=3829006\">3829006</a></td><td>Ijzer</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406470001\">406470001</a></td><td>Insect allergeen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=280939008\">280939008</a></td><td>Insectengif</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260118006\">260118006</a></td><td>Judaica stuifmeel</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260152009\">260152009</a></td><td>Kat huidschilfers</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89889006\">89889006</a></td><td>Katoenen vezels</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61789006\">61789006</a></td><td>Kleurstof</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260153004\">260153004</a></td><td>Koe huidschilfers</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412153009\">412153009</a></td><td>Konijn huidschilfers</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=66925006\">66925006</a></td><td>Koper</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=395922006\">395922006</a></td><td>Lanoline</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=42416001\">42416001</a></td><td>Lanoline</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=57126000\">57126000</a></td><td>Lijm</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261243003\">261243003</a></td><td>Messing</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=420111002\">420111002</a></td><td>Metaal</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2799001\">2799001</a></td><td>Methylbenzethonium chloride</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=33396006\">33396006</a></td><td>nikkel</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260126003\">260126003</a></td><td>Olijfboom stuifmeel</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419604006\">419604006</a></td><td>Onkruid stuifmeel</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=119417004\">119417004</a></td><td>Organofosforverbinding (insecticide)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256417003\">256417003</a></td><td>Paard huidschilfers</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255667006\">255667006</a></td><td>Paraffine</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418785009\">418785009</a></td><td>Parfum</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=31006001\">31006001</a></td><td>Planten</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=387398009\">387398009</a></td><td>Podophyllin</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256259004\">256259004</a></td><td>Pollen</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=83619009\">83619009</a></td><td>Polyvinylalcohol</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=311846002\">311846002</a></td><td>Pyrethroïde insecticide</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43230003\">43230003</a></td><td>Rubber</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=116549003\">116549003</a></td><td>Samengestelde organochlore (bestrijdingsmiddelen)</td><td/></tr></table></li><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R4/v3/NullFlavor/cs.html\"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/v3/NullFlavor/cs.html#v3-NullFlavor-OTH\">OTH</a></td><td>other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/>\n                        \n                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/>\n                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>373270004</td><td>penicillin</td><td>la pénicilline</td><td>penicilline</td></tr><tr><td>260170007</td><td>Potato</td><td>pomme de terre</td><td>Aardappel</td></tr><tr><td>102261002</td><td>strawberry</td><td>fraise</td><td>Aardbei</td></tr><tr><td>52454007</td><td>Albumin</td><td>albumine</td><td>Albumine</td></tr><tr><td>391737006</td><td>Almond oil</td><td>huile d'amande</td><td>Amandelolie</td></tr><tr><td>256311001</td><td>Apple</td><td>pomme</td><td>Appel</td></tr><tr><td>226491003</td><td>Apple juice</td><td>jus de pomme</td><td>Appelsap</td></tr><tr><td>412069004</td><td>Flavouring agent</td><td>aromatisants</td><td>Aroma’s</td></tr><tr><td>11526002</td><td>aspartame</td><td>aspartame</td><td>aspartaam</td></tr><tr><td>256307007</td><td>Banana</td><td>banane</td><td>Banaan</td></tr><tr><td>227344001</td><td>Broad bean</td><td>fève</td><td>Boon</td></tr><tr><td>80237000</td><td>Cocoa butter</td><td>beurre de cacao</td><td>cacao boter</td></tr><tr><td>227252000</td><td>Mushroom</td><td>champignon</td><td>champignon</td></tr><tr><td>102262009</td><td>chocolate</td><td>chocolat</td><td>Chocolade</td></tr><tr><td>59351004</td><td>citrate</td><td>citrate</td><td>citraat</td></tr><tr><td>102259006</td><td>citrus fruit</td><td>agrume</td><td>Citrus</td></tr><tr><td>116273005</td><td>dietary substance</td><td>substance de régime</td><td>dieetproducten</td></tr><tr><td>303300008</td><td>egg protein</td><td>protéine d'œuf</td><td>Ei eiwit</td></tr><tr><td>102263004</td><td>eggs</td><td>œufs</td><td>eieren</td></tr><tr><td>256443002</td><td>blanc d'œuf</td><td>blanc d'œuf</td><td>Eiwit</td></tr><tr><td>12510000</td><td>eucalyptus oil</td><td>huile d'eucalyptus</td><td>Eucalyptus olie</td></tr><tr><td>227444000</td><td>Raspberries</td><td>framboises</td><td>Framboos</td></tr><tr><td>72511004</td><td>Fruit</td><td>fruit</td><td>Fruit</td></tr><tr><td>278840001</td><td>Shrimp product</td><td>crevette</td><td>Garnalen</td></tr><tr><td>227313005</td><td>Pulse vegetables</td><td>légumes secs</td><td>Gedroogde groenten</td></tr><tr><td>28230009</td><td>Poultry</td><td>volaille</td><td>Gevogelte</td></tr><tr><td>430503006</td><td>glutamate</td><td>glutamate</td><td>Glutamaat</td></tr><tr><td>89811004</td><td>gluten</td><td>gluten</td><td>Gluten</td></tr><tr><td>23182003</td><td>cereal</td><td>céréale</td><td>Granen</td></tr><tr><td>418504009</td><td>oats</td><td>avoine</td><td>Haver</td></tr><tr><td>256352005</td><td>Walnut - nut</td><td>noisette</td><td>Hazelnoot</td></tr><tr><td>102264005</td><td>cheese</td><td>fromage</td><td>Kaas</td></tr><tr><td>227388008</td><td>Cinnamon</td><td>canelle</td><td>Kaneel</td></tr><tr><td>256310000</td><td>Cherry</td><td>cerise</td><td>Kers</td></tr><tr><td>260176001</td><td>Kiwi fruit</td><td>kiwi</td><td>Kiwi</td></tr><tr><td>264295007</td><td>Cow's milk protein</td><td>protéine de lait de vache</td><td>koe melkeiwit</td></tr><tr><td>230031005</td><td>Lobster</td><td>homard</td><td>Kreeft</td></tr><tr><td>227374009</td><td>Herbs and spices</td><td>herbes et épices</td><td>kruiden en specerijen</td></tr><tr><td>47703008</td><td>Lactose</td><td>lactose</td><td>Lactose</td></tr><tr><td>59533004</td><td>food additive</td><td>additif alimentaire</td><td>levensmiddelenadditief</td></tr><tr><td>260172004</td><td>Garlic</td><td>ail</td><td>Look</td></tr><tr><td>412357001</td><td>corn</td><td>mais</td><td>Maïs</td></tr><tr><td>226760005</td><td>Dairy foods</td><td>produits laitiers</td><td>Melkproducten</td></tr><tr><td>260177005</td><td>Melon</td><td>melon</td><td>Meloen</td></tr><tr><td>51905005</td><td>Mustard</td><td>moutarde</td><td>Mosterd</td></tr><tr><td>13577000</td><td>Nut</td><td>noix</td><td>Noten</td></tr><tr><td>230034002</td><td>Nuts and seeds</td><td>noix et graines</td><td>Noten en granen</td></tr><tr><td>227161006</td><td>Octopus</td><td>poulpe</td><td>Octopus</td></tr><tr><td>230032003</td><td>Oyster</td><td>huitre</td><td>Oester</td></tr><tr><td>256309005</td><td>Peach</td><td>pêche</td><td>Perzik</td></tr><tr><td>256349002</td><td>Peanut</td><td>cacahuète</td><td>Pinda</td></tr><tr><td>762952008</td><td>peanuts</td><td>arachides</td><td>pindanoten</td></tr><tr><td>67324005</td><td>Rice</td><td>riz</td><td>Rijst</td></tr><tr><td>412068007</td><td>Rye</td><td>seigle</td><td>Rogge</td></tr><tr><td>226915003</td><td>Red meat</td><td>viande rouge</td><td>Rood vlees</td></tr><tr><td>28647000</td><td>Meat</td><td>viande rouge</td><td>Rood vlees</td></tr><tr><td>227146005</td><td>Shellfish</td><td>coquillages et crustacés</td><td>Schaaldieren</td></tr><tr><td>256326004</td><td>Celery</td><td>céleri</td><td>Selder</td></tr><tr><td>260167008</td><td>Sesame seed</td><td>graine de sésame</td><td>Sesamzaad</td></tr><tr><td>256355007</td><td>Soya bean</td><td>soja</td><td>soja</td></tr><tr><td>7791007</td><td>Soy protein</td><td>protéine de soja</td><td>soja-eiwit</td></tr><tr><td>227163009</td><td>Squid - dietary</td><td>calamar</td><td>Squid</td></tr><tr><td>412071004</td><td>Wheat</td><td>blé</td><td>Tarwe</td></tr><tr><td>256327008</td><td>Tomato</td><td>tomate</td><td>Tomaat</td></tr><tr><td>227144008</td><td>Tuna fish</td><td>thon</td><td>Tonijn</td></tr><tr><td>256323007</td><td>Onion</td><td>oignon</td><td>Ui</td></tr><tr><td>226934003</td><td>Pork</td><td>porc</td><td>Varkensvlees</td></tr><tr><td>227425007</td><td>Figs</td><td>figue</td><td>Vijgen</td></tr><tr><td>227037002</td><td>Fish</td><td>poisson</td><td>Vis</td></tr><tr><td>406774009</td><td>Fish derived omega 3 fatty acid</td><td>acides gras oméga 3 issus du poisson</td><td>Vis afgeleid omega-3 vetzuur</td></tr><tr><td>226359003</td><td>Fish oil - dietary</td><td>huile de poisson</td><td>Visolie</td></tr><tr><td>419420009</td><td>watermelon</td><td>pastèque</td><td>Watermeloen</td></tr><tr><td>256319004</td><td>Carrot</td><td>carotte</td><td>Wortel</td></tr><tr><td>264337003</td><td>Seed</td><td>graines</td><td>Zaden</td></tr><tr><td>44027008</td><td>Seafood</td><td>fruits de mer</td><td>Zeevruchten</td></tr><tr><td>412160003</td><td>Suture allergen</td><td>Allergène lié à la suture</td><td>Aan hechtdraad gerelateerde allergeen</td></tr><tr><td>12503006</td><td>Aluminium</td><td>Aluminium et composés d'aluminium</td><td>Aluminium en aluminium verbindingen</td></tr><tr><td>256303006</td><td>Ragweed pollen</td><td>Pollen d'ambroisie</td><td>Ambrosia stuifmeel</td></tr><tr><td>386936005</td><td>Azelaic acid</td><td>Acide azélaïque</td><td>Azelaïnezuur</td></tr><tr><td>91598004</td><td>Benzoyl peroxide</td><td>Peroxyde de benzoyle</td><td>Benzoylperoxide</td></tr><tr><td>59545008</td><td>Pesticide</td><td>Pesticide</td><td>Bestrijdingsmiddelen</td></tr><tr><td>288328004</td><td>Bee venom</td><td>Venins d'abeille</td><td>Bijengif</td></tr><tr><td>255640000</td><td>Biocide</td><td>Biocide</td><td>Biocide</td></tr><tr><td>256305004</td><td>Tree resin</td><td>Résine d'arbre</td><td>Boom hars</td></tr><tr><td>412061001</td><td>Blueberries</td><td>Bleuets</td><td>Bosbessen</td></tr><tr><td>9021002</td><td>Carbaryl</td><td>Carbaryl</td><td>Carbaryl</td></tr><tr><td>311984009</td><td>Chemical or external agent</td><td>Produit chimique ou externe</td><td>Chemicaliën of externe</td></tr><tr><td>11894001</td><td>Clostridium botulinum toxin</td><td>Toxine du Clostridium botulinum</td><td>Clostridium Botulinetoxine</td></tr><tr><td>406473004</td><td>Contact allergen</td><td>Allergène de contact</td><td>Contact allergeen</td></tr><tr><td>289122001</td><td>Cosmetic material</td><td>Cosmétique</td><td>Cosmetica</td></tr><tr><td>289949002</td><td>Cypress pollen</td><td>Pollen de cyprès</td><td>Cypress stuifmeel</td></tr><tr><td>406472009</td><td>Animal protein and epidermal allergen</td><td>Protéine animale et allergène épidermique</td><td>Dierlijke eiwitten en epidermale allergeen</td></tr><tr><td>276310004</td><td>Animal hair</td><td>Poil animal</td><td>Dierlijke haren</td></tr><tr><td>264287008</td><td>Animal dander</td><td>Squame animale</td><td>Dierlijke huidschilfers</td></tr><tr><td>396031000</td><td>Dimeticone</td><td>Diméticone</td><td>Dimeticon</td></tr><tr><td>387293003</td><td>Dithranol</td><td>Dithranol</td><td>Ditranol</td></tr><tr><td>260156007</td><td>Mouse urine proteins</td><td>Protéines d’urine de souris</td><td>Eiwit van muizenurine</td></tr><tr><td>256419000</td><td>Mouse epithelium</td><td>Épithélium de souris</td><td>Epitheel van muis</td></tr><tr><td>115589000</td><td>Ethanolamine</td><td>éthanolamine</td><td>Ethanolamine</td></tr><tr><td>418266005</td><td>Yellow paraffin</td><td>Paraffine jaune</td><td>Gele paraffine</td></tr><tr><td>410853002</td><td>Perfluorochemical</td><td>Perfluorés</td><td>Geperfluoreerde</td></tr><tr><td>2309006</td><td>Gold</td><td>Or</td><td>Goud</td></tr><tr><td>412145001</td><td>Hair dye</td><td>Coloration pour cheveux</td><td>Haarkleurmiddelen</td></tr><tr><td>260154005</td><td>Dog dander</td><td>Squame de chien</td><td>Hond huidschilfers</td></tr><tr><td>14402002</td><td>Wood</td><td>Bois</td><td>Hout</td></tr><tr><td>128488006</td><td>House dust</td><td>Poussière ménagère</td><td>Huisstof</td></tr><tr><td>406466009</td><td>House dust allergen</td><td>Allergène de poussière de maison</td><td>Huisstof allergeen</td></tr><tr><td>3829006</td><td>Iron</td><td>Fer</td><td>Ijzer</td></tr><tr><td>406470001</td><td>Insect allergen</td><td>Allergène d’insecte</td><td>Insect allergeen</td></tr><tr><td>280939008</td><td>Insect venom</td><td>Venin d’insecte</td><td>Insectengif</td></tr><tr><td>260118006</td><td>Wall pellitory pollen</td><td>Pollen de pariétaire</td><td>Judaica stuifmeel</td></tr><tr><td>260152009</td><td>Cat dander</td><td>Squame de chat</td><td>Kat huidschilfers</td></tr><tr><td>89889006</td><td>Cotton fibre</td><td>Fibre de coton</td><td>Katoenen vezels</td></tr><tr><td>61789006</td><td>Dye</td><td>Colorant</td><td>Kleurstof</td></tr><tr><td>260153004</td><td>Cow dander</td><td>Squame de vache</td><td>Koe huidschilfers</td></tr><tr><td>412153009</td><td>Rabbit dander</td><td>Squame de lapin</td><td>Konijn huidschilfers</td></tr><tr><td>66925006</td><td>Copper</td><td>Cuivre</td><td>Koper</td></tr><tr><td>395922006</td><td>Wool alcohols</td><td>Lanoline</td><td>Lanoline</td></tr><tr><td>42416001</td><td>Lanolin</td><td>Lanoline</td><td>Lanoline</td></tr><tr><td>57126000</td><td>Glue</td><td>Colle</td><td>Lijm</td></tr><tr><td>261243003</td><td>Brass</td><td>Laiton</td><td>Messing</td></tr><tr><td>420111002</td><td>Contact metal agent</td><td>Métal</td><td>Metaal</td></tr><tr><td>2799001</td><td>Methylbenzethonium chloride</td><td>Chlorure de méthylbenzéthonium</td><td>Methylbenzethonium chloride</td></tr><tr><td>33396006</td><td>Nickel</td><td>Nickel</td><td>nikkel</td></tr><tr><td>260126003</td><td>Olive pollen</td><td>Pollen d’olivier</td><td>Olijfboom stuifmeel</td></tr><tr><td>419604006</td><td>Weed pollen</td><td>Pollen de mauvaise herbe</td><td>Onkruid stuifmeel</td></tr><tr><td>119417004</td><td>Organophosphate insecticide</td><td>Organophosphate (insecticide)</td><td>Organofosforverbinding (insecticide)</td></tr><tr><td>256417003</td><td>Horse dander</td><td>Squame de cheval</td><td>Paard huidschilfers</td></tr><tr><td>255667006</td><td>Paraffin</td><td>parffine</td><td>Paraffine</td></tr><tr><td>418785009</td><td>Perfume</td><td>Parfum</td><td>Parfum</td></tr><tr><td>31006001</td><td>Kingdom Plantae</td><td>Plante</td><td>Planten</td></tr><tr><td>387398009</td><td>Podophyllum resin</td><td>Podophylline</td><td>Podophyllin</td></tr><tr><td>256259004</td><td>Pollen</td><td>Pollen</td><td>Pollen</td></tr><tr><td>83619009</td><td>Polyvinyl alcohol</td><td>Alcool de polyvinyle</td><td>Polyvinylalcohol</td></tr><tr><td>311846002</td><td>Pyrethroid insecticide</td><td>Pyréthrinoïde insecticide</td><td>Pyrethroïde insecticide</td></tr><tr><td>43230003</td><td>Rubber</td><td>Caoutchouc</td><td>Rubber</td></tr><tr><td>116549003</td><td>Organochlorine pesticide</td><td>Composé organochloré (pesticide)</td><td>Samengestelde organochlore (bestrijdingsmiddelen)</td></tr><tr><td>OTH</td><td>Other</td><td>Autre</td><td>Andere</td></tr></table></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
+  fhir:ValueSet.name [ fhir:value "BeCausativeAgent"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2019-10-02T22:59:28+02:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HL7 Belgium"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/fiwg" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Codes as communicated by NIHDI differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort."];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "373270004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "penicillin" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "la pénicilline" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "penicilline" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260170007" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Potato" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "pomme de terre" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aardappel" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "102261002" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "strawberry" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "fraise" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aardbei" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "52454007" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Albumin" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "albumine" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Albumine" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "391737006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Almond oil" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "huile d'amande" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Amandelolie" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256311001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Apple" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "pomme" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Appel" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "226491003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Apple juice" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "jus de pomme" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Appelsap" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "412069004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flavouring agent" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "aromatisants" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aroma’s" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11526002" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "aspartame" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "aspartame" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "aspartaam" ]
+         ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256307007" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Banana" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "banane" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Banaan" ]
+         ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227344001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Broad bean" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "fève" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Boon" ]
+         ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "80237000" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cocoa butter" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "beurre de cacao" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "cacao boter" ]
+         ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227252000" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mushroom" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "champignon" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "champignon" ]
+         ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "102262009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "chocolate" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "chocolat" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Chocolade" ]
+         ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "59351004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "citrate" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "citrate" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "citraat" ]
+         ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "102259006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "citrus fruit" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "agrume" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Citrus" ]
+         ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "116273005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "dietary substance" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "substance de régime" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "dieetproducten" ]
+         ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "303300008" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "egg protein" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "protéine d'œuf" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ei eiwit" ]
+         ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "102263004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "eggs" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "œufs" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "eieren" ]
+         ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256443002" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "blanc d'œuf" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "blanc d'œuf" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Eiwit" ]
+         ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12510000" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "eucalyptus oil" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "huile d'eucalyptus" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Eucalyptus olie" ]
+         ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227444000" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Raspberries" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "framboises" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Framboos" ]
+         ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "72511004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fruit" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "fruit" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fruit" ]
+         ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "278840001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Shrimp product" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "crevette" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Garnalen" ]
+         ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227313005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulse vegetables" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "légumes secs" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gedroogde groenten" ]
+         ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28230009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poultry" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "volaille" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gevogelte" ]
+         ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "430503006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "glutamate" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "glutamate" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Glutamaat" ]
+         ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "89811004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "gluten" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "gluten" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gluten" ]
+         ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "23182003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "cereal" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "céréale" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Granen" ]
+         ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "418504009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "oats" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "avoine" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Haver" ]
+         ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256352005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Walnut - nut" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "noisette" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hazelnoot" ]
+         ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "102264005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "cheese" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "fromage" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kaas" ]
+         ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227388008" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cinnamon" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "canelle" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kaneel" ]
+         ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256310000" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cherry" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "cerise" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kers" ]
+         ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260176001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kiwi fruit" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "kiwi" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kiwi" ]
+         ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264295007" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cow's milk protein" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "protéine de lait de vache" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "koe melkeiwit" ]
+         ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "230031005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lobster" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "homard" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kreeft" ]
+         ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227374009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Herbs and spices" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "herbes et épices" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "kruiden en specerijen" ]
+         ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "47703008" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lactose" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "lactose" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lactose" ]
+         ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "59533004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "food additive" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "additif alimentaire" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "levensmiddelenadditief" ]
+         ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260172004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Garlic" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "ail" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Look" ]
+         ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "412357001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "corn" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "mais" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Maïs" ]
+         ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "226760005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dairy foods" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "produits laitiers" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Melkproducten" ]
+         ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260177005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Melon" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "melon" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Meloen" ]
+         ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "51905005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mustard" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "moutarde" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mosterd" ]
+         ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13577000" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nut" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "noix" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Noten" ]
+         ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "230034002" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nuts and seeds" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "noix et graines" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Noten en granen" ]
+         ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227161006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Octopus" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "poulpe" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Octopus" ]
+         ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "230032003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Oyster" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "huitre" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Oester" ]
+         ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256309005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Peach" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "pêche" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Perzik" ]
+         ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256349002" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Peanut" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "cacahuète" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pinda" ]
+         ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "762952008" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "peanuts" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "arachides" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "pindanoten" ]
+         ]
+       ], [
+         fhir:index 52;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "67324005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Rice" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "riz" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Rijst" ]
+         ]
+       ], [
+         fhir:index 53;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "412068007" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Rye" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "seigle" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Rogge" ]
+         ]
+       ], [
+         fhir:index 54;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "226915003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Red meat" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "viande rouge" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Rood vlees" ]
+         ]
+       ], [
+         fhir:index 55;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28647000" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Meat" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "viande rouge" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Rood vlees" ]
+         ]
+       ], [
+         fhir:index 56;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227146005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Shellfish" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "coquillages et crustacés" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Schaaldieren" ]
+         ]
+       ], [
+         fhir:index 57;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256326004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Celery" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "céleri" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Selder" ]
+         ]
+       ], [
+         fhir:index 58;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260167008" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sesame seed" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "graine de sésame" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sesamzaad" ]
+         ]
+       ], [
+         fhir:index 59;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256355007" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Soya bean" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "soja" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "soja" ]
+         ]
+       ], [
+         fhir:index 60;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7791007" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Soy protein" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "protéine de soja" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "soja-eiwit" ]
+         ]
+       ], [
+         fhir:index 61;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227163009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Squid - dietary" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "calamar" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Squid" ]
+         ]
+       ], [
+         fhir:index 62;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "412071004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Wheat" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "blé" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tarwe" ]
+         ]
+       ], [
+         fhir:index 63;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256327008" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tomato" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "tomate" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tomaat" ]
+         ]
+       ], [
+         fhir:index 64;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227144008" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tuna fish" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "thon" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tonijn" ]
+         ]
+       ], [
+         fhir:index 65;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256323007" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Onion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "oignon" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ui" ]
+         ]
+       ], [
+         fhir:index 66;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "226934003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pork" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "porc" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Varkensvlees" ]
+         ]
+       ], [
+         fhir:index 67;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227425007" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Figs" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "figue" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vijgen" ]
+         ]
+       ], [
+         fhir:index 68;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227037002" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fish" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "poisson" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vis" ]
+         ]
+       ], [
+         fhir:index 69;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "406774009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fish derived omega 3 fatty acid" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "acides gras oméga 3 issus du poisson" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vis afgeleid omega-3 vetzuur" ]
+         ]
+       ], [
+         fhir:index 70;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "226359003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fish oil - dietary" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "huile de poisson" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Visolie" ]
+         ]
+       ], [
+         fhir:index 71;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "419420009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "watermelon" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "pastèque" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Watermeloen" ]
+         ]
+       ], [
+         fhir:index 72;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256319004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Carrot" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "carotte" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Wortel" ]
+         ]
+       ], [
+         fhir:index 73;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264337003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seed" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "graines" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Zaden" ]
+         ]
+       ], [
+         fhir:index 74;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "44027008" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seafood" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "fruits de mer" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Zeevruchten" ]
+         ]
+       ], [
+         fhir:index 75;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "412160003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suture allergen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Allergène lié à la suture" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aan hechtdraad gerelateerde allergeen" ]
+         ]
+       ], [
+         fhir:index 76;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12503006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aluminium" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aluminium et composés d'aluminium" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aluminium en aluminium verbindingen" ]
+         ]
+       ], [
+         fhir:index 77;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256303006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ragweed pollen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pollen d'ambroisie" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ambrosia stuifmeel" ]
+         ]
+       ], [
+         fhir:index 78;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "386936005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Azelaic acid" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Acide azélaïque" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Azelaïnezuur" ]
+         ]
+       ], [
+         fhir:index 79;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "91598004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Benzoyl peroxide" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Peroxyde de benzoyle" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Benzoylperoxide" ]
+         ]
+       ], [
+         fhir:index 80;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "59545008" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pesticide" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pesticide" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bestrijdingsmiddelen" ]
+         ]
+       ], [
+         fhir:index 81;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "288328004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bee venom" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Venins d'abeille" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bijengif" ]
+         ]
+       ], [
+         fhir:index 82;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255640000" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Biocide" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Biocide" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Biocide" ]
+         ]
+       ], [
+         fhir:index 83;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256305004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tree resin" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Résine d'arbre" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Boom hars" ]
+         ]
+       ], [
+         fhir:index 84;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "412061001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Blueberries" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bleuets" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bosbessen" ]
+         ]
+       ], [
+         fhir:index 85;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9021002" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Carbaryl" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Carbaryl" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Carbaryl" ]
+         ]
+       ], [
+         fhir:index 86;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "311984009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Chemical or external agent" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Produit chimique ou externe" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Chemicaliën of externe" ]
+         ]
+       ], [
+         fhir:index 87;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11894001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Clostridium botulinum toxin" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Toxine du Clostridium botulinum" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Clostridium Botulinetoxine" ]
+         ]
+       ], [
+         fhir:index 88;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "406473004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contact allergen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Allergène de contact" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contact allergeen" ]
+         ]
+       ], [
+         fhir:index 89;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "289122001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cosmetic material" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cosmétique" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cosmetica" ]
+         ]
+       ], [
+         fhir:index 90;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "289949002" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cypress pollen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pollen de cyprès" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cypress stuifmeel" ]
+         ]
+       ], [
+         fhir:index 91;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "406472009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Animal protein and epidermal allergen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Protéine animale et allergène épidermique" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dierlijke eiwitten en epidermale allergeen" ]
+         ]
+       ], [
+         fhir:index 92;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "276310004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Animal hair" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poil animal" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dierlijke haren" ]
+         ]
+       ], [
+         fhir:index 93;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264287008" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Animal dander" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Squame animale" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dierlijke huidschilfers" ]
+         ]
+       ], [
+         fhir:index 94;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "396031000" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dimeticone" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Diméticone" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dimeticon" ]
+         ]
+       ], [
+         fhir:index 95;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "387293003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dithranol" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dithranol" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ditranol" ]
+         ]
+       ], [
+         fhir:index 96;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260156007" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mouse urine proteins" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Protéines d’urine de souris" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Eiwit van muizenurine" ]
+         ]
+       ], [
+         fhir:index 97;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256419000" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mouse epithelium" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Épithélium de souris" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Epitheel van muis" ]
+         ]
+       ], [
+         fhir:index 98;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "115589000" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ethanolamine" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "éthanolamine" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ethanolamine" ]
+         ]
+       ], [
+         fhir:index 99;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "418266005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Yellow paraffin" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Paraffine jaune" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gele paraffine" ]
+         ]
+       ], [
+         fhir:index 100;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "410853002" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Perfluorochemical" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Perfluorés" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Geperfluoreerde" ]
+         ]
+       ], [
+         fhir:index 101;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2309006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gold" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Or" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Goud" ]
+         ]
+       ], [
+         fhir:index 102;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "412145001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hair dye" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Coloration pour cheveux" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Haarkleurmiddelen" ]
+         ]
+       ], [
+         fhir:index 103;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260154005" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dog dander" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Squame de chien" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hond huidschilfers" ]
+         ]
+       ], [
+         fhir:index 104;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14402002" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Wood" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bois" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hout" ]
+         ]
+       ], [
+         fhir:index 105;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "128488006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "House dust" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poussière ménagère" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Huisstof" ]
+         ]
+       ], [
+         fhir:index 106;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "406466009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "House dust allergen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Allergène de poussière de maison" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Huisstof allergeen" ]
+         ]
+       ], [
+         fhir:index 107;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3829006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Iron" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fer" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ijzer" ]
+         ]
+       ], [
+         fhir:index 108;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "406470001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Insect allergen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Allergène d’insecte" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Insect allergeen" ]
+         ]
+       ], [
+         fhir:index 109;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "280939008" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Insect venom" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Venin d’insecte" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Insectengif" ]
+         ]
+       ], [
+         fhir:index 110;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260118006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Wall pellitory pollen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pollen de pariétaire" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Judaica stuifmeel" ]
+         ]
+       ], [
+         fhir:index 111;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260152009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cat dander" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Squame de chat" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kat huidschilfers" ]
+         ]
+       ], [
+         fhir:index 112;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "89889006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cotton fibre" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fibre de coton" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Katoenen vezels" ]
+         ]
+       ], [
+         fhir:index 113;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "61789006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dye" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Colorant" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kleurstof" ]
+         ]
+       ], [
+         fhir:index 114;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260153004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cow dander" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Squame de vache" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Koe huidschilfers" ]
+         ]
+       ], [
+         fhir:index 115;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "412153009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Rabbit dander" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Squame de lapin" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Konijn huidschilfers" ]
+         ]
+       ], [
+         fhir:index 116;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66925006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Copper" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cuivre" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Koper" ]
+         ]
+       ], [
+         fhir:index 117;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "395922006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Wool alcohols" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lanoline" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lanoline" ]
+         ]
+       ], [
+         fhir:index 118;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42416001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lanolin" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lanoline" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lanoline" ]
+         ]
+       ], [
+         fhir:index 119;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57126000" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Glue" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Colle" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lijm" ]
+         ]
+       ], [
+         fhir:index 120;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "261243003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Brass" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Laiton" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Messing" ]
+         ]
+       ], [
+         fhir:index 121;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "420111002" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contact metal agent" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Métal" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Metaal" ]
+         ]
+       ], [
+         fhir:index 122;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2799001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Methylbenzethonium chloride" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Chlorure de méthylbenzéthonium" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Methylbenzethonium chloride" ]
+         ]
+       ], [
+         fhir:index 123;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33396006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nickel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nickel" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "nikkel" ]
+         ]
+       ], [
+         fhir:index 124;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260126003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Olive pollen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pollen d’olivier" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Olijfboom stuifmeel" ]
+         ]
+       ], [
+         fhir:index 125;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "419604006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Weed pollen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pollen de mauvaise herbe" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Onkruid stuifmeel" ]
+         ]
+       ], [
+         fhir:index 126;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119417004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Organophosphate insecticide" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Organophosphate (insecticide)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Organofosforverbinding (insecticide)" ]
+         ]
+       ], [
+         fhir:index 127;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256417003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Horse dander" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Squame de cheval" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Paard huidschilfers" ]
+         ]
+       ], [
+         fhir:index 128;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255667006" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Paraffin" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "parffine" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Paraffine" ]
+         ]
+       ], [
+         fhir:index 129;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "418785009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Perfume" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Parfum" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Parfum" ]
+         ]
+       ], [
+         fhir:index 130;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31006001" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kingdom Plantae" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Plante" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Planten" ]
+         ]
+       ], [
+         fhir:index 131;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "387398009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Podophyllum resin" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Podophylline" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Podophyllin" ]
+         ]
+       ], [
+         fhir:index 132;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "256259004" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pollen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pollen" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pollen" ]
+         ]
+       ], [
+         fhir:index 133;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83619009" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polyvinyl alcohol" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Alcool de polyvinyle" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polyvinylalcohol" ]
+         ]
+       ], [
+         fhir:index 134;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "311846002" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pyrethroid insecticide" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pyréthrinoïde insecticide" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pyrethroïde insecticide" ]
+         ]
+       ], [
+         fhir:index 135;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43230003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Rubber" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Caoutchouc" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Rubber" ]
+         ]
+       ], [
+         fhir:index 136;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "116549003" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Organochlorine pesticide" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Composé organochloré (pesticide)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Samengestelde organochlore (bestrijdingsmiddelen)" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-NullFlavor" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "OTH" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Other" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Andere" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Autre" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/sdc/ValueSet/be-causativeagent.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/sdc/ValueSet/be-causativeagent.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-diarytopic"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Diary Topics</h2><div><p>Codes supported by eHealth Platform differentiating types of communication topics.</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>diabetes</td><td/><td/></tr><tr><td>medication</td><td/><td/></tr><tr><td>movement</td><td/><td/></tr><tr><td>nutrition</td><td/><td/></tr><tr><td>renalinsufficiency</td><td/><td/></tr><tr><td>woundcare</td><td/><td/></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>diabetes</td><td>diabetes</td><td>diabète</td><td>diabetes</td></tr><tr><td>medication</td><td>medication</td><td>médication</td><td>medicatie</td></tr><tr><td>movement</td><td>movement</td><td>mouvement</td><td>beweging</td></tr><tr><td>nutrition</td><td>nutrition</td><td>nutrition</td><td>voeding</td></tr><tr><td>renalinsufficiency</td><td>renal insufficiency</td><td>insuffisance rénale</td><td>nierinsufficiëntie</td></tr><tr><td>woundcare</td><td>wound care</td><td>soins de plaies</td><td>wondverzorging</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic"/>
+  <version value="1.0.0"/>
+  <name value="diarytopic"/>
+  <title value="Diary Topics"/>
+  <status value="draft"/>
+  <date value="2019-10-02T22:59:28+02:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Codes supported by eHealth Platform differentiating types of communication topics."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE"/>
+      <concept>
+        <code value="diabetes"/>
+        <designation>
+          <language value="en"/>
+          <value value="diabetes"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="diabetes"/>
+        </designation>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="diab&#xE8;te"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="medication"/>
+        <designation>
+          <language value="en"/>
+          <value value="medication"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="medicatie"/>
+        </designation>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="m&#xE9;dication"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="movement"/>
+        <designation>
+          <language value="en"/>
+          <value value="movement"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="beweging"/>
+        </designation>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="mouvement"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="nutrition"/>
+        <designation>
+          <language value="en"/>
+          <value value="nutrition"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="voeding"/>
+        </designation>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="nutrition"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="renalinsufficiency"/>
+        <designation>
+          <language value="en"/>
+          <value value="renal insufficiency"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="nierinsuffici&#xEB;ntie"/>
+        </designation>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="insuffisance r&#xE9;nale"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="woundcare"/>
+        <designation>
+          <language value="en"/>
+          <value value="wound care"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="wondverzorging"/>
+        </designation>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="soins de plaies"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

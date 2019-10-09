@@ -1,0 +1,11 @@
+{
+  "url": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+  "name": "BaseIG",
+  "package-id": "hl7.be.core",
+  "date": "Wed, 02 Oct, 2019 22:59:28 +0200",
+  "errs": 90,
+  "warnings": 24,
+  "hints": 116,
+  "version": "4.0.0",
+  "tool": "4.1.0 (3)"
+}

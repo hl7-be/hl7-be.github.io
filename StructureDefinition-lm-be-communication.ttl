@@ -1,0 +1,341 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/sdc/StructureDefinition/lm-be-communication> a fhir:StructureDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "lm-be-communication"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "additional" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">This Logical Model represents the core attributes of a Diary Note or Communication used in Belgium.</div>"
+  ];
+  fhir:StructureDefinition.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/logicalmodel-be-communication"];
+  fhir:StructureDefinition.name [ fhir:value "BECommunicationLogicalModel"];
+  fhir:StructureDefinition.status [ fhir:value "draft"];
+  fhir:StructureDefinition.date [ fhir:value "2019-10-02T22:59:28+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
+  fhir:StructureDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/fiwg" ]
+     ]
+  ];
+  fhir:StructureDefinition.description [ fhir:value "The common model for Communication (messages or diary notes) in Belgium exchange."];
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:StructureDefinition.purpose [ fhir:value "This logical model can be instantiated in the technical standards that are used in Belgium - KMEHR and FHIR. This ensures semantic compatibility between systems and standards."];
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
+  fhir:StructureDefinition.kind [ fhir:value "logical"];
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
+  fhir:StructureDefinition.type [ fhir:value "http://example.org/fhir/StructureDefinition/BECommunication"];
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+  ];
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"];
+  fhir:StructureDefinition.snapshot [
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "BECommunication" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication" ];
+       fhir:ElementDefinition.short [ fhir:value "Communication" ];
+       fhir:ElementDefinition.definition [ fhir:value "The Communication object represents a message sent or note entered in a diary, in the context of care." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "BECommunication.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Identifier for this communication" ];
+       fhir:ElementDefinition.definition [ fhir:value "A unique identifier for this communication." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Identifier";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Identifier>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "BECommunication.status" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.status" ];
+       fhir:ElementDefinition.short [ fhir:value "Status of the communication" ];
+       fhir:ElementDefinition.definition [ fhir:value "The status of this communication entry." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/code";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/code>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "BECommunication.validated" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.validated" ];
+       fhir:ElementDefinition.short [ fhir:value "Validation status" ];
+       fhir:ElementDefinition.definition [ fhir:value "The validation status of the communication - whether this note is validated or not." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/code";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/code>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "BECommunication.dateTimeEntered" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.dateTimeEntered" ];
+       fhir:ElementDefinition.short [ fhir:value "Time and Date of Communication entered" ];
+       fhir:ElementDefinition.definition [ fhir:value "Date or timestamp of entering the communication in its current status" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/dateTime";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/dateTime>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "BECommunication.basedOn" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.basedOn" ];
+       fhir:ElementDefinition.short [ fhir:value "The trigger for this communication" ];
+       fhir:ElementDefinition.definition [ fhir:value "What is the trigger data element for this communication - whether it is an updated medication, or an encounter..." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "BECommunication.inReponseTo" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.inReponseTo" ];
+       fhir:ElementDefinition.short [ fhir:value "Communication for which this communication is a response" ];
+       fhir:ElementDefinition.definition [ fhir:value "The message that this communication is responding to. Similar to a \"quote\" in chats, or \"forward/reply\" in mail." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "BeCommunication";
+           fhir:index 0
+         ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "BECommunication.sender" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.sender" ];
+       fhir:ElementDefinition.short [ fhir:value "Sender of the communication" ];
+       fhir:ElementDefinition.definition [ fhir:value "Sender of the communication" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient";
+           fhir:index 0;
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Person";
+           fhir:index 1;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Person>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner";
+           fhir:index 2;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "BECommunication.recipient" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.recipient" ];
+       fhir:ElementDefinition.short [ fhir:value "Recipient(s) of the communication" ];
+       fhir:ElementDefinition.definition [ fhir:value "The addressees of this communication, the ones to whom the message is destined." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Group";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Group>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Person";
+           fhir:index 1;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Person>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Patient";
+           fhir:index 2;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner";
+           fhir:index 3;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/PractitionerRole";
+           fhir:index 4;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+         ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "BECommunication.topic" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.topic" ];
+       fhir:ElementDefinition.short [ fhir:value "Topic of the communication" ];
+       fhir:ElementDefinition.definition [ fhir:value "The topic of this communication. Should be coded e.g. \"medication\", or \"vaccines\"" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/CodeableConcept";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/CodeableConcept>
+         ]
+       ];
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Communication Topic" ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/communication-topic";
+           fhir:link <http://hl7.org/fhir/ValueSet/communication-topic>
+         ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "BECommunication.context" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.context" ];
+       fhir:ElementDefinition.short [ fhir:value "The context (e.g. subject) for this communications" ];
+       fhir:ElementDefinition.definition [ fhir:value "Normally the context is a patient, or a plan" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.id [ fhir:value "BECommunication.context.patient" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.context.patient" ];
+       fhir:ElementDefinition.short [ fhir:value "The patient or subject of care" ];
+       fhir:ElementDefinition.definition [ fhir:value "The Patient or Subject of Care. This is a reference to a Patient resource, following the Logical Model for Belgian Patients." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "BEPatient";
+           fhir:index 0
+         ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.id [ fhir:value "BECommunication.content" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.content" ];
+       fhir:ElementDefinition.short [ fhir:value "Message payload" ];
+       fhir:ElementDefinition.definition [ fhir:value "The content of the message" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.id [ fhir:value "BECommunication.content.text" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.content.text" ];
+       fhir:ElementDefinition.short [ fhir:value "Communication text" ];
+       fhir:ElementDefinition.definition [ fhir:value "The text of the communication. Maximum 320 characters" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Annotation" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320";
+           fhir:index 0;
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320>
+         ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.id [ fhir:value "BECommunication.content.attachment" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.content.attachment" ];
+       fhir:ElementDefinition.short [ fhir:value "Attachment (e.g. image)" ];
+       fhir:ElementDefinition.definition [ fhir:value "An encoded attachment such as an image, video or audio recording" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Attachment" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Attachment";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Attachment>
+         ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.id [ fhir:value "BECommunication.content.link" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.content.link" ];
+       fhir:ElementDefinition.short [ fhir:value "Link to message content - an attachment, an online video, a document in another server or vault" ];
+       fhir:ElementDefinition.definition [ fhir:value "A link to the message content e.g. an online video or an attachment that resides on a server or content in another vault" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/sdc/StructureDefinition/lm-be-communication.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/sdc/StructureDefinition/lm-be-communication.ttl> .
+
+# -------------------------------------------------------------------------------------
+

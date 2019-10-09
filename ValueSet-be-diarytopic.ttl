@@ -1,0 +1,150 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/sdc/ValueSet/be-diarytopic> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-diarytopic"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Diary Topics</h2><div><p>Codes supported by eHealth Platform differentiating types of communication topics.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>diabetes</td><td/><td/></tr><tr><td>medication</td><td/><td/></tr><tr><td>movement</td><td/><td/></tr><tr><td>nutrition</td><td/><td/></tr><tr><td>renalinsufficiency</td><td/><td/></tr><tr><td>woundcare</td><td/><td/></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>diabetes</td><td>diabetes</td><td>diabète</td><td>diabetes</td></tr><tr><td>medication</td><td>medication</td><td>médication</td><td>medicatie</td></tr><tr><td>movement</td><td>movement</td><td>mouvement</td><td>beweging</td></tr><tr><td>nutrition</td><td>nutrition</td><td>nutrition</td><td>voeding</td></tr><tr><td>renalinsufficiency</td><td>renal insufficiency</td><td>insuffisance rénale</td><td>nierinsufficiëntie</td></tr><tr><td>woundcare</td><td>wound care</td><td>soins de plaies</td><td>wondverzorging</td></tr></table></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
+  fhir:ValueSet.name [ fhir:value "diarytopic"];
+  fhir:ValueSet.title [ fhir:value "Diary Topics"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2019-10-02T22:59:28+02:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HL7 Belgium"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/fiwg" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Codes supported by eHealth Platform differentiating types of communication topics."];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "diabetes" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "diabetes" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "diabetes" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "diabète" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "medication" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "medication" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "medicatie" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "médication" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "movement" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "movement" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "beweging" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "mouvement" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "nutrition" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "nutrition" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "voeding" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "nutrition" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "renalinsufficiency" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "renal insufficiency" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "nierinsufficiëntie" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "insuffisance rénale" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "woundcare" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "wound care" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "wondverzorging" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "soins de plaies" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/sdc/ValueSet/be-diarytopic.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/sdc/ValueSet/be-diarytopic.ttl> .
+
+# -------------------------------------------------------------------------------------
+
