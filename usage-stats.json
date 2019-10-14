@@ -4,6 +4,12 @@
   "jurisdiction": "001",
   "extensions": [],
   "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance",
+        "title": "BeAllergyIntolerance"
+      }
+    ],
     "Communication": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication",
@@ -20,6 +26,12 @@
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
         "title": "BePractitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
+        "title": "BePractitionerRole"
       }
     ]
   },
@@ -38,6 +50,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/language": [
       "Patient.address",

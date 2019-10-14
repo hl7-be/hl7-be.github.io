@@ -3,14 +3,14 @@
   "id": "hl7.be.core",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BaseIG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.be.core</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BaseIG</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/hl7.be.core</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium</p>\n</div></div>"
   },
-  "url": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.be.core",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/hl7.be.core",
   "name": "BaseIG",
   "title": "Belgium Base IG",
   "status": "draft",
   "experimental": false,
-  "date": "2019-10-02T22:59:28+02:00",
+  "date": "2019-10-14T10:38:11+02:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -43,32 +43,41 @@
       {
         "id": "logicalmodels",
         "name": "Logical Models",
-        "description": "The common Belgian Logical Models - these can be mapped to KMEHR and FHIR\r\n\r\n"
+        "description": "The common Belgian Logical Models - these can be mapped to KMEHR and FHIR"
       },
       {
         "id": "core",
         "name": "Core Profiles",
-        "description": "Core resources to be reused in other resources\r\n\r\n"
+        "description": "Core resources to be reused in other resources"
+      },
+      {
+        "name": "Conditions",
+        "description": "Conditions and findings about patients"
       },
       {
         "id": "communication",
         "name": "Communication",
-        "description": "Communication, also known as Journal entry\r\n\r\n"
+        "description": "Communication, also known as Journal entry"
+      },
+      {
+        "id": "condition",
+        "name": "Conditions",
+        "description": "Resource profiles defined for conditions"
       },
       {
         "id": "medication",
         "name": "Medication",
-        "description": "Resource profiles defined for medication\r\n\r\n"
+        "description": "Resource profiles defined for medication"
       },
       {
         "id": "documents",
         "name": "Documents",
-        "description": "Documents curated extracts of information - they represent a set of information for a given context at a given time.\r\n\r\n"
+        "description": "Documents curated extracts of information - they represent a set of information for a given context at a given time."
       },
       {
         "id": "terminology",
         "name": "Terminology",
-        "description": "Terminology resources - ValueSets and CodeSystems\r\n\r\n"
+        "description": "Terminology resources - ValueSets and CodeSystems"
       }
     ],
     "resource": [
@@ -92,6 +101,27 @@
         "name": "ValueSet - CommunicationTopic",
         "description": "The values for communication topic",
         "groupingId": "terminology"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "be-allergyintolerance.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-allergyintolerance"
+        },
+        "fhirVersion": [
+          "4.0.0"
+        ],
+        "name": "Allergy Intolerance core BE profile",
+        "description": "The Core BE profile for Allergy Intolerance",
+        "groupingId": "condition"
       },
       {
         "extension": [
@@ -259,6 +289,27 @@
         ],
         "name": "BE Practitioner profile",
         "description": "Core Belgian Practitioner profile",
+        "groupingId": "core"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "be-practitionerrole.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-practitionerrole"
+        },
+        "fhirVersion": [
+          "4.0.0"
+        ],
+        "name": "BE Practitioner Role profile",
+        "description": "Core Belgian Practitioner Role profile",
         "groupingId": "core"
       },
       {

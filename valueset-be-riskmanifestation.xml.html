@@ -1,75 +1,75 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>HL7.BE.CORE\ValueSet - Risk Manifestation - XML Representation - FHIR v4.0.0</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
   
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
       
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
   
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
   
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
   </head>
   <body>
 
 
-    <style type="text/css">h2{--heading-prefix:"2.9"}
-    h3,h4,h5,h6{--heading-prefix:"2.9"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
+    <style type="text/css">h2{--heading-prefix:"2.11"}
+    h3,h4,h5,h6{--heading-prefix:"2.11"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
         <div id="hl7-nav">
-          <a no-external="true" id="hl7-logo" href="http://hl7.org/fhir/R4/">
-            <img src="assets/images/be-flag.png" alt="Visit the website" height="50"/>
+          <a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/R4/">
+            <img height="50" alt="Visit the website" src="assets/images/be-flag.png"/>
           </a>
         </div>
         <div id="fhir-nav">
-          <a no-external="true" id="fhir-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+          <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
         </div>
         <div id="hl7-search">
-          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
         <div id="hl7-status">
           <p><span style="font-size:12pt;font-weight:bold">Belgium Base IG</span><br/> - CI Build (HL7 BE)</p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
     
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
     
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
@@ -77,9 +77,6 @@
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">BE Core Specification<b class="caret"> </b> </a>
     <ul class="dropdown-menu">
-      <li><a name="eb5eb65d-efc7-4f39-bdfe-e1f6c20fda17">​</a>
-        <a href="search.html">Finding a specification</a>
-      </li>
     </ul>
   </li>
   <li><a href="artifacts.html">Artifact Index</a></li>
@@ -89,10 +86,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
       </li>
       <li>
-        <a href="http://hl7.org/fhirpath" target="_blank">FHIRPath Spec <img src="external.png" style="text-align: baseline"/></a>
+        <a target="_blank" href="http://hl7.org/fhirpath">FHIRPath Spec <img src="external.png" style="text-align: baseline"/></a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
@@ -101,27 +98,27 @@
   </li>
 </ul>      
 
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->  
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifact List</b></a></li><li><b>ValueSet - Risk Manifestation</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifact List</b></a></li><li><b>ValueSet - Risk Manifestation</b></li>
         </ul>  
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
     
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Belgium Base IG - Local Development build (vnull). See the <a href="http://hl7.org/fhir/uv/sdc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">Belgium Base IG - Local Development build (vnull). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <a name="root"> </a>
   <h2 id="root">BeRiskManifestation - xml</h2>
   <p>
@@ -136,493 +133,494 @@
   
   <pre class="xml">
 
-&lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns="http://hl7.org/fhir"&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="be-riskmanifestation"/&gt;
+&lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;be-riskmanifestation&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h2&gt;BeRiskManifestation&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Codes as communicated by NIHDI differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort.&lt;/p&gt;
-&lt;/div&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href="http://www.snomed.org/"&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;table class="none"&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=39579001"&gt;39579001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;anafylaxie&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=41291007"&gt;41291007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;angio-oedeem&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=195967001"&gt;195967001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;astma&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=24079001"&gt;24079001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Atopische dermatitis&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=4386001"&gt;4386001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bronchospasme&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=271759003"&gt;271759003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bullous rash&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=698247007"&gt;698247007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hartritmestoornis&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=410430005"&gt;410430005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiorespiratoire stilstand&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=9826008"&gt;9826008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;conjonctivitis&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=49727002"&gt;49727002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;hoest&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=62315008"&gt;62315008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;diarree&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=702809001"&gt;702809001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drug eruption met eosinofilie 
-en systemische symptomen&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=162290004"&gt;162290004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;droge ogen&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=267036007"&gt;267036007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;kortademigheid&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=43116000"&gt;43116000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eczeem&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=418363000"&gt;418363000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;jeuk&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=422587007"&gt;422587007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Misselijkheid&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=359610006"&gt;359610006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oogbeschadigingen en/of hyperemia&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=51599000"&gt;51599000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oedeem van het strottenhoofd&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=271757001"&gt;271757001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Papulaire uitbarsting&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=70076002"&gt;70076002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rinitis&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=91175000"&gt;91175000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Epileptische aanval&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=76067001"&gt;76067001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Niezen&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=73442001"&gt;73442001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stevens-Johnson syndroom&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=23924001"&gt;23924001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;beklemmende borst&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=126485001"&gt;126485001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;netelroos&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=31996006"&gt;31996006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vasculitis&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=1985008"&gt;1985008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;braken&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=247472004"&gt;247472004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Huiduitslag&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href="http://hl7.org/fhir/R4/v3/NullFlavor/cs.html"&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&lt;/code&gt;&lt;/a&gt;&lt;table class="none"&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://hl7.org/fhir/R4/v3/NullFlavor/cs.html#v3-NullFlavor-OTH"&gt;OTH&lt;/a&gt;&lt;/td&gt;&lt;td&gt;other&lt;/td&gt;&lt;td&gt;Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).&lt;br/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;BeRiskManifestation&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Codes as communicated by NIHDI differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://www.snomed.org/&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=39579001&quot;&gt;39579001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;anafylaxie&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=41291007&quot;&gt;41291007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;angio-oedeem&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=195967001&quot;&gt;195967001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;astma&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=24079001&quot;&gt;24079001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Atopische dermatitis&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=4386001&quot;&gt;4386001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bronchospasme&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=271759003&quot;&gt;271759003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bulleuze eruptie&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=698247007&quot;&gt;698247007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hartritmestoornis&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=410430005&quot;&gt;410430005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiorespiratoire stilstand&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=9826008&quot;&gt;9826008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;conjonctivitis&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=49727002&quot;&gt;49727002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;hoest&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=62315008&quot;&gt;62315008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;diarree&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=702809001&quot;&gt;702809001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drug eruption met eosinofilie 
+en systemische symptomen&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=162290004&quot;&gt;162290004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;droge ogen&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=267036007&quot;&gt;267036007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;kortademigheid&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=43116000&quot;&gt;43116000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eczeem&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=418363000&quot;&gt;418363000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;jeuk&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=422587007&quot;&gt;422587007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Misselijkheid&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=359610006&quot;&gt;359610006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oogbeschadigingen en/of hyperemia&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=51599000&quot;&gt;51599000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oedeem van het strottenhoofd&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=271757001&quot;&gt;271757001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Papulaire uitbarsting&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=70076002&quot;&gt;70076002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rinitis&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=91175000&quot;&gt;91175000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Epileptische aanval&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=76067001&quot;&gt;76067001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Niezen&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=73442001&quot;&gt;73442001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stevens-Johnson syndroom&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=23924001&quot;&gt;23924001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;beklemmende borst&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=126485001&quot;&gt;126485001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;netelroos&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=31996006&quot;&gt;31996006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vasculitis&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=1985008&quot;&gt;1985008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;braken&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=247472004&quot;&gt;247472004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Huiduitslag&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://hl7.org/fhir/R4/v3/NullFlavor/cs.html&quot;&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/v3/NullFlavor/cs.html#v3-NullFlavor-OTH&quot;&gt;OTH&lt;/a&gt;&lt;/td&gt;&lt;td&gt;other&lt;/td&gt;&lt;td&gt;Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).&lt;br/&gt;
                         
                            Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.&lt;br/&gt;
-                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class="codes"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;BE&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;BE&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (Belgium) (fr)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Nederlands (België) (Dutch (Belgium), nl)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;39579001&lt;/td&gt;&lt;td&gt;Anaphylaxie&lt;/td&gt;&lt;td&gt;anafylaxie&lt;/td&gt;&lt;td&gt;Anaphylaxis&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;41291007&lt;/td&gt;&lt;td&gt;Angio-œdème&lt;/td&gt;&lt;td&gt;angio-oedeem&lt;/td&gt;&lt;td&gt;Angio-oedema&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;195967001&lt;/td&gt;&lt;td&gt;Asthme&lt;/td&gt;&lt;td&gt;astma&lt;/td&gt;&lt;td&gt;Asthma&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;24079001&lt;/td&gt;&lt;td&gt;Dermatite atopique&lt;/td&gt;&lt;td&gt;Atopische dermatitis&lt;/td&gt;&lt;td&gt;Atopic dermatitis&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4386001&lt;/td&gt;&lt;td&gt;Bronchospasme&lt;/td&gt;&lt;td&gt;Bronchospasme&lt;/td&gt;&lt;td&gt;Bronchospasm&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;271759003&lt;/td&gt;&lt;td&gt;Eruption bulleuse&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Bullous eruption&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;698247007&lt;/td&gt;&lt;td&gt;Arythmie cardique&lt;/td&gt;&lt;td&gt;Hartritmestoornis&lt;/td&gt;&lt;td&gt;Cardiac arrhythmia&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;410430005&lt;/td&gt;&lt;td&gt;Arrêt cardiorespiratoire&lt;/td&gt;&lt;td&gt;Cardiorespiratoire stilstand&lt;/td&gt;&lt;td&gt;Cardiorespiratory arrest&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9826008&lt;/td&gt;&lt;td&gt;Conjonctivite&lt;/td&gt;&lt;td&gt;conjonctivitis&lt;/td&gt;&lt;td&gt;Conjunctivitis&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;49727002&lt;/td&gt;&lt;td&gt;Toux&lt;/td&gt;&lt;td&gt;hoest&lt;/td&gt;&lt;td&gt;Cough&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;62315008&lt;/td&gt;&lt;td&gt;Diarrhée&lt;/td&gt;&lt;td&gt;diarree&lt;/td&gt;&lt;td&gt;Diarrhoea&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;702809001&lt;/td&gt;&lt;td&gt;Syndrome d'hypersensibilité médicamenteuse&lt;/td&gt;&lt;td&gt;Drug eruption met eosinofilie 
-en systemische symptomen&lt;/td&gt;&lt;td&gt;Drug reaction with eosinophilia and systemic symptoms&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;162290004&lt;/td&gt;&lt;td&gt;Sécheresse oculaire&lt;/td&gt;&lt;td&gt;droge ogen&lt;/td&gt;&lt;td&gt;Dry eyes&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;267036007&lt;/td&gt;&lt;td&gt;Dyspnée&lt;/td&gt;&lt;td&gt;kortademigheid&lt;/td&gt;&lt;td&gt;Dyspnea&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;43116000&lt;/td&gt;&lt;td&gt;Eczéma&lt;/td&gt;&lt;td&gt;Eczeem&lt;/td&gt;&lt;td&gt;Eczema&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;418363000&lt;/td&gt;&lt;td&gt;Prurit&lt;/td&gt;&lt;td&gt;jeuk&lt;/td&gt;&lt;td&gt;Itching of skin&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;422587007&lt;/td&gt;&lt;td&gt;Nausée&lt;/td&gt;&lt;td&gt;Misselijkheid&lt;/td&gt;&lt;td&gt;Nausea&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;359610006&lt;/td&gt;&lt;td&gt;Hyperémie oculaire&lt;/td&gt;&lt;td&gt;Oogbeschadigingen en/of hyperemia&lt;/td&gt;&lt;td&gt;Ocular hyperaemia&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;51599000&lt;/td&gt;&lt;td&gt;Œdème laryngé&lt;/td&gt;&lt;td&gt;Oedeem van het strottenhoofd&lt;/td&gt;&lt;td&gt;Oedema of larynx&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;271757001&lt;/td&gt;&lt;td&gt;Eruption papulaire&lt;/td&gt;&lt;td&gt;Papulaire uitbarsting&lt;/td&gt;&lt;td&gt;Papular eruption&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;70076002&lt;/td&gt;&lt;td&gt;Rhinite&lt;/td&gt;&lt;td&gt;Rinitis&lt;/td&gt;&lt;td&gt;Rhinitis&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;91175000&lt;/td&gt;&lt;td&gt;Crise épileptique&lt;/td&gt;&lt;td&gt;Epileptische aanval&lt;/td&gt;&lt;td&gt;Seizure&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;76067001&lt;/td&gt;&lt;td&gt;Eternuement&lt;/td&gt;&lt;td&gt;Niezen&lt;/td&gt;&lt;td&gt;Sneezing&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;73442001&lt;/td&gt;&lt;td&gt;Syndrome de Stevens-Johnson&lt;/td&gt;&lt;td&gt;Stevens-Johnson syndroom&lt;/td&gt;&lt;td&gt;Stevens-Johnson syndrome&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;23924001&lt;/td&gt;&lt;td&gt;Oppression thoracique&lt;/td&gt;&lt;td&gt;beklemmende borst&lt;/td&gt;&lt;td&gt;Tight chest&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;126485001&lt;/td&gt;&lt;td&gt;Urticaire&lt;/td&gt;&lt;td&gt;netelroos&lt;/td&gt;&lt;td&gt;Urticaria&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31996006&lt;/td&gt;&lt;td&gt;Vascularite&lt;/td&gt;&lt;td&gt;Vasculitis&lt;/td&gt;&lt;td&gt;Vasculitis&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1985008&lt;/td&gt;&lt;td&gt;Vomi&lt;/td&gt;&lt;td&gt;braken&lt;/td&gt;&lt;td&gt;Vomitus&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;247472004&lt;/td&gt;&lt;td&gt;Éruption cutanée&lt;/td&gt;&lt;td&gt;Huiduitslag&lt;/td&gt;&lt;td&gt;Weal&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OTH&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;td&gt;Autre&lt;/td&gt;&lt;td&gt;Andere&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (Belgium) (fr)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Nederlands (België) (Dutch (Belgium), nl)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;39579001&lt;/td&gt;&lt;td&gt;Anaphylaxis&lt;/td&gt;&lt;td&gt;Anaphylaxie&lt;/td&gt;&lt;td&gt;anafylaxie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;41291007&lt;/td&gt;&lt;td&gt;Angio-oedema&lt;/td&gt;&lt;td&gt;Angio-œdème&lt;/td&gt;&lt;td&gt;angio-oedeem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;195967001&lt;/td&gt;&lt;td&gt;Asthma&lt;/td&gt;&lt;td&gt;Asthme&lt;/td&gt;&lt;td&gt;astma&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;24079001&lt;/td&gt;&lt;td&gt;Atopic dermatitis&lt;/td&gt;&lt;td&gt;Dermatite atopique&lt;/td&gt;&lt;td&gt;Atopische dermatitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4386001&lt;/td&gt;&lt;td&gt;Bronchospasm&lt;/td&gt;&lt;td&gt;Bronchospasme&lt;/td&gt;&lt;td&gt;Bronchospasme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;271759003&lt;/td&gt;&lt;td&gt;Bullous eruption&lt;/td&gt;&lt;td&gt;Eruption bulleuse&lt;/td&gt;&lt;td&gt;Bulleuze eruptie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;698247007&lt;/td&gt;&lt;td&gt;Cardiac arrhythmia&lt;/td&gt;&lt;td&gt;Arythmie cardique&lt;/td&gt;&lt;td&gt;Hartritmestoornis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;410430005&lt;/td&gt;&lt;td&gt;Cardiorespiratory arrest&lt;/td&gt;&lt;td&gt;Arrêt cardiorespiratoire&lt;/td&gt;&lt;td&gt;Cardiorespiratoire stilstand&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9826008&lt;/td&gt;&lt;td&gt;Conjunctivitis&lt;/td&gt;&lt;td&gt;Conjonctivite&lt;/td&gt;&lt;td&gt;conjonctivitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;49727002&lt;/td&gt;&lt;td&gt;Cough&lt;/td&gt;&lt;td&gt;Toux&lt;/td&gt;&lt;td&gt;hoest&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;62315008&lt;/td&gt;&lt;td&gt;Diarrhoea&lt;/td&gt;&lt;td&gt;Diarrhée&lt;/td&gt;&lt;td&gt;diarree&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;702809001&lt;/td&gt;&lt;td&gt;Drug reaction with eosinophilia and systemic symptoms&lt;/td&gt;&lt;td&gt;Syndrome d'hypersensibilité médicamenteuse&lt;/td&gt;&lt;td&gt;Drug eruption met eosinofilie 
+en systemische symptomen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;162290004&lt;/td&gt;&lt;td&gt;Dry eyes&lt;/td&gt;&lt;td&gt;Sécheresse oculaire&lt;/td&gt;&lt;td&gt;droge ogen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;267036007&lt;/td&gt;&lt;td&gt;Dyspnea&lt;/td&gt;&lt;td&gt;Dyspnée&lt;/td&gt;&lt;td&gt;kortademigheid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;43116000&lt;/td&gt;&lt;td&gt;Eczema&lt;/td&gt;&lt;td&gt;Eczéma&lt;/td&gt;&lt;td&gt;Eczeem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;418363000&lt;/td&gt;&lt;td&gt;Itching of skin&lt;/td&gt;&lt;td&gt;Prurit&lt;/td&gt;&lt;td&gt;jeuk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;422587007&lt;/td&gt;&lt;td&gt;Nausea&lt;/td&gt;&lt;td&gt;Nausée&lt;/td&gt;&lt;td&gt;Misselijkheid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;359610006&lt;/td&gt;&lt;td&gt;Ocular hyperaemia&lt;/td&gt;&lt;td&gt;Hyperémie oculaire&lt;/td&gt;&lt;td&gt;Oogbeschadigingen en/of hyperemia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;51599000&lt;/td&gt;&lt;td&gt;Oedema of larynx&lt;/td&gt;&lt;td&gt;Œdème laryngé&lt;/td&gt;&lt;td&gt;Oedeem van het strottenhoofd&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;271757001&lt;/td&gt;&lt;td&gt;Papular eruption&lt;/td&gt;&lt;td&gt;Eruption papulaire&lt;/td&gt;&lt;td&gt;Papulaire uitbarsting&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;70076002&lt;/td&gt;&lt;td&gt;Rhinitis&lt;/td&gt;&lt;td&gt;Rhinite&lt;/td&gt;&lt;td&gt;Rinitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;91175000&lt;/td&gt;&lt;td&gt;Seizure&lt;/td&gt;&lt;td&gt;Crise épileptique&lt;/td&gt;&lt;td&gt;Epileptische aanval&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;76067001&lt;/td&gt;&lt;td&gt;Sneezing&lt;/td&gt;&lt;td&gt;Eternuement&lt;/td&gt;&lt;td&gt;Niezen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;73442001&lt;/td&gt;&lt;td&gt;Stevens-Johnson syndrome&lt;/td&gt;&lt;td&gt;Syndrome de Stevens-Johnson&lt;/td&gt;&lt;td&gt;Stevens-Johnson syndroom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;23924001&lt;/td&gt;&lt;td&gt;Tight chest&lt;/td&gt;&lt;td&gt;Oppression thoracique&lt;/td&gt;&lt;td&gt;beklemmende borst&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;126485001&lt;/td&gt;&lt;td&gt;Urticaria&lt;/td&gt;&lt;td&gt;Urticaire&lt;/td&gt;&lt;td&gt;netelroos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31996006&lt;/td&gt;&lt;td&gt;Vasculitis&lt;/td&gt;&lt;td&gt;Vascularite&lt;/td&gt;&lt;td&gt;Vasculitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1985008&lt;/td&gt;&lt;td&gt;Vomitus&lt;/td&gt;&lt;td&gt;Vomi&lt;/td&gt;&lt;td&gt;braken&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;247472004&lt;/td&gt;&lt;td&gt;Weal&lt;/td&gt;&lt;td&gt;Éruption cutanée&lt;/td&gt;&lt;td&gt;Huiduitslag&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OTH&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;td&gt;Autre&lt;/td&gt;&lt;td&gt;Andere&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>
-       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="1.0.0"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="BeRiskManifestation"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="draft"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2019-10-02T22:59:28+02:00"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 Belgium"/&gt;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BeRiskManifestation&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2019-10-14T10:38:11+02:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HL7 Belgium&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="other"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="http://hl7.org/Special/committees/fiwg"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;other&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://hl7.org/Special/committees/fiwg&quot;/&gt;
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="Codes as communicated by NIHDI differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort."/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Codes as communicated by NIHDI differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort.&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://unstats.un.org/unsd/methods/m49/m49.htm"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="001"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;001&quot;/&gt;
     &lt;/coding&gt;
   &lt;/jurisdiction&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="39579001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;39579001&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Anaphylaxis"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anaphylaxis&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Anaphylaxie"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anaphylaxie&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="anafylaxie"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;anafylaxie&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="41291007"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;41291007&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Angio-oedema"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Angio-oedema&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Angio-œdème"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Angio-œdème&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="angio-oedeem"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="195967001"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Asthma"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Asthme"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="astma"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;angio-oedeem&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="24079001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;195967001&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Atopic dermatitis"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Asthma&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Dermatite atopique"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Asthme&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Atopische dermatitis"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="4386001"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Bronchospasm"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Bronchospasme"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Bronchospasme"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;astma&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="271759003"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;24079001&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Bullous eruption"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Atopic dermatitis&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Eruption bulleuse"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Dermatite atopique&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="698247007"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Cardiac arrhythmia"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Arythmie cardique"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Hartritmestoornis"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Atopische dermatitis&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="410430005"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4386001&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Cardiorespiratory arrest"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bronchospasm&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Arrêt cardiorespiratoire"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bronchospasme&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Cardiorespiratoire stilstand"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="9826008"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Conjunctivitis"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Conjonctivite"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="conjonctivitis"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bronchospasme&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="49727002"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;271759003&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Cough"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bullous eruption&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Toux"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Eruption bulleuse&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="hoest"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="62315008"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Diarrhoea"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Diarrhée"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="diarree"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bulleuze eruptie&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="702809001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;698247007&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Drug reaction with eosinophilia and systemic symptoms"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cardiac arrhythmia&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Syndrome d&amp;#39;hypersensibilité médicamenteuse"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Arythmie cardique&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Drug eruption met eosinofilie 
-en systemische symptomen"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="162290004"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Dry eyes"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Sécheresse oculaire"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="droge ogen"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Hartritmestoornis&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="267036007"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;410430005&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Dyspnea"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cardiorespiratory arrest&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Dyspnée"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Arrêt cardiorespiratoire&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="kortademigheid"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="43116000"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Eczema"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Eczéma"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Eczeem"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cardiorespiratoire stilstand&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="418363000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;9826008&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Itching of skin"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Conjunctivitis&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Prurit"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Conjonctivite&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="jeuk"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="422587007"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Nausea"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Nausée"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Misselijkheid"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;conjonctivitis&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="359610006"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;49727002&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Ocular hyperaemia"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cough&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Hyperémie oculaire"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Toux&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Oogbeschadigingen en/of hyperemia"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="51599000"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Oedema of larynx"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Œdème laryngé"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Oedeem van het strottenhoofd"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;hoest&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="271757001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;62315008&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Papular eruption"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diarrhoea&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Eruption papulaire"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diarrhée&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Papulaire uitbarsting"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="70076002"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Rhinitis"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Rhinite"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Rinitis"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;diarree&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="91175000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;702809001&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Seizure"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Drug reaction with eosinophilia and systemic symptoms&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Crise épileptique"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Syndrome d&amp;#39;hypersensibilité médicamenteuse&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Epileptische aanval"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="76067001"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Sneezing"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Eternuement"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Niezen"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Drug eruption met eosinofilie 
+en systemische symptomen&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="73442001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;162290004&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Stevens-Johnson syndrome"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Dry eyes&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Syndrome de Stevens-Johnson"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Sécheresse oculaire&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Stevens-Johnson syndroom"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="23924001"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Tight chest"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Oppression thoracique"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="beklemmende borst"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;droge ogen&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="126485001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;267036007&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Urticaria"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Dyspnea&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Urticaire"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Dyspnée&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="netelroos"/&gt;
-        &lt;/designation&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="31996006"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Vasculitis"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Vascularite"/&gt;
-        &lt;/designation&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Vasculitis"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;kortademigheid&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="1985008"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;43116000&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Vomitus"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Eczema&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Vomi"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Eczéma&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="braken"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Eczeem&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="247472004"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;418363000&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Weal"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Itching of skin&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-fr"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Éruption cutanée"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Prurit&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BE-nl"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Huiduitslag"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;jeuk&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;422587007&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Nausea&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Nausée&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Misselijkheid&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;359610006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ocular hyperaemia&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Hyperémie oculaire&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Oogbeschadigingen en/of hyperemia&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;51599000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Oedema of larynx&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Œdème laryngé&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Oedeem van het strottenhoofd&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;271757001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Papular eruption&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Eruption papulaire&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Papulaire uitbarsting&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;70076002&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rhinitis&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rhinite&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rinitis&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;91175000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Seizure&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Crise épileptique&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Epileptische aanval&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;76067001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Sneezing&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Eternuement&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Niezen&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;73442001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Stevens-Johnson syndrome&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Syndrome de Stevens-Johnson&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Stevens-Johnson syndroom&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;23924001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Tight chest&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Oppression thoracique&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;beklemmende borst&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;126485001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Urticaria&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Urticaire&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;netelroos&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;31996006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Vasculitis&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Vascularite&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Vasculitis&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1985008&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Vomitus&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Vomi&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;braken&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;247472004&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Weal&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Éruption cutanée&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Huiduitslag&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
     &lt;/include&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="OTH"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;OTH&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="en"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Other"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Other&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="nl-BE"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Andere"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Andere&quot;/&gt;
         &lt;/designation&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="fr-BE"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Autre"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-BE&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Autre&quot;/&gt;
         &lt;/designation&gt;
       &lt;/concept&gt;
     &lt;/include&gt;
@@ -633,49 +631,49 @@ en systemische symptomen"/&gt;
   
   
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
 
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg"></a>HL7 Belgium.  Package hl7.be.core# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.0</a>. Generated <span title="Wed, Oct 2, 2019 22:59+0200">2019-10-02</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg"/>HL7 Belgium</a>.  Package hl7.be.core# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.0</a>. Generated <span title="Mon, Oct 14, 2019 10:38+0200">2019-10-14</span>
           <br/>
           <span style="color: #FFFF77">
           Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-                 <a style="color: #81BEF7" href="http://hl7.org/fhir/uv/sdc/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
-                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
-                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank">Propose a change <img src="external.png" alt="external" style="vertical-align: baseline"/></a>
+                 <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img alt="external" style="vertical-align: baseline" src="external.png"/></a>
           </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/fhir.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/fhir.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>

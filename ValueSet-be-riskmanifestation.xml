@@ -4,18 +4,18 @@
   <id value="be-riskmanifestation"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>BeRiskManifestation</h2><div><p>Codes as communicated by NIHDI differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort.</p>
-</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=39579001">39579001</a></td><td>anafylaxie</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=41291007">41291007</a></td><td>angio-oedeem</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=195967001">195967001</a></td><td>astma</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=24079001">24079001</a></td><td>Atopische dermatitis</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=4386001">4386001</a></td><td>Bronchospasme</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271759003">271759003</a></td><td>Bullous rash</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=698247007">698247007</a></td><td>Hartritmestoornis</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410430005">410430005</a></td><td>Cardiorespiratoire stilstand</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9826008">9826008</a></td><td>conjonctivitis</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49727002">49727002</a></td><td>hoest</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62315008">62315008</a></td><td>diarree</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=702809001">702809001</a></td><td>Drug eruption met eosinofilie 
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=39579001">39579001</a></td><td>anafylaxie</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=41291007">41291007</a></td><td>angio-oedeem</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=195967001">195967001</a></td><td>astma</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=24079001">24079001</a></td><td>Atopische dermatitis</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=4386001">4386001</a></td><td>Bronchospasme</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271759003">271759003</a></td><td>Bulleuze eruptie</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=698247007">698247007</a></td><td>Hartritmestoornis</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410430005">410430005</a></td><td>Cardiorespiratoire stilstand</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9826008">9826008</a></td><td>conjonctivitis</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49727002">49727002</a></td><td>hoest</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62315008">62315008</a></td><td>diarree</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=702809001">702809001</a></td><td>Drug eruption met eosinofilie 
 en systemische symptomen</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=162290004">162290004</a></td><td>droge ogen</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=267036007">267036007</a></td><td>kortademigheid</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43116000">43116000</a></td><td>Eczeem</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418363000">418363000</a></td><td>jeuk</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422587007">422587007</a></td><td>Misselijkheid</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=359610006">359610006</a></td><td>Oogbeschadigingen en/of hyperemia</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=51599000">51599000</a></td><td>Oedeem van het strottenhoofd</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271757001">271757001</a></td><td>Papulaire uitbarsting</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=70076002">70076002</a></td><td>Rinitis</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91175000">91175000</a></td><td>Epileptische aanval</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=76067001">76067001</a></td><td>Niezen</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73442001">73442001</a></td><td>Stevens-Johnson syndroom</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=23924001">23924001</a></td><td>beklemmende borst</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=126485001">126485001</a></td><td>netelroos</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=31996006">31996006</a></td><td>Vasculitis</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1985008">1985008</a></td><td>braken</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=247472004">247472004</a></td><td>Huiduitslag</td><td/></tr></table></li><li>Include these codes as defined in <a href="http://hl7.org/fhir/R4/v3/NullFlavor/cs.html"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://hl7.org/fhir/R4/v3/NullFlavor/cs.html#v3-NullFlavor-OTH">OTH</a></td><td>other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/>
                         
                            Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/>
-                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>BE</b></td><td><b>BE</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>39579001</td><td>Anaphylaxie</td><td>anafylaxie</td><td>Anaphylaxis</td><td></td><td></td></tr><tr><td>41291007</td><td>Angio-œdème</td><td>angio-oedeem</td><td>Angio-oedema</td><td></td><td></td></tr><tr><td>195967001</td><td>Asthme</td><td>astma</td><td>Asthma</td><td></td><td></td></tr><tr><td>24079001</td><td>Dermatite atopique</td><td>Atopische dermatitis</td><td>Atopic dermatitis</td><td></td><td></td></tr><tr><td>4386001</td><td>Bronchospasme</td><td>Bronchospasme</td><td>Bronchospasm</td><td></td><td></td></tr><tr><td>271759003</td><td>Eruption bulleuse</td><td></td><td>Bullous eruption</td><td></td><td></td></tr><tr><td>698247007</td><td>Arythmie cardique</td><td>Hartritmestoornis</td><td>Cardiac arrhythmia</td><td></td><td></td></tr><tr><td>410430005</td><td>Arrêt cardiorespiratoire</td><td>Cardiorespiratoire stilstand</td><td>Cardiorespiratory arrest</td><td></td><td></td></tr><tr><td>9826008</td><td>Conjonctivite</td><td>conjonctivitis</td><td>Conjunctivitis</td><td></td><td></td></tr><tr><td>49727002</td><td>Toux</td><td>hoest</td><td>Cough</td><td></td><td></td></tr><tr><td>62315008</td><td>Diarrhée</td><td>diarree</td><td>Diarrhoea</td><td></td><td></td></tr><tr><td>702809001</td><td>Syndrome d'hypersensibilité médicamenteuse</td><td>Drug eruption met eosinofilie 
-en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic symptoms</td><td></td><td></td></tr><tr><td>162290004</td><td>Sécheresse oculaire</td><td>droge ogen</td><td>Dry eyes</td><td></td><td></td></tr><tr><td>267036007</td><td>Dyspnée</td><td>kortademigheid</td><td>Dyspnea</td><td></td><td></td></tr><tr><td>43116000</td><td>Eczéma</td><td>Eczeem</td><td>Eczema</td><td></td><td></td></tr><tr><td>418363000</td><td>Prurit</td><td>jeuk</td><td>Itching of skin</td><td></td><td></td></tr><tr><td>422587007</td><td>Nausée</td><td>Misselijkheid</td><td>Nausea</td><td></td><td></td></tr><tr><td>359610006</td><td>Hyperémie oculaire</td><td>Oogbeschadigingen en/of hyperemia</td><td>Ocular hyperaemia</td><td></td><td></td></tr><tr><td>51599000</td><td>Œdème laryngé</td><td>Oedeem van het strottenhoofd</td><td>Oedema of larynx</td><td></td><td></td></tr><tr><td>271757001</td><td>Eruption papulaire</td><td>Papulaire uitbarsting</td><td>Papular eruption</td><td></td><td></td></tr><tr><td>70076002</td><td>Rhinite</td><td>Rinitis</td><td>Rhinitis</td><td></td><td></td></tr><tr><td>91175000</td><td>Crise épileptique</td><td>Epileptische aanval</td><td>Seizure</td><td></td><td></td></tr><tr><td>76067001</td><td>Eternuement</td><td>Niezen</td><td>Sneezing</td><td></td><td></td></tr><tr><td>73442001</td><td>Syndrome de Stevens-Johnson</td><td>Stevens-Johnson syndroom</td><td>Stevens-Johnson syndrome</td><td></td><td></td></tr><tr><td>23924001</td><td>Oppression thoracique</td><td>beklemmende borst</td><td>Tight chest</td><td></td><td></td></tr><tr><td>126485001</td><td>Urticaire</td><td>netelroos</td><td>Urticaria</td><td></td><td></td></tr><tr><td>31996006</td><td>Vascularite</td><td>Vasculitis</td><td>Vasculitis</td><td></td><td></td></tr><tr><td>1985008</td><td>Vomi</td><td>braken</td><td>Vomitus</td><td></td><td></td></tr><tr><td>247472004</td><td>Éruption cutanée</td><td>Huiduitslag</td><td>Weal</td><td></td><td></td></tr><tr><td>OTH</td><td></td><td></td><td>Other</td><td>Autre</td><td>Andere</td></tr></table></div>
+                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>39579001</td><td>Anaphylaxis</td><td>Anaphylaxie</td><td>anafylaxie</td></tr><tr><td>41291007</td><td>Angio-oedema</td><td>Angio-œdème</td><td>angio-oedeem</td></tr><tr><td>195967001</td><td>Asthma</td><td>Asthme</td><td>astma</td></tr><tr><td>24079001</td><td>Atopic dermatitis</td><td>Dermatite atopique</td><td>Atopische dermatitis</td></tr><tr><td>4386001</td><td>Bronchospasm</td><td>Bronchospasme</td><td>Bronchospasme</td></tr><tr><td>271759003</td><td>Bullous eruption</td><td>Eruption bulleuse</td><td>Bulleuze eruptie</td></tr><tr><td>698247007</td><td>Cardiac arrhythmia</td><td>Arythmie cardique</td><td>Hartritmestoornis</td></tr><tr><td>410430005</td><td>Cardiorespiratory arrest</td><td>Arrêt cardiorespiratoire</td><td>Cardiorespiratoire stilstand</td></tr><tr><td>9826008</td><td>Conjunctivitis</td><td>Conjonctivite</td><td>conjonctivitis</td></tr><tr><td>49727002</td><td>Cough</td><td>Toux</td><td>hoest</td></tr><tr><td>62315008</td><td>Diarrhoea</td><td>Diarrhée</td><td>diarree</td></tr><tr><td>702809001</td><td>Drug reaction with eosinophilia and systemic symptoms</td><td>Syndrome d'hypersensibilité médicamenteuse</td><td>Drug eruption met eosinofilie 
+en systemische symptomen</td></tr><tr><td>162290004</td><td>Dry eyes</td><td>Sécheresse oculaire</td><td>droge ogen</td></tr><tr><td>267036007</td><td>Dyspnea</td><td>Dyspnée</td><td>kortademigheid</td></tr><tr><td>43116000</td><td>Eczema</td><td>Eczéma</td><td>Eczeem</td></tr><tr><td>418363000</td><td>Itching of skin</td><td>Prurit</td><td>jeuk</td></tr><tr><td>422587007</td><td>Nausea</td><td>Nausée</td><td>Misselijkheid</td></tr><tr><td>359610006</td><td>Ocular hyperaemia</td><td>Hyperémie oculaire</td><td>Oogbeschadigingen en/of hyperemia</td></tr><tr><td>51599000</td><td>Oedema of larynx</td><td>Œdème laryngé</td><td>Oedeem van het strottenhoofd</td></tr><tr><td>271757001</td><td>Papular eruption</td><td>Eruption papulaire</td><td>Papulaire uitbarsting</td></tr><tr><td>70076002</td><td>Rhinitis</td><td>Rhinite</td><td>Rinitis</td></tr><tr><td>91175000</td><td>Seizure</td><td>Crise épileptique</td><td>Epileptische aanval</td></tr><tr><td>76067001</td><td>Sneezing</td><td>Eternuement</td><td>Niezen</td></tr><tr><td>73442001</td><td>Stevens-Johnson syndrome</td><td>Syndrome de Stevens-Johnson</td><td>Stevens-Johnson syndroom</td></tr><tr><td>23924001</td><td>Tight chest</td><td>Oppression thoracique</td><td>beklemmende borst</td></tr><tr><td>126485001</td><td>Urticaria</td><td>Urticaire</td><td>netelroos</td></tr><tr><td>31996006</td><td>Vasculitis</td><td>Vascularite</td><td>Vasculitis</td></tr><tr><td>1985008</td><td>Vomitus</td><td>Vomi</td><td>braken</td></tr><tr><td>247472004</td><td>Weal</td><td>Éruption cutanée</td><td>Huiduitslag</td></tr><tr><td>OTH</td><td>Other</td><td>Autre</td><td>Andere</td></tr></table></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation"/>
   <version value="1.0.0"/>
   <name value="BeRiskManifestation"/>
   <status value="draft"/>
-  <date value="2019-10-02T22:59:28+02:00"/>
+  <date value="2019-10-14T10:38:11+02:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -40,11 +40,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Anaphylaxis"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Anaphylaxie"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="anafylaxie"/>
         </designation>
       </concept>
@@ -55,11 +55,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Angio-oedema"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Angio-&#x153;d&#xE8;me"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="angio-oedeem"/>
         </designation>
       </concept>
@@ -70,11 +70,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Asthma"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Asthme"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="astma"/>
         </designation>
       </concept>
@@ -85,11 +85,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Atopic dermatitis"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Dermatite atopique"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Atopische dermatitis"/>
         </designation>
       </concept>
@@ -100,11 +100,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Bronchospasm"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Bronchospasme"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Bronchospasme"/>
         </designation>
       </concept>
@@ -115,11 +115,12 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Bullous eruption"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Eruption bulleuse"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
+          <value value="Bulleuze eruptie"/>
         </designation>
       </concept>
       <concept>
@@ -129,11 +130,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Cardiac arrhythmia"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Arythmie cardique"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Hartritmestoornis"/>
         </designation>
       </concept>
@@ -144,11 +145,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Cardiorespiratory arrest"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Arr&#xEA;t cardiorespiratoire"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Cardiorespiratoire stilstand"/>
         </designation>
       </concept>
@@ -159,11 +160,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Conjunctivitis"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Conjonctivite"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="conjonctivitis"/>
         </designation>
       </concept>
@@ -174,11 +175,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Cough"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Toux"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="hoest"/>
         </designation>
       </concept>
@@ -189,11 +190,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Diarrhoea"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Diarrh&#xE9;e"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="diarree"/>
         </designation>
       </concept>
@@ -204,11 +205,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Drug reaction with eosinophilia and systemic symptoms"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Syndrome d&#39;hypersensibilit&#xE9; m&#xE9;dicamenteuse"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Drug eruption met eosinofilie &#xA;en systemische symptomen"/>
         </designation>
       </concept>
@@ -219,11 +220,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Dry eyes"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="S&#xE9;cheresse oculaire"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="droge ogen"/>
         </designation>
       </concept>
@@ -234,11 +235,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Dyspnea"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Dyspn&#xE9;e"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="kortademigheid"/>
         </designation>
       </concept>
@@ -249,11 +250,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Eczema"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Ecz&#xE9;ma"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Eczeem"/>
         </designation>
       </concept>
@@ -264,11 +265,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Itching of skin"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Prurit"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="jeuk"/>
         </designation>
       </concept>
@@ -279,11 +280,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Nausea"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Naus&#xE9;e"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Misselijkheid"/>
         </designation>
       </concept>
@@ -294,11 +295,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Ocular hyperaemia"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Hyper&#xE9;mie oculaire"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Oogbeschadigingen en/of hyperemia"/>
         </designation>
       </concept>
@@ -309,11 +310,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Oedema of larynx"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="&#x152;d&#xE8;me laryng&#xE9;"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Oedeem van het strottenhoofd"/>
         </designation>
       </concept>
@@ -324,11 +325,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Papular eruption"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Eruption papulaire"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Papulaire uitbarsting"/>
         </designation>
       </concept>
@@ -339,11 +340,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Rhinitis"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Rhinite"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Rinitis"/>
         </designation>
       </concept>
@@ -354,11 +355,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Seizure"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Crise &#xE9;pileptique"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Epileptische aanval"/>
         </designation>
       </concept>
@@ -369,11 +370,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Sneezing"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Eternuement"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Niezen"/>
         </designation>
       </concept>
@@ -384,11 +385,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Stevens-Johnson syndrome"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Syndrome de Stevens-Johnson"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Stevens-Johnson syndroom"/>
         </designation>
       </concept>
@@ -399,11 +400,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Tight chest"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Oppression thoracique"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="beklemmende borst"/>
         </designation>
       </concept>
@@ -414,11 +415,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Urticaria"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Urticaire"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="netelroos"/>
         </designation>
       </concept>
@@ -429,11 +430,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Vasculitis"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Vascularite"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Vasculitis"/>
         </designation>
       </concept>
@@ -444,11 +445,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Vomitus"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="Vomi"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="braken"/>
         </designation>
       </concept>
@@ -459,11 +460,11 @@ en systemische symptomen</td><td>Drug reaction with eosinophilia and systemic sy
           <value value="Weal"/>
         </designation>
         <designation>
-          <language value="BE-fr"/>
+          <language value="fr-BE"/>
           <value value="&#xC9;ruption cutan&#xE9;e"/>
         </designation>
         <designation>
-          <language value="BE-nl"/>
+          <language value="nl-BE"/>
           <value value="Huiduitslag"/>
         </designation>
       </concept>

@@ -1,11 +1,11 @@
 {
-  "url": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/be.base.ig",
   "name": "BaseIG",
   "package-id": "hl7.be.core",
-  "date": "Wed, 02 Oct, 2019 22:59:28 +0200",
-  "errs": 90,
-  "warnings": 24,
-  "hints": 116,
+  "date": "Mon, 14 Oct, 2019 10:38:11 +0200",
+  "errs": 34,
+  "warnings": 0,
+  "hints": 0,
   "version": "4.0.0",
   "tool": "4.1.0 (3)"
 }

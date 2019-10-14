@@ -7,9 +7,10 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+  <version value="0.1.0"/>
   <name value="BePatient"/>
   <status value="draft"/>
-  <date value="2019-10-02T22:59:28+02:00"/>
+  <date value="2019-10-14T10:38:11+02:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -629,6 +630,7 @@
           <type value="type"/>
           <path value="$this"/>
         </discriminator>
+        <rules value="open"/>
       </slicing>
       <short value="Value of extension"/>
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)."/>
@@ -849,6 +851,7 @@
           <type value="type"/>
           <path value="$this"/>
         </discriminator>
+        <rules value="open"/>
       </slicing>
       <short value="Value of extension"/>
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)."/>
@@ -1269,6 +1272,7 @@
           <type value="type"/>
           <path value="$this"/>
         </discriminator>
+        <rules value="open"/>
       </slicing>
       <short value="Value of extension"/>
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)."/>
@@ -2398,6 +2402,7 @@
           <type value="type"/>
           <path value="$this"/>
         </discriminator>
+        <rules value="open"/>
       </slicing>
       <short value="Value of extension"/>
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)."/>
@@ -2828,6 +2833,10 @@
     <element id="Patient.address.extension:humanLanguage.value[x]">
       <path value="Patient.address.extension.value[x]"/>
       <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="item.resolve()"/>
+        </discriminator>
         <rules value="open"/>
       </slicing>
       <short value="Value of extension"/>
@@ -4915,6 +4924,10 @@
     <element id="Patient.address.extension:humanLanguage.value[x]">
       <path value="Patient.address.extension.value[x]"/>
       <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="item.resolve()"/>
+        </discriminator>
         <rules value="open"/>
       </slicing>
       <type>

@@ -5,17 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/sdc/StructureDefinition/be-communication> a fhir:StructureDefinition;
+<https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "be-communication"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"{{[id]}}-definitions.html#Communication.identifier\" title=\"null\">identifier</a><a name=\"Communication.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"{{[id]}}-definitions.html#Communication.identifier\" title=\"null\">identifier</a><a name=\"Communication.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "BECommunication"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-10-02T22:59:28+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-10-14T10:38:11+02:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -36,14 +37,14 @@
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
-     fhir:StructureDefinition.mapping.identity [ fhir:value "workflow" ];
-     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/fhir/workflow" ];
-     fhir:StructureDefinition.mapping.name [ fhir:value "Workflow Pattern" ]
-  ], [
-     fhir:index 1;
      fhir:StructureDefinition.mapping.identity [ fhir:value "w5" ];
      fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/fhir/fivews" ];
      fhir:StructureDefinition.mapping.name [ fhir:value "FiveWs Pattern Mapping" ]
+  ], [
+     fhir:index 1;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "workflow" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/fhir/workflow" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "Workflow Pattern" ]
   ], [
      fhir:index 2;
      fhir:StructureDefinition.mapping.identity [ fhir:value "rim" ];
@@ -122,6 +123,8 @@
          fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(f:contained/*/f:meta/f:security))" ];
          fhir:ElementDefinition.constraint.source [ fhir:value "DomainResource" ]
        ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
@@ -149,25 +152,8 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "id" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ]
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 2;
        fhir:Element.id [ fhir:value "Communication.meta" ];
@@ -185,29 +171,8 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Meta" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 3;
        fhir:Element.id [ fhir:value "Communication.implicitRules" ];
@@ -226,27 +191,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "uri" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifierReason [ fhir:value "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation" ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ]
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 4;
        fhir:Element.id [ fhir:value "Communication.language" ];
@@ -265,31 +212,31 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet" ];
+           fhir:Extension.valueCanonical [
+             fhir:value "http://hl7.org/fhir/ValueSet/all-languages";
+             fhir:link <http://hl7.org/fhir/ValueSet/all-languages>
+           ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "Language" ]
+         ], [
+           fhir:index 2;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
          fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ];
          fhir:ElementDefinition.binding.description [ fhir:value "A human language." ];
          fhir:ElementDefinition.binding.valueSet [
            fhir:value "http://hl7.org/fhir/ValueSet/languages";
            fhir:link <http://hl7.org/fhir/ValueSet/languages>
          ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
        fhir:index 5;
@@ -322,29 +269,10 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Narrative" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ], [
-         fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Act.text?" ]
        ]
@@ -376,12 +304,10 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Resource" ]
        ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Entity. Role, or Act" ]
-       ], [
-         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
@@ -389,15 +315,6 @@
        fhir:index 7;
        fhir:Element.id [ fhir:value "Communication.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Communication.extension" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
-         ];
-         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
-       ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
        fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
        fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
@@ -419,33 +336,10 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Extension" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
@@ -453,19 +347,10 @@
        fhir:index 8;
        fhir:Element.id [ fhir:value "Communication.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Communication.modifierExtension" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
-         ];
-         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
-       ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
        fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." ];
        fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
-       fhir:ElementDefinition.requirements [ fhir:value "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](extensibility.html#modifierExtension)." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)." ];
        fhir:ElementDefinition.alias [
          fhir:value "extensions";
          fhir:index 0
@@ -484,35 +369,11 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Extension" ]
-       ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifierReason [ fhir:value "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them" ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
@@ -522,7 +383,7 @@
        fhir:ElementDefinition.path [ fhir:value "Communication.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Unique identifier" ];
        fhir:ElementDefinition.definition [ fhir:value "Business identifiers assigned to this communication by the performer or other systems which remain constant as the resource is updated and propagates from server to server." ];
-       fhir:ElementDefinition.comment [ fhir:value "This is a business identifier, not a resource identifier (see [discussion](resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number." ];
+       fhir:ElementDefinition.comment [ fhir:value "This is a business identifier, not a resource identifier (see [discussion](http://hl7.org/fhir/R4/resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number." ];
        fhir:ElementDefinition.requirements [ fhir:value "Allows identification of the communication as it is known by various participating systems and in a way that remains consistent across servers." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
@@ -535,43 +396,15 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CX / EI (occasionally, more often EI maps to a resource id or a URL)" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]" ]
-       ], [
-         fhir:index 3;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Identifier" ]
-       ], [
-         fhir:index 4;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.identifier" ]
        ], [
-         fhir:index 5;
+         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.identifier" ]
        ]
@@ -581,7 +414,6 @@
        fhir:ElementDefinition.path [ fhir:value "Communication.instantiatesCanonical" ];
        fhir:ElementDefinition.short [ fhir:value "Instantiates FHIR protocol or definition" ];
        fhir:ElementDefinition.definition [ fhir:value "The URL pointing to a FHIR-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Communication." ];
-       fhir:ElementDefinition.comment [ fhir:value "see [Canonical References](references.html#canonical)" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ];
        fhir:ElementDefinition.base [
@@ -614,30 +446,14 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Questionnaire>
          ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.instantiatesCanonical" ]
        ], [
-         fhir:index 2;
+         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=DEFN].target" ]
        ]
@@ -659,30 +475,14 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "uri" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.instantiatesUri" ]
        ], [
-         fhir:index 2;
+         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=DEFN].target" ]
        ]
@@ -713,38 +513,10 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Resource>
          ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ref-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "SHALL have a contained resource if a local reference is provided" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Reference" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ], [
-         fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.basedOn" ]
        ]
@@ -754,7 +526,6 @@
        fhir:ElementDefinition.path [ fhir:value "Communication.partOf" ];
        fhir:ElementDefinition.short [ fhir:value "Part of this action" ];
        fhir:ElementDefinition.definition [ fhir:value "Part of this action." ];
-       fhir:ElementDefinition.comment [ fhir:value "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ];
        fhir:ElementDefinition.alias [
          fhir:value "container";
          fhir:index 0
@@ -775,38 +546,10 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Resource>
          ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ref-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "SHALL have a contained resource if a local reference is provided" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Reference" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ], [
-         fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.partOf" ]
        ]
@@ -816,7 +559,6 @@
        fhir:ElementDefinition.path [ fhir:value "Communication.inResponseTo" ];
        fhir:ElementDefinition.short [ fhir:value "Reply to" ];
        fhir:ElementDefinition.definition [ fhir:value "Prior communication that this communication is in response to." ];
-       fhir:ElementDefinition.comment [ fhir:value "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -833,36 +575,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Communication>
          ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ref-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "SHALL have a contained resource if a local reference is provided" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Reference" ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ]
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 15;
        fhir:Element.id [ fhir:value "Communication.status" ];
@@ -881,24 +595,16 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifierReason [ fhir:value "This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "CommunicationStatus" ]
+         ];
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "The status of the communication." ];
          fhir:ElementDefinition.binding.valueSet [
@@ -908,14 +614,10 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.status" ]
        ], [
-         fhir:index 2;
+         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.status" ]
        ]
@@ -944,21 +646,14 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "CommunicationNotDoneReason" ]
+         ];
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Codes for the reason why a communication did not happen." ];
          fhir:ElementDefinition.binding.valueSet [
@@ -968,22 +663,6 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CE/CNE/CWE" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CD" ]
-       ], [
-         fhir:index 3;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
-       ], [
-         fhir:index 4;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.statusReason" ]
        ]
@@ -1005,20 +684,14 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "CommunicationCategory" ]
+         ];
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Codes for general categories of communications such as alerts, instructions, etc." ];
          fhir:ElementDefinition.binding.valueSet [
@@ -1028,22 +701,6 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CE/CNE/CWE" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CD" ]
-       ], [
-         fhir:index 3;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
-       ], [
-         fhir:index 4;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.class" ]
        ]
@@ -1066,21 +723,14 @@
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
        fhir:ElementDefinition.meaningWhenMissing [ fhir:value "If missing, this communication should be treated with normal priority" ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "CommunicationPriority" ]
+         ];
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Codes indicating the relative importance of a communication." ];
          fhir:ElementDefinition.binding.valueSet [
@@ -1090,10 +740,6 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.grade" ]
        ]
@@ -1103,7 +749,6 @@
        fhir:ElementDefinition.path [ fhir:value "Communication.medium" ];
        fhir:ElementDefinition.short [ fhir:value "A channel of communication" ];
        fhir:ElementDefinition.definition [ fhir:value "A channel that was used for this communication (e.g. email, fax)." ];
-       fhir:ElementDefinition.comment [ fhir:value "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -1115,43 +760,20 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "CommunicationMedium" ]
+         ];
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Codes for communication mediums such as phone, fax, email, in person, etc." ];
          fhir:ElementDefinition.binding.valueSet [
            fhir:value "http://terminology.hl7.org/ValueSet/v3-ParticipationMode";
            fhir:link <http://terminology.hl7.org/ValueSet/v3-ParticipationMode>
          ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CE/CNE/CWE" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CD" ]
-       ], [
-         fhir:index 3;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
        ]
      ], [
        fhir:index 20;
@@ -1159,7 +781,6 @@
        fhir:ElementDefinition.path [ fhir:value "Communication.subject" ];
        fhir:ElementDefinition.short [ fhir:value "Focus of message" ];
        fhir:ElementDefinition.definition [ fhir:value "The patient or group that was the focus of this communication." ];
-       fhir:ElementDefinition.comment [ fhir:value "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ];
        fhir:ElementDefinition.alias [
          fhir:value "patient";
          fhir:index 0
@@ -1184,46 +805,18 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Group>
          ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ref-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "SHALL have a contained resource if a local reference is provided" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Reference" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ], [
-         fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.subject" ]
        ], [
-         fhir:index 3;
+         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.subject[x]" ]
        ], [
-         fhir:index 4;
+         fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.subject" ]
        ]
@@ -1245,23 +838,11 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Codes describing the purpose or content of the communication." ];
          fhir:ElementDefinition.binding.valueSet [
            fhir:value "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic";
            fhir:link <https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic>
@@ -1269,22 +850,6 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CE/CNE/CWE" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CD" ]
-       ], [
-         fhir:index 3;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
-       ], [
-         fhir:index 4;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.context" ]
        ]
@@ -1311,37 +876,10 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Resource>
          ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ref-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "SHALL have a contained resource if a local reference is provided" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Reference" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ], [
-         fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.context" ]
        ]
@@ -1368,42 +906,14 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
          ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ref-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "SHALL have a contained resource if a local reference is provided" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Reference" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ], [
-         fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.context" ]
        ], [
-         fhir:index 3;
+         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.context" ]
        ]
@@ -1424,30 +934,15 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.occurrence[x] {Invariant: maps to period.start}" ]
        ], [
-         fhir:index 2;
+         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.done[x]" ]
        ]
@@ -1468,29 +963,14 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.occurrence[x] {Invariant: maps to period.end}" ]
        ], [
-         fhir:index 2;
+         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.done[x]" ]
        ]
@@ -1500,7 +980,6 @@
        fhir:ElementDefinition.path [ fhir:value "Communication.recipient" ];
        fhir:ElementDefinition.short [ fhir:value "Message recipient" ];
        fhir:ElementDefinition.definition [ fhir:value "The entity (e.g. person, organization, clinical information system, care team or device) which was the target of the communication. If receipts need to be tracked by an individual, a separate resource instance will need to be created for each recipient.  Multiple recipient communications are intended where either receipts are not tracked (e.g. a mass mail-out) or a receipt is captured in aggregate (all emails confirmed received by a particular time)." ];
-       fhir:ElementDefinition.comment [ fhir:value "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -1549,42 +1028,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/HealthcareService>
          ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ref-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "SHALL have a contained resource if a local reference is provided" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Reference" ]
-       ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ], [
-         fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.performer.actor" ]
        ], [
-         fhir:index 3;
+         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.actor" ]
        ]
@@ -1594,7 +1046,6 @@
        fhir:ElementDefinition.path [ fhir:value "Communication.sender" ];
        fhir:ElementDefinition.short [ fhir:value "Message sender" ];
        fhir:ElementDefinition.definition [ fhir:value "The entity (e.g. person, organization, clinical information system, or device) which was the source of the communication." ];
-       fhir:ElementDefinition.comment [ fhir:value "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -1635,42 +1086,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/HealthcareService>
          ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ref-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "SHALL have a contained resource if a local reference is provided" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Reference" ]
-       ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ], [
-         fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.performer.actor" ]
        ], [
-         fhir:index 3;
+         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.actor" ]
        ]
@@ -1692,21 +1116,14 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "CommunicationReason" ]
+         ];
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Codes for describing reasons for the occurrence of a communication." ];
          fhir:ElementDefinition.binding.valueSet [
@@ -1716,30 +1133,14 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CE/CNE/CWE" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CD" ]
-       ], [
-         fhir:index 3;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
-       ], [
-         fhir:index 4;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.reasonCode" ]
        ], [
-         fhir:index 5;
+         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.why[x]" ]
        ], [
-         fhir:index 6;
+         fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value ".reasonCode" ]
        ]
@@ -1749,7 +1150,6 @@
        fhir:ElementDefinition.path [ fhir:value "Communication.reasonReference" ];
        fhir:ElementDefinition.short [ fhir:value "Why was communication done?" ];
        fhir:ElementDefinition.definition [ fhir:value "Indicates another resource whose existence justifies this communication." ];
-       fhir:ElementDefinition.comment [ fhir:value "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -1778,46 +1178,18 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentReference>
          ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ref-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "SHALL have a contained resource if a local reference is provided" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Reference" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ], [
-         fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.reasonReference" ]
        ], [
-         fhir:index 3;
+         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.why[x]" ]
        ], [
-         fhir:index 4;
+         fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=RSON].target" ]
        ]
@@ -1838,10 +1210,6 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -1852,11 +1220,8 @@
          fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ]
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 31;
        fhir:Element.id [ fhir:value "Communication.payload.id" ];
@@ -1876,22 +1241,10 @@
        ];
        fhir:ElementDefinition.type [
          fhir:index 0;
-         fhir:ElementDefinition.type.code [
-           fhir:Element.extension [
-             fhir:index 0;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type" ];
-             fhir:Extension.valueString [ fhir:value "string" ]
-           ], [
-             fhir:index 1;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type" ];
-             fhir:Extension.valueString [ fhir:value "xsd:string" ]
-           ], [
-             fhir:index 2;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type" ];
-             fhir:Extension.valueString [ fhir:value "xsd:string" ]
-           ]
-         ]
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
@@ -1901,15 +1254,6 @@
        fhir:index 32;
        fhir:Element.id [ fhir:value "Communication.payload.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Communication.payload.extension" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
-         ];
-         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
-       ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
        fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
        fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
@@ -1931,35 +1275,12 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Extension" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
        fhir:index 33;
@@ -1968,7 +1289,7 @@
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
        fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." ];
        fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
-       fhir:ElementDefinition.requirements [ fhir:value "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](extensibility.html#modifierExtension)." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)." ];
        fhir:ElementDefinition.alias [
          fhir:value "extensions";
          fhir:index 0
@@ -1990,36 +1311,11 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Extension" ]
-       ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifierReason [ fhir:value "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
@@ -2029,7 +1325,6 @@
        fhir:ElementDefinition.path [ fhir:value "Communication.payload.content[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Message content" ];
        fhir:ElementDefinition.definition [ fhir:value "A communicated content (or for multi-part communications, one portion of the communication)." ];
-       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings SHALL NOT exceed 1MB in size" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -2050,38 +1345,16 @@
          fhir:ElementDefinition.type.code [ fhir:value "Attachment" ]
        ], [
          fhir:index 2;
-         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Resource";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Resource>
-         ]
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ]
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 35;
        fhir:Element.id [ fhir:value "Communication.note" ];
        fhir:ElementDefinition.path [ fhir:value "Communication.note" ];
        fhir:ElementDefinition.short [ fhir:value "Comments made about the communication" ];
        fhir:ElementDefinition.definition [ fhir:value "Additional notes or commentary about the communication by the sender, receiver or other interested parties." ];
-       fhir:ElementDefinition.comment [ fhir:value "For systems that do not have structured annotations, they can simply communicate a single annotation with no author or time.  This element may need to be included in narrative because of the potential for modifying information.  *Annotations SHOULD NOT* be used to communicate \"modifying\" information that could be computable. (This is a SHOULD because enforcing user behavior is nearly impossible)." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -2093,33 +1366,10 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Annotation" ]
        ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
-       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Act" ]
-       ], [
-         fhir:index 3;
          fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Event.note" ]
        ]
@@ -2203,9 +1453,8 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/sdc/StructureDefinition/be-communication.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/uv/sdc/StructureDefinition/be-communication.ttl> .
+<https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

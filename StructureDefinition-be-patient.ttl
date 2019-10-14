@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/sdc/StructureDefinition/be-patient> a fhir:StructureDefinition;
+<https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "be-patient"];
   fhir:DomainResource.text [
@@ -13,9 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck2.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"{{[id]}}-definitions.html#Patient.extension\" title=\"null\">extension</a><a name=\"Patient.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "BePatient"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-10-02T22:59:28+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-10-14T10:38:11+02:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -803,7 +804,8 @@
            fhir:index 0;
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ]
+         ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." ];
@@ -1079,7 +1081,8 @@
            fhir:index 0;
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ]
+         ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." ];
@@ -1572,7 +1575,8 @@
            fhir:index 0;
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ]
+         ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." ];
@@ -2927,7 +2931,8 @@
            fhir:index 0;
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ]
+         ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." ];
@@ -3465,6 +3470,11 @@
        fhir:Element.id [ fhir:value "Patient.address.extension:humanLanguage.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.extension.value[x]" ];
        fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "item.resolve()" ]
+         ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
@@ -6012,6 +6022,11 @@
        fhir:Element.id [ fhir:value "Patient.address.extension:humanLanguage.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.extension.value[x]" ];
        fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "item.resolve()" ]
+         ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.type [
@@ -6034,9 +6049,8 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/sdc/StructureDefinition/be-patient.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/uv/sdc/StructureDefinition/be-patient.ttl> .
+<https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
