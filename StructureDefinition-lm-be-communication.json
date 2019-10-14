@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "BECommunicationLogicalModel",
   "status": "draft",
-  "date": "2019-10-14T10:38:11+02:00",
+  "date": "2019-10-14T13:11:46+02:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -40,6 +40,353 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
+    "element": [
+      {
+        "id": "BECommunication",
+        "path": "BECommunication",
+        "short": "Communication",
+        "definition": "The Communication object represents a message sent or note entered in a diary, in the context of care.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Element.id",
+        "path": "BECommunication.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "_code": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type",
+                  "valueString": "string"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type",
+                  "valueString": "xsd:string"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type",
+                  "valueString": "xsd:string"
+                }
+              ]
+            }
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Element.extension",
+        "path": "BECommunication.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "BECommunication.identifier",
+        "path": "BECommunication.identifier",
+        "short": "Identifier for this communication",
+        "definition": "A unique identifier for this communication.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Identifier"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "BECommunication.status",
+        "path": "BECommunication.status",
+        "short": "Status of the communication",
+        "definition": "The status of this communication entry.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/code"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "BECommunication.validated",
+        "path": "BECommunication.validated",
+        "short": "Validation status",
+        "definition": "The validation status of the communication - whether this note is validated or not.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/code"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "BECommunication.dateTimeEntered",
+        "path": "BECommunication.dateTimeEntered",
+        "short": "Time and Date of Communication entered",
+        "definition": "Date or timestamp of entering the communication in its current status",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "dateTime",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/dateTime"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "BECommunication.basedOn",
+        "path": "BECommunication.basedOn",
+        "short": "The trigger for this communication",
+        "definition": "What is the trigger data element for this communication - whether it is an updated medication, or an encounter...",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "BECommunication.inReponseTo",
+        "path": "BECommunication.inReponseTo",
+        "short": "Communication for which this communication is a response",
+        "definition": "The message that this communication is responding to. Similar to a \"quote\" in chats, or \"forward/reply\" in mail.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "BeCommunication"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BECommunication.sender",
+        "path": "BECommunication.sender",
+        "short": "Sender of the communication",
+        "definition": "Sender of the communication",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
+              "http://hl7.org/fhir/StructureDefinition/Person",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "BECommunication.recipient",
+        "path": "BECommunication.recipient",
+        "short": "Recipient(s) of the communication",
+        "definition": "The addressees of this communication, the ones to whom the message is destined.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/Person",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BECommunication.topic",
+        "path": "BECommunication.topic",
+        "short": "Topic of the communication",
+        "definition": "The topic of this communication. Should be coded e.g. \"medication\", or \"vaccines\"",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CodeableConcept"
+            ]
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Communication Topic",
+          "valueSet": "http://hl7.org/fhir/ValueSet/communication-topic"
+        }
+      },
+      {
+        "id": "BECommunication.context",
+        "path": "BECommunication.context",
+        "short": "The context (e.g. subject) for this communications",
+        "definition": "Normally the context is a patient, or a plan",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BECommunication.context.patient",
+        "path": "BECommunication.context.patient",
+        "short": "The patient or subject of care",
+        "definition": "The Patient or Subject of Care. This is a reference to a Patient resource, following the Logical Model for Belgian Patients.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BECommunication.content",
+        "path": "BECommunication.content",
+        "short": "Message payload",
+        "definition": "The content of the message",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "BECommunication.content.text",
+        "path": "BECommunication.content.text",
+        "short": "Communication text",
+        "definition": "The text of the communication. Maximum 320 characters",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Annotation",
+            "profile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BECommunication.content.attachment",
+        "path": "BECommunication.content.attachment",
+        "short": "Attachment (e.g. image)",
+        "definition": "An encoded attachment such as an image, video or audio recording",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Attachment",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Attachment"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BECommunication.content.link",
+        "path": "BECommunication.content.link",
+        "short": "Link to message content - an attachment, an online video, a document in another server or vault",
+        "definition": "A link to the message content e.g. an online video or an attachment that resides on a server or content in another vault",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
     "element": [
       {
         "id": "BECommunication",
@@ -235,7 +582,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "BEPatient"
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
             ]
           }
         ]

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Belgium Base IG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2019-10-14T10:38:11+02:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2019-10-14T13:11:46+02:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Belgium"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -61,7 +61,7 @@
        fhir:index 3;
        fhir:Element.id [ fhir:value "communication" ];
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Communication" ];
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Communication, also known as Journal entry" ]
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Communication and Care Coordination" ]
      ], [
        fhir:index 4;
        fhir:Element.id [ fhir:value "condition" ];
@@ -246,11 +246,11 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be-careplan.html" ]
+         fhir:Extension.valueUri [ fhir:value "lm-be-careplan.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-careplan" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/lm-be-careplan>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/lm-be-careplan" ]
        ];
        fhir:ImplementationGuide.definition.resource.fhirVersion [
          fhir:value "4.0.0";
@@ -347,6 +347,48 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Civil State" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for Civil State" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "be-careplan.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-careplan" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.0";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Care Plan profile" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "communication" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "be-careteam.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-careteam" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.0";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Care Team profile" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "communication" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

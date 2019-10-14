@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "BECommunication",
   "status": "draft",
-  "date": "2019-10-14T10:38:11+02:00",
+  "date": "2019-10-14T13:11:46+02:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -767,8 +767,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Group"
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
             ]
           }
         ],
@@ -1317,6 +1316,18 @@
         "id": "Communication.status",
         "path": "Communication.status",
         "mustSupport": true
+      },
+      {
+        "id": "Communication.subject",
+        "path": "Communication.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+            ]
+          }
+        ]
       },
       {
         "id": "Communication.topic",

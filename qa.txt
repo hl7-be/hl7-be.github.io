@@ -1,19 +1,21 @@
 ﻿BaseIG : Validation Results
 =========================================
 
-err = 34, warn = 0, info = 0
+err = 42, warn = 4, info = 0
 IG Publisher Version: v0.9.84-SNAPSHOT
-Generated Mon Oct 14 10:39:46 CEST 2019. FHIR version 4.0.0 for hl7.be.core# (canonical = https://www.ehealth.fgov.be/standards/fhir)
+Generated Mon Oct 14 13:14:07 CEST 2019. FHIR version 4.0.0 for hl7.be.core# (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
- Build Errors : 5 / 0
+ Build Errors : 7 / 0
  C:\be-core\input\be.base.ig : 13 / 0
  C:\be-core\input\resources\structuredefinition-be-allergyintolerance : 0 / 0
- C:\be-core\input\resources\structuredefinition-be-careplan : 0 / 0
+ C:\be-core\input\resources\structuredefinition-be-careplan : 2 / 1
+ C:\be-core\input\resources\structuredefinition-be-careteam : 0 / 1
  C:\be-core\input\resources\structuredefinition-be-communication : 0 / 0
  C:\be-core\input\resources\structuredefinition-be-patient : 0 / 0
  C:\be-core\input\resources\structuredefinition-be-practitioner : 0 / 0
  C:\be-core\input\resources\structuredefinition-be-practitionerrole : 0 / 0
- C:\be-core\input\resources\structuredefinition-lm-be-communication : 1 / 0
+ C:\be-core\input\resources\structuredefinition-lm-be-careplan : 3 / 0
+ C:\be-core\input\resources\structuredefinition-lm-be-communication : 0 / 0
  C:\be-core\input\vocabulary\valueset-be-causativeagent : 0 / 0
  C:\be-core\input\vocabulary\valueset-be-civilstate : 1 / 0
  C:\be-core\input\vocabulary\valueset-be-contactperson : 1 / 0
@@ -22,10 +24,12 @@ Generated Mon Oct 14 10:39:46 CEST 2019. FHIR version 4.0.0 for hl7.be.core# (ca
 </table>
 == n/a ==
 ERROR: ??: The reference https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320 could not be resolved
-ERROR: C:\be-core\output\be-careplan.html#/html/body/div/div/div/div/div/p/a at Line 865, column 41: The link 'be-careplan.sch' for "Schematron" cannot be resolved
-ERROR: C:\be-core\output\lm-be-communication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 236, column 1358: The link 'unknown.html' for "??" cannot be resolved
-ERROR: C:\be-core\output\lm-be-communication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 327, column 1358: The link 'unknown.html' for "??" cannot be resolved
-ERROR: C:\be-core\output\lm-be-communication.html#/html/body/div/div/div/div/div/p/a at Line 379, column 41: The link 'lm-be-communication.sch' for "Schematron" cannot be resolved
+ERROR: C:\be-core\output\lm-be-careplan.html#/html/body/div/div/div/div/div/p/a at Line 865, column 41: The link 'lm-be-careplan.sch' for "Schematron" cannot be resolved
+ERROR: C:\be-core\output\lm-be-communication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 235, column 1358: The link 'unknown.html' for "??" cannot be resolved
+ERROR: C:\be-core\output\lm-be-communication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 260, column 1346: The link 'unknown.html' for "??" cannot be resolved
+ERROR: C:\be-core\output\lm-be-communication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 352, column 1358: The link 'unknown.html' for "??" cannot be resolved
+ERROR: C:\be-core\output\lm-be-communication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 377, column 1346: The link 'unknown.html' for "??" cannot be resolved
+ERROR: C:\be-core\output\lm-be-communication.html#/html/body/div/div/div/div/div/p/a at Line 431, column 41: The link 'lm-be-communication.sch' for "Schematron" cannot be resolved
 == C:\be-core\input\be.base.ig.xml ==
 ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[10].code: The value provided ('path-qa') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-qa in http://hl7.org/fhir/guide-parameter-code)
 ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[11].code: The value provided ('path-temp') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-temp in http://hl7.org/fhir/guide-parameter-code)
@@ -42,12 +46,20 @@ ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter
 ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[23].code: The value provided ('apply-version') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-version in http://hl7.org/fhir/guide-parameter-code)
 == C:\be-core\input\resources\structuredefinition-be-allergyintolerance.xml ==
 == C:\be-core\input\resources\structuredefinition-be-careplan.xml ==
+ERROR: http://example.org/fhir/StructureDefinition/be-careplan: Conformance resource C:\be-core\input\resources\structuredefinition-be-careplan.xml - the canonical URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan) does not match the URL (http://example.org/fhir/StructureDefinition/be-careplan)
+WARNING: http://example.org/fhir/StructureDefinition/be-careplan: Profiles SHOULD state their own version
+ERROR: C:\be-core\input\resources\structuredefinition-be-careplan: URL Mismatch https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan vs http://example.org/fhir/StructureDefinition/be-careplan
+== C:\be-core\input\resources\structuredefinition-be-careteam.xml ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam: Profiles SHOULD state their own version
 == C:\be-core\input\resources\structuredefinition-be-communication.xml ==
 == C:\be-core\input\resources\structuredefinition-be-patient.xml ==
 == C:\be-core\input\resources\structuredefinition-be-practitioner.xml ==
 == C:\be-core\input\resources\structuredefinition-be-practitionerrole.xml ==
+== C:\be-core\input\resources\structuredefinition-lm-be-careplan.xml ==
+ERROR: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan: Conformance resource C:\be-core\input\resources\structuredefinition-lm-be-careplan.xml - the canonical URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/lm-be-careplan) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan)
+ERROR: StructureDefinition.url: Resource id/url mismatch: lm-be-careplan/https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan
+ERROR: C:\be-core\input\resources\structuredefinition-lm-be-careplan: URL Mismatch https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/lm-be-careplan vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan
 == C:\be-core\input\resources\structuredefinition-lm-be-communication.xml ==
-ERROR: StructureDefinition/lm-be-communication: StructureDefinition.snapshot: All snapshot elements must have a base definition [element.all(base.exists())]
 == C:\be-core\input\vocabulary\valueset-be-causativeagent.json ==
 == C:\be-core\input\vocabulary\valueset-be-civilstate.json ==
 ERROR: be-civilstate: Error from server: Unable to provide support for code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate

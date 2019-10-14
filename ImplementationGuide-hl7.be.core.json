@@ -10,7 +10,7 @@
   "title": "Belgium Base IG",
   "status": "draft",
   "experimental": false,
-  "date": "2019-10-14T10:38:11+02:00",
+  "date": "2019-10-14T13:11:46+02:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -57,7 +57,7 @@
       {
         "id": "communication",
         "name": "Communication",
-        "description": "Communication, also known as Journal entry"
+        "description": "Communication and Care Coordination"
       },
       {
         "id": "condition",
@@ -236,11 +236,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be-careplan.html"
+            "valueUri": "lm-be-careplan.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/be-careplan"
+          "reference": "StructureDefinition/lm-be-careplan"
         },
         "fhirVersion": [
           "4.0.0"
@@ -332,6 +332,46 @@
         "name": "ValueSet - Civil State",
         "description": "The values for Civil State",
         "groupingId": "terminology"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "be-careplan.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-careplan"
+        },
+        "fhirVersion": [
+          "4.0.0"
+        ],
+        "name": "Care Plan profile",
+        "groupingId": "communication"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "be-careteam.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-careteam"
+        },
+        "fhirVersion": [
+          "4.0.0"
+        ],
+        "name": "Care Team profile",
+        "groupingId": "communication"
       }
     ],
     "page": {

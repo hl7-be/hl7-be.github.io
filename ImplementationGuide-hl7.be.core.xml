@@ -11,7 +11,7 @@
   <title value="Belgium Base IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-10-14T10:38:11+02:00"/>
+  <date value="2019-10-14T13:11:46+02:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -44,7 +44,7 @@
     </grouping>
     <grouping id="communication">
       <name value="Communication"/>
-      <description value="Communication, also known as Journal entry"/>
+      <description value="Communication and Care Coordination"/>
     </grouping>
     <grouping id="condition">
       <name value="Conditions"/>
@@ -172,10 +172,10 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-careplan.html"/>
+        <valueUri value="lm-be-careplan.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/be-careplan"/>
+        <reference value="StructureDefinition/lm-be-careplan"/>
       </reference>
       <fhirVersion value="4.0.0"/>
       <name value="Logical Model Care Plan"/>
@@ -241,6 +241,34 @@
       <name value="ValueSet - Civil State"/>
       <description value="The values for Civil State"/>
       <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-careplan.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-careplan"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Care Plan profile"/>
+      <groupingId value="communication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-careteam.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-careteam"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Care Team profile"/>
+      <groupingId value="communication"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

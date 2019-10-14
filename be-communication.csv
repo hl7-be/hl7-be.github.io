@@ -49,7 +49,7 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 "Communication.medium","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","A channel of communication","A channel that was used for this communication (e.g. email, fax).","","","","","","","","","",,"example","Codes for communication mediums such as phone, fax, email, in person, etc.","http://terminology.hl7.org/ValueSet/v3-ParticipationMode","",,,,"Communication.medium",0,*,"",""
 "Communication.subject","","patient
-","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group]]}
+","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient]]}
 ","Focus of message","The patient or group that was the focus of this communication.","","","","","","","","","",,,,,"",,,,"Communication.subject",0,1,"","","FiveWs.subject[x]","FiveWs.subject","Event.subject"
 "Communication.topic","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Description of the purpose/content","Description of the purpose/content, similar to a subject line in an email.","Communication.topic.text can be used without any codings.","","","","","","","","",,"required","","https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic","",,,,"Communication.topic",0,1,"","","FiveWs.context"
