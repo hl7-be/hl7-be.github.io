@@ -11,7 +11,7 @@
   <title value="Belgium Base IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-10-14T13:11:46+02:00"/>
+  <date value="2019-10-25T10:15:21+02:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -269,6 +269,21 @@
       <fhirVersion value="4.0.0"/>
       <name value="Care Team profile"/>
       <groupingId value="communication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:primitive-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="string320.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/string320"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="String 320"/>
+      <description value="String with up to 320 characters"/>
+      <groupingId value="core"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

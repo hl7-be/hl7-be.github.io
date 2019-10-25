@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "BECommunicationLogicalModel"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-10-14T13:11:46+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-10-25T10:15:21+02:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -227,6 +227,18 @@
        ]
      ], [
        fhir:index 8;
+       fhir:Element.id [ fhir:value "BECommunication.partOf" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.partOf" ];
+       fhir:ElementDefinition.short [ fhir:value "The broader communication that this communication is a part of" ];
+       fhir:ElementDefinition.definition [ fhir:value "This will be used in multi-part messages, namely for when the content is beyond the character limit" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ]
+       ]
+     ], [
+       fhir:index 9;
        fhir:Element.id [ fhir:value "BECommunication.inReponseTo" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.inReponseTo" ];
        fhir:ElementDefinition.short [ fhir:value "Communication for which this communication is a response" ];
@@ -242,7 +254,7 @@
          ]
        ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.id [ fhir:value "BECommunication.sender" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.sender" ];
        fhir:ElementDefinition.short [ fhir:value "Sender of the communication" ];
@@ -268,7 +280,7 @@
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.id [ fhir:value "BECommunication.recipient" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.recipient" ];
        fhir:ElementDefinition.short [ fhir:value "Recipient(s) of the communication" ];
@@ -301,7 +313,7 @@
          ]
        ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.id [ fhir:value "BECommunication.topic" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.topic" ];
        fhir:ElementDefinition.short [ fhir:value "Topic of the communication" ];
@@ -326,7 +338,7 @@
          ]
        ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.id [ fhir:value "BECommunication.context" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.context" ];
        fhir:ElementDefinition.short [ fhir:value "The context (e.g. subject) for this communications" ];
@@ -338,7 +350,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
        ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.id [ fhir:value "BECommunication.context.patient" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.context.patient" ];
        fhir:ElementDefinition.short [ fhir:value "The patient or subject of care" ];
@@ -355,7 +367,7 @@
          ]
        ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.id [ fhir:value "BECommunication.content" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.content" ];
        fhir:ElementDefinition.short [ fhir:value "Message payload" ];
@@ -368,7 +380,7 @@
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.id [ fhir:value "BECommunication.content.text" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.content.text" ];
        fhir:ElementDefinition.short [ fhir:value "Communication text" ];
@@ -379,13 +391,13 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Annotation" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320";
+           fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320";
            fhir:index 0;
-           fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320>
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320>
          ]
        ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.id [ fhir:value "BECommunication.content.attachment" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.content.attachment" ];
        fhir:ElementDefinition.short [ fhir:value "Attachment (e.g. image)" ];
@@ -402,7 +414,7 @@
          ]
        ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.id [ fhir:value "BECommunication.content.link" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.content.link" ];
        fhir:ElementDefinition.short [ fhir:value "Link to message content - an attachment, an online video, a document in another server or vault" ];
@@ -514,6 +526,18 @@
        ]
      ], [
        fhir:index 6;
+       fhir:Element.id [ fhir:value "BECommunication.partOf" ];
+       fhir:ElementDefinition.path [ fhir:value "BECommunication.partOf" ];
+       fhir:ElementDefinition.short [ fhir:value "The broader communication that this communication is a part of" ];
+       fhir:ElementDefinition.definition [ fhir:value "This will be used in multi-part messages, namely for when the content is beyond the character limit" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ]
+       ]
+     ], [
+       fhir:index 7;
        fhir:Element.id [ fhir:value "BECommunication.inReponseTo" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.inReponseTo" ];
        fhir:ElementDefinition.short [ fhir:value "Communication for which this communication is a response" ];
@@ -529,7 +553,7 @@
          ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.id [ fhir:value "BECommunication.sender" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.sender" ];
        fhir:ElementDefinition.short [ fhir:value "Sender of the communication" ];
@@ -555,7 +579,7 @@
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.id [ fhir:value "BECommunication.recipient" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.recipient" ];
        fhir:ElementDefinition.short [ fhir:value "Recipient(s) of the communication" ];
@@ -588,7 +612,7 @@
          ]
        ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.id [ fhir:value "BECommunication.topic" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.topic" ];
        fhir:ElementDefinition.short [ fhir:value "Topic of the communication" ];
@@ -613,7 +637,7 @@
          ]
        ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.id [ fhir:value "BECommunication.context" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.context" ];
        fhir:ElementDefinition.short [ fhir:value "The context (e.g. subject) for this communications" ];
@@ -625,7 +649,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
        ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.id [ fhir:value "BECommunication.context.patient" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.context.patient" ];
        fhir:ElementDefinition.short [ fhir:value "The patient or subject of care" ];
@@ -642,7 +666,7 @@
          ]
        ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.id [ fhir:value "BECommunication.content" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.content" ];
        fhir:ElementDefinition.short [ fhir:value "Message payload" ];
@@ -655,7 +679,7 @@
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.id [ fhir:value "BECommunication.content.text" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.content.text" ];
        fhir:ElementDefinition.short [ fhir:value "Communication text" ];
@@ -666,13 +690,13 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Annotation" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320";
+           fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320";
            fhir:index 0;
-           fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320>
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320>
          ]
        ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.id [ fhir:value "BECommunication.content.attachment" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.content.attachment" ];
        fhir:ElementDefinition.short [ fhir:value "Attachment (e.g. image)" ];
@@ -689,7 +713,7 @@
          ]
        ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.id [ fhir:value "BECommunication.content.link" ];
        fhir:ElementDefinition.path [ fhir:value "BECommunication.content.link" ];
        fhir:ElementDefinition.short [ fhir:value "Link to message content - an attachment, an online video, a document in another server or vault" ];

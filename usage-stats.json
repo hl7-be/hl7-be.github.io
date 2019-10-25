@@ -4,16 +4,16 @@
   "jurisdiction": "001",
   "extensions": [],
   "profiles": {
-    "CarePlan": [
-      {
-        "url": "http://example.org/fhir/StructureDefinition/be-careplan",
-        "title": "BECarePlan"
-      }
-    ],
     "AllergyIntolerance": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance",
         "title": "BeAllergyIntolerance"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan",
+        "title": "BECarePlan"
       }
     ],
     "CareTeam": [
@@ -80,6 +80,7 @@
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
@@ -87,12 +88,15 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type": [
+      "StructureDefinition.differential.element.type.code",
       "StructureDefinition.snapshot.element.type.code"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type": [
+      "StructureDefinition.differential.element.type.code",
       "StructureDefinition.snapshot.element.type.code"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type": [
+      "StructureDefinition.differential.element.type.code",
       "StructureDefinition.snapshot.element.type.code"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [

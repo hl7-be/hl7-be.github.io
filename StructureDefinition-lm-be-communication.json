@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "BECommunicationLogicalModel",
   "status": "draft",
-  "date": "2019-10-14T13:11:46+02:00",
+  "date": "2019-10-25T10:15:21+02:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -221,6 +221,19 @@
         ]
       },
       {
+        "id": "BECommunication.partOf",
+        "path": "BECommunication.partOf",
+        "short": "The broader communication that this communication is a part of",
+        "definition": "This will be used in multi-part messages, namely for when the content is beyond the character limit",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
         "id": "BECommunication.inReponseTo",
         "path": "BECommunication.inReponseTo",
         "short": "Communication for which this communication is a response",
@@ -350,7 +363,7 @@
           {
             "code": "Annotation",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320"
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320"
             ]
           }
         ]
@@ -483,6 +496,19 @@
         ]
       },
       {
+        "id": "BECommunication.partOf",
+        "path": "BECommunication.partOf",
+        "short": "The broader communication that this communication is a part of",
+        "definition": "This will be used in multi-part messages, namely for when the content is beyond the character limit",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
         "id": "BECommunication.inReponseTo",
         "path": "BECommunication.inReponseTo",
         "short": "Communication for which this communication is a response",
@@ -612,7 +638,7 @@
           {
             "code": "Annotation",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320"
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320"
             ]
           }
         ]

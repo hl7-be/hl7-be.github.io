@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "BECommunication",
   "status": "draft",
-  "date": "2019-10-14T13:11:46+02:00",
+  "date": "2019-10-25T10:15:21+02:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -1254,7 +1254,7 @@
           {
             "code": "string",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-string320"
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320"
             ]
           },
           {
@@ -1366,7 +1366,7 @@
           {
             "code": "string",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-string320"
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320"
             ]
           },
           {

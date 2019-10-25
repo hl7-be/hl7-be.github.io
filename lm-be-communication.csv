@@ -17,6 +17,8 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Time and Date of Communication entered","Date or timestamp of entering the communication in its current status","","","","","","","","","",,,,,"",,,,"",0,null,"",""
 "BECommunication.basedOn","","","",0,*,"","","","Reference {[]} {[]}
 ","The trigger for this communication","What is the trigger data element for this communication - whether it is an updated medication, or an encounter...","","","","","","","","","",,,,,"",,,,"",0,null,"",""
+"BECommunication.partOf","","","",0,*,"","","","Reference {[]} {[]}
+","The broader communication that this communication is a part of","This will be used in multi-part messages, namely for when the content is beyond the character limit","","","","","","","","","",,,,,"",,,,"",0,null,"",""
 "BECommunication.inReponseTo","","","",0,*,"","","","Reference {[]} {[CanonicalType[BeCommunication]]}
 ","Communication for which this communication is a response","The message that this communication is responding to. Similar to a ""quote"" in chats, or ""forward/reply"" in mail.","","","","","","","","","",,,,,"",,,,"",0,null,"",""
 "BECommunication.sender","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Person], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
@@ -31,7 +33,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","The patient or subject of care","The Patient or Subject of Care. This is a reference to a Patient resource, following the Logical Model for Belgian Patients.","","","","","","","","","",,,,,"",,,,"",0,null,"",""
 "BECommunication.content","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Message payload","The content of the message","","","","","","","","","",,,,,"",,,,"",0,null,"",""
-"BECommunication.content.text","","","",0,*,"","","","Annotation {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320]]} {[]}
+"BECommunication.content.text","","","",0,*,"","","","Annotation {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320]]} {[]}
 ","Communication text","The text of the communication. Maximum 320 characters","","","","","","","","","",,,,,"",,,,"",0,null,"",""
 "BECommunication.content.attachment","","","",0,*,"","","","Attachment {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Attachment]]} {[]}
 ","Attachment (e.g. image)","An encoded attachment such as an image, video or audio recording","","","","","","","","","",,,,,"",,,,"",0,null,"",""

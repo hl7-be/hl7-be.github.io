@@ -7,9 +7,10 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+  <version value="0.1.0"/>
   <name value="BECareTeam"/>
   <status value="draft"/>
-  <date value="2019-10-14T13:11:46+02:00"/>
+  <date value="2019-10-25T10:15:21+02:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
