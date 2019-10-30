@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "BEDiaryTopic"];
   fhir:ValueSet.title [ fhir:value "BE Diary Topics"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2019-10-30T13:41:22+01:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2019-10-30T14:47:11+01:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Belgium"];
   fhir:ValueSet.contact [
      fhir:index 0;
