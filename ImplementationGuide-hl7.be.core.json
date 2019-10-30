@@ -10,7 +10,7 @@
   "title": "Belgium Base IG",
   "status": "draft",
   "experimental": false,
-  "date": "2019-10-30T09:33:35+01:00",
+  "date": "2019-10-30T13:41:22+01:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -406,12 +406,17 @@
           "generation": "html"
         },
         {
-          "nameUrl": "functional-overview",
-          "title": "Functional Description",
-          "generation": "html"
+          "nameUrl": "conventions.html",
+          "title": "Conventions",
+          "generation": "markdown"
         },
         {
-          "nameUrl": "logical-models",
+          "nameUrl": "functional-overview.html",
+          "title": "Functional Description",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "logical-models.html",
           "title": "Logical Data Models",
           "generation": "markdown"
         },
@@ -421,12 +426,12 @@
           "generation": "html"
         },
         {
-          "nameUrl": "example-resources",
+          "nameUrl": "example-resources.html",
           "title": "Example Resources",
           "generation": "markdown"
         },
         {
-          "nameUrl": "example-scenarios",
+          "nameUrl": "example-scenarios.html",
           "title": "Example Scenarios",
           "generation": "markdown"
         },

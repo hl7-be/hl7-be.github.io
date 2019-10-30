@@ -11,7 +11,7 @@
   <title value="Belgium Base IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-10-30T09:33:35+01:00"/>
+  <date value="2019-10-30T13:41:22+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -295,12 +295,17 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="functional-overview"/>
-        <title value="Functional Description"/>
-        <generation value="html"/>
+        <nameUrl value="conventions.html"/>
+        <title value="Conventions"/>
+        <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="logical-models"/>
+        <nameUrl value="functional-overview.html"/>
+        <title value="Functional Description"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="logical-models.html"/>
         <title value="Logical Data Models"/>
         <generation value="markdown"/>
       </page>
@@ -310,12 +315,12 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="example-resources"/>
+        <nameUrl value="example-resources.html"/>
         <title value="Example Resources"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="example-scenarios"/>
+        <nameUrl value="example-scenarios.html"/>
         <title value="Example Scenarios"/>
         <generation value="markdown"/>
       </page>
