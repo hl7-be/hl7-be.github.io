@@ -37,7 +37,7 @@
   "abstract": false,
   "type": "string320",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/string",
-  "derivation": "specialization",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {

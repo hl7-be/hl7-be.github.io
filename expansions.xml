@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2e73a956-e152-4e56-bcb2-1383d4a79b50"/>
+  <id value="7e053eec-1aff-4a18-80b1-d085da809c57"/>
   <meta>
-    <lastUpdated value="2019-10-25T10:15:21.406+02:00"/>
+    <lastUpdated value="2019-10-30T09:33:35.691+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -1285,7 +1285,7 @@
         <version value="1.0.0"/>
         <name value="BeCausativeAgent"/>
         <status value="draft"/>
-        <date value="2019-10-25T10:15:21+02:00"/>
+        <date value="2019-10-30T09:33:35+01:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -1301,8 +1301,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c71e0f88-7aef-4e8f-86a9-af2bd4cd7f81"/>
-          <timestamp value="2019-10-25T10:15:44+02:00"/>
+          <identifier value="urn:uuid:779cda96-1e2a-491e-ac93-513b49ec0ead"/>
+          <timestamp value="2019-10-30T09:33:49+01:00"/>
           <total value="138"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2322,7 +2322,7 @@ en systemische symptomen</td>
         <version value="1.0.0"/>
         <name value="BeRiskManifestation"/>
         <status value="draft"/>
-        <date value="2019-10-25T10:15:21+02:00"/>
+        <date value="2019-10-30T09:33:35+01:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -2338,8 +2338,8 @@ en systemische symptomen</td>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cac3ea7d-5563-4947-8831-86929a6402a4"/>
-          <timestamp value="2019-10-25T10:15:44+02:00"/>
+          <identifier value="urn:uuid:6342f63a-1499-42fd-be40-589b6041f2d5"/>
+          <timestamp value="2019-10-30T09:33:49+01:00"/>
           <total value="30"/>
           <parameter>
             <name value="excludeNested"/>

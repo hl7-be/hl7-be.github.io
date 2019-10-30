@@ -43,7 +43,7 @@
      fhir:value "http://hl7.org/fhir/StructureDefinition/string";
      fhir:link <http://hl7.org/fhir/StructureDefinition/string>
   ];
-  fhir:StructureDefinition.derivation [ fhir:value "specialization"];
+  fhir:StructureDefinition.derivation [ fhir:value "constraint"];
   fhir:StructureDefinition.snapshot [
      fhir:StructureDefinition.snapshot.element [
        fhir:index 0;

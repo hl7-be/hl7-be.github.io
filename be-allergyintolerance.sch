@@ -10,6 +10,14 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:AllergyIntolerance</sch:title>
+    <sch:rule context="f:AllergyIntolerance">
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:recordedDate) &gt;= 1">recordedDate: minimum cardinality of 'recordedDate' is 1</sch:assert>
+      <sch:assert test="count(f:recorder) &gt;= 1">recorder: minimum cardinality of 'recorder' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>AllergyIntolerance</sch:title>
     <sch:rule context="f:AllergyIntolerance">
       <sch:assert test="not(parent::f:contained and f:contained)">If the resource is contained in another resource, it SHALL NOT contain nested Resources (inherited)</sch:assert>
@@ -19,6 +27,12 @@
       <sch:assert test="not(exists(f:contained/*/f:meta/f:security))">If a resource is contained in another resource, it SHALL NOT have a security label (inherited)</sch:assert>
       <sch:assert test="f:verificationStatus/@value='entered-in-error' or exists(f:clinicalStatus)">AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error. (inherited)</sch:assert>
       <sch:assert test="f:verificationStatus/@value!='entered-in-error' or not(exists(f:clinicalStatus))">AllergyIntolerance.clinicalStatus SHALL NOT be present if verification Status is entered-in-error (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:AllergyIntolerance/f:reaction</sch:title>
+    <sch:rule context="f:AllergyIntolerance/f:reaction">
+      <sch:assert test="count(f:note) &lt;= 0">note: maximum cardinality of 'note' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

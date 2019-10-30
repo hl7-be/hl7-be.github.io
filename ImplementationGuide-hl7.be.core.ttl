@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Belgium Base IG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2019-10-25T10:15:21+02:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2019-10-30T09:33:35+01:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Belgium"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -423,16 +423,36 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 1;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "artifacts.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Artifact List" ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "functional-overview" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Functional Description" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "logical-models" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Logical Data Models" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "artifacts.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Artifacts" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example-resources" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Example Resources" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example-scenarios" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Example Scenarios" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 6;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Useful Downloads" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 3;
+         fhir:index 7;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "changes.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "IG Change History" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]

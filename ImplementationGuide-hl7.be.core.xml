@@ -11,7 +11,7 @@
   <title value="Belgium Base IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-10-25T10:15:21+02:00"/>
+  <date value="2019-10-30T09:33:35+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -295,9 +295,29 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="artifacts.html"/>
-        <title value="Artifact List"/>
+        <nameUrl value="functional-overview"/>
+        <title value="Functional Description"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="logical-models"/>
+        <title value="Logical Data Models"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifacts"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="example-resources"/>
+        <title value="Example Resources"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="example-scenarios"/>
+        <title value="Example Scenarios"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>

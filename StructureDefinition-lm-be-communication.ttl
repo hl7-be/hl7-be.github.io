@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "BECommunicationLogicalModel"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-10-25T10:15:21+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-10-30T09:33:35+01:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -26,7 +26,7 @@
        fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/fiwg" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "The common model for Communication (messages or diary notes) in Belgium exchange."];
+  fhir:StructureDefinition.description [ fhir:value "This is the Logical Data Model for Communications. Communications can be:\r\n\r\n* Messages between healthcare professionals\r\n* Messages between professionals and the patient\r\n* A journal of notes and communications about a patient, a patient's care or a healthcare team's activities.\r\n\r\nThis Logical Data Model is compatible with both FHIR Communication and KMEHR Diary Note, namely the selection of attributes that are supported, and the maximum length of the payload (320 characters).\r\n"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
