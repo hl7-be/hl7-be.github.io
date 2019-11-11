@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-contactperson"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ContactPerson</h2><div><p>Contact person in Belgium.</p>
+</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">father<a name="be-contactperson-father"> </a></td><td/></tr><tr><td style="white-space:nowrap">mother<a name="be-contactperson-mother"> </a></td><td/></tr><tr><td style="white-space:nowrap">child<a name="be-contactperson-child"> </a></td><td/></tr><tr><td style="white-space:nowrap">spouse<a name="be-contactperson-spouse"> </a></td><td/></tr><tr><td style="white-space:nowrap">husband<a name="be-contactperson-husband"> </a></td><td/></tr><tr><td style="white-space:nowrap">partner<a name="be-contactperson-partner"> </a></td><td/></tr><tr><td style="white-space:nowrap">brother<a name="be-contactperson-brother"> </a></td><td/></tr><tr><td style="white-space:nowrap">sister<a name="be-contactperson-sister"> </a></td><td/></tr><tr><td style="white-space:nowrap">brotherinlaw<a name="be-contactperson-brotherinlaw"> </a></td><td/></tr><tr><td style="white-space:nowrap">tutor<a name="be-contactperson-tutor"> </a></td><td/></tr><tr><td style="white-space:nowrap">notary<a name="be-contactperson-notary"> </a></td><td/></tr><tr><td style="white-space:nowrap">lawyer<a name="be-contactperson-lawyer"> </a></td><td/></tr><tr><td style="white-space:nowrap">employer<a name="be-contactperson-employer"> </a></td><td/></tr><tr><td style="white-space:nowrap">grandparent<a name="be-contactperson-grandparent"> </a></td><td/></tr><tr><td style="white-space:nowrap">son<a name="be-contactperson-son"> </a></td><td/></tr><tr><td style="white-space:nowrap">daughter<a name="be-contactperson-daughter"> </a></td><td/></tr><tr><td style="white-space:nowrap">grandchild<a name="be-contactperson-grandchild"> </a></td><td/></tr><tr><td style="white-space:nowrap">neighbour<a name="be-contactperson-neighbour"> </a></td><td/></tr><tr><td style="white-space:nowrap">stepson<a name="be-contactperson-stepson"> </a></td><td/></tr><tr><td style="white-space:nowrap">stepdaughter<a name="be-contactperson-stepdaughter"> </a></td><td/></tr><tr><td style="white-space:nowrap">stepfather<a name="be-contactperson-stepfather"> </a></td><td/></tr><tr><td style="white-space:nowrap">stepmother<a name="be-contactperson-stepmother"> </a></td><td/></tr><tr><td style="white-space:nowrap">sisterinlaw<a name="be-contactperson-sisterinlaw"> </a></td><td/></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson"/>
+  <version value="0.1.0"/>
+  <name value="ContactPerson"/>
+  <title value="ContactPerson"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-11-11T15:01:59+01:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Contact person in Belgium."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <concept>
+    <code value="father"/>
+    <designation>
+      <language value="en"/>
+      <value value="father"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="mother"/>
+    <designation>
+      <language value="en"/>
+      <value value="mother"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="child"/>
+    <designation>
+      <language value="en"/>
+      <value value="child"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="spouse"/>
+    <designation>
+      <language value="en"/>
+      <value value="spouse"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="husband"/>
+    <designation>
+      <language value="en"/>
+      <value value="husband"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="partner"/>
+    <designation>
+      <language value="en"/>
+      <value value="partner"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="brother"/>
+    <designation>
+      <language value="en"/>
+      <value value="brother"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="sister"/>
+    <designation>
+      <language value="en"/>
+      <value value="sister"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="brotherinlaw"/>
+    <designation>
+      <language value="en"/>
+      <value value="brother-in-law"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tutor"/>
+    <designation>
+      <language value="en"/>
+      <value value="tutor"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="notary"/>
+    <designation>
+      <language value="en"/>
+      <value value="notary"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="lawyer"/>
+    <designation>
+      <language value="en"/>
+      <value value="lawyer"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="employer"/>
+    <designation>
+      <language value="en"/>
+      <value value="employer"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="grandparent"/>
+    <designation>
+      <language value="en"/>
+      <value value="grandparent"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="son"/>
+    <designation>
+      <language value="en"/>
+      <value value="son"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="daughter"/>
+    <designation>
+      <language value="en"/>
+      <value value="daughter"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="grandchild"/>
+    <designation>
+      <language value="en"/>
+      <value value="grandchild"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="neighbour"/>
+    <designation>
+      <language value="en"/>
+      <value value="neighbour"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="stepson"/>
+    <designation>
+      <language value="en"/>
+      <value value="stepson"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="stepdaughter"/>
+    <designation>
+      <language value="en"/>
+      <value value="stepdaughter"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="stepfather"/>
+    <designation>
+      <language value="en"/>
+      <value value="stepfather"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="stepmother"/>
+    <designation>
+      <language value="en"/>
+      <value value="stepmother"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="sisterinlaw"/>
+    <designation>
+      <language value="en"/>
+      <value value="sisterinlaw"/>
+    </designation>
+  </concept>
+</CodeSystem>

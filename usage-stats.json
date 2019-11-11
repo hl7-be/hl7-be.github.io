@@ -1,6 +1,7 @@
 {
   "package": "hl7.be.core",
-  "fhirVersion": "4.0.0",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
   "jurisdiction": "001",
   "extensions": [],
   "profiles": {
@@ -34,12 +35,6 @@
         "title": "BePatient"
       }
     ],
-    "Practitioner": [
-      {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
-        "title": "BePractitioner"
-      }
-    ],
     "PractitionerRole": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
@@ -67,8 +62,7 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/language": [
-      "Patient.address",
-      "Practitioner.address"
+      "Patient.address"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Patient"
@@ -81,6 +75,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [

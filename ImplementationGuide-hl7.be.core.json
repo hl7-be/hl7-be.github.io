@@ -6,11 +6,12 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BaseIG</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/hl7.be.core</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium</p>\n</div></div>"
   },
   "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/hl7.be.core",
+  "version": "0.1.0",
   "name": "BaseIG",
   "title": "Belgium Base IG",
   "status": "draft",
   "experimental": false,
-  "date": "2019-10-30T16:10:47+01:00",
+  "date": "2019-11-11T15:01:59+01:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -36,7 +37,7 @@
   "packageId": "hl7.be.core",
   "license": "CC0-1.0",
   "fhirVersion": [
-    "4.0.0"
+    "4.0.1"
   ],
   "definition": {
     "grouping": [
@@ -96,9 +97,30 @@
           "reference": "ValueSet/be-diarytopic"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "ValueSet - CommunicationTopic",
+        "description": "The values for communication topic",
+        "groupingId": "terminology"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "be-diarytopic.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/be-diarytopic"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "CodeSystem - CommunicationTopic",
         "description": "The values for communication topic",
         "groupingId": "terminology"
       },
@@ -117,7 +139,7 @@
           "reference": "StructureDefinition/be-allergyintolerance"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "Allergy Intolerance core BE profile",
         "description": "The Core BE profile for Allergy Intolerance",
@@ -138,9 +160,30 @@
           "reference": "ValueSet/be-contactperson"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "ValueSet - Contact Person",
+        "description": "The values for Contact Person type",
+        "groupingId": "terminology"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "be-contactperson.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/be-contactperson"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "CodeSystem - Contact Person",
         "description": "The values for Contact Person type",
         "groupingId": "terminology"
       },
@@ -159,7 +202,7 @@
           "reference": "ValueSet/be-causativeagent"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "ValueSet - Contact Person",
         "description": "The list of causative agents",
@@ -180,7 +223,7 @@
           "reference": "ValueSet/be-riskmanifestation"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "ValueSet - Risk Manifestation",
         "description": "The values for Risk Manifestation",
@@ -201,7 +244,7 @@
           "reference": "StructureDefinition/lm-be-communication"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "Logical Model Communication",
         "description": "Communication / Diary Note logical model",
@@ -222,7 +265,7 @@
           "reference": "StructureDefinition/be-communication"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "Communication Profile",
         "description": "Communication / Diary Note profile",
@@ -243,7 +286,7 @@
           "reference": "StructureDefinition/lm-be-careplan"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "Logical Model Care Plan",
         "description": "Care Plan logical model",
@@ -264,31 +307,10 @@
           "reference": "StructureDefinition/be-patient"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "BE Patient profile",
         "description": "Core Belgian Patient profile",
-        "groupingId": "core"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be-practitioner.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/be-practitioner"
-        },
-        "fhirVersion": [
-          "4.0.0"
-        ],
-        "name": "BE Practitioner profile",
-        "description": "Core Belgian Practitioner profile",
         "groupingId": "core"
       },
       {
@@ -306,7 +328,7 @@
           "reference": "StructureDefinition/be-practitionerrole"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "BE Practitioner Role profile",
         "description": "Core Belgian Practitioner Role profile",
@@ -327,10 +349,31 @@
           "reference": "ValueSet/be-civilstate"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "ValueSet - Civil State",
         "description": "The values for Civil State",
+        "groupingId": "terminology"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "be-civilstate.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/be-civilstate"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "CodeSystem - Civil State",
+        "description": "The official values for Civil State",
         "groupingId": "terminology"
       },
       {
@@ -348,7 +391,7 @@
           "reference": "StructureDefinition/be-careplan"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "Care Plan profile",
         "groupingId": "communication"
@@ -368,7 +411,7 @@
           "reference": "StructureDefinition/be-careteam"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "Care Team profile",
         "groupingId": "communication"
@@ -388,11 +431,53 @@
           "reference": "StructureDefinition/string320"
         },
         "fhirVersion": [
-          "4.0.0"
+          "4.0.1"
         ],
         "name": "String 320",
         "description": "String with up to 320 characters",
         "groupingId": "core"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "be-communication-apps.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/be-communication-apps"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Communication Apps",
+        "description": "This is a Capability Statement for all Apps and clients that wish to be conformant with the Communication system specifications in Belgium.",
+        "groupingId": "core"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "be-hcparty.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/be-hcparty"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "CodeSystem - Healthcare Party",
+        "description": "The values for healthcare party types",
+        "groupingId": "terminology"
       }
     ],
     "page": {

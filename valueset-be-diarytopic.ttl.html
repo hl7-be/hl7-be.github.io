@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.BE.CORE\ValueSet - CommunicationTopic - TTL Representation - FHIR v4.0.0</title>
+    <title>HL7.BE.CORE\ValueSet - CommunicationTopic - TTL Representation - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -51,7 +51,7 @@
           <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
         <div id="hl7-status">
-          <p><span style="font-size:12pt;font-weight:bold">Belgium Base IG</span><br/> - CI Build (HL7 BE)</p>
+          <p><span style="font-size:12pt;font-weight:bold">Belgium Base IG</span><br/>0.1.0 - CI Build (HL7 BE)</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -118,7 +118,7 @@
         <div class="row">
           <div class="inner-wrapper">
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Belgium Base IG - Local Development build (vnull). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Belgium Base IG - Local Development build (v0.1.0). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <a name="root"> </a>
   <h2 id="root">BEDiaryTopic - ttl</h2>
   <p>
@@ -141,17 +141,16 @@
 
  a fhir:ValueSet;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;be-diarytopic&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;be-diarytopic&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;BE Diary Topics&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Codes supported by eHealth Platform differentiating types of communication topics.&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-diarytopic&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;diabetes&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;medication&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;movement&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nutrition&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;renalinsufficiency&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;woundcare&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (Belgium) (fr)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Nederlands (België) (Dutch (Belgium), nl)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;diabetes&lt;/td&gt;&lt;td&gt;diabetes&lt;/td&gt;&lt;td&gt;diabète&lt;/td&gt;&lt;td&gt;diabetes&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;medication&lt;/td&gt;&lt;td&gt;medication&lt;/td&gt;&lt;td&gt;médication&lt;/td&gt;&lt;td&gt;medicatie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;movement&lt;/td&gt;&lt;td&gt;movement&lt;/td&gt;&lt;td&gt;mouvement&lt;/td&gt;&lt;td&gt;beweging&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nutrition&lt;/td&gt;&lt;td&gt;nutrition&lt;/td&gt;&lt;td&gt;nutrition&lt;/td&gt;&lt;td&gt;voeding&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;renalinsufficiency&lt;/td&gt;&lt;td&gt;renal insufficiency&lt;/td&gt;&lt;td&gt;insuffisance rénale&lt;/td&gt;&lt;td&gt;nierinsufficiëntie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;woundcare&lt;/td&gt;&lt;td&gt;wound care&lt;/td&gt;&lt;td&gt;soins de plaies&lt;/td&gt;&lt;td&gt;wondverzorging&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;BEDiaryTopic&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Codes supported by eHealth Platform differentiating types of communication topics.&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;be-diarytopic.html\&quot;&gt;&lt;code&gt;https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;be-diarytopic.html#be-diarytopic-diabetes\&quot;&gt;diabetes&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;be-diarytopic.html#be-diarytopic-medication\&quot;&gt;medication&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;be-diarytopic.html#be-diarytopic-movement\&quot;&gt;movement&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;be-diarytopic.html#be-diarytopic-nutrition\&quot;&gt;nutrition&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;be-diarytopic.html#be-diarytopic-renalinsufficiency\&quot;&gt;renalinsufficiency&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;be-diarytopic.html#be-diarytopic-woundcare\&quot;&gt;woundcare&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (Belgium) (fr)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Nederlands (België) (Dutch (Belgium), nl)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;diabetes&lt;/td&gt;&lt;td&gt;diabetes&lt;/td&gt;&lt;td&gt;diabète&lt;/td&gt;&lt;td&gt;diabetes&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;medication&lt;/td&gt;&lt;td&gt;medication&lt;/td&gt;&lt;td&gt;médication&lt;/td&gt;&lt;td&gt;medicatie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;movement&lt;/td&gt;&lt;td&gt;movement&lt;/td&gt;&lt;td&gt;mouvement&lt;/td&gt;&lt;td&gt;beweging&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;nutrition&lt;/td&gt;&lt;td&gt;nutrition&lt;/td&gt;&lt;td&gt;nutrition&lt;/td&gt;&lt;td&gt;voeding&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;renalinsufficiency&lt;/td&gt;&lt;td&gt;renal insufficiency&lt;/td&gt;&lt;td&gt;insuffisance rénale&lt;/td&gt;&lt;td&gt;nierinsufficiëntie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;woundcare&lt;/td&gt;&lt;td&gt;wound care&lt;/td&gt;&lt;td&gt;soins de plaies&lt;/td&gt;&lt;td&gt;wondverzorging&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.1.0&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;BEDiaryTopic&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;BE Diary Topics&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2019-10-30T16:10:47+01:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2019-11-11T15:01:59+01:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;HL7 Belgium&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -171,7 +170,7 @@
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
      <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-diarytopic&quot; ];
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic&quot; ];
        <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
          <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;diabetes&quot; ];
@@ -269,7 +268,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg"/>HL7 Belgium</a>.  Package hl7.be.core# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.0</a>. Generated <span title="Wed, Oct 30, 2019 16:10+0100">2019-10-30</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg"/>HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 11, 2019 15:01+0100">2019-11-11</span>
           <br/>
           <span style="color: #FFFF77">
           Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

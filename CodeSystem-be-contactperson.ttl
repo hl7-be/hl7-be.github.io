@@ -1,0 +1,234 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-contactperson"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ContactPerson</h2><div><p>Contact person in Belgium.</p>\n</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">father<a name=\"be-contactperson-father\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">mother<a name=\"be-contactperson-mother\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">child<a name=\"be-contactperson-child\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">spouse<a name=\"be-contactperson-spouse\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">husband<a name=\"be-contactperson-husband\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">partner<a name=\"be-contactperson-partner\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">brother<a name=\"be-contactperson-brother\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">sister<a name=\"be-contactperson-sister\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">brotherinlaw<a name=\"be-contactperson-brotherinlaw\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">tutor<a name=\"be-contactperson-tutor\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">notary<a name=\"be-contactperson-notary\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">lawyer<a name=\"be-contactperson-lawyer\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">employer<a name=\"be-contactperson-employer\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">grandparent<a name=\"be-contactperson-grandparent\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">son<a name=\"be-contactperson-son\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">daughter<a name=\"be-contactperson-daughter\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">grandchild<a name=\"be-contactperson-grandchild\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">neighbour<a name=\"be-contactperson-neighbour\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">stepson<a name=\"be-contactperson-stepson\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">stepdaughter<a name=\"be-contactperson-stepdaughter\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">stepfather<a name=\"be-contactperson-stepfather\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">stepmother<a name=\"be-contactperson-stepmother\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">sisterinlaw<a name=\"be-contactperson-sisterinlaw\"> </a></td><td/></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "ContactPerson"];
+  fhir:CodeSystem.title [ fhir:value "ContactPerson"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2019-11-11T15:01:59+01:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Belgium"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/fiwg" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Contact person in Belgium."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "father" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "father" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "mother" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "mother" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "child" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "child" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "spouse" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "spouse" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "husband" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "husband" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "partner" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "partner" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "brother" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "brother" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "sister" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "sister" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "brotherinlaw" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "brother-in-law" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "tutor" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "tutor" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "notary" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "notary" ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "lawyer" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "lawyer" ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "employer" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "employer" ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "grandparent" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "grandparent" ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "son" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "son" ]
+     ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "daughter" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "daughter" ]
+     ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "grandchild" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "grandchild" ]
+     ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "neighbour" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "neighbour" ]
+     ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "stepson" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "stepson" ]
+     ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "stepdaughter" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "stepdaughter" ]
+     ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "stepfather" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "stepfather" ]
+     ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "stepmother" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "stepmother" ]
+     ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "sisterinlaw" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "sisterinlaw" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

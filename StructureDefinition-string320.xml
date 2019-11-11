@@ -8,7 +8,7 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320"/>
-  <version value="4.0.0"/>
+  <version value="0.1.0"/>
   <name value="String320"/>
   <status value="active"/>
   <date value="2019-10-21T22:31:33+02:00"/>
@@ -26,7 +26,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <kind value="primitive-type"/>
   <abstract value="false"/>
   <type value="string320"/>

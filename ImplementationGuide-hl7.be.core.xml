@@ -7,11 +7,12 @@
 </div></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/hl7.be.core"/>
+  <version value="0.1.0"/>
   <name value="BaseIG"/>
   <title value="Belgium Base IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-10-30T16:10:47+01:00"/>
+  <date value="2019-11-11T15:01:59+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -28,7 +29,7 @@
   </jurisdiction>
   <packageId value="hl7.be.core"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <definition>
     <grouping id="logicalmodels">
       <name value="Logical Models"/>
@@ -72,8 +73,23 @@
       <reference>
         <reference value="ValueSet/be-diarytopic"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="ValueSet - CommunicationTopic"/>
+      <description value="The values for communication topic"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-diarytopic.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-diarytopic"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - CommunicationTopic"/>
       <description value="The values for communication topic"/>
       <groupingId value="terminology"/>
     </resource>
@@ -87,7 +103,7 @@
       <reference>
         <reference value="StructureDefinition/be-allergyintolerance"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Allergy Intolerance core BE profile"/>
       <description value="The Core BE profile for Allergy Intolerance"/>
       <groupingId value="condition"/>
@@ -102,8 +118,23 @@
       <reference>
         <reference value="ValueSet/be-contactperson"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="ValueSet - Contact Person"/>
+      <description value="The values for Contact Person type"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-contactperson.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-contactperson"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - Contact Person"/>
       <description value="The values for Contact Person type"/>
       <groupingId value="terminology"/>
     </resource>
@@ -117,7 +148,7 @@
       <reference>
         <reference value="ValueSet/be-causativeagent"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="ValueSet - Contact Person"/>
       <description value="The list of causative agents"/>
       <groupingId value="terminology"/>
@@ -132,7 +163,7 @@
       <reference>
         <reference value="ValueSet/be-riskmanifestation"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="ValueSet - Risk Manifestation"/>
       <description value="The values for Risk Manifestation"/>
       <groupingId value="terminology"/>
@@ -147,7 +178,7 @@
       <reference>
         <reference value="StructureDefinition/lm-be-communication"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Logical Model Communication"/>
       <description value="Communication / Diary Note logical model"/>
       <groupingId value="logicalmodels"/>
@@ -162,7 +193,7 @@
       <reference>
         <reference value="StructureDefinition/be-communication"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Communication Profile"/>
       <description value="Communication / Diary Note profile"/>
       <groupingId value="communication"/>
@@ -177,7 +208,7 @@
       <reference>
         <reference value="StructureDefinition/lm-be-careplan"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Logical Model Care Plan"/>
       <description value="Care Plan logical model"/>
       <groupingId value="logicalmodels"/>
@@ -192,24 +223,9 @@
       <reference>
         <reference value="StructureDefinition/be-patient"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="BE Patient profile"/>
       <description value="Core Belgian Patient profile"/>
-      <groupingId value="core"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-practitioner.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-practitioner"/>
-      </reference>
-      <fhirVersion value="4.0.0"/>
-      <name value="BE Practitioner profile"/>
-      <description value="Core Belgian Practitioner profile"/>
       <groupingId value="core"/>
     </resource>
     <resource>
@@ -222,7 +238,7 @@
       <reference>
         <reference value="StructureDefinition/be-practitionerrole"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="BE Practitioner Role profile"/>
       <description value="Core Belgian Practitioner Role profile"/>
       <groupingId value="core"/>
@@ -237,9 +253,24 @@
       <reference>
         <reference value="ValueSet/be-civilstate"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="ValueSet - Civil State"/>
       <description value="The values for Civil State"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-civilstate.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-civilstate"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - Civil State"/>
+      <description value="The official values for Civil State"/>
       <groupingId value="terminology"/>
     </resource>
     <resource>
@@ -252,7 +283,7 @@
       <reference>
         <reference value="StructureDefinition/be-careplan"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Care Plan profile"/>
       <groupingId value="communication"/>
     </resource>
@@ -266,7 +297,7 @@
       <reference>
         <reference value="StructureDefinition/be-careteam"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Care Team profile"/>
       <groupingId value="communication"/>
     </resource>
@@ -280,10 +311,40 @@
       <reference>
         <reference value="StructureDefinition/string320"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="String 320"/>
       <description value="String with up to 320 characters"/>
       <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-communication-apps.html"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/be-communication-apps"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication Apps"/>
+      <description value="This is a Capability Statement for all Apps and clients that wish to be conformant with the Communication system specifications in Belgium."/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-hcparty.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-hcparty"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - Healthcare Party"/>
+      <description value="The values for healthcare party types"/>
+      <groupingId value="terminology"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

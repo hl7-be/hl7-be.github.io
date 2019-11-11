@@ -1,5 +1,6 @@
 {
-  "fhirVersion": "[4.0.0]",
-  "date": "20191030161013",
+  "version": "0.1.0",
+  "fhirVersion": "[4.0.1]",
+  "date": "20191111150121",
   "name": "hl7.be.core"
 }

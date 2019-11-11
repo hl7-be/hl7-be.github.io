@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-diarytopic"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Diary Topic</h2><div><p>Diary and Communication Topics</p>
+</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">diabetes<a name="be-diarytopic-diabetes"> </a></td><td/></tr><tr><td style="white-space:nowrap">medication<a name="be-diarytopic-medication"> </a></td><td/></tr><tr><td style="white-space:nowrap">movement<a name="be-diarytopic-movement"> </a></td><td/></tr><tr><td style="white-space:nowrap">nutrition<a name="be-diarytopic-nutrition"> </a></td><td/></tr><tr><td style="white-space:nowrap">renalinsufficiency<a name="be-diarytopic-renalinsufficiency"> </a></td><td/></tr><tr><td style="white-space:nowrap">woundcare<a name="be-diarytopic-woundcare"> </a></td><td/></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic"/>
+  <version value="0.1.0"/>
+  <name value="DiaryTopic"/>
+  <title value="Diary Topic"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-11-11T15:01:59+01:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Diary and Communication Topics"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <concept>
+    <code value="diabetes"/>
+    <designation>
+      <language value="en"/>
+      <value value="diabetes"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="diabetes"/>
+    </designation>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="diab&#xE8;te"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="medication"/>
+    <designation>
+      <language value="en"/>
+      <value value="medication"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="medicatie"/>
+    </designation>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="m&#xE9;dication"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="movement"/>
+    <designation>
+      <language value="en"/>
+      <value value="movement"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="beweging"/>
+    </designation>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="mouvement"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="nutrition"/>
+    <designation>
+      <language value="en"/>
+      <value value="nutrition"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="voeding"/>
+    </designation>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="nutrition"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="renalinsufficiency"/>
+    <designation>
+      <language value="en"/>
+      <value value="renal insufficiency"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="nierinsuffici&#xEB;ntie"/>
+    </designation>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="insuffisance r&#xE9;nale"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="woundcare"/>
+    <designation>
+      <language value="en"/>
+      <value value="wound care"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="wondverzorging"/>
+    </designation>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="soins de plaies"/>
+    </designation>
+  </concept>
+</CodeSystem>

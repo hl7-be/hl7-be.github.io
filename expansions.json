@@ -1,11 +1,252 @@
 {
   "resourceType" : "Bundle",
-  "id" : "87eb8271-3c68-4fd3-bcd0-208cc9d3d08f",
+  "id" : "32b0133e-fb04-4c12-a605-c6ee73420b8d",
   "meta" : {
-    "lastUpdated" : "2019-10-30T16:10:47.561+01:00"
+    "lastUpdated" : "2019-11-11T15:01:59.173+01:00"
   },
   "type" : "collection",
   "entry" : [{
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-diarytopic",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic version 0.1.0</p><p>All codes from system <a href=\"be-diarytopic.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-diarytopic-diabetes\"> </a><a href=\"be-diarytopic.html#be-diarytopic-diabetes\">diabetes</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-diarytopic-medication\"> </a><a href=\"be-diarytopic.html#be-diarytopic-medication\">medication</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-diarytopic-movement\"> </a><a href=\"be-diarytopic.html#be-diarytopic-movement\">movement</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-diarytopic-nutrition\"> </a><a href=\"be-diarytopic.html#be-diarytopic-nutrition\">nutrition</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-diarytopic-renalinsufficiency\"> </a><a href=\"be-diarytopic.html#be-diarytopic-renalinsufficiency\">renalinsufficiency</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-diarytopic-woundcare\"> </a><a href=\"be-diarytopic.html#be-diarytopic-woundcare\">woundcare</a></td><td/><td/></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic",
+      "version" : "0.1.0",
+      "name" : "BEDiaryTopic",
+      "status" : "draft",
+      "date" : "2019-11-11T15:01:59+01:00",
+      "publisher" : "HL7 Belgium",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "other",
+          "value" : "http://hl7.org/Special/committees/fiwg"
+        }]
+      }],
+      "description" : "Codes supported by eHealth Platform differentiating types of communication topics.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:b12f53c1-e2b9-4830-bf34-a62e4f5a02a3",
+        "timestamp" : "2019-11-11T15:02:21+01:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic",
+          "code" : "diabetes"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic",
+          "code" : "medication"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic",
+          "code" : "movement"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic",
+          "code" : "nutrition"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic",
+          "code" : "renalinsufficiency"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic",
+          "code" : "woundcare"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-contactperson",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 30 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson version 0.1.0, http://terminology.hl7.org/CodeSystem/v2-0131 version 2.9</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-C\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-C\">C</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Emergency Contact</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-E\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-E\">E</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Employer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-F\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-F\">F</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Federal Agency</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-I\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-I\">I</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Insurance Company</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-N\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-N\">N</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Next-of-Kin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-S\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-S\">S</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>State Agency</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-U\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-U\">U</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Unknown</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-father\"> </a><a href=\"be-contactperson.html#be-contactperson-father\">father</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-mother\"> </a><a href=\"be-contactperson.html#be-contactperson-mother\">mother</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-child\"> </a><a href=\"be-contactperson.html#be-contactperson-child\">child</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-spouse\"> </a><a href=\"be-contactperson.html#be-contactperson-spouse\">spouse</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-husband\"> </a><a href=\"be-contactperson.html#be-contactperson-husband\">husband</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-partner\"> </a><a href=\"be-contactperson.html#be-contactperson-partner\">partner</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-brother\"> </a><a href=\"be-contactperson.html#be-contactperson-brother\">brother</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-sister\"> </a><a href=\"be-contactperson.html#be-contactperson-sister\">sister</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-brotherinlaw\"> </a><a href=\"be-contactperson.html#be-contactperson-brotherinlaw\">brotherinlaw</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-tutor\"> </a><a href=\"be-contactperson.html#be-contactperson-tutor\">tutor</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-notary\"> </a><a href=\"be-contactperson.html#be-contactperson-notary\">notary</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-lawyer\"> </a><a href=\"be-contactperson.html#be-contactperson-lawyer\">lawyer</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-employer\"> </a><a href=\"be-contactperson.html#be-contactperson-employer\">employer</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-grandparent\"> </a><a href=\"be-contactperson.html#be-contactperson-grandparent\">grandparent</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-son\"> </a><a href=\"be-contactperson.html#be-contactperson-son\">son</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-daughter\"> </a><a href=\"be-contactperson.html#be-contactperson-daughter\">daughter</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-grandchild\"> </a><a href=\"be-contactperson.html#be-contactperson-grandchild\">grandchild</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-neighbour\"> </a><a href=\"be-contactperson.html#be-contactperson-neighbour\">neighbour</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-stepson\"> </a><a href=\"be-contactperson.html#be-contactperson-stepson\">stepson</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-stepdaughter\"> </a><a href=\"be-contactperson.html#be-contactperson-stepdaughter\">stepdaughter</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-stepfather\"> </a><a href=\"be-contactperson.html#be-contactperson-stepfather\">stepfather</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-stepmother\"> </a><a href=\"be-contactperson.html#be-contactperson-stepmother\">stepmother</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-sisterinlaw\"> </a><a href=\"be-contactperson.html#be-contactperson-sisterinlaw\">sisterinlaw</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson",
+      "version" : "0.1.0",
+      "name" : "BeContactPerson",
+      "status" : "draft",
+      "date" : "2019-11-11T15:01:59+01:00",
+      "publisher" : "HL7 Belgium",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "other",
+          "value" : "http://hl7.org/Special/committees/fiwg"
+        }]
+      }],
+      "description" : "Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c794958d-1a11-4bb3-b72d-68db6eaed424",
+        "timestamp" : "2019-11-11T15:02:27+01:00",
+        "total" : 30,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v2-0131|2.9"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "code" : "C",
+          "display" : "Emergency Contact"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "code" : "E",
+          "display" : "Employer"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "code" : "F",
+          "display" : "Federal Agency"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "code" : "I",
+          "display" : "Insurance Company"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "code" : "N",
+          "display" : "Next-of-Kin"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "code" : "S",
+          "display" : "State Agency"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "code" : "U",
+          "display" : "Unknown"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "father"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "mother"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "child"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "spouse"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "husband"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "partner"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "brother"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "sister"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "brotherinlaw"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "tutor"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "notary"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "lawyer"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "employer"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "grandparent"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "son"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "daughter"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "grandchild"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "neighbour"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "stepson"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "stepdaughter"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "stepfather"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "stepmother"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+          "code" : "sisterinlaw"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -15,10 +256,10 @@
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 138 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://terminology.hl7.org/CodeSystem/v3-NullFlavor version 2018-08-12</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373270004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373270004\">373270004</a></td><td>http://snomed.info/sct</td><td>penicilline</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260170007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260170007\">260170007</a></td><td>http://snomed.info/sct</td><td>Aardappel</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-102261002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102261002\">102261002</a></td><td>http://snomed.info/sct</td><td>Aardbei</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-52454007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52454007\">52454007</a></td><td>http://snomed.info/sct</td><td>Albumine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-391737006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=391737006\">391737006</a></td><td>http://snomed.info/sct</td><td>Amandelolie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256311001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256311001\">256311001</a></td><td>http://snomed.info/sct</td><td>Appel</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-226491003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226491003\">226491003</a></td><td>http://snomed.info/sct</td><td>Appelsap</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-412069004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412069004\">412069004</a></td><td>http://snomed.info/sct</td><td>Aroma’s</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-11526002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11526002\">11526002</a></td><td>http://snomed.info/sct</td><td>aspartaam</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256307007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256307007\">256307007</a></td><td>http://snomed.info/sct</td><td>Banaan</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227344001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227344001\">227344001</a></td><td>http://snomed.info/sct</td><td>Boon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-80237000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=80237000\">80237000</a></td><td>http://snomed.info/sct</td><td>cacao boter</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227252000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227252000\">227252000</a></td><td>http://snomed.info/sct</td><td>champignon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-102262009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102262009\">102262009</a></td><td>http://snomed.info/sct</td><td>Chocolade</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-59351004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59351004\">59351004</a></td><td>http://snomed.info/sct</td><td>citraat</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-102259006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102259006\">102259006</a></td><td>http://snomed.info/sct</td><td>Citrus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-116273005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=116273005\">116273005</a></td><td>http://snomed.info/sct</td><td>dieetproducten</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-303300008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=303300008\">303300008</a></td><td>http://snomed.info/sct</td><td>Ei eiwit</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-102263004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102263004\">102263004</a></td><td>http://snomed.info/sct</td><td>eieren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256443002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256443002\">256443002</a></td><td>http://snomed.info/sct</td><td>Eiwit</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-12510000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12510000\">12510000</a></td><td>http://snomed.info/sct</td><td>Eucalyptus olie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227444000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227444000\">227444000</a></td><td>http://snomed.info/sct</td><td>Framboos</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-72511004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=72511004\">72511004</a></td><td>http://snomed.info/sct</td><td>Fruit</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-278840001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=278840001\">278840001</a></td><td>http://snomed.info/sct</td><td>Garnalen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227313005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227313005\">227313005</a></td><td>http://snomed.info/sct</td><td>Gedroogde groenten</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-28230009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28230009\">28230009</a></td><td>http://snomed.info/sct</td><td>Gevogelte</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-430503006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=430503006\">430503006</a></td><td>http://snomed.info/sct</td><td>Glutamaat</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-89811004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89811004\">89811004</a></td><td>http://snomed.info/sct</td><td>Gluten</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-23182003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=23182003\">23182003</a></td><td>http://snomed.info/sct</td><td>Granen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-418504009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418504009\">418504009</a></td><td>http://snomed.info/sct</td><td>Haver</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256352005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256352005\">256352005</a></td><td>http://snomed.info/sct</td><td>Hazelnoot</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-102264005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102264005\">102264005</a></td><td>http://snomed.info/sct</td><td>Kaas</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227388008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227388008\">227388008</a></td><td>http://snomed.info/sct</td><td>Kaneel</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256310000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256310000\">256310000</a></td><td>http://snomed.info/sct</td><td>Kers</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260176001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260176001\">260176001</a></td><td>http://snomed.info/sct</td><td>Kiwi</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-264295007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264295007\">264295007</a></td><td>http://snomed.info/sct</td><td>koe melkeiwit</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-230031005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230031005\">230031005</a></td><td>http://snomed.info/sct</td><td>Kreeft</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227374009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227374009\">227374009</a></td><td>http://snomed.info/sct</td><td>kruiden en specerijen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-47703008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=47703008\">47703008</a></td><td>http://snomed.info/sct</td><td>Lactose</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-59533004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59533004\">59533004</a></td><td>http://snomed.info/sct</td><td>levensmiddelenadditief</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260172004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260172004\">260172004</a></td><td>http://snomed.info/sct</td><td>Look</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-412357001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412357001\">412357001</a></td><td>http://snomed.info/sct</td><td>Maïs</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-226760005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226760005\">226760005</a></td><td>http://snomed.info/sct</td><td>Melkproducten</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260177005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260177005\">260177005</a></td><td>http://snomed.info/sct</td><td>Meloen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-51905005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=51905005\">51905005</a></td><td>http://snomed.info/sct</td><td>Mosterd</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-13577000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=13577000\">13577000</a></td><td>http://snomed.info/sct</td><td>Noten</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-230034002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230034002\">230034002</a></td><td>http://snomed.info/sct</td><td>Noten en granen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227161006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227161006\">227161006</a></td><td>http://snomed.info/sct</td><td>Octopus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-230032003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230032003\">230032003</a></td><td>http://snomed.info/sct</td><td>Oester</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256309005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256309005\">256309005</a></td><td>http://snomed.info/sct</td><td>Perzik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256349002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256349002\">256349002</a></td><td>http://snomed.info/sct</td><td>Pinda</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-762952008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=762952008\">762952008</a></td><td>http://snomed.info/sct</td><td>pindanoten</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-67324005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=67324005\">67324005</a></td><td>http://snomed.info/sct</td><td>Rijst</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-412068007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412068007\">412068007</a></td><td>http://snomed.info/sct</td><td>Rogge</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-226915003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226915003\">226915003</a></td><td>http://snomed.info/sct</td><td>Rood vlees</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-28647000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28647000\">28647000</a></td><td>http://snomed.info/sct</td><td>Rood vlees</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227146005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227146005\">227146005</a></td><td>http://snomed.info/sct</td><td>Schaaldieren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256326004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256326004\">256326004</a></td><td>http://snomed.info/sct</td><td>Selder</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260167008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260167008\">260167008</a></td><td>http://snomed.info/sct</td><td>Sesamzaad</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256355007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256355007\">256355007</a></td><td>http://snomed.info/sct</td><td>soja</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-7791007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=7791007\">7791007</a></td><td>http://snomed.info/sct</td><td>soja-eiwit</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227163009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227163009\">227163009</a></td><td>http://snomed.info/sct</td><td>Squid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-412071004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412071004\">412071004</a></td><td>http://snomed.info/sct</td><td>Tarwe</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256327008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256327008\">256327008</a></td><td>http://snomed.info/sct</td><td>Tomaat</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227144008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227144008\">227144008</a></td><td>http://snomed.info/sct</td><td>Tonijn</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256323007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256323007\">256323007</a></td><td>http://snomed.info/sct</td><td>Ui</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-226934003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226934003\">226934003</a></td><td>http://snomed.info/sct</td><td>Varkensvlees</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227425007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227425007\">227425007</a></td><td>http://snomed.info/sct</td><td>Vijgen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-227037002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227037002\">227037002</a></td><td>http://snomed.info/sct</td><td>Vis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-406774009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406774009\">406774009</a></td><td>http://snomed.info/sct</td><td>Vis afgeleid omega-3 vetzuur</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-226359003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226359003\">226359003</a></td><td>http://snomed.info/sct</td><td>Visolie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419420009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419420009\">419420009</a></td><td>http://snomed.info/sct</td><td>Watermeloen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256319004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256319004\">256319004</a></td><td>http://snomed.info/sct</td><td>Wortel</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-264337003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264337003\">264337003</a></td><td>http://snomed.info/sct</td><td>Zaden</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-44027008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=44027008\">44027008</a></td><td>http://snomed.info/sct</td><td>Zeevruchten</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-412160003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412160003\">412160003</a></td><td>http://snomed.info/sct</td><td>Aan hechtdraad gerelateerde allergeen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-12503006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12503006\">12503006</a></td><td>http://snomed.info/sct</td><td>Aluminium en aluminium verbindingen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256303006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256303006\">256303006</a></td><td>http://snomed.info/sct</td><td>Ambrosia stuifmeel</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386936005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386936005\">386936005</a></td><td>http://snomed.info/sct</td><td>Azelaïnezuur</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-91598004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91598004\">91598004</a></td><td>http://snomed.info/sct</td><td>Benzoylperoxide</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-59545008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59545008\">59545008</a></td><td>http://snomed.info/sct</td><td>Bestrijdingsmiddelen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-288328004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=288328004\">288328004</a></td><td>http://snomed.info/sct</td><td>Bijengif</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-255640000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255640000\">255640000</a></td><td>http://snomed.info/sct</td><td>Biocide</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256305004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256305004\">256305004</a></td><td>http://snomed.info/sct</td><td>Boom hars</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-412061001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412061001\">412061001</a></td><td>http://snomed.info/sct</td><td>Bosbessen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-9021002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9021002\">9021002</a></td><td>http://snomed.info/sct</td><td>Carbaryl</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-311984009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=311984009\">311984009</a></td><td>http://snomed.info/sct</td><td>Chemicaliën of externe</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-11894001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11894001\">11894001</a></td><td>http://snomed.info/sct</td><td>Clostridium Botulinetoxine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-406473004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406473004\">406473004</a></td><td>http://snomed.info/sct</td><td>Contact allergeen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-289122001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=289122001\">289122001</a></td><td>http://snomed.info/sct</td><td>Cosmetica</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-289949002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=289949002\">289949002</a></td><td>http://snomed.info/sct</td><td>Cypress stuifmeel</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-406472009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406472009\">406472009</a></td><td>http://snomed.info/sct</td><td>Dierlijke eiwitten en epidermale allergeen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-276310004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=276310004\">276310004</a></td><td>http://snomed.info/sct</td><td>Dierlijke haren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-264287008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264287008\">264287008</a></td><td>http://snomed.info/sct</td><td>Dierlijke huidschilfers</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-396031000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=396031000\">396031000</a></td><td>http://snomed.info/sct</td><td>Dimeticon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-387293003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=387293003\">387293003</a></td><td>http://snomed.info/sct</td><td>Ditranol</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260156007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260156007\">260156007</a></td><td>http://snomed.info/sct</td><td>Eiwit van muizenurine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256419000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256419000\">256419000</a></td><td>http://snomed.info/sct</td><td>Epitheel van muis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-115589000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=115589000\">115589000</a></td><td>http://snomed.info/sct</td><td>Ethanolamine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-418266005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418266005\">418266005</a></td><td>http://snomed.info/sct</td><td>Gele paraffine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-410853002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410853002\">410853002</a></td><td>http://snomed.info/sct</td><td>Geperfluoreerde</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-2309006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2309006\">2309006</a></td><td>http://snomed.info/sct</td><td>Goud</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-412145001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412145001\">412145001</a></td><td>http://snomed.info/sct</td><td>Haarkleurmiddelen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260154005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260154005\">260154005</a></td><td>http://snomed.info/sct</td><td>Hond huidschilfers</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-14402002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=14402002\">14402002</a></td><td>http://snomed.info/sct</td><td>Hout</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-128488006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128488006\">128488006</a></td><td>http://snomed.info/sct</td><td>Huisstof</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-406466009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406466009\">406466009</a></td><td>http://snomed.info/sct</td><td>Huisstof allergeen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-3829006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=3829006\">3829006</a></td><td>http://snomed.info/sct</td><td>Ijzer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-406470001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406470001\">406470001</a></td><td>http://snomed.info/sct</td><td>Insect allergeen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-280939008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=280939008\">280939008</a></td><td>http://snomed.info/sct</td><td>Insectengif</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260118006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260118006\">260118006</a></td><td>http://snomed.info/sct</td><td>Judaica stuifmeel</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260152009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260152009\">260152009</a></td><td>http://snomed.info/sct</td><td>Kat huidschilfers</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-89889006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89889006\">89889006</a></td><td>http://snomed.info/sct</td><td>Katoenen vezels</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-61789006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61789006\">61789006</a></td><td>http://snomed.info/sct</td><td>Kleurstof</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260153004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260153004\">260153004</a></td><td>http://snomed.info/sct</td><td>Koe huidschilfers</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-412153009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412153009\">412153009</a></td><td>http://snomed.info/sct</td><td>Konijn huidschilfers</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-66925006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=66925006\">66925006</a></td><td>http://snomed.info/sct</td><td>Koper</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-395922006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=395922006\">395922006</a></td><td>http://snomed.info/sct</td><td>Lanoline</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-42416001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=42416001\">42416001</a></td><td>http://snomed.info/sct</td><td>Lanoline</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-57126000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=57126000\">57126000</a></td><td>http://snomed.info/sct</td><td>Lijm</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261243003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261243003\">261243003</a></td><td>http://snomed.info/sct</td><td>Messing</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-420111002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=420111002\">420111002</a></td><td>http://snomed.info/sct</td><td>Metaal</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-2799001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2799001\">2799001</a></td><td>http://snomed.info/sct</td><td>Methylbenzethonium chloride</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-33396006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=33396006\">33396006</a></td><td>http://snomed.info/sct</td><td>nikkel</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-260126003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260126003\">260126003</a></td><td>http://snomed.info/sct</td><td>Olijfboom stuifmeel</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419604006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419604006\">419604006</a></td><td>http://snomed.info/sct</td><td>Onkruid stuifmeel</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119417004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=119417004\">119417004</a></td><td>http://snomed.info/sct</td><td>Organofosforverbinding (insecticide)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256417003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256417003\">256417003</a></td><td>http://snomed.info/sct</td><td>Paard huidschilfers</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-255667006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255667006\">255667006</a></td><td>http://snomed.info/sct</td><td>Paraffine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-418785009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418785009\">418785009</a></td><td>http://snomed.info/sct</td><td>Parfum</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-31006001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=31006001\">31006001</a></td><td>http://snomed.info/sct</td><td>Planten</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-387398009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=387398009\">387398009</a></td><td>http://snomed.info/sct</td><td>Podophyllin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-256259004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256259004\">256259004</a></td><td>http://snomed.info/sct</td><td>Pollen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-83619009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=83619009\">83619009</a></td><td>http://snomed.info/sct</td><td>Polyvinylalcohol</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-311846002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=311846002\">311846002</a></td><td>http://snomed.info/sct</td><td>Pyrethroïde insecticide</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-43230003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43230003\">43230003</a></td><td>http://snomed.info/sct</td><td>Rubber</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-116549003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=116549003\">116549003</a></td><td>http://snomed.info/sct</td><td>Samengestelde organochlore (bestrijdingsmiddelen)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH\"> </a><a href=\"http://hl7.org/fhir/R4/v3/NullFlavor/cs.html#v3-NullFlavor-OTH\">OTH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).\r\n\n                        \n                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.\r\n\n                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent",
-      "version" : "1.0.0",
+      "version" : "0.1.0",
       "name" : "BeCausativeAgent",
       "status" : "draft",
-      "date" : "2019-10-30T16:10:47+01:00",
+      "date" : "2019-11-11T15:01:59+01:00",
       "publisher" : "HL7 Belgium",
       "contact" : [{
         "telecom" : [{
@@ -34,8 +275,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e526f7ea-9422-48b0-b482-fab41f4c1206",
-        "timestamp" : "2019-10-30T16:11:02+01:00",
+        "identifier" : "urn:uuid:e0ece446-a81a-4164-8de5-dc04a9bf6cdd",
+        "timestamp" : "2019-11-11T15:02:28+01:00",
         "total" : 138,
         "parameter" : [{
           "name" : "excludeNested",
@@ -756,10 +997,10 @@
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 30 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://terminology.hl7.org/CodeSystem/v3-NullFlavor version 2018-08-12</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-39579001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=39579001\">39579001</a></td><td>http://snomed.info/sct</td><td>anafylaxie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-41291007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=41291007\">41291007</a></td><td>http://snomed.info/sct</td><td>angio-oedeem</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-195967001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=195967001\">195967001</a></td><td>http://snomed.info/sct</td><td>astma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-24079001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=24079001\">24079001</a></td><td>http://snomed.info/sct</td><td>Atopische dermatitis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-4386001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=4386001\">4386001</a></td><td>http://snomed.info/sct</td><td>Bronchospasme</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-271759003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271759003\">271759003</a></td><td>http://snomed.info/sct</td><td>Bulleuze eruptie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-698247007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=698247007\">698247007</a></td><td>http://snomed.info/sct</td><td>Hartritmestoornis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-410430005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410430005\">410430005</a></td><td>http://snomed.info/sct</td><td>Cardiorespiratoire stilstand</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-9826008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9826008\">9826008</a></td><td>http://snomed.info/sct</td><td>conjonctivitis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-49727002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49727002\">49727002</a></td><td>http://snomed.info/sct</td><td>hoest</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-62315008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62315008\">62315008</a></td><td>http://snomed.info/sct</td><td>diarree</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-702809001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=702809001\">702809001</a></td><td>http://snomed.info/sct</td><td>Drug eruption met eosinofilie \nen systemische symptomen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-162290004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=162290004\">162290004</a></td><td>http://snomed.info/sct</td><td>droge ogen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-267036007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=267036007\">267036007</a></td><td>http://snomed.info/sct</td><td>kortademigheid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-43116000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43116000\">43116000</a></td><td>http://snomed.info/sct</td><td>Eczeem</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-418363000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418363000\">418363000</a></td><td>http://snomed.info/sct</td><td>jeuk</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422587007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422587007\">422587007</a></td><td>http://snomed.info/sct</td><td>Misselijkheid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-359610006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=359610006\">359610006</a></td><td>http://snomed.info/sct</td><td>Oogbeschadigingen en/of hyperemia</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-51599000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=51599000\">51599000</a></td><td>http://snomed.info/sct</td><td>Oedeem van het strottenhoofd</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-271757001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271757001\">271757001</a></td><td>http://snomed.info/sct</td><td>Papulaire uitbarsting</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-70076002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=70076002\">70076002</a></td><td>http://snomed.info/sct</td><td>Rinitis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-91175000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91175000\">91175000</a></td><td>http://snomed.info/sct</td><td>Epileptische aanval</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-76067001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=76067001\">76067001</a></td><td>http://snomed.info/sct</td><td>Niezen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-73442001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73442001\">73442001</a></td><td>http://snomed.info/sct</td><td>Stevens-Johnson syndroom</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-23924001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=23924001\">23924001</a></td><td>http://snomed.info/sct</td><td>beklemmende borst</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-126485001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=126485001\">126485001</a></td><td>http://snomed.info/sct</td><td>netelroos</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-31996006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=31996006\">31996006</a></td><td>http://snomed.info/sct</td><td>Vasculitis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1985008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1985008\">1985008</a></td><td>http://snomed.info/sct</td><td>braken</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-247472004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=247472004\">247472004</a></td><td>http://snomed.info/sct</td><td>Huiduitslag</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH\"> </a><a href=\"http://hl7.org/fhir/R4/v3/NullFlavor/cs.html#v3-NullFlavor-OTH\">OTH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).\r\n\n                        \n                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.\r\n\n                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation",
-      "version" : "1.0.0",
+      "version" : "0.1.0",
       "name" : "BeRiskManifestation",
       "status" : "draft",
-      "date" : "2019-10-30T16:10:47+01:00",
+      "date" : "2019-11-11T15:01:59+01:00",
       "publisher" : "HL7 Belgium",
       "contact" : [{
         "telecom" : [{
@@ -775,8 +1016,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d1b0cc8f-a1e6-4d2e-a50d-e673f62c32be",
-        "timestamp" : "2019-10-30T16:11:02+01:00",
+        "identifier" : "urn:uuid:a1053629-b362-45b7-84b2-39e689fc6c05",
+        "timestamp" : "2019-11-11T15:02:28+01:00",
         "total" : 30,
         "parameter" : [{
           "name" : "excludeNested",
@@ -943,6 +1184,132 @@
           "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
           "code" : "OTH",
           "display" : "other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-civilstate",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 15 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://terminology.hl7.org/CodeSystem/v3-MaritalStatus version 2018-08-12, https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate version 0.1.0, http://terminology.hl7.org/CodeSystem/v3-NullFlavor version 2018-08-12</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-A\"> </a><a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-A\">A</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Annulled</td><td>Marriage contract has been declared null and to not have existed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-D\"> </a><a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-D\">D</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Divorced</td><td>Marriage contract has been declared dissolved and inactive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-M\"> </a><a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-M\">M</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Married</td><td>A current marriage contract is active</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-U\"> </a><a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-U\">U</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>unmarried</td><td>Currently not in a marriage contract.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-W\"> </a><a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-W\">W</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Widowed</td><td>The spouse has died</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-civilstate-10\"> </a><a href=\"be-civilstate.html#be-civilstate-10\">10</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate</td><td>Unmarried</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-civilstate-26\"> </a><a href=\"be-civilstate.html#be-civilstate-26\">26</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate</td><td>Putative marriage</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-civilstate-40\"> </a><a href=\"be-civilstate.html#be-civilstate-40\">40</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate</td><td>Divorced</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-civilstate-41\"> </a><a href=\"be-civilstate.html#be-civilstate-41\">41</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate</td><td>Divorced since 1/10/1994</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-civilstate-50\"> </a><a href=\"be-civilstate.html#be-civilstate-50\">50</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate</td><td>Legal separation</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-civilstate-51\"> </a><a href=\"be-civilstate.html#be-civilstate-51\">51</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate</td><td>Legal separation since 1/10/1994</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-civilstate-60\"> </a><a href=\"be-civilstate.html#be-civilstate-60\">60</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate</td><td>Repudiation</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-civilstate-80\"> </a><a href=\"be-civilstate.html#be-civilstate-80\">80</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate</td><td>Partnership</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-civilstate-81\"> </a><a href=\"be-civilstate.html#be-civilstate-81\">81</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate</td><td>End of partnership</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK\"> </a><a href=\"http://hl7.org/fhir/R4/v3/NullFlavor/cs.html#v3-NullFlavor-UNK\">UNK</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>unknown</td><td>Description:A proper value is applicable, but not known.\r\n\n                        \n                           Usage Notes: This means the actual value is not known.  If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used.  No properties should be included for a datatype with this property unless:\r\n\n                        \n                           Those properties themselves directly translate to a semantic of &quot;unknown&quot;.  (E.g. a local code sent as a translation that conveys 'unknown')\n                           Those properties further qualify the nature of what is unknown.  (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate",
+      "version" : "0.1.0",
+      "name" : "BeCivilstate",
+      "status" : "draft",
+      "date" : "2019-11-11T15:01:59+01:00",
+      "publisher" : "HL7 Belgium",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "other",
+          "value" : "http://hl7.org/Special/committees/fiwg"
+        }]
+      }],
+      "description" : "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE for the Belgian specific code.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5c582d22-3aa6-4ee3-95f0-e8c4377d05ed",
+        "timestamp" : "2019-11-11T15:02:41+01:00",
+        "total" : 15,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus|2018-08-12"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2018-08-12"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "A",
+          "display" : "Annulled"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "D",
+          "display" : "Divorced"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "M",
+          "display" : "Married"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "U",
+          "display" : "unmarried"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "W",
+          "display" : "Widowed"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate",
+          "code" : "10",
+          "display" : "Unmarried"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate",
+          "code" : "26",
+          "display" : "Putative marriage"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate",
+          "code" : "40",
+          "display" : "Divorced"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate",
+          "code" : "41",
+          "display" : "Divorced since 1/10/1994"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate",
+          "code" : "50",
+          "display" : "Legal separation"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate",
+          "code" : "51",
+          "display" : "Legal separation since 1/10/1994"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate",
+          "code" : "60",
+          "display" : "Repudiation"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate",
+          "code" : "80",
+          "display" : "Partnership"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate",
+          "code" : "81",
+          "display" : "End of partnership"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code" : "UNK",
+          "display" : "unknown"
         }]
       }
     }

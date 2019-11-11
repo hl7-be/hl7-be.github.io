@@ -1,0 +1,77 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "be-communication-apps",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CommunicationApps</h2><div><p>This is a Capability Statement for all Apps and clients that wish to be conformant with the Communication system specifications in Belgium.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"PATCH a new resource version (patch interaction)\">Patch</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Communication</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr></table></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CapabilityStatement/be-communication-apps",
+  "version": "0.1.0",
+  "name": "CommunicationApps",
+  "title": "Communication Apps",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-08-27T01:00:00+02:00",
+  "publisher": "HL7 Belgium",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This is a Capability Statement for all Apps and clients that wish to be conformant with the Communication system specifications in Belgium.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "application/fhir+xml",
+    "application/fhir+json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "resource": [
+        {
+          "type": "Communication",
+          "supportedProfile": [
+            "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"
+          ],
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "patch"
+            },
+            {
+              "code": "create"
+            }
+          ],
+          "updateCreate": false,
+          "conditionalCreate": false,
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported"
+        }
+      ]
+    }
+  ]
+}

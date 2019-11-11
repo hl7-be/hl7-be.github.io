@@ -12,10 +12,10 @@ en systemische symptomen</td><td/></tr><tr><td><a href="http://browser.ihtsdotoo
 en systemische symptomen</td></tr><tr><td>162290004</td><td>Dry eyes</td><td>Sécheresse oculaire</td><td>droge ogen</td></tr><tr><td>267036007</td><td>Dyspnea</td><td>Dyspnée</td><td>kortademigheid</td></tr><tr><td>43116000</td><td>Eczema</td><td>Eczéma</td><td>Eczeem</td></tr><tr><td>418363000</td><td>Itching of skin</td><td>Prurit</td><td>jeuk</td></tr><tr><td>422587007</td><td>Nausea</td><td>Nausée</td><td>Misselijkheid</td></tr><tr><td>359610006</td><td>Ocular hyperaemia</td><td>Hyperémie oculaire</td><td>Oogbeschadigingen en/of hyperemia</td></tr><tr><td>51599000</td><td>Oedema of larynx</td><td>Œdème laryngé</td><td>Oedeem van het strottenhoofd</td></tr><tr><td>271757001</td><td>Papular eruption</td><td>Eruption papulaire</td><td>Papulaire uitbarsting</td></tr><tr><td>70076002</td><td>Rhinitis</td><td>Rhinite</td><td>Rinitis</td></tr><tr><td>91175000</td><td>Seizure</td><td>Crise épileptique</td><td>Epileptische aanval</td></tr><tr><td>76067001</td><td>Sneezing</td><td>Eternuement</td><td>Niezen</td></tr><tr><td>73442001</td><td>Stevens-Johnson syndrome</td><td>Syndrome de Stevens-Johnson</td><td>Stevens-Johnson syndroom</td></tr><tr><td>23924001</td><td>Tight chest</td><td>Oppression thoracique</td><td>beklemmende borst</td></tr><tr><td>126485001</td><td>Urticaria</td><td>Urticaire</td><td>netelroos</td></tr><tr><td>31996006</td><td>Vasculitis</td><td>Vascularite</td><td>Vasculitis</td></tr><tr><td>1985008</td><td>Vomitus</td><td>Vomi</td><td>braken</td></tr><tr><td>247472004</td><td>Weal</td><td>Éruption cutanée</td><td>Huiduitslag</td></tr><tr><td>OTH</td><td>Other</td><td>Autre</td><td>Andere</td></tr></table></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation"/>
-  <version value="1.0.0"/>
+  <version value="0.1.0"/>
   <name value="BeRiskManifestation"/>
   <status value="draft"/>
-  <date value="2019-10-30T16:10:47+01:00"/>
+  <date value="2019-11-11T15:01:59+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>

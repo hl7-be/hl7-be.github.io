@@ -31,7 +31,7 @@
   <version value="0.1.0"/>
   <name value="BePatient"/>
   <status value="draft"/>
-  <date value="2019-10-30T16:10:47+01:00"/>
+  <date value="2019-11-11T15:01:59+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -45,7 +45,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Patient"/>

@@ -1,0 +1,143 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "be-diarytopic",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Diary Topic</h2><div><p>Diary and Communication Topics</p>\n</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">diabetes<a name=\"be-diarytopic-diabetes\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">medication<a name=\"be-diarytopic-medication\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">movement<a name=\"be-diarytopic-movement\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">nutrition<a name=\"be-diarytopic-nutrition\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">renalinsufficiency<a name=\"be-diarytopic-renalinsufficiency\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">woundcare<a name=\"be-diarytopic-woundcare\"> </a></td><td/></tr></table></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic",
+  "version": "0.1.0",
+  "name": "DiaryTopic",
+  "title": "Diary Topic",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-11-11T15:01:59+01:00",
+  "publisher": "HL7 Belgium",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "Diary and Communication Topics",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "diabetes",
+      "designation": [
+        {
+          "language": "en",
+          "value": "diabetes"
+        },
+        {
+          "language": "nl-BE",
+          "value": "diabetes"
+        },
+        {
+          "language": "fr-BE",
+          "value": "diabète"
+        }
+      ]
+    },
+    {
+      "code": "medication",
+      "designation": [
+        {
+          "language": "en",
+          "value": "medication"
+        },
+        {
+          "language": "nl-BE",
+          "value": "medicatie"
+        },
+        {
+          "language": "fr-BE",
+          "value": "médication"
+        }
+      ]
+    },
+    {
+      "code": "movement",
+      "designation": [
+        {
+          "language": "en",
+          "value": "movement"
+        },
+        {
+          "language": "nl-BE",
+          "value": "beweging"
+        },
+        {
+          "language": "fr-BE",
+          "value": "mouvement"
+        }
+      ]
+    },
+    {
+      "code": "nutrition",
+      "designation": [
+        {
+          "language": "en",
+          "value": "nutrition"
+        },
+        {
+          "language": "nl-BE",
+          "value": "voeding"
+        },
+        {
+          "language": "fr-BE",
+          "value": "nutrition"
+        }
+      ]
+    },
+    {
+      "code": "renalinsufficiency",
+      "designation": [
+        {
+          "language": "en",
+          "value": "renal insufficiency"
+        },
+        {
+          "language": "nl-BE",
+          "value": "nierinsufficiëntie"
+        },
+        {
+          "language": "fr-BE",
+          "value": "insuffisance rénale"
+        }
+      ]
+    },
+    {
+      "code": "woundcare",
+      "designation": [
+        {
+          "language": "en",
+          "value": "wound care"
+        },
+        {
+          "language": "nl-BE",
+          "value": "wondverzorging"
+        },
+        {
+          "language": "fr-BE",
+          "value": "soins de plaies"
+        }
+      ]
+    }
+  ]
+}
