@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="BECommunicationLogicalModel"/>
   <status value="draft"/>
-  <date value="2019-11-11T15:01:59+01:00"/>
+  <date value="2019-11-16T15:29:14+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -125,7 +125,6 @@
         <code value="Identifier"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="BECommunication.status">
       <path value="BECommunication.status"/>
@@ -137,7 +136,6 @@
         <code value="code"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="BECommunication.validated">
       <path value="BECommunication.validated"/>
@@ -149,7 +147,6 @@
         <code value="code"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="BECommunication.dateTimeEntered">
       <path value="BECommunication.dateTimeEntered"/>
@@ -161,7 +158,6 @@
         <code value="dateTime"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/dateTime"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="BECommunication.basedOn">
       <path value="BECommunication.basedOn"/>
@@ -206,7 +202,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="BECommunication.recipient">
       <path value="BECommunication.recipient"/>
@@ -269,7 +264,6 @@
       <type>
         <code value="BackboneElement"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="BECommunication.content.text">
       <path value="BECommunication.content.text"/>
@@ -325,7 +319,6 @@
         <code value="Identifier"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="BECommunication.status">
       <path value="BECommunication.status"/>
@@ -337,7 +330,6 @@
         <code value="code"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="BECommunication.validated">
       <path value="BECommunication.validated"/>
@@ -349,7 +341,6 @@
         <code value="code"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="BECommunication.dateTimeEntered">
       <path value="BECommunication.dateTimeEntered"/>
@@ -361,7 +352,6 @@
         <code value="dateTime"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/dateTime"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="BECommunication.basedOn">
       <path value="BECommunication.basedOn"/>
@@ -406,7 +396,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="BECommunication.recipient">
       <path value="BECommunication.recipient"/>
@@ -469,7 +458,6 @@
       <type>
         <code value="BackboneElement"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="BECommunication.content.text">
       <path value="BECommunication.content.text"/>

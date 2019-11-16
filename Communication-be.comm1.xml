@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Communication xmlns="http://hl7.org/fhir">
+  <id value="be.comm1"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+  </meta>
+  <language value="nl-BE"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm1</p><p><b>meta</b>: </p><p><b>language</b>: nl-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000001</p><p><b>status</b>: completed</p><p><b>category</b>: notification <span style="background: LightGoldenRodYellow">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href="{{[id]}}.html">peter. Generated Summary: id: peter; Social Beneficiary Identifier = 79121137740 (OFFICIAL); active; Peter Patient (OFFICIAL); gender: male; birthDate: 1979-12-11; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}">Divorced</span></a></p><p><b>sent</b>: 11-Nov-2019 07:50:01</p><p><b>recipient</b>: <a href="Practitioner/natalie">Natalie</a></p><p><b>sender</b>: <a href="Practitioner/dzop">DZOP</a></p><h3>Payloads</h3><table class="grid"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>Patient must take blood for analysis - see if conditions are met.</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://www.dzop.be/archive/communication"/>
+    <value value="d0000000-0000-0000-0000-000000000001"/>
+  </identifier>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <code value="notification"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/peter"/>
+    <display value="peter"/>
+  </subject>
+  <sent value="2019-11-11T07:50:01+01:00"/>
+  <recipient>
+    <reference value="Practitioner/natalie"/>
+    <display value="Natalie"/>
+  </recipient>
+  <sender>
+    <reference value="Practitioner/dzop"/>
+    <display value="DZOP"/>
+  </sender>
+  <payload>
+    <contentString value="Patient must take blood for analysis - see if conditions are met."/>
+  </payload>
+</Communication>

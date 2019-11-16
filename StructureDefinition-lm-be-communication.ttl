@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "BECommunicationLogicalModel"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-11-11T15:01:59+01:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-11-16T15:29:14+01:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -171,8 +171,7 @@
            fhir:index 0;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Identifier>
          ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 4;
        fhir:Element.id [ fhir:value "BECommunication.status" ];
@@ -189,8 +188,7 @@
            fhir:index 0;
            fhir:link <http://hl7.org/fhir/StructureDefinition/code>
          ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 5;
        fhir:Element.id [ fhir:value "BECommunication.validated" ];
@@ -207,8 +205,7 @@
            fhir:index 0;
            fhir:link <http://hl7.org/fhir/StructureDefinition/code>
          ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 6;
        fhir:Element.id [ fhir:value "BECommunication.dateTimeEntered" ];
@@ -225,8 +222,7 @@
            fhir:index 0;
            fhir:link <http://hl7.org/fhir/StructureDefinition/dateTime>
          ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 7;
        fhir:Element.id [ fhir:value "BECommunication.basedOn" ];
@@ -291,8 +287,7 @@
            fhir:index 2;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
          ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 11;
        fhir:Element.id [ fhir:value "BECommunication.recipient" ];
@@ -391,8 +386,7 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 16;
        fhir:Element.id [ fhir:value "BECommunication.content.text" ];
@@ -470,8 +464,7 @@
            fhir:index 0;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Identifier>
          ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 2;
        fhir:Element.id [ fhir:value "BECommunication.status" ];
@@ -488,8 +481,7 @@
            fhir:index 0;
            fhir:link <http://hl7.org/fhir/StructureDefinition/code>
          ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 3;
        fhir:Element.id [ fhir:value "BECommunication.validated" ];
@@ -506,8 +498,7 @@
            fhir:index 0;
            fhir:link <http://hl7.org/fhir/StructureDefinition/code>
          ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 4;
        fhir:Element.id [ fhir:value "BECommunication.dateTimeEntered" ];
@@ -524,8 +515,7 @@
            fhir:index 0;
            fhir:link <http://hl7.org/fhir/StructureDefinition/dateTime>
          ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 5;
        fhir:Element.id [ fhir:value "BECommunication.basedOn" ];
@@ -590,8 +580,7 @@
            fhir:index 2;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
          ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 9;
        fhir:Element.id [ fhir:value "BECommunication.recipient" ];
@@ -690,8 +679,7 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 14;
        fhir:Element.id [ fhir:value "BECommunication.content.text" ];

@@ -3,10 +3,10 @@
   "name": "BaseIG",
   "package-id": "hl7.be.core",
   "ig-ver": "0.1.0",
-  "date": "Mon, 11 Nov, 2019 15:01:59 +0100",
-  "errs": 26,
-  "warnings": 0,
-  "hints": 238,
+  "date": "Sat, 16 Nov, 2019 15:29:14 +0100",
+  "errs": 120,
+  "warnings": 32,
+  "hints": 2,
   "version": "4.0.1",
   "tool": "4.1.0 (3)"
 }

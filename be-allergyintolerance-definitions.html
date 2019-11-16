@@ -35,8 +35,8 @@
   <body>
 
 
-    <style type="text/css">h2{--heading-prefix:"5.10"}
-    h3,h4,h5,h6{--heading-prefix:"5.10"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.9"}
+    h3,h4,h5,h6{--heading-prefix:"5.9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <div id="hl7-nav">
@@ -51,7 +51,7 @@
           <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
         <div id="hl7-status">
-          <p><span style="font-size:12pt;font-weight:bold">Belgium Base IG</span><br/>0.1.0 - CI Build (HL7 BE)</p>
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Belgium Base IG</span><br/>0.1.0 - CI Build (HL7 BE)</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -122,7 +122,7 @@
 
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Belgium Base IG - Local Development build (v0.1.0). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FHIR Belgium Base IG - Local Development build (v0.1.0). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <ul class="nav nav-tabs">
     <li>
       <a href="be-allergyintolerance.html">Content</a>
@@ -363,7 +363,7 @@ The data type is CodeableConcept because clinicalStatus has some clinical judgme
   <tr><td>Definition</td><td><p>Individual who recorded the record and takes responsibility for its content.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a> | <a href="be-patient.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient">BePatient</a> | https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner | <a href="be-practitionerrole.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole">BePractitionerRole</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a> | <a href="be-patient.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient">BePatient</a> | https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner | https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Author</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -372,7 +372,7 @@ The data type is CodeableConcept because clinicalStatus has some clinical judgme
   <tr><td>Definition</td><td><p>The source of the information about the allergy that is recorded.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a> | <a href="be-patient.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient">BePatient</a> | https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner | <a href="be-practitionerrole.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole">BePractitionerRole</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a> | <a href="be-patient.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient">BePatient</a> | https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner | https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Source, Informant</td></tr>
   <tr><td>Comments</td><td><p>The recorder takes responsibility for the content, but can reference the source from where they got it.</p>
@@ -548,7 +548,7 @@ The data type is CodeableConcept because clinicalStatus has some clinical judgme
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg"/>HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 11, 2019 15:01+0100">2019-11-11</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg"/>HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 16, 2019 15:29+0100">2019-11-16</span>
           <br/>
           <span style="color: #FFFF77">
           Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

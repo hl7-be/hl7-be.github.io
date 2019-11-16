@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm4.2> a fhir:Communication;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be.comm4.2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "nl-BE"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm4.2</p><p><b>meta</b>: </p><p><b>language</b>: nl-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000008</p><p><b>basedOn</b>: </p><ul><li><a href=\"{{[id]}}.html\">Generated Summary: id: be.comm4.1; language: nl-BE; d0000000-0000-0000-0000-000000000007; status: completed; <span title=\"Codes: \">notification</span>; sent: 11-Nov-2019 09:00:01</a></li><li>be.comm4.1</li></ul><p><b>status</b>: completed</p><p><b>category</b>: reminder <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'reminder' = 'reminder)</span></p><p><b>subject</b>: <a href=\"{{[id]}}.html\">peter. Generated Summary: id: peter; Social Beneficiary Identifier = 79121137740 (OFFICIAL); active; Peter Patient (OFFICIAL); gender: male; birthDate: 1979-12-11; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}\">Divorced</span></a></p><p><b>sent</b>: 11-Nov-2019 09:15:01</p><p><b>recipient</b>: <a href=\"CareTeam/nurses\">Nurses</a></p><p><b>sender</b>: <a href=\"Practitioner/dzop\">DZOP</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>Patient must be in hospital at 16h00 without food</td></tr></table></div>"
+  ];
+  fhir:Communication.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "" ];
+     fhir:Identifier.value [ fhir:value "d0000000-0000-0000-0000-000000000008" ]
+  ];
+  fhir:Communication.basedOn [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm4.1>;
+     fhir:Reference.reference [ fhir:value "Communication/be.comm4.1" ]
+  ], [
+     fhir:index 1;
+     fhir:Reference.display [ fhir:value "be.comm4.1" ]
+  ];
+  fhir:Communication.status [ fhir:value "completed"];
+  fhir:Communication.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "reminder" ]
+     ]
+  ];
+  fhir:Communication.subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/peter>;
+     fhir:Reference.reference [ fhir:value "Patient/peter" ];
+     fhir:Reference.display [ fhir:value "peter" ]
+  ];
+  fhir:Communication.sent [ fhir:value "2019-11-11T09:15:01+01:00"^^xsd:dateTime];
+  fhir:Communication.recipient [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/CareTeam/nurses>;
+     fhir:Reference.reference [ fhir:value "CareTeam/nurses" ];
+     fhir:Reference.display [ fhir:value "Nurses" ]
+  ];
+  fhir:Communication.sender [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/dzop>;
+     fhir:Reference.reference [ fhir:value "Practitioner/dzop" ];
+     fhir:Reference.display [ fhir:value "DZOP" ]
+  ];
+  fhir:Communication.payload [
+     fhir:index 0;
+     fhir:Communication.payload.contentString [ fhir:value "Patient must be in hospital at 16h00 without food" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm4.2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -9,10 +9,10 @@
   <url value="https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/hl7.be.core"/>
   <version value="0.1.0"/>
   <name value="BaseIG"/>
-  <title value="Belgium Base IG"/>
+  <title value="FHIR Belgium Base IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-11-11T15:01:59+01:00"/>
+  <date value="2019-11-16T15:29:14+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -62,6 +62,10 @@
     <grouping id="terminology">
       <name value="Terminology"/>
       <description value="Terminology resources - ValueSets and CodeSystems"/>
+    </grouping>
+    <grouping id="examples">
+      <name value="Examples"/>
+      <description value="Example resources"/>
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -230,21 +234,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-practitionerrole.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-practitionerrole"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="BE Practitioner Role profile"/>
-      <description value="Core Belgian Practitioner Role profile"/>
-      <groupingId value="core"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -321,14 +310,13 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-communication-apps.html"/>
+        <valueUri value="be-communicationclient.html"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/be-communication-apps"/>
+        <reference value="CapabilityStatement/be-communicationclient"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Communication Apps"/>
-      <description value="This is a Capability Statement for all Apps and clients that wish to be conformant with the Communication system specifications in Belgium."/>
       <groupingId value="core"/>
     </resource>
     <resource>
@@ -345,6 +333,198 @@
       <name value="CodeSystem - Healthcare Party"/>
       <description value="The values for healthcare party types"/>
       <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be.comm1.html"/>
+      </extension>
+      <reference>
+        <reference value="Communication/be.comm1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 1"/>
+      <description value="New message from DZOP to nurse"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be.comm2.1.html"/>
+      </extension>
+      <reference>
+        <reference value="Communication/be.comm2.1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 2"/>
+      <description value="Long message - part 1"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be.comm2.2.html"/>
+      </extension>
+      <reference>
+        <reference value="Communication/be.comm2.2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 3"/>
+      <description value="Long message - part 2"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be.comm2.3.html"/>
+      </extension>
+      <reference>
+        <reference value="Communication/be.comm2.3"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 4"/>
+      <description value="Long message - part 3"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be.comm3.1.html"/>
+      </extension>
+      <reference>
+        <reference value="Communication/be.comm3.1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 5"/>
+      <description value="Send notice / question"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be.comm3.2.html"/>
+      </extension>
+      <reference>
+        <reference value="Communication/be.comm3.2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 6"/>
+      <description value="Reply to question"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be.comm4.1.html"/>
+      </extension>
+      <reference>
+        <reference value="Communication/be.comm4.1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 7"/>
+      <description value="Send notification"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be.comm4.2.html"/>
+      </extension>
+      <reference>
+        <reference value="Communication/be.comm4.2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 8"/>
+      <description value="Send reminder"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be.comm5.1.html"/>
+      </extension>
+      <reference>
+        <reference value="Communication/be.comm5.1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 9"/>
+      <description value="Send attachment"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be.comm5.2.html"/>
+      </extension>
+      <reference>
+        <reference value="Communication/be.comm5.2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 10"/>
+      <description value="Forward existing attachment"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be.comm6.html"/>
+      </extension>
+      <reference>
+        <reference value="Communication/be.comm6"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 11"/>
+      <description value="High-priority notification"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="peter.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/peter"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Peter"/>
+      <description value="Peter"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+      <groupingId value="examples"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

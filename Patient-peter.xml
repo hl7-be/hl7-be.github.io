@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="peter"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: peter</p><p><b>meta</b>: </p><p><b>identifier</b>: Social Beneficiary Identifier = 79121137740 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Peter Patient (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1979-12-11</p><p><b>address</b>: </p><ul><li>Sloordelle 42, 1160 Oudergem(HOME)</li><li>42, Allee des Colzas, 1160 Auderghem(HOME)</li></ul><p><b>maritalStatus</b>: Divorced <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus code 'D' = 'Divorced', given as 'Divorced'})</span></p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Next of kin <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v2-0131 code 'N' = 'Next-of-Kin', given as 'Next of kin'}; {[not stated] code 'mother' = 'mother)</span></td><td>Leia Vogels </td><td>ph: +31201234567(MOBILE)</td></tr></table><p><b>generalPractitioner</b>: <a href="Practitioner/Dragon">Practitioner/Dragon</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+    <valueAddress>
+      <extension url="http://hl7.org/fhir/StructureDefinition/language">
+        <valueCode value="nl"/>
+      </extension>
+      <text value="26, Rue du Labrador, 5000 Namen"/>
+      <city value="Namen"/>
+      <country value="BE"/>
+    </valueAddress>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">
+    <extension url="code">
+      <valueCodeableConcept>
+        <coding>
+          <code value="BE"/>
+          <display value="Belgium"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="SB"/>
+        <display value="Social Beneficiary Identifier"/>
+      </coding>
+    </type>
+    <value value="79121137740"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Patient"/>
+    <given value="Peter"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1979-12-11">
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+      <valueDateTime value="1979-12-11T13:28:17-05:00"/>
+    </extension>
+  </birthDate>
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/language">
+      <valueCode value="nl"/>
+    </extension>
+    <use value="home"/>
+    <type value="both"/>
+    <text value="Sloordelle 42, 1160 Oudergem"/>
+    <city value="Oudergem"/>
+    <postalCode value="1160"/>
+    <country value="BE"/>
+  </address>
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/language">
+      <valueCode value="fr"/>
+    </extension>
+    <use value="home"/>
+    <type value="both"/>
+    <text value="42, Allee des Colzas, 1160 Auderghem"/>
+    <city value="Auderghem"/>
+    <postalCode value="1160"/>
+    <country value="BE"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+      <code value="D"/>
+      <display value="Divorced"/>
+    </coding>
+  </maritalStatus>
+  <contact>
+    <relationship>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+        <code value="N"/>
+        <display value="Next of kin"/>
+      </coding>
+      <coding>
+        <code value="mother"/>
+      </coding>
+    </relationship>
+    <name>
+      <family value="Vogels"/>
+      <given value="Leia"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="+31201234567"/>
+      <use value="mobile"/>
+    </telecom>
+  </contact>
+  <generalPractitioner>
+    <reference value="Practitioner/Dragon"/>
+  </generalPractitioner>
+</Patient>

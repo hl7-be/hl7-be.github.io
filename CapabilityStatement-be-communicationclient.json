@@ -1,0 +1,241 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "be-communicationclient",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BECommunicationService</h2><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr></table></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CapabilityStatement/be-communicationclient",
+  "version": "0.1.0",
+  "name": "BECommunicationService",
+  "title": "Belgium Communication Service",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-08-27T01:00:00+02:00",
+  "publisher": "HL7 Belgium",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "kind": "requirements",
+  "fhirVersion": "3.5.0",
+  "format": [
+    "application/fhir+xml",
+    "application/fhir+json"
+  ],
+  "rest": [
+    {
+      "mode": "server"
+    },
+    {
+      "mode": "client",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "type": "Communication",
+          "profile": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            }
+          ],
+          "versioning": "versioned",
+          "updateCreate": true,
+          "conditionalCreate": false,
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported",
+          "referencePolicy": [
+            "literal"
+          ],
+          "searchParam": [
+            {
+              "name": "_content",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-_content",
+              "type": "number",
+              "documentation": "Search on the entire content of the resource"
+            },
+            {
+              "name": "_filter",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-_filter",
+              "documentation": "This is the formal declaration for the _filter parameter, documented at [http://hl7.org/fhir/search_filter.html](http://hl7.org/fhir/search_filter.html)"
+            },
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-_id",
+              "type": "date",
+              "documentation": "Logical id of this artifact"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-_lastUpdated",
+              "type": "quantity",
+              "documentation": "When the resource version last changed"
+            },
+            {
+              "name": "_profile",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-_profile",
+              "type": "reference",
+              "documentation": "Profiles this resource claims to conform to"
+            },
+            {
+              "name": "_query",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-_query",
+              "type": "date",
+              "documentation": "A custom search profile that describes a specific defined query operation"
+            },
+            {
+              "name": "_security",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-_security",
+              "type": "date",
+              "documentation": "Security Labels applied to this resource"
+            },
+            {
+              "name": "_source",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-_source",
+              "type": "token",
+              "documentation": "Identifies where the resource comes from"
+            },
+            {
+              "name": "_tag",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-_tag",
+              "type": "date",
+              "documentation": "Tags applied to this resource"
+            },
+            {
+              "name": "_text",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-_text",
+              "type": "number",
+              "documentation": "Search on the narrative of the resource"
+            },
+            {
+              "name": "based-on",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-based-on",
+              "type": "reference",
+              "documentation": "Request fulfilled by this communication"
+            },
+            {
+              "name": "category",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-category",
+              "type": "date",
+              "documentation": "Message category"
+            },
+            {
+              "name": "encounter",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-encounter",
+              "type": "reference",
+              "documentation": "Encounter created as part of"
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-identifier",
+              "type": "date",
+              "documentation": "Unique identifier"
+            },
+            {
+              "name": "instantiates-canonical",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-instantiates-canonical",
+              "type": "reference",
+              "documentation": "Instantiates FHIR protocol or definition"
+            },
+            {
+              "name": "instantiates-uri",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-instantiates-uri",
+              "type": "token",
+              "documentation": "Instantiates external protocol or definition"
+            },
+            {
+              "name": "medium",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-medium",
+              "type": "date",
+              "documentation": "A channel of communication"
+            },
+            {
+              "name": "part-of",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-part-of",
+              "type": "reference",
+              "documentation": "Part of this action"
+            },
+            {
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-patient",
+              "type": "reference",
+              "documentation": "Focus of message"
+            },
+            {
+              "name": "received",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-received",
+              "type": "quantity",
+              "documentation": "When received"
+            },
+            {
+              "name": "recipient",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-recipient",
+              "type": "reference",
+              "documentation": "Message recipient"
+            },
+            {
+              "name": "sender",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-sender",
+              "type": "reference",
+              "documentation": "Message sender"
+            },
+            {
+              "name": "sent",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-sent",
+              "type": "quantity",
+              "documentation": "When sent"
+            },
+            {
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-status",
+              "type": "date",
+              "documentation": "preparation | in-progress | not-done | suspended | aborted | completed | entered-in-error"
+            },
+            {
+              "name": "subject",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-subject",
+              "type": "reference",
+              "documentation": "Focus of message"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

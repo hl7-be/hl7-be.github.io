@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="32b0133e-fb04-4c12-a605-c6ee73420b8d"/>
+  <id value="a10ad8ca-02bd-44d9-bdaa-ba05aa12990c"/>
   <meta>
-    <lastUpdated value="2019-11-11T15:01:59.173+01:00"/>
+    <lastUpdated value="2019-11-16T15:29:14.516+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -88,7 +88,7 @@
         <version value="0.1.0"/>
         <name value="BEDiaryTopic"/>
         <status value="draft"/>
-        <date value="2019-11-11T15:01:59+01:00"/>
+        <date value="2019-11-16T15:29:14+01:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -104,8 +104,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b12f53c1-e2b9-4830-bf34-a62e4f5a02a3"/>
-          <timestamp value="2019-11-11T15:02:21+01:00"/>
+          <identifier value="urn:uuid:89fc2382-738d-463b-8f35-5b103fae2e04"/>
+          <timestamp value="2019-11-16T15:29:27+01:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -445,7 +445,7 @@
         <version value="0.1.0"/>
         <name value="BeContactPerson"/>
         <status value="draft"/>
-        <date value="2019-11-11T15:01:59+01:00"/>
+        <date value="2019-11-16T15:29:14+01:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -461,8 +461,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c794958d-1a11-4bb3-b72d-68db6eaed424"/>
-          <timestamp value="2019-11-11T15:02:27+01:00"/>
+          <identifier value="urn:uuid:3947f3ac-82fb-4e9f-aa81-f2cdc6202685"/>
+          <timestamp value="2019-11-16T15:29:30+01:00"/>
           <total value="30"/>
           <parameter>
             <name value="excludeNested"/>
@@ -616,7 +616,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 138 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://terminology.hl7.org/CodeSystem/v3-NullFlavor version 2018-08-12</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://terminology.hl7.org/CodeSystem/v3-NullFlavor version 2018-08-12, SNOMED CT 11000201108 edition 06-mar 2017</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -1886,7 +1886,7 @@
         <version value="0.1.0"/>
         <name value="BeCausativeAgent"/>
         <status value="draft"/>
-        <date value="2019-11-11T15:01:59+01:00"/>
+        <date value="2019-11-16T15:29:14+01:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -1902,8 +1902,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e0ece446-a81a-4164-8de5-dc04a9bf6cdd"/>
-          <timestamp value="2019-11-11T15:02:28+01:00"/>
+          <identifier value="urn:uuid:47ccb139-29e3-4d4b-85a0-4c0e326199eb"/>
+          <timestamp value="2019-11-16T15:29:31+01:00"/>
           <total value="138"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1915,7 +1915,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/11000201108/version/20170306"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -2624,7 +2624,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 30 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://terminology.hl7.org/CodeSystem/v3-NullFlavor version 2018-08-12</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://terminology.hl7.org/CodeSystem/v3-NullFlavor version 2018-08-12, SNOMED CT 11000201108 edition 06-mar 2017</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -2923,7 +2923,7 @@ en systemische symptomen</td>
         <version value="0.1.0"/>
         <name value="BeRiskManifestation"/>
         <status value="draft"/>
-        <date value="2019-11-11T15:01:59+01:00"/>
+        <date value="2019-11-16T15:29:14+01:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -2939,8 +2939,8 @@ en systemische symptomen</td>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a1053629-b362-45b7-84b2-39e689fc6c05"/>
-          <timestamp value="2019-11-11T15:02:28+01:00"/>
+          <identifier value="urn:uuid:4320fe27-5417-4964-b0d8-5954fcab3e18"/>
+          <timestamp value="2019-11-16T15:29:31+01:00"/>
           <total value="30"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2952,7 +2952,7 @@ en systemische symptomen</td>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/11000201108/version/20170306"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -3286,7 +3286,7 @@ en systemische symptomen</td>
         <version value="0.1.0"/>
         <name value="BeCivilstate"/>
         <status value="draft"/>
-        <date value="2019-11-11T15:01:59+01:00"/>
+        <date value="2019-11-16T15:29:14+01:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -3302,8 +3302,8 @@ en systemische symptomen</td>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5c582d22-3aa6-4ee3-95f0-e8c4377d05ed"/>
-          <timestamp value="2019-11-11T15:02:41+01:00"/>
+          <identifier value="urn:uuid:cf360963-49c9-46dd-aba4-8b19dbd9743e"/>
+          <timestamp value="2019-11-16T15:29:38+01:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Communication xmlns="http://hl7.org/fhir">
+  <id value="be.comm3.1"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+  </meta>
+  <language value="nl-BE"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm3.1</p><p><b>meta</b>: </p><p><b>language</b>: nl-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000005</p><p><b>partOf</b>: </p><ul><li/><li>2</li></ul><p><b>status</b>: completed</p><p><b>category</b>: notification <span style="background: LightGoldenRodYellow">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href="{{[id]}}.html">peter. Generated Summary: id: peter; Social Beneficiary Identifier = 79121137740 (OFFICIAL); active; Peter Patient (OFFICIAL); gender: male; birthDate: 1979-12-11; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}">Divorced</span></a></p><p><b>sent</b>: 11-Nov-2019 08:30:01</p><p><b>recipient</b>: <a href="CareTeam/careteam">Care Team</a></p><p><b>sender</b>: <a href="Practitioner/dragon">Dragon</a></p><h3>Payloads</h3><table class="grid"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>For this test, if the patient comes at 4 today it is still ok. Can the patient be here at 16h00?</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://www.dzop.be/archive/communication"/>
+    <value value="d0000000-0000-0000-0000-000000000005"/>
+  </identifier>
+  <partOf>
+    <reference value=""/>
+  </partOf>
+  <partOf>
+    <display value="2"/>
+  </partOf>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <code value="notification"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/peter"/>
+    <display value="peter"/>
+  </subject>
+  <sent value="2019-11-11T08:30:01+01:00"/>
+  <recipient>
+    <reference value="CareTeam/careteam"/>
+    <display value="Care Team"/>
+  </recipient>
+  <sender>
+    <reference value="Practitioner/dragon"/>
+    <display value="Dragon"/>
+  </sender>
+  <payload>
+    <contentString value="For this test, if the patient comes at 4 today it is still ok. Can the patient be here at 16h00?"/>
+  </payload>
+</Communication>

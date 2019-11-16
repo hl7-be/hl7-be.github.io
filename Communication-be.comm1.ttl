@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm1> a fhir:Communication;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be.comm1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "nl-BE"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm1</p><p><b>meta</b>: </p><p><b>language</b>: nl-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000001</p><p><b>status</b>: completed</p><p><b>category</b>: notification <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href=\"{{[id]}}.html\">peter. Generated Summary: id: peter; Social Beneficiary Identifier = 79121137740 (OFFICIAL); active; Peter Patient (OFFICIAL); gender: male; birthDate: 1979-12-11; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}\">Divorced</span></a></p><p><b>sent</b>: 11-Nov-2019 07:50:01</p><p><b>recipient</b>: <a href=\"Practitioner/natalie\">Natalie</a></p><p><b>sender</b>: <a href=\"Practitioner/dzop\">DZOP</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>Patient must take blood for analysis - see if conditions are met.</td></tr></table></div>"
+  ];
+  fhir:Communication.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://www.dzop.be/archive/communication" ];
+     fhir:Identifier.value [ fhir:value "d0000000-0000-0000-0000-000000000001" ]
+  ];
+  fhir:Communication.status [ fhir:value "completed"];
+  fhir:Communication.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "notification" ]
+     ]
+  ];
+  fhir:Communication.subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/peter>;
+     fhir:Reference.reference [ fhir:value "Patient/peter" ];
+     fhir:Reference.display [ fhir:value "peter" ]
+  ];
+  fhir:Communication.sent [ fhir:value "2019-11-11T07:50:01+01:00"^^xsd:dateTime];
+  fhir:Communication.recipient [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/natalie>;
+     fhir:Reference.reference [ fhir:value "Practitioner/natalie" ];
+     fhir:Reference.display [ fhir:value "Natalie" ]
+  ];
+  fhir:Communication.sender [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/dzop>;
+     fhir:Reference.reference [ fhir:value "Practitioner/dzop" ];
+     fhir:Reference.display [ fhir:value "DZOP" ]
+  ];
+  fhir:Communication.payload [
+     fhir:index 0;
+     fhir:Communication.payload.contentString [ fhir:value "Patient must take blood for analysis - see if conditions are met." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

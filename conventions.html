@@ -51,7 +51,7 @@
           <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
         <div id="hl7-status">
-          <p><span style="font-size:12pt;font-weight:bold">Belgium Base IG</span><br/>0.1.0 - CI Build (HL7 BE)</p>
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Belgium Base IG</span><br/>0.1.0 - CI Build (HL7 BE)</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -125,19 +125,96 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Belgium Base IG - Local Development build (v0.1.0). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FHIR Belgium Base IG - Local Development build (v0.1.0). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Conventions</h2>
   
   
   
 <div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#use-of-must-should-may" id="markdown-toc-use-of-must-should-may">Use of MUST, SHOULD, MAY</a></li>
+  <li><a href="#must-support" id="markdown-toc-must-support">Must Support</a>    <ul>
+      <li><a href="#for-technical-profiles" id="markdown-toc-for-technical-profiles">For technical profiles</a></li>
+      <li><a href="#for-logical-models" id="markdown-toc-for-logical-models">For Logical Models</a></li>
+    </ul>
+  </li>
+</ul>
 
 </div>
-<p>Conventions</p>
-
 <p>Throughout this document, the following conventions apply:</p>
 
-<p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”,  “MAY”, and “OPTIONAL” in this document are to be interpreted as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+<h3 id="use-of-must-should-may">Use of MUST, SHOULD, MAY</h3>
+
+<p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”,  “MAY”, and “OPTIONAL” in this document are to be interpreted as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>:</p>
+
+<blockquote>
+  <ol>
+    <li>
+      <p><strong>MUST</strong>, or the terms “<strong>REQUIRED</strong>” or “<strong>SHALL</strong>”, mean that the definition is an absolute requirement of the specification.</p>
+    </li>
+    <li>
+      <p><strong>MUST NOT</strong>, or the phrase “<strong>SHALL NOT</strong>”, mean that the definition is an absolute prohibition of the specification.</p>
+    </li>
+    <li>
+      <p><strong>SHOULD</strong>, or the adjective “<strong>RECOMMENDED</strong>”, mean that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course.</p>
+    </li>
+    <li>
+      <p><strong>SHOULD NOT</strong>, or the phrase “<strong>NOT RECOMMENDED</strong>” mean that there may exist valid reasons in particular circumstances when the particular behaviour is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behaviour described with this label.</p>
+    </li>
+    <li>
+      <p><strong>MAY</strong>, or the adjective “<strong>OPTIONAL</strong>”, mean that an item is truly optional.  One vendor may choose to include the item because a particular marketplace requires it or because the vendor feels that it enhances the product while another vendor may omit the same item. An implementation which does not include a particular option MUST be prepared to interoperate with another implementation which does include the option, though perhaps with reduced functionality. In the same vein an implementation which does include a particular option
+MUST be prepared to interoperate with another implementation which does not include the option (except, of course, for the feature the option provides.)</p>
+    </li>
+  </ol>
+</blockquote>
+
+<h3 id="must-support">Must Support</h3>
+
+<p>Unless otherwise stated, the following criteria apply to elements marked as “Must Support” in this Implementation Guide:</p>
+
+<h5 id="for-technical-profiles">For technical profiles</h5>
+
+<p><strong>Systems supporting the profile MUST NOT ignore the field.</strong></p>
+
+<ul>
+  <li>
+    <p>Systems receiving or consuming a resource instance:</p>
+
+    <ul>
+      <li>MUST be able to process the field’s content when it is present</li>
+      <li>MUST process the content according to the rules defined for the profile</li>
+      <li>MUST NOT fail when the value is not present.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Systems sending or creating a resource instance</p>
+
+    <ul>
+      <li>SHOULD populate the element when the information is available</li>
+      <li>MUST populate the element according to the rules defined for the profile</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="for-logical-models">For Logical Models</h5>
+
+<ul>
+  <li>
+    <p><strong>Functional Analysis MUST consider the data element as defined</strong></p>
+
+    <ul>
+      <li>“Must Support” elements that are used in an implementation MUST inherit the behaviour and constraints defined for the data element</li>
+      <li>“Must Support” elements not needed in a particular implementation MAY be excluded from implementation but such exclusion MUST be described</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Derived implementations SHOULD inherit the field’s “Must Support” flag</strong></p>
+  </li>
+</ul>
+
+<hr />
+
+<!-- This is commented out. -->
 
 
 </div>
@@ -151,7 +228,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg"/>HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 11, 2019 15:01+0100">2019-11-11</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg"/>HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 16, 2019 15:29+0100">2019-11-16</span>
           <br/>
           <span style="color: #FFFF77">
           Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
