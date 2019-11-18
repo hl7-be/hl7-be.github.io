@@ -2,8 +2,8 @@
 =========================================
 
 err = 120, warn = 32, info = 2
-IG Publisher Version: v0.9.96-SNAPSHOT
-Generated Sat Nov 16 15:30:41 CET 2019. FHIR version 4.0.1 for hl7.be.core#0.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+IG Publisher Version: v0.9.97-SNAPSHOT
+Generated Mon Nov 18 08:57:11 CET 2019. FHIR version 4.0.1 for hl7.be.core#0.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
  Build Errors : 26 / 0
  C:\be-core\input\be.base.ig : 13 / 0
