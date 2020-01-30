@@ -22,8 +22,9 @@
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <code value="056"/>
     </coding>
+    <text value="Belgium"/>
   </jurisdiction>
   <kind value="requirements"/>
   <fhirVersion value="3.5.0"/>

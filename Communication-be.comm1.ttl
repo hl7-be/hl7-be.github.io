@@ -18,7 +18,7 @@
   fhir:Resource.language [ fhir:value "nl-BE"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm1</p><p><b>meta</b>: </p><p><b>language</b>: nl-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000001</p><p><b>status</b>: completed</p><p><b>category</b>: notification <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href=\"{{[id]}}.html\">peter. Generated Summary: id: peter; Social Beneficiary Identifier = 79121137740 (OFFICIAL); active; Peter Patient (OFFICIAL); gender: male; birthDate: 1979-12-11; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}\">Divorced</span></a></p><p><b>sent</b>: 11-Nov-2019 07:50:01</p><p><b>recipient</b>: <a href=\"Practitioner/natalie\">Natalie</a></p><p><b>sender</b>: <a href=\"Practitioner/dzop\">DZOP</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>Patient must take blood for analysis - see if conditions are met.</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm1</p><p><b>meta</b>: </p><p><b>language</b>: nl-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000001</p><p><b>status</b>: completed</p><p><b>category</b>: notification <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href=\"{{[type]}}-{{[id]}}.html\">peter. Generated Summary: id: pia; Pia </a></p><p><b>sent</b>: 11-Nov-2019 07:50:01</p><p><b>recipient</b>: <a href=\"Practitioner/nathalie\">Natalie</a></p><p><b>sender</b>: <a href=\"Practitioner/dzop\">DZOP</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>Patient must take blood for analysis - see if conditions are met.</td></tr></table></div>"
   ];
   fhir:Communication.identifier [
      fhir:index 0;
@@ -34,15 +34,15 @@
      ]
   ];
   fhir:Communication.subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/peter>;
-     fhir:Reference.reference [ fhir:value "Patient/peter" ];
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/pia>;
+     fhir:Reference.reference [ fhir:value "Patient/pia" ];
      fhir:Reference.display [ fhir:value "peter" ]
   ];
   fhir:Communication.sent [ fhir:value "2019-11-11T07:50:01+01:00"^^xsd:dateTime];
   fhir:Communication.recipient [
      fhir:index 0;
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/natalie>;
-     fhir:Reference.reference [ fhir:value "Practitioner/natalie" ];
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/nathalie>;
+     fhir:Reference.reference [ fhir:value "Practitioner/nathalie" ];
      fhir:Reference.display [ fhir:value "Natalie" ]
   ];
   fhir:Communication.sender [

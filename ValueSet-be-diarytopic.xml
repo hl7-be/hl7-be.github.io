@@ -4,13 +4,13 @@
   <id value="be-diarytopic"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>BEDiaryTopic</h2><div><p>Codes supported by eHealth Platform differentiating types of communication topics.</p>
-</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="be-diarytopic.html"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="be-diarytopic.html#be-diarytopic-diabetes">diabetes</a></td><td/><td/></tr><tr><td><a href="be-diarytopic.html#be-diarytopic-medication">medication</a></td><td/><td/></tr><tr><td><a href="be-diarytopic.html#be-diarytopic-movement">movement</a></td><td/><td/></tr><tr><td><a href="be-diarytopic.html#be-diarytopic-nutrition">nutrition</a></td><td/><td/></tr><tr><td><a href="be-diarytopic.html#be-diarytopic-renalinsufficiency">renalinsufficiency</a></td><td/><td/></tr><tr><td><a href="be-diarytopic.html#be-diarytopic-woundcare">woundcare</a></td><td/><td/></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>diabetes</td><td>diabetes</td><td>diabète</td><td>diabetes</td></tr><tr><td>medication</td><td>medication</td><td>médication</td><td>medicatie</td></tr><tr><td>movement</td><td>movement</td><td>mouvement</td><td>beweging</td></tr><tr><td>nutrition</td><td>nutrition</td><td>nutrition</td><td>voeding</td></tr><tr><td>renalinsufficiency</td><td>renal insufficiency</td><td>insuffisance rénale</td><td>nierinsufficiëntie</td></tr><tr><td>woundcare</td><td>wound care</td><td>soins de plaies</td><td>wondverzorging</td></tr></table></div>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="CodeSystem-be-diarytopic.html"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-be-diarytopic.html#be-diarytopic-diabetes">diabetes</a></td><td/><td/></tr><tr><td><a href="CodeSystem-be-diarytopic.html#be-diarytopic-medication">medication</a></td><td/><td/></tr><tr><td><a href="CodeSystem-be-diarytopic.html#be-diarytopic-movement">movement</a></td><td/><td/></tr><tr><td><a href="CodeSystem-be-diarytopic.html#be-diarytopic-nutrition">nutrition</a></td><td/><td/></tr><tr><td><a href="CodeSystem-be-diarytopic.html#be-diarytopic-renalinsufficiency">renalinsufficiency</a></td><td/><td/></tr><tr><td><a href="CodeSystem-be-diarytopic.html#be-diarytopic-woundcare">woundcare</a></td><td/><td/></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>diabetes</td><td>diabetes</td><td>diabète</td><td>diabetes</td></tr><tr><td>medication</td><td>medication</td><td>médication</td><td>medicatie</td></tr><tr><td>movement</td><td>movement</td><td>mouvement</td><td>beweging</td></tr><tr><td>nutrition</td><td>nutrition</td><td>nutrition</td><td>voeding</td></tr><tr><td>renalinsufficiency</td><td>renal insufficiency</td><td>insuffisance rénale</td><td>nierinsufficiëntie</td></tr><tr><td>woundcare</td><td>wound care</td><td>soins de plaies</td><td>wondverzorging</td></tr></table></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic"/>
   <version value="0.1.0"/>
   <name value="BEDiaryTopic"/>
   <status value="draft"/>
-  <date value="2019-11-18T08:55:31+01:00"/>
+  <date value="2020-01-30T20:40:02+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -22,8 +22,9 @@
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <code value="056"/>
     </coding>
+    <text value="Belgium"/>
   </jurisdiction>
   <compose>
     <include>

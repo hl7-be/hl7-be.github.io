@@ -15,7 +15,7 @@ en systemische symptomen</td></tr><tr><td>162290004</td><td>Dry eyes</td><td>Sé
   <version value="0.1.0"/>
   <name value="BeRiskManifestation"/>
   <status value="draft"/>
-  <date value="2019-11-18T08:55:31+01:00"/>
+  <date value="2020-01-30T20:40:02+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -27,8 +27,9 @@ en systemische symptomen</td></tr><tr><td>162290004</td><td>Dry eyes</td><td>Sé
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <code value="056"/>
     </coding>
+    <text value="Belgium"/>
   </jurisdiction>
   <compose>
     <include>

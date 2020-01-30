@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "FHIR Belgium Base IG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2019-11-18T08:55:31+01:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-01-30T20:40:02+01:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Belgium"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -34,8 +34,9 @@
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
-     ]
+       fhir:Coding.code [ fhir:value "056" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Belgium" ]
   ];
   fhir:ImplementationGuide.packageId [ fhir:value "hl7.be.core"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
@@ -44,6 +45,211 @@
      fhir:index 0
   ];
   fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2020" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "CI build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
      fhir:ImplementationGuide.definition.grouping [
        fhir:index 0;
        fhir:Element.id [ fhir:value "logicalmodels" ];
@@ -51,40 +257,45 @@
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "The common Belgian Logical Models - these can be mapped to KMEHR and FHIR" ]
      ], [
        fhir:index 1;
+       fhir:Element.id [ fhir:value "datatypes" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Data Types" ];
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Specific Belgian data types" ]
+     ], [
+       fhir:index 2;
        fhir:Element.id [ fhir:value "core" ];
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Core Profiles" ];
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Core resources to be reused in other resources" ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Conditions" ];
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Conditions and findings about patients" ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.id [ fhir:value "communication" ];
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Communication" ];
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Communication and Care Coordination" ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.id [ fhir:value "condition" ];
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Conditions" ];
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Resource profiles defined for conditions" ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.id [ fhir:value "medication" ];
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Medication" ];
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Resource profiles defined for medication" ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.id [ fhir:value "documents" ];
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Documents" ];
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Documents curated extracts of information - they represent a set of information for a given context at a given time." ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.id [ fhir:value "terminology" ];
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Terminology" ];
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Terminology resources - ValueSets and CodeSystems" ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.id [ fhir:value "examples" ];
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Examples" ];
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Example resources" ]
@@ -94,187 +305,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "valueset-be-diarytopic.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-diarytopic" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - CommunicationTopic" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for communication topic" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
-     ], [
-       fhir:index 1;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be-diarytopic.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/be-diarytopic" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - CommunicationTopic" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for communication topic" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
-     ], [
-       fhir:index 2;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be-allergyintolerance.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-allergyintolerance" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Allergy Intolerance core BE profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Core BE profile for Allergy Intolerance" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "condition" ]
-     ], [
-       fhir:index 3;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "valueset-be-contactperson.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-contactperson" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Contact Person" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for Contact Person type" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
-     ], [
-       fhir:index 4;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be-contactperson.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/be-contactperson" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Contact Person" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for Contact Person type" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
-     ], [
-       fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "valueset-be-causativeagent.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-causativeagent" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Contact Person" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The list of causative agents" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
-     ], [
-       fhir:index 6;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "valueset-be-riskmanifestation.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-riskmanifestation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Risk Manifestation" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for Risk Manifestation" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "lm-be-communication.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/lm-be-communication>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/lm-be-communication" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model Communication" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Communication / Diary Note logical model" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "logicalmodels" ]
-     ], [
-       fhir:index 8;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be-communication.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-be-communication.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication>;
@@ -288,29 +323,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Communication / Diary Note profile" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "communication" ]
      ], [
-       fhir:index 9;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "lm-be-careplan.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/lm-be-careplan>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/lm-be-careplan" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model Care Plan" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Care Plan logical model" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "logicalmodels" ]
-     ], [
-       fhir:index 10;
+       fhir:index 1;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -318,7 +331,51 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be-patient.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-be-careplan.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-careplan" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Care Plan profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Care Plan profile" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "communication" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-be-careteam.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-careteam" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Care Team profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Belgian profile for Care Plan. A Care Plan contains the activities planned and/or performed by a care team to deliver care for a particular patient, usually targeting a specific condition or set of conditions." ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "communication" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-be-patient.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient>;
@@ -332,7 +389,181 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Core Belgian Patient profile" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "core" ]
      ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-be-practitionerrole.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-practitionerrole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BE Practitioner Role profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Core Belgian Practitioner Role profile" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "core" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-be-address.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-address" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Belgian Address" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgian Address" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "datatypes" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:primitive-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-string320.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/string320" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "String wih max 320 characters" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "String wih max 320 characters" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "datatypes" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-be-practitioner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BE Practitioner profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Core Belgian Practitioner profile" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "core" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-be-careteam-model.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam-model>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-careteam-model" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model Care Team" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Care Team logical model" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "logicalmodels" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-lm-be-communication.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/lm-be-communication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/lm-be-communication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model Communication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Communication / Diary Note logical model" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "logicalmodels" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-be-communicationclient.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CapabilityStatement/be-communicationclient>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/be-communicationclient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Apps" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "core" ]
+     ], [
        fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-be-communicationserver.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CapabilityStatement/be-communicationserver>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/be-communicationserver" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Server" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "core" ]
+     ], [
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -340,7 +571,161 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "valueset-be-civilstate.html" ]
+         fhir:Extension.valueUri [ fhir:value "ValueSet-be-diarytopic.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic>;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-diarytopic" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - CommunicationTopic" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for communication topic" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-be-diarytopic.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-diarytopic>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-diarytopic" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - CommunicationTopic" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for communication topic" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-be-allergyintolerance.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-allergyintolerance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Allergy Intolerance core BE profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Core BE profile for Allergy Intolerance" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "condition" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-be-contactperson.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson>;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-contactperson" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Contact Person" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for Contact Person type" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-be-contactperson.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-contactperson" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Contact Person" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for Contact Person type" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-be-causativeagent.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent>;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-causativeagent" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Causative Agent" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The list of causative agents" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-be-riskmanifestation.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation>;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-riskmanifestation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Risk Manifestation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for Risk Manifestation" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-be-civilstate.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate>;
@@ -354,7 +739,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for Civil State" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
      ], [
-       fhir:index 12;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -362,7 +747,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be-civilstate.html" ]
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-be-civilstate.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate>;
@@ -376,92 +761,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The official values for Civil State" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
      ], [
-       fhir:index 13;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be-careplan.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-careplan" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Care Plan profile" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "communication" ]
-     ], [
-       fhir:index 14;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be-careteam.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-careteam" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Care Team profile" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "communication" ]
-     ], [
-       fhir:index 15;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:primitive-type" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "string320.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/string320" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "String 320" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "String with up to 320 characters" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "core" ]
-     ], [
-       fhir:index 16;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be-communicationclient.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CapabilityStatement/be-communicationclient>;
-         fhir:Reference.reference [ fhir:value "CapabilityStatement/be-communicationclient" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Apps" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "core" ]
-     ], [
-       fhir:index 17;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -469,7 +769,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be-hcparty.html" ]
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-be-hcparty.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-hcparty>;
@@ -483,7 +783,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The values for healthcare party types" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "terminology" ]
      ], [
-       fhir:index 18;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -491,7 +791,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be.comm1.html" ]
+         fhir:Extension.valueUri [ fhir:value "Communication-be.comm1.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm1>;
@@ -509,7 +809,51 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
      ], [
-       fhir:index 19;
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Patient-pia.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/pia>;
+         fhir:Reference.reference [ fhir:value "Patient/pia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Pia" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Pia" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-dragon.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/dragon>;
+         fhir:Reference.reference [ fhir:value "Practitioner/dragon" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dr. Dragon" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dr. Dragon" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -517,7 +861,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be.comm2.1.html" ]
+         fhir:Extension.valueUri [ fhir:value "Communication-be.comm2.1.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm2.1>;
@@ -535,7 +879,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
      ], [
-       fhir:index 20;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -543,7 +887,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be.comm2.2.html" ]
+         fhir:Extension.valueUri [ fhir:value "Communication-be.comm2.2.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm2.2>;
@@ -561,7 +905,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
      ], [
-       fhir:index 21;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -569,7 +913,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be.comm2.3.html" ]
+         fhir:Extension.valueUri [ fhir:value "Communication-be.comm2.3.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm2.3>;
@@ -587,7 +931,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
      ], [
-       fhir:index 22;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -595,7 +939,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be.comm3.1.html" ]
+         fhir:Extension.valueUri [ fhir:value "Communication-be.comm3.1.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm3.1>;
@@ -613,7 +957,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
      ], [
-       fhir:index 23;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -621,7 +965,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be.comm3.2.html" ]
+         fhir:Extension.valueUri [ fhir:value "Communication-be.comm3.2.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm3.2>;
@@ -639,7 +983,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
      ], [
-       fhir:index 24;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -647,7 +991,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be.comm4.1.html" ]
+         fhir:Extension.valueUri [ fhir:value "Communication-be.comm4.1.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm4.1>;
@@ -665,7 +1009,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
      ], [
-       fhir:index 25;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -673,7 +1017,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be.comm4.2.html" ]
+         fhir:Extension.valueUri [ fhir:value "Communication-be.comm4.2.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm4.2>;
@@ -691,7 +1035,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
      ], [
-       fhir:index 26;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -699,7 +1043,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be.comm5.1.html" ]
+         fhir:Extension.valueUri [ fhir:value "Communication-be.comm5.1.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm5.1>;
@@ -717,7 +1061,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
      ], [
-       fhir:index 27;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -725,7 +1069,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be.comm5.2.html" ]
+         fhir:Extension.valueUri [ fhir:value "Communication-be.comm5.2.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm5.2>;
@@ -743,7 +1087,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
      ], [
-       fhir:index 28;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -751,7 +1095,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "be.comm6.html" ]
+         fhir:Extension.valueUri [ fhir:value "Communication-be.comm6.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/Communication/be.comm6>;
@@ -769,7 +1113,121 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
      ], [
-       fhir:index 29;
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CareTeam" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CareTeam-dzop-team-0002.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CareTeam/dzop-team-0002>;
+         fhir:Reference.reference [ fhir:value "CareTeam/dzop-team-0002" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Care Team Pia" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Care Team responsible for Pia's care" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam>
+       ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Condition-pia-diabetes.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/Condition/pia-diabetes>;
+         fhir:Reference.reference [ fhir:value "Condition/pia-diabetes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition - Pia diabetes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Pia has diabetes" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Condition-pia-loneliness.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/Condition/pia-loneliness>;
+         fhir:Reference.reference [ fhir:value "Condition/pia-loneliness" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition - Pia loneliness" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Pia feels lonely" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Condition-pia-postop.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/Condition/pia-postop>;
+         fhir:Reference.reference [ fhir:value "Condition/pia-postop" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition - Pia's surgery recovery" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Pia had a surgery and needs to recover" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Condition-pia-depression.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/Condition/pia-depression>;
+         fhir:Reference.reference [ fhir:value "Condition/pia-depression" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.fhirVersion [
+         fhir:value "4.0.1";
+         fhir:index 0
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition - Pia depression" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Pia has a depression" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
+     ], [
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -777,23 +1235,100 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "peter.html" ]
+         fhir:Extension.valueUri [ fhir:value "Patient-peter.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/peter>;
          fhir:Reference.reference [ fhir:value "Patient/peter" ]
        ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Peter" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Peter" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient - peter" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient";
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient>
+       ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-language.html" ]
        ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/language>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/language" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Human Language of the item" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Human Language of the item." ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-patient-birthPlace.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/patient-birthPlace>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/patient-birthPlace" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Birth Place" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements." ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-patient-birthTime.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/patient-birthTime>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/patient-birthTime" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Birth Time" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively." ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-patient-nationality.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/patient-nationality>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/patient-nationality" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nationality" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The nationality of the patient." ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-be-medicationtreatment.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-medicationtreatment>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-medicationtreatment" ]
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -881,67 +1416,15 @@
      ], [
        fhir:index 8;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/pagecontent" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
      ], [
        fhir:index 9;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
      ], [
        fhir:index 10;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-qa" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "temp/qa" ]
-     ], [
-       fhir:index 11;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-temp" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "temp/pages" ]
-     ], [
-       fhir:index 12;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-output" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "output" ]
-     ], [
-       fhir:index 13;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
-     ], [
-       fhir:index 14;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-suppressed-warnings" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/ignoreWarnings.txt" ]
-     ], [
-       fhir:index 15;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "template-html" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template-page.html" ]
-     ], [
-       fhir:index 16;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "template-md" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template-page-md.html" ]
-     ], [
-       fhir:index 17;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-contact" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
-     ], [
-       fhir:index 18;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-context" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
-     ], [
-       fhir:index 19;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-copyright" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
-     ], [
-       fhir:index 20;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-jurisdiction" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
-     ], [
-       fhir:index 21;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-license" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
-     ], [
-       fhir:index 22;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-publisher" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
-     ], [
-       fhir:index 23;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-version" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
      ]
   ] .
 

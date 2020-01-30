@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "BeRiskManifestation",
   "status": "draft",
-  "date": "2019-11-18T08:55:31+01:00",
+  "date": "2020-01-30T20:40:02+01:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -27,9 +27,10 @@
       "coding": [
         {
           "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
+          "code": "056"
         }
-      ]
+      ],
+      "text": "Belgium"
     }
   ],
   "compose": {

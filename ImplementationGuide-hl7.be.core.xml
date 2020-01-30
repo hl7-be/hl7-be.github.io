@@ -12,7 +12,7 @@
   <title value="FHIR Belgium Base IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-11-18T08:55:31+01:00"/>
+  <date value="2020-01-30T20:40:02+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -24,16 +24,157 @@
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <code value="056"/>
     </coding>
+    <text value="Belgium"/>
   </jurisdiction>
   <packageId value="hl7.be.core"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2020"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="CI build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
     <grouping id="logicalmodels">
       <name value="Logical Models"/>
       <description value="The common Belgian Logical Models - these can be mapped to KMEHR and FHIR"/>
+    </grouping>
+    <grouping id="datatypes">
+      <name value="Data Types"/>
+      <description value="Specific Belgian data types"/>
     </grouping>
     <grouping id="core">
       <name value="Core Profiles"/>
@@ -69,10 +210,188 @@
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-communication.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-communication"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication Profile"/>
+      <description value="Communication / Diary Note profile"/>
+      <groupingId value="communication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-careplan.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-careplan"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Plan profile"/>
+      <description value="Care Plan profile"/>
+      <groupingId value="communication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-careteam.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-careteam"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team profile"/>
+      <description value="This is the Belgian profile for Care Plan. A Care Plan contains the activities planned and/or performed by a care team to deliver care for a particular patient, usually targeting a specific condition or set of conditions."/>
+      <groupingId value="communication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-patient.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-patient"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="BE Patient profile"/>
+      <description value="Core Belgian Patient profile"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-practitionerrole.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-practitionerrole"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="BE Practitioner Role profile"/>
+      <description value="Core Belgian Practitioner Role profile"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-address.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-address"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Belgian Address"/>
+      <description value="Belgian Address"/>
+      <groupingId value="datatypes"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:primitive-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-string320.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/string320"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="String wih max 320 characters"/>
+      <description value="String wih max 320 characters"/>
+      <groupingId value="datatypes"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-practitioner.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-practitioner"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="BE Practitioner profile"/>
+      <description value="Core Belgian Practitioner profile"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-careteam-model.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-careteam-model"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Care Team"/>
+      <description value="Care Team logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-lm-be-communication.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-be-communication"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Communication"/>
+      <description value="Communication / Diary Note logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-be-communicationclient.html"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/be-communicationclient"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication Apps"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-be-communicationserver.html"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/be-communicationserver"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication Server"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="valueset-be-diarytopic.html"/>
+        <valueUri value="ValueSet-be-diarytopic.html"/>
       </extension>
       <reference>
         <reference value="ValueSet/be-diarytopic"/>
@@ -87,7 +406,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-diarytopic.html"/>
+        <valueUri value="CodeSystem-be-diarytopic.html"/>
       </extension>
       <reference>
         <reference value="CodeSystem/be-diarytopic"/>
@@ -102,7 +421,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-allergyintolerance.html"/>
+        <valueUri value="StructureDefinition-be-allergyintolerance.html"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/be-allergyintolerance"/>
@@ -117,7 +436,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="valueset-be-contactperson.html"/>
+        <valueUri value="ValueSet-be-contactperson.html"/>
       </extension>
       <reference>
         <reference value="ValueSet/be-contactperson"/>
@@ -132,7 +451,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-contactperson.html"/>
+        <valueUri value="CodeSystem-be-contactperson.html"/>
       </extension>
       <reference>
         <reference value="CodeSystem/be-contactperson"/>
@@ -147,13 +466,13 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="valueset-be-causativeagent.html"/>
+        <valueUri value="ValueSet-be-causativeagent.html"/>
       </extension>
       <reference>
         <reference value="ValueSet/be-causativeagent"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="ValueSet - Contact Person"/>
+      <name value="ValueSet - Causative Agent"/>
       <description value="The list of causative agents"/>
       <groupingId value="terminology"/>
     </resource>
@@ -162,7 +481,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="valueset-be-riskmanifestation.html"/>
+        <valueUri value="ValueSet-be-riskmanifestation.html"/>
       </extension>
       <reference>
         <reference value="ValueSet/be-riskmanifestation"/>
@@ -174,70 +493,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="lm-be-communication.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/lm-be-communication"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Communication"/>
-      <description value="Communication / Diary Note logical model"/>
-      <groupingId value="logicalmodels"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-communication.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-communication"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Communication Profile"/>
-      <description value="Communication / Diary Note profile"/>
-      <groupingId value="communication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="lm-be-careplan.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/lm-be-careplan"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Care Plan"/>
-      <description value="Care Plan logical model"/>
-      <groupingId value="logicalmodels"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-patient.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-patient"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="BE Patient profile"/>
-      <description value="Core Belgian Patient profile"/>
-      <groupingId value="core"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="valueset-be-civilstate.html"/>
+        <valueUri value="ValueSet-be-civilstate.html"/>
       </extension>
       <reference>
         <reference value="ValueSet/be-civilstate"/>
@@ -252,7 +511,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-civilstate.html"/>
+        <valueUri value="CodeSystem-be-civilstate.html"/>
       </extension>
       <reference>
         <reference value="CodeSystem/be-civilstate"/>
@@ -264,67 +523,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-careplan.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-careplan"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Care Plan profile"/>
-      <groupingId value="communication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-careteam.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-careteam"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Care Team profile"/>
-      <groupingId value="communication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:primitive-type"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="string320.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/string320"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="String 320"/>
-      <description value="String with up to 320 characters"/>
-      <groupingId value="core"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-communicationclient.html"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/be-communicationclient"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Communication Apps"/>
-      <groupingId value="core"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be-hcparty.html"/>
+        <valueUri value="CodeSystem-be-hcparty.html"/>
       </extension>
       <reference>
         <reference value="CodeSystem/be-hcparty"/>
@@ -339,7 +541,7 @@
         <valueString value="Communication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be.comm1.html"/>
+        <valueUri value="Communication-be.comm1.html"/>
       </extension>
       <reference>
         <reference value="Communication/be.comm1"/>
@@ -352,10 +554,40 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-pia.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/pia"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Patient Pia"/>
+      <description value="Patient Pia"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-dragon.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/dragon"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Dr. Dragon"/>
+      <description value="Dr. Dragon"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Communication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be.comm2.1.html"/>
+        <valueUri value="Communication-be.comm2.1.html"/>
       </extension>
       <reference>
         <reference value="Communication/be.comm2.1"/>
@@ -371,7 +603,7 @@
         <valueString value="Communication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be.comm2.2.html"/>
+        <valueUri value="Communication-be.comm2.2.html"/>
       </extension>
       <reference>
         <reference value="Communication/be.comm2.2"/>
@@ -387,7 +619,7 @@
         <valueString value="Communication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be.comm2.3.html"/>
+        <valueUri value="Communication-be.comm2.3.html"/>
       </extension>
       <reference>
         <reference value="Communication/be.comm2.3"/>
@@ -403,7 +635,7 @@
         <valueString value="Communication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be.comm3.1.html"/>
+        <valueUri value="Communication-be.comm3.1.html"/>
       </extension>
       <reference>
         <reference value="Communication/be.comm3.1"/>
@@ -419,7 +651,7 @@
         <valueString value="Communication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be.comm3.2.html"/>
+        <valueUri value="Communication-be.comm3.2.html"/>
       </extension>
       <reference>
         <reference value="Communication/be.comm3.2"/>
@@ -435,7 +667,7 @@
         <valueString value="Communication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be.comm4.1.html"/>
+        <valueUri value="Communication-be.comm4.1.html"/>
       </extension>
       <reference>
         <reference value="Communication/be.comm4.1"/>
@@ -451,7 +683,7 @@
         <valueString value="Communication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be.comm4.2.html"/>
+        <valueUri value="Communication-be.comm4.2.html"/>
       </extension>
       <reference>
         <reference value="Communication/be.comm4.2"/>
@@ -467,7 +699,7 @@
         <valueString value="Communication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be.comm5.1.html"/>
+        <valueUri value="Communication-be.comm5.1.html"/>
       </extension>
       <reference>
         <reference value="Communication/be.comm5.1"/>
@@ -483,7 +715,7 @@
         <valueString value="Communication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be.comm5.2.html"/>
+        <valueUri value="Communication-be.comm5.2.html"/>
       </extension>
       <reference>
         <reference value="Communication/be.comm5.2"/>
@@ -499,7 +731,7 @@
         <valueString value="Communication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="be.comm6.html"/>
+        <valueUri value="Communication-be.comm6.html"/>
       </extension>
       <reference>
         <reference value="Communication/be.comm6"/>
@@ -512,19 +744,155 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CareTeam-dzop-team-0002.html"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/dzop-team-0002"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team Pia"/>
+      <description value="The Care Team responsible for Pia&#39;s care"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-pia-diabetes.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/pia-diabetes"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Condition - Pia diabetes"/>
+      <description value="Patient Pia has diabetes"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-pia-loneliness.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/pia-loneliness"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Condition - Pia loneliness"/>
+      <description value="Patient Pia feels lonely"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-pia-postop.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/pia-postop"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Condition - Pia&#39;s surgery recovery"/>
+      <description value="Patient Pia had a surgery and needs to recover"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-pia-depression.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/pia-depression"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Condition - Pia depression"/>
+      <description value="Patient Pia has a depression"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="peter.html"/>
+        <valueUri value="Patient-peter.html"/>
       </extension>
       <reference>
         <reference value="Patient/peter"/>
       </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Peter"/>
-      <description value="Peter"/>
+      <name value="Example Patient - peter"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
-      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-language.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/language"/>
+      </reference>
+      <name value="Human Language of the item"/>
+      <description value="The Human Language of the item."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-patient-birthPlace.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-birthPlace"/>
+      </reference>
+      <name value="Birth Place"/>
+      <description value="The registered place of birth of the patient. A sytem may use the address.text if they don&#39;t store the birthPlace address in discrete elements."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-patient-birthTime.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-birthTime"/>
+      </reference>
+      <name value="Birth Time"/>
+      <description value="The time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-patient-nationality.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-nationality"/>
+      </reference>
+      <name value="nationality"/>
+      <description value="The nationality of the patient."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-medicationtreatment.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-medicationtreatment"/>
+      </reference>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -610,67 +978,15 @@
     </parameter>
     <parameter>
       <code value="path-pages"/>
-      <value value="input/pagecontent"/>
+      <value value="template/config"/>
     </parameter>
     <parameter>
       <code value="path-pages"/>
       <value value="input/images"/>
     </parameter>
     <parameter>
-      <code value="path-qa"/>
-      <value value="temp/qa"/>
-    </parameter>
-    <parameter>
-      <code value="path-temp"/>
-      <value value="temp/pages"/>
-    </parameter>
-    <parameter>
-      <code value="path-output"/>
-      <value value="output"/>
-    </parameter>
-    <parameter>
       <code value="path-tx-cache"/>
       <value value="input-cache/txcache"/>
-    </parameter>
-    <parameter>
-      <code value="path-suppressed-warnings"/>
-      <value value="input/ignoreWarnings.txt"/>
-    </parameter>
-    <parameter>
-      <code value="template-html"/>
-      <value value="template-page.html"/>
-    </parameter>
-    <parameter>
-      <code value="template-md"/>
-      <value value="template-page-md.html"/>
-    </parameter>
-    <parameter>
-      <code value="apply-contact"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="apply-context"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="apply-copyright"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="apply-jurisdiction"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="apply-license"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="apply-publisher"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="apply-version"/>
-      <value value="true"/>
     </parameter>
   </definition>
 </ImplementationGuide>

@@ -33,8 +33,9 @@
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
-     ]
+       fhir:Coding.code [ fhir:value "056" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Belgium" ]
   ];
   fhir:CapabilityStatement.kind [ fhir:value "requirements"];
   fhir:CapabilityStatement.fhirVersion [ fhir:value "3.5.0"];

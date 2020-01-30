@@ -7,9 +7,9 @@
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
-  
+
     <link href="fhir.css" rel="stylesheet"/>
-      
+     
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
@@ -18,7 +18,12 @@
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -30,28 +35,30 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-    <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body>
-
 
     <style type="text/css">h2{--heading-prefix:"1"}
     h3,h4,h5,h6{--heading-prefix:"1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+        
         <div id="hl7-nav">
-          <a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/R4/">
-            <img height="50" alt="Visit the website" src="assets/images/be-flag.png"/>
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
           </a>
         </div>
-        <div id="fhir-nav">
-          <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
         </div>
         <div id="hl7-search">
           <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
-        <div id="hl7-status">
-          <p><span style="font-size:12pt;font-weight:bold">FHIR Belgium Base IG</span><br/>0.1.0 - CI Build (HL7 BE)</p>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Belgium Base IG</span><br/>0.1.0 - CI build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -71,33 +78,123 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">BE Core Specification<b class="caret"> </b> </a>
-    <ul class="dropdown-menu">
-    </ul>
-  </li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
-      </li>
-      <li>
-        <a target="_blank" href="http://hl7.org/fhirpath">FHIRPath Spec <img src="external.png" style="text-align: baseline"/></a>
-      </li>
-      <li>
-        <a href="downloads.html">Downloads</a>
-      </li>
-    </ul>
-  </li>
+              <ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#">How to use this Publication</a>
+			</li>
+			<li>
+				<a href="#">Copyright</a>
+			</li>
+			<li>
+				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec 
+					<img src="external.png" style="text-align: baseline"/>
+				</a>
+			</li>
+		</ul>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="downloads.html">Context and intro</a>
+			</li>
+			<li>
+				<a target="_blank" href="#">Use Cases</a>
+			</li>
+			<li>
+				<a target="_blank" href="#">Logical Models</a>
+			</li>
+			<li>
+				<a target="_blank" href="#">Services &amp; Transactions</a>
+			</li>
+		</ul>
+	</li>
+-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
+			</li>
+		</ul>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#">Terminology Resources</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Project-specific
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#">Core Profiles</a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="#">DZOP</a>
+			</li>
+            <li>
+				<a href="#">EFRO</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">Test Data
+					<img src="external.png" style="text-align: baseline"/>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="#">Test Scripts
+					<img src="external.png" style="text-align: baseline"/>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="#">OpenAPI
+					<img src="external.png" style="text-align: baseline"/>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="#">Test Servers
+					<img src="external.png" style="text-align: baseline"/>
+				</a>
+			</li>
+			<li>
+				<a href="downloads.html">Downloads</a>
+			</li>
+		</ul>
+	</li>
+-->
 </ul>      
-
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -128,73 +225,97 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!--ReleaseHeader--><p id="publish-box">FHIR Belgium Base IG - Local Development build (v0.1.0). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>BE Core Home Page</h2>
   
-  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-  <a name="scope"> </a>
+  <div xmlns="http://www.w3.org/1999/xhtml">
+   <div class="markdown-toc">
+      <p>Contents:</p>
+      <ul>
+         <li>
+            <a href="#scope">Scope</a>
+         </li>
+         <li>
+            <a href="#toc">Navigation</a>
+         </li>
+         <li>
+            <a href="#ip">Intellectual Property Considerations</a>
+         </li>
+         <li>
+            <a href="#disclaimer">Disclaimer</a>
+         </li>
+      </ul>
+   </div>
+  <a name="scope">  </a>
   <h3>Scope</h3>
-	<p>
+	  <p>
     This is the DRAFT FHIR specification for Belgium. This document is being developed and may not be used for any implementation or testing purpose.
   </p>
-<blockquote class="stu-note">
-  <a name="dstu"/>
-<strong>This documentation and set of artefacts are still undergoing development, and they are NOT to be taken by implementations.</strong>
+   <blockquote class="stu-note">
+      <a name="dstu"> </a>
+      <strong>This documentation and set of artefacts are still undergoing development, and they are NOT to be taken by implementations.</strong>
 The working groups of HL7 and the different interested parties are still defining the process, the requirements and the tooling. This is a placeholder or sandbox for content, and not any recommendation or preview, so there is no guarantee of completeness or correctness.
 </blockquote>
 
 This specification contains: 
 	<ul>
-    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#logical-models">Logical Models</a>, which describe describing several data sets and elements used in Belgian systems</li>
-    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#terminology">Value Sets and code systems</a>, containing specific Belgian value sets</li>
-    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#core-profiles">Core profiles</a>, which constitute the basis for Belgium FHIR profiling and can be reused in other profiles </li>
-    <li>Functional Profiles, split by functional area for ease of access</li>
-	<ul>
-    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#communication">Care coordination and Communication</a>, </li>
-    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#communication">Patient conditions</a></li>
-	</ul>
-    <li>Required <a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#logical-models">Capability Statements</a> for systems to implement</li>
-	</ul>
-	<p>
+      <li>
+         <a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#logical-models">Logical Models</a>, which describe describing several data sets and elements used in Belgian systems</li>
+      <li>
+         <a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#terminology">Value Sets and code systems</a>, containing specific Belgian value sets</li>
+      <li>
+         <a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#core-profiles">Core profiles</a>, which constitute the basis for Belgium FHIR profiling and can be reused in other profiles </li>
+      <li>Functional Profiles, split by functional area for ease of access</li>
+	     <ul>
+         <li>
+            <a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#communication">Care coordination and Communication</a>, </li>
+         <li>
+            <a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#communication">Patient conditions</a>
+         </li>
+	     </ul>
+      <li>Required <a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#logical-models">Capability Statements</a> for systems to implement</li>
+	  </ul>
+	  <p>
     The implementation guide is structured to allow implementers to pick and choose the capabilities they need and combine them as necessary.
 	</p>
-	<a name="toc"> </a>
-	<h3>Navigation</h3>
-	<p>
+	  <a name="toc">  </a>
+	  <h3>Navigation</h3>
+	  <p>
     This implementation guide follows the FHIR pattern of being published as a web-based specification.  This
     allows easy navigation between the Belgium-specific portion of the implementation guide and the resources,
     data types, value sets and other specification components leveraged from the FHIR core specification.  This
     approach also allows implementers to easily navigate to the information needed to perform a task.
   </p>
-	<p>
+	  <p>
     A <a href="toc.html">Table of Contents</a> page is provided that lists all of the pages defined as part of this implementation guide.  (Do be aware 
     that some pages have multiple tabs.)  A table of contents is also available for the full <a href="http://hl7.org/fhir/R4/toc.html">FHIR specification</a> 
     if you really want to read absolutely everything.  There's also an <a href="artifacts.html">Artifact index</a> that lists all formal FHIR artifacts 
     defined within this implementation guide.  The <i>Support</i> menu provides links to the HL7 standards used by this implementation guide as well as
     providing a <a href="downloads.html">downloads</a> link to retrieve a local copy of this implementation guide and/or particular subsets of it.
   </p>
-	<p>
+	  <p>
     Bread-crumb navigation is provided in the gray bar just below the menu at the top of each page, allowing
     easy navigation back to the main page.
   </p>
   <p>
   </p>
 
-	<a name="ip"> </a>
-	<h3>Intellectual Property Considerations</h3>
-	<p>
+	  <a name="ip">  </a>
+	  <h3>Intellectual Property Considerations</h3>
+	  <p>
     While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such 
     as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and 
     any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, 
     licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
   </p>
 
-	<a name="disclaimer"> </a>
-	<h3>Disclaimer</h3>
-	<p>
+	  <a name="disclaimer">  </a>
+	  <h3>Disclaimer</h3>
+	  <p>
   
     The specification herewith documented is a draft working specification, and may not be used for any implementation purposes. 
     This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
     No liability can be inferred from the use or misuse of this specification, or its consequences.
   </p>
 </div>
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
@@ -206,15 +327,16 @@ This specification contains:
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg"/>HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 18, 2019 08:55+0100">2019-11-18</span>
+          IG &#169; 2020 <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg">HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 30, 2020 20:40+0100">2020-01-30</span>
           <br/>
           <span style="color: #FFFF77">
-          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-                 <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                 | <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change <img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -233,7 +355,6 @@ This specification contains:
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/fhir.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>

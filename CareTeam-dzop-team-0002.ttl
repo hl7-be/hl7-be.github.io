@@ -1,0 +1,114 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/CareTeam/dzop-team-0002> a fhir:CareTeam;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "dzop-team-0002"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "3" ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dzop-team-0002</p><p><b>meta</b>: </p><p><b>identifier</b>: DZOP-Pia-2020001</p><p><b>status</b>: active</p><p><b>category</b>: Home &amp; Community Based Services (HCBS)-focused care team <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LA28866-4' = 'Home &amp; Community Based Services (HCBS)-focused care team', given as 'Home &amp; Community Based Services (HCBS)-focused care team'})</span></p><p><b>name</b>: Pia's 2020 Care Team for post-op care</p><p><b>subject</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Pia. Generated Summary: id: pia; Pia </a></p><p><b>period</b>: ?? --&gt; 01-Jan-2013 00:00:00</p><blockquote><p><b>participant</b></p><p><b>role</b>: care-coordinator <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>member</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Dr Dragon. Generated Summary: id: dragon; Dragon </a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: welfare-actor <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>member</b>: <a href=\"Practitioner/christa\">Caregiver Christa</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: healthcare-actor <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>member</b>: <a href=\"Practitioner/nathalie\">Nurse Nathalie</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: informal care actor <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>member</b>: <a href=\"RelatedPerson/dina\">Dina (daughter)</a></p><p><b>period</b>: ?? --&gt; 01-Jan-2013 00:00:00</p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: welfare-actor <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>member</b>: <a href=\"Organization/diensten-gent\">Lokaal dienstencentrum Gen</a></p></blockquote><p><b>managingOrganization</b>: <a href=\"Organization/dzop\">Organization/dzop</a></p></div>"
+  ];
+  fhir:CareTeam.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "DZOP-Pia-2020001" ]
+  ];
+  fhir:CareTeam.status [ fhir:value "active"];
+  fhir:CareTeam.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:LA28866-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "LA28866-4" ];
+       fhir:Coding.display [ fhir:value "Home & Community Based Services (HCBS)-focused care team" ]
+     ]
+  ];
+  fhir:CareTeam.name [ fhir:value "Pia's 2020 Care Team for post-op care"];
+  fhir:CareTeam.subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/pia>;
+     fhir:Reference.reference [ fhir:value "Patient/pia" ];
+     fhir:Reference.display [ fhir:value "Pia" ]
+  ];
+  fhir:CareTeam.period [
+     fhir:Period.end [ fhir:value "2013-01-01"^^xsd:date ]
+  ];
+  fhir:CareTeam.participant [
+     fhir:index 0;
+     fhir:CareTeam.participant.role [
+       fhir:index 0;
+       fhir:CodeableConcept.text [ fhir:value "care-coordinator" ]
+     ];
+     fhir:CareTeam.participant.member [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/dragon>;
+       fhir:Reference.reference [ fhir:value "Practitioner/dragon" ];
+       fhir:Reference.display [ fhir:value "Dr Dragon" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CareTeam.participant.role [
+       fhir:index 0;
+       fhir:CodeableConcept.text [ fhir:value "welfare-actor" ]
+     ];
+     fhir:CareTeam.participant.member [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/christa>;
+       fhir:Reference.reference [ fhir:value "Practitioner/christa" ];
+       fhir:Reference.display [ fhir:value "Caregiver Christa" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CareTeam.participant.role [
+       fhir:index 0;
+       fhir:CodeableConcept.text [ fhir:value "healthcare-actor" ]
+     ];
+     fhir:CareTeam.participant.member [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/nathalie>;
+       fhir:Reference.reference [ fhir:value "Practitioner/nathalie" ];
+       fhir:Reference.display [ fhir:value "Nurse Nathalie" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CareTeam.participant.role [
+       fhir:index 0;
+       fhir:CodeableConcept.text [ fhir:value "informal care actor" ]
+     ];
+     fhir:CareTeam.participant.member [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/RelatedPerson/dina>;
+       fhir:Reference.reference [ fhir:value "RelatedPerson/dina" ];
+       fhir:Reference.display [ fhir:value "Dina (daughter)" ]
+     ];
+     fhir:CareTeam.participant.period [
+       fhir:Period.end [ fhir:value "2013-01-01"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CareTeam.participant.role [
+       fhir:index 0;
+       fhir:CodeableConcept.text [ fhir:value "welfare-actor" ]
+     ];
+     fhir:CareTeam.participant.member [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/Organization/diensten-gent>;
+       fhir:Reference.reference [ fhir:value "Organization/diensten-gent" ];
+       fhir:Reference.display [ fhir:value "Lokaal dienstencentrum Gen" ]
+     ]
+  ];
+  fhir:CareTeam.managingOrganization [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Organization/dzop>;
+     fhir:Reference.reference [ fhir:value "Organization/dzop" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/CareTeam/dzop-team-0002.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

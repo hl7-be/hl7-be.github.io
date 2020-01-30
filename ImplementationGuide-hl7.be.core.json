@@ -11,7 +11,7 @@
   "title": "FHIR Belgium Base IG",
   "status": "draft",
   "experimental": false,
-  "date": "2019-11-18T08:55:31+01:00",
+  "date": "2020-01-30T20:40:02+01:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -29,9 +29,10 @@
       "coding": [
         {
           "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
+          "code": "056"
         }
-      ]
+      ],
+      "text": "Belgium"
     }
   ],
   "packageId": "hl7.be.core",
@@ -40,11 +41,239 @@
     "4.0.1"
   ],
   "definition": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "copyrightyear"
+          },
+          {
+            "url": "value",
+            "valueString": "2020"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "releaselabel"
+          },
+          {
+            "url": "value",
+            "valueString": "CI build"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "autoload-resources"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-qa"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/qa"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-temp"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/pages"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-output"
+          },
+          {
+            "url": "value",
+            "valueString": "output"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-suppressed-warnings"
+          },
+          {
+            "url": "value",
+            "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-html"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-md"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page-md.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-contact"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-context"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-copyright"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-jurisdiction"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-license"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-publisher"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-version"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
     "grouping": [
       {
         "id": "logicalmodels",
         "name": "Logical Models",
         "description": "The common Belgian Logical Models - these can be mapped to KMEHR and FHIR"
+      },
+      {
+        "id": "datatypes",
+        "name": "Data Types",
+        "description": "Specific Belgian data types"
       },
       {
         "id": "core",
@@ -91,11 +320,261 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-be-communication.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-communication"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Communication Profile",
+        "description": "Communication / Diary Note profile",
+        "groupingId": "communication"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-be-careplan.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-careplan"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Care Plan profile",
+        "description": "Care Plan profile",
+        "groupingId": "communication"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-be-careteam.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-careteam"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Care Team profile",
+        "description": "This is the Belgian profile for Care Plan. A Care Plan contains the activities planned and/or performed by a care team to deliver care for a particular patient, usually targeting a specific condition or set of conditions.",
+        "groupingId": "communication"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-be-patient.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-patient"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "BE Patient profile",
+        "description": "Core Belgian Patient profile",
+        "groupingId": "core"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-be-practitionerrole.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-practitionerrole"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "BE Practitioner Role profile",
+        "description": "Core Belgian Practitioner Role profile",
+        "groupingId": "core"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-be-address.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-address"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Belgian Address",
+        "description": "Belgian Address",
+        "groupingId": "datatypes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:primitive-type"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-string320.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/string320"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "String wih max 320 characters",
+        "description": "String wih max 320 characters",
+        "groupingId": "datatypes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-be-practitioner.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-practitioner"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "BE Practitioner profile",
+        "description": "Core Belgian Practitioner profile",
+        "groupingId": "core"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-be-careteam-model.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-careteam-model"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Logical Model Care Team",
+        "description": "Care Team logical model",
+        "groupingId": "logicalmodels"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-lm-be-communication.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/lm-be-communication"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Logical Model Communication",
+        "description": "Communication / Diary Note logical model",
+        "groupingId": "logicalmodels"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-be-communicationclient.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/be-communicationclient"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Communication Apps",
+        "groupingId": "core"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-be-communicationserver.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/be-communicationserver"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Communication Server",
+        "groupingId": "core"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "valueset-be-diarytopic.html"
+            "valueUri": "ValueSet-be-diarytopic.html"
           }
         ],
         "reference": {
@@ -116,7 +595,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be-diarytopic.html"
+            "valueUri": "CodeSystem-be-diarytopic.html"
           }
         ],
         "reference": {
@@ -137,7 +616,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be-allergyintolerance.html"
+            "valueUri": "StructureDefinition-be-allergyintolerance.html"
           }
         ],
         "reference": {
@@ -158,7 +637,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "valueset-be-contactperson.html"
+            "valueUri": "ValueSet-be-contactperson.html"
           }
         ],
         "reference": {
@@ -179,7 +658,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be-contactperson.html"
+            "valueUri": "CodeSystem-be-contactperson.html"
           }
         ],
         "reference": {
@@ -200,7 +679,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "valueset-be-causativeagent.html"
+            "valueUri": "ValueSet-be-causativeagent.html"
           }
         ],
         "reference": {
@@ -209,7 +688,7 @@
         "fhirVersion": [
           "4.0.1"
         ],
-        "name": "ValueSet - Contact Person",
+        "name": "ValueSet - Causative Agent",
         "description": "The list of causative agents",
         "groupingId": "terminology"
       },
@@ -221,7 +700,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "valueset-be-riskmanifestation.html"
+            "valueUri": "ValueSet-be-riskmanifestation.html"
           }
         ],
         "reference": {
@@ -238,95 +717,11 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "lm-be-communication.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/lm-be-communication"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "Logical Model Communication",
-        "description": "Communication / Diary Note logical model",
-        "groupingId": "logicalmodels"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be-communication.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/be-communication"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "Communication Profile",
-        "description": "Communication / Diary Note profile",
-        "groupingId": "communication"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "lm-be-careplan.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/lm-be-careplan"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "Logical Model Care Plan",
-        "description": "Care Plan logical model",
-        "groupingId": "logicalmodels"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be-patient.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/be-patient"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "BE Patient profile",
-        "description": "Core Belgian Patient profile",
-        "groupingId": "core"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "valueset-be-civilstate.html"
+            "valueUri": "ValueSet-be-civilstate.html"
           }
         ],
         "reference": {
@@ -347,7 +742,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be-civilstate.html"
+            "valueUri": "CodeSystem-be-civilstate.html"
           }
         ],
         "reference": {
@@ -364,92 +759,11 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be-careplan.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/be-careplan"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "Care Plan profile",
-        "groupingId": "communication"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be-careteam.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/be-careteam"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "Care Team profile",
-        "groupingId": "communication"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:primitive-type"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "string320.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/string320"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "String 320",
-        "description": "String with up to 320 characters",
-        "groupingId": "core"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CapabilityStatement"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be-communicationclient.html"
-          }
-        ],
-        "reference": {
-          "reference": "CapabilityStatement/be-communicationclient"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "Communication Apps",
-        "groupingId": "core"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be-hcparty.html"
+            "valueUri": "CodeSystem-be-hcparty.html"
           }
         ],
         "reference": {
@@ -470,7 +784,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be.comm1.html"
+            "valueUri": "Communication-be.comm1.html"
           }
         ],
         "reference": {
@@ -488,11 +802,53 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-pia.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/pia"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Patient Pia",
+        "description": "Patient Pia",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-dragon.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/dragon"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Dr. Dragon",
+        "description": "Dr. Dragon",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Communication"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be.comm2.1.html"
+            "valueUri": "Communication-be.comm2.1.html"
           }
         ],
         "reference": {
@@ -514,7 +870,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be.comm2.2.html"
+            "valueUri": "Communication-be.comm2.2.html"
           }
         ],
         "reference": {
@@ -536,7 +892,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be.comm2.3.html"
+            "valueUri": "Communication-be.comm2.3.html"
           }
         ],
         "reference": {
@@ -558,7 +914,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be.comm3.1.html"
+            "valueUri": "Communication-be.comm3.1.html"
           }
         ],
         "reference": {
@@ -580,7 +936,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be.comm3.2.html"
+            "valueUri": "Communication-be.comm3.2.html"
           }
         ],
         "reference": {
@@ -602,7 +958,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be.comm4.1.html"
+            "valueUri": "Communication-be.comm4.1.html"
           }
         ],
         "reference": {
@@ -624,7 +980,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be.comm4.2.html"
+            "valueUri": "Communication-be.comm4.2.html"
           }
         ],
         "reference": {
@@ -646,7 +1002,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be.comm5.1.html"
+            "valueUri": "Communication-be.comm5.1.html"
           }
         ],
         "reference": {
@@ -668,7 +1024,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be.comm5.2.html"
+            "valueUri": "Communication-be.comm5.2.html"
           }
         ],
         "reference": {
@@ -690,7 +1046,7 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "be.comm6.html"
+            "valueUri": "Communication-be.comm6.html"
           }
         ],
         "reference": {
@@ -708,23 +1064,207 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CareTeam"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CareTeam-dzop-team-0002.html"
+          }
+        ],
+        "reference": {
+          "reference": "CareTeam/dzop-team-0002"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Care Team Pia",
+        "description": "The Care Team responsible for Pia's care",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam",
+        "groupingId": "examples"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-pia-diabetes.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/pia-diabetes"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Condition - Pia diabetes",
+        "description": "Patient Pia has diabetes",
+        "groupingId": "examples"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-pia-loneliness.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/pia-loneliness"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Condition - Pia loneliness",
+        "description": "Patient Pia feels lonely",
+        "groupingId": "examples"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-pia-postop.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/pia-postop"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Condition - Pia's surgery recovery",
+        "description": "Patient Pia had a surgery and needs to recover",
+        "groupingId": "examples"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-pia-depression.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/pia-depression"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Condition - Pia depression",
+        "description": "Patient Pia has a depression",
+        "groupingId": "examples"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "peter.html"
+            "valueUri": "Patient-peter.html"
           }
         ],
         "reference": {
           "reference": "Patient/peter"
         },
-        "fhirVersion": [
-          "4.0.1"
+        "name": "Example Patient - peter",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-language.html"
+          }
         ],
-        "name": "Peter",
-        "description": "Peter",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
-        "groupingId": "examples"
+        "reference": {
+          "reference": "StructureDefinition/language"
+        },
+        "name": "Human Language of the item",
+        "description": "The Human Language of the item."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-patient-birthPlace.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/patient-birthPlace"
+        },
+        "name": "Birth Place",
+        "description": "The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-patient-birthTime.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/patient-birthTime"
+        },
+        "name": "Birth Time",
+        "description": "The time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-patient-nationality.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/patient-nationality"
+        },
+        "name": "nationality",
+        "description": "The nationality of the patient."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-be-medicationtreatment.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-medicationtreatment"
+        }
       }
     ],
     "page": {
@@ -814,67 +1354,15 @@
       },
       {
         "code": "path-pages",
-        "value": "input/pagecontent"
+        "value": "template/config"
       },
       {
         "code": "path-pages",
         "value": "input/images"
       },
       {
-        "code": "path-qa",
-        "value": "temp/qa"
-      },
-      {
-        "code": "path-temp",
-        "value": "temp/pages"
-      },
-      {
-        "code": "path-output",
-        "value": "output"
-      },
-      {
         "code": "path-tx-cache",
         "value": "input-cache/txcache"
-      },
-      {
-        "code": "path-suppressed-warnings",
-        "value": "input/ignoreWarnings.txt"
-      },
-      {
-        "code": "template-html",
-        "value": "template-page.html"
-      },
-      {
-        "code": "template-md",
-        "value": "template-page-md.html"
-      },
-      {
-        "code": "apply-contact",
-        "value": "true"
-      },
-      {
-        "code": "apply-context",
-        "value": "true"
-      },
-      {
-        "code": "apply-copyright",
-        "value": "true"
-      },
-      {
-        "code": "apply-jurisdiction",
-        "value": "true"
-      },
-      {
-        "code": "apply-license",
-        "value": "true"
-      },
-      {
-        "code": "apply-publisher",
-        "value": "true"
-      },
-      {
-        "code": "apply-version",
-        "value": "true"
       }
     ]
   }

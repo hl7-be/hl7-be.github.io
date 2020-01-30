@@ -1,0 +1,329 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/CapabilityStatement/be-communicationserver> a fhir:CapabilityStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-communicationserver"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BECommunicationService</h2><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"DELETE a resource (delete interaction)\">Delete</b></th></tr><tr><td>Communication</td><td><a href=\"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication\">https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication</a></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td></tr></table></div>"
+  ];
+  fhir:CapabilityStatement.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CapabilityStatement/be-communicationserver"];
+  fhir:CapabilityStatement.version [ fhir:value "0.1.0"];
+  fhir:CapabilityStatement.name [ fhir:value "BECommunicationService"];
+  fhir:CapabilityStatement.title [ fhir:value "Belgium Communication Service"];
+  fhir:CapabilityStatement.status [ fhir:value "draft"];
+  fhir:CapabilityStatement.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CapabilityStatement.date [ fhir:value "2019-08-27T01:00:00+02:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.publisher [ fhir:value "HL7 Belgium"];
+  fhir:CapabilityStatement.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/fiwg" ]
+     ]
+  ];
+  fhir:CapabilityStatement.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Belgium" ]
+  ];
+  fhir:CapabilityStatement.kind [ fhir:value "requirements"];
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "3.5.0"];
+  fhir:CapabilityStatement.format [
+     fhir:value "application/fhir+xml";
+     fhir:index 0
+  ], [
+     fhir:value "application/fhir+json";
+     fhir:index 1
+  ];
+  fhir:CapabilityStatement.rest [
+     fhir:index 0;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "server" ];
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+         fhir:Extension.valueCode [ fhir:value "SHALL" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Communication" ];
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "The Communication capability" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Allow retrieval of communication" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Allow retrieval of historic versions of communication" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Allow deletion" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Allow posting communications" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Allow updating communications" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.updateCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_content" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-_content";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-_content>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "number" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search on the entire content of the resource" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_filter" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-_filter";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-_filter>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "This is the formal declaration for the _filter parameter, documented at [http://hl7.org/fhir/search_filter.html](http://hl7.org/fhir/search_filter.html)" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-_id";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-_id>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Logical id of this artifact" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-_lastUpdated";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-_lastUpdated>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "quantity" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "When the resource version last changed" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_profile" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-_profile";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-_profile>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Profiles this resource claims to conform to" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_query" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-_query";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-_query>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A custom search profile that describes a specific defined query operation" ]
+       ], [
+         fhir:index 6;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_security" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-_security";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-_security>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Security Labels applied to this resource" ]
+       ], [
+         fhir:index 7;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_source" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-_source";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-_source>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Identifies where the resource comes from" ]
+       ], [
+         fhir:index 8;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_tag" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-_tag";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-_tag>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Tags applied to this resource" ]
+       ], [
+         fhir:index 9;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_text" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-_text";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-_text>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "number" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search on the narrative of the resource" ]
+       ], [
+         fhir:index 10;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "based-on" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-based-on";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-based-on>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Request fulfilled by this communication" ]
+       ], [
+         fhir:index 11;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "category" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-category";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-category>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Message category" ]
+       ], [
+         fhir:index 12;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "encounter" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-encounter";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-encounter>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Encounter created as part of" ]
+       ], [
+         fhir:index 13;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-identifier";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-identifier>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Unique identifier" ]
+       ], [
+         fhir:index 14;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "instantiates-canonical" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-instantiates-canonical";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-instantiates-canonical>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Instantiates FHIR protocol or definition" ]
+       ], [
+         fhir:index 15;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "instantiates-uri" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-instantiates-uri";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-instantiates-uri>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Instantiates external protocol or definition" ]
+       ], [
+         fhir:index 16;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "medium" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-medium";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-medium>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A channel of communication" ]
+       ], [
+         fhir:index 17;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "part-of" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-part-of";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-part-of>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Part of this action" ]
+       ], [
+         fhir:index 18;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-patient";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-patient>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Focus of message" ]
+       ], [
+         fhir:index 19;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "received" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-received";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-received>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "quantity" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "When received" ]
+       ], [
+         fhir:index 20;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "recipient" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-recipient";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-recipient>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Message recipient" ]
+       ], [
+         fhir:index 21;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "sender" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-sender";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-sender>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Message sender" ]
+       ], [
+         fhir:index 22;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "sent" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-sent";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-sent>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "quantity" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "When sent" ]
+       ], [
+         fhir:index 23;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-status";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-status>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "preparation | in-progress | not-done | suspended | aborted | completed | entered-in-error" ]
+       ], [
+         fhir:index 24;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "subject" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/SearchParameter/Communication-subject";
+           fhir:link <http://hl7.org/fhir/SearchParameter/Communication-subject>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Focus of message" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/CapabilityStatement/be-communicationserver.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
