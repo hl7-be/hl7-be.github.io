@@ -9,7 +9,7 @@
   "language": "fr-BE",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm2.2</p><p><b>meta</b>: </p><p><b>language</b>: fr-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000003</p><p><b>partOf</b>: </p><ul><li><a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: be.comm2.1; language: nl-BE; d0000000-0000-0000-0000-000000000002; status: completed; <span title=\"Codes: \">notification</span>; sent: 11-Nov-2019 08:01:00</a></li><li>2</li></ul><p><b>status</b>: completed</p><p><b>category</b>: notification <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href=\"{{[type]}}-{{[id]}}.html\">peter. Generated Summary: id: peter; Social Beneficiary Identifier = 79121137740 (OFFICIAL); active; Peter Patient (OFFICIAL); gender: male; birthDate: 1979-12-11; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}\">Divorced</span></a></p><p><b>sent</b>: 11-Nov-2019 08:15:01</p><p><b>recipient</b>: <a href=\"CareTeam/careteam\">Care Team</a></p><p><b>sender</b>: <a href=\"Practitioner/natalie\">Natalie</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>Bonjour</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr-BE\" lang=\"fr-BE\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm2.2</p><p><b>meta</b>: </p><p><b>language</b>: fr-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000003</p><p><b>partOf</b>: </p><ul><li><a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: be.comm2.1; language: nl-BE; d0000000-0000-0000-0000-000000000002; status: completed; <span title=\"Codes: \">notification</span>; sent: 11-Nov-2019 08:01:00</a></li><li>2</li></ul><p><b>status</b>: completed</p><p><b>category</b>: notification <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href=\"{{[type]}}-{{[id]}}.html\">pia. Generated Summary: id: pia; Pia ; gender: female</a></p><p><b>sent</b>: 11-Nov-2019 08:15:01</p><p><b>recipient</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Care Team. Generated Summary: id: dzop-team-0002-v1; DZOP-Pia-2020001; status: active; <span title=\"Codes: {http://loinc.org LA28866-4}\">Home &amp; Community Based Services (HCBS)-focused care team</span>; name: Pia's 2020 Care Team for post-op care; period: 02-Nov-2019 00:00:00 --&gt; 01-Nov-2020 00:00:00</a></p><p><b>sender</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Natalie. Generated Summary: id: nathalie; Nathalie </a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>Bonjour</td></tr></table></div>"
   },
   "identifier": [
     {
@@ -36,18 +36,18 @@
     }
   ],
   "subject": {
-    "reference": "Patient/peter",
-    "display": "peter"
+    "reference": "Patient/pia",
+    "display": "pia"
   },
   "sent": "2019-11-11T08:15:01+01:00",
   "recipient": [
     {
-      "reference": "CareTeam/careteam",
+      "reference": "CareTeam/dzop-team-0002-v1",
       "display": "Care Team"
     }
   ],
   "sender": {
-    "reference": "Practitioner/natalie",
+    "reference": "Practitioner/nathalie",
     "display": "Natalie"
   },
   "payload": [

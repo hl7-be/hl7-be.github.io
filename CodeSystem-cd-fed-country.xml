@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cd-fed-country"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>FedCountry</h2><div><p>FHIR code system definition for country codes as they are described on https://www.ehealth.fgov.be/standards/kmehr/en/tables/fedict-country-codes</p>
+</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country defines many codes, but they are not represented here</p></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country"/>
+  <version value="0.1.0"/>
+  <name value="FedCountry"/>
+  <title value="FedCountry"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-02-25T01:28:53+01:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="FHIR code system definition for country codes as they are described on https://www.ehealth.fgov.be/standards/kmehr/en/tables/fedict-country-codes"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <text value="Belgium"/>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="not-present"/>
+</CodeSystem>

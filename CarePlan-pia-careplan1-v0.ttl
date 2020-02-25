@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/CarePlan/pia-careplan1-v0> a fhir:CarePlan;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "pia-careplan1-v0"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "0" ];
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: pia-careplan1-v0</p><p><b>meta</b>: </p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>category</b>: homecare <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'homecare' = 'homecare)</span></p><p><b>title</b>: Careplan Pia 2019-2020</p><p><b>description</b>: Care plan for Pia to manage diabetes.</p><p><b>subject</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: pia; Pia ; gender: female</a></p><p><b>period</b>: 02-Nov-2019 00:00:00 --&gt; (ongoing)</p><p><b>created</b>: 02-Nov-2019 10:15:15</p><p><b>author</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: dragon; Dragon </a></p><p><b>contributor</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: dragon; Dragon </a></p><p><b>careTeam</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: dzop-team-0002-v1; DZOP-Pia-2020001; status: active; <span title=\"Codes: {http://loinc.org LA28866-4}\">Home &amp; Community Based Services (HCBS)-focused care team</span>; name: Pia's 2020 Care Team for post-op care; period: 02-Nov-2019 00:00:00 --&gt; 01-Nov-2020 00:00:00</a></p><p><b>addresses</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: pia-diabetes; <span title=\"Codes: \">Diabetes</span></a></p><p><b>supportingInfo</b>: </p><h3>Activities</h3><table class=\"grid\"><tr><td>-</td><td><b>Progress</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td>Planned</td><td>Appointment with nurse</td></tr></table></div>"
+  ];
+  fhir:CarePlan.status [ fhir:value "draft"];
+  fhir:CarePlan.intent [ fhir:value "proposal"];
+  fhir:CarePlan.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "homecare" ]
+     ]
+  ];
+  fhir:CarePlan.title [ fhir:value "Careplan Pia 2019-2020"];
+  fhir:CarePlan.description [ fhir:value "Care plan for Pia to manage diabetes."];
+  fhir:CarePlan.subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/pia>;
+     fhir:Reference.reference [ fhir:value "Patient/pia" ]
+  ];
+  fhir:CarePlan.period [
+     fhir:Period.start [ fhir:value "2019-11-02"^^xsd:date ]
+  ];
+  fhir:CarePlan.created [ fhir:value "2019-11-02T09:15:15Z"^^xsd:dateTime];
+  fhir:CarePlan.author [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/dragon>;
+     fhir:Reference.reference [ fhir:value "Practitioner/dragon" ]
+  ];
+  fhir:CarePlan.contributor [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/dragon>;
+     fhir:Reference.reference [ fhir:value "Practitioner/dragon" ]
+  ];
+  fhir:CarePlan.careTeam [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/CareTeam/dzop-team-0002-v1>;
+     fhir:Reference.reference [ fhir:value "CareTeam/dzop-team-0002-v1" ]
+  ];
+  fhir:CarePlan.addresses [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Condition/pia-diabetes>;
+     fhir:Reference.reference [ fhir:value "Condition/pia-diabetes" ]
+  ];
+  fhir:CarePlan.supportingInfo [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.code [ fhir:value "74196-7" ]
+         ]
+       ];
+       fhir:Identifier.system [ fhir:value "http://belrai.be" ]
+     ]
+  ];
+  fhir:CarePlan.activity [
+     fhir:index 0;
+     fhir:CarePlan.activity.progress [
+       fhir:index 0;
+       fhir:Annotation.text [ fhir:value "Planned" ]
+     ];
+     fhir:CarePlan.activity.reference [
+       fhir:Reference.display [ fhir:value "Appointment with nurse" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/CarePlan/pia-careplan1-v0.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

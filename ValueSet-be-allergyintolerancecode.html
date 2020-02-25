@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.BE.CORE\ - FHIR v4.0.1</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+  
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
+    <script src="fhir-table-scripts.js"></script>
+  </head>
+  <body>
+
+
+    <style type="text/css">h2{--heading-prefix:"4.1.39"}
+    h3,h4,h5,h6{--heading-prefix:"4.1.39"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+                <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://hl7-be.github.io">
+            <img height="50" alt="Visit the website" src="assets/images/be-flag.png"/>
+          </a>
+        </div>
+        <div id="fhir-nav">
+          <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+        <div id="hl7-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Belgium Base IG</span><br/>0.1.0 - </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+    
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+    
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="howto.html">How to use this Publication</a>
+			</li>
+			<li>
+				<a href="artifacttypes.html">Artifact types</a>
+			</li>
+			<li>
+				<a href="privacy.html">Privacy considerations</a>
+			</li>
+			<li>
+				<a href="security.html">Security considerations</a>
+			</li>
+			<li>
+				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec<img src="external.png" style="text-align: baseline"/>
+				</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="context.html">Context and intro</a>
+			</li>
+			<li>
+				<a href="usecases.html">Use Cases</a>
+			</li>
+			<li>
+				<a href="logical-models.html">Logical Models</a>
+			</li>
+<!--
+			<li>
+				<a target="_blank" href="#">Services &amp; Transactions</a>
+			</li>
+-->
+		</ul>
+
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="terminology.html">Terminology Resources</a>
+			</li>
+		</ul>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Project-specific
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#">Core Profiles</a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="#">DZOP</a>
+			</li>
+            <li>
+				<a href="#">EFRO</a>
+			</li>
+		</ul>
+	</li>
+-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a href="testdata.html">Test Data<img src="external.png" style="text-align: baseline"/></a></li>
+			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
+			<li><a href="testservers.html">Test Servers<img src="external.png" style="text-align: baseline"/></a></li>
+			<li><a href="downloads.html">Downloads</a></li>
+		</ul>
+	</li>
+</ul>      
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->  
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specification.html'><b>Specification</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b></b></li>
+        </ul>  
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+    
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR Belgium Base IG - Local Development build (v0.1.0). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <a name="root"> </a>
+  <h2 id="root"></h2>
+  <p>
+    <b>Summary</b>
+  </p>
+  <table class="grid">
+ <tbody><tr><td>Defining URL:</td><td>https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode</td></tr>
+ <tr><td>Version:</td><td>0.1.0</td></tr>
+ <tr><td>Name:</td><td>BeAllergyIntoleranceCode</td></tr>
+ <tr><td>Status:</td><td>Active</td></tr>
+ <tr><td>Definition:</td><td><p>Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort.</p>
+</td></tr>
+ <tr><td>Publisher:</td><td>HL7 Belgium</td></tr>
+ <tr><td>Source Resource:</td><td><a href="ValueSet-be-allergyintolerancecode.xml.html">XML</a> / <a href="ValueSet-be-allergyintolerancecode.json.html">JSON</a> / <a href="ValueSet-be-allergyintolerancecode.ttl.html">Turtle</a></td></tr>
+</tbody></table>
+
+  
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-be-allergyintolerance.html">BeAllergyIntolerance</a></li>
+</ul>
+
+
+  
+  
+
+  <a name="definition"> </a>
+  <h3 id="definition">Content Logical Definition</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2>BeAllergyIntoleranceCode</h2><div><p>Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort.</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-be-causativeagent.html">https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent</a></li><li>Import all the codes that are contained in <a href="ValueSet-be-noallergy.html">https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy</a></li></ul></div>
+  
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 148 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent version 0.1.0, https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy version 0.1.0, SNOMED CT International edition 31-jul 2019</p><p>All codes from system <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html"><code>http://snomed.info/sct</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-52454007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52454007">52454007</a></td><td>albumine</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-391737006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=391737006">391737006</a></td><td>huile d'amande</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-12503006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12503006">12503006</a></td><td>aluminium</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-767108006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=767108006">767108006</a></td><td>aluminium et composés d'aluminium</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-264287008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264287008">264287008</a></td><td>squame animale</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-711062002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=711062002">711062002</a></td><td>protéine animale et substance épidermique</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735215001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735215001">735215001</a></td><td>pomme</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-226491003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226491003">226491003</a></td><td>jus de pomme</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-11526002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11526002">11526002</a></td><td>aspartame</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-386936005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386936005">386936005</a></td><td>acide azélaïque</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-256307007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256307007">256307007</a></td><td>banane</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-288328004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=288328004">288328004</a></td><td>venin d'abeille</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-91598004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91598004">91598004</a></td><td>peroxyde de benzoyle</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-255640000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255640000">255640000</a></td><td>biocide</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-412061001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412061001">412061001</a></td><td>bleuets</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-261243003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261243003">261243003</a></td><td>laiton</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-726764009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=726764009">726764009</a></td><td>fève</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-9021002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9021002">9021002</a></td><td>carbaryl</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-256319004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256319004">256319004</a></td><td>carotte</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-260152009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260152009">260152009</a></td><td>squame de chat</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-256326004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256326004">256326004</a></td><td>céléri</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-23182003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=23182003">23182003</a></td><td>céréale</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-102264005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102264005">102264005</a></td><td>fromage</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735248001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735248001">735248001</a></td><td>cerise</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-102262009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102262009">102262009</a></td><td>chocolat</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-227388008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227388008">227388008</a></td><td>canelle</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-59351004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59351004">59351004</a></td><td>citrate</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-102259006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102259006">102259006</a></td><td>agrume</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-11894001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11894001">11894001</a></td><td>toxine du Clostridium botulinum</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-80237000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=80237000">80237000</a></td><td>beurre de cacao</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-66925006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=66925006">66925006</a></td><td>cuivre</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-412357001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412357001">412357001</a></td><td>maïs</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-289122001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=289122001">289122001</a></td><td>cosmétique</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-89889006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89889006">89889006</a></td><td>fibre de coton</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-260153004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260153004">260153004</a></td><td>squame de vache</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-264295007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264295007">264295007</a></td><td>protéine de lait de vache</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-289949002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=289949002">289949002</a></td><td>pollen de cyprès</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-226760005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226760005">226760005</a></td><td>produits laitiers</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-396031000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=396031000">396031000</a></td><td>diméticone</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-387293003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=387293003">387293003</a></td><td>dithranol</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-260154005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260154005">260154005</a></td><td>squame de chien</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-61789006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61789006">61789006</a></td><td>teinture</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-762766007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=762766007">762766007</a></td><td>substance comestible</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-303300008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=303300008">303300008</a></td><td>protéine d'œuf</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-256443002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256443002">256443002</a></td><td>blanc d'œuf</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-102263004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102263004">102263004</a></td><td>œufs comestibles</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-115589000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=115589000">115589000</a></td><td>éthanolamine</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-12510000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12510000">12510000</a></td><td>huile d'eucalyptus</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-227425007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227425007">227425007</a></td><td>figue</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735971005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735971005">735971005</a></td><td>poisson</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-406774009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406774009">406774009</a></td><td>acides gras oméga 3 issus du poisson</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735341005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735341005">735341005</a></td><td>huile de poisson</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-59533004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59533004">59533004</a></td><td>additif alimentaire</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-80259003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=80259003">80259003</a></td><td>agent aromatisant d'un aliment</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-72511004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=72511004">72511004</a></td><td>fruit</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735030001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735030001">735030001</a></td><td>ail</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-57126000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=57126000">57126000</a></td><td>colle</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-430503006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=430503006">430503006</a></td><td>glutamate</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-89811004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89811004">89811004</a></td><td>gluten</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-2309006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2309006">2309006</a></td><td>or</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-412145001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412145001">412145001</a></td><td>teinture pour cheveux</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-227374009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227374009">227374009</a></td><td>herbes et épices</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-256417003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256417003">256417003</a></td><td>squame de cheval</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-128488006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128488006">128488006</a></td><td>poussière de maison</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-710942001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=710942001">710942001</a></td><td>protéine d'insecte</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-280939008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=280939008">280939008</a></td><td>venin d'insecte</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-3829006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=3829006">3829006</a></td><td>fer</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-260176001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260176001">260176001</a></td><td>kiwi</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-47703008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=47703008">47703008</a></td><td>lactose</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-42416001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=42416001">42416001</a></td><td>lanoline</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-736162008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=736162008">736162008</a></td><td>homard</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-719108000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=719108000">719108000</a></td><td>farine de lupin</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-710179004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=710179004">710179004</a></td><td>graine de lupin</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735977009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735977009">735977009</a></td><td>crustacés</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-28647000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28647000">28647000</a></td><td>viande</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-260177005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260177005">260177005</a></td><td>melon</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-425620007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=425620007">425620007</a></td><td>métal</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-2799001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2799001">2799001</a></td><td>chlorure de méthylbenzéthonium</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-770326002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=770326002">770326002</a></td><td>mollusque</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-256419000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256419000">256419000</a></td><td>épithélium de souris</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-260156007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260156007">260156007</a></td><td>protéines d’urine de souris</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735045008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735045008">735045008</a></td><td>champignon</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-51905005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=51905005">51905005</a></td><td>herbe de moutarde</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-762953003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=762953003">762953003</a></td><td>assaisonnement à la moutarde</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-33396006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=33396006">33396006</a></td><td>nickel</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-276310004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=276310004">276310004</a></td><td>poil animal</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-13577000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=13577000">13577000</a></td><td>noix</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-230034002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230034002">230034002</a></td><td>noix et graines</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-418504009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418504009">418504009</a></td><td>avoine</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735979007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735979007">735979007</a></td><td>poulpe</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-260126003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260126003">260126003</a></td><td>pollen d’olivier</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735047000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735047000">735047000</a></td><td>oignon</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-116549003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=116549003">116549003</a></td><td>pesticide organochloré</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-119417004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=119417004">119417004</a></td><td>insecticide organophosphate</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-736031006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=736031006">736031006</a></td><td>huitre</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-255667006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255667006">255667006</a></td><td>paraffine</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735049002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735049002">735049002</a></td><td>pêche</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-762952008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=762952008">762952008</a></td><td>cacahuète</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-410853002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410853002">410853002</a></td><td>perfluorochimique</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-418785009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418785009">418785009</a></td><td>parfum</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-59545008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59545008">59545008</a></td><td>pesticide</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-256248008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256248008">256248008</a></td><td>matériel végétal</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-387398009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=387398009">387398009</a></td><td>résine de Podophyllum</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-256259004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256259004">256259004</a></td><td>pollen</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-83619009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=83619009">83619009</a></td><td>alcool polyvinylique</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-226934003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226934003">226934003</a></td><td>porc</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735053000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735053000">735053000</a></td><td>pomme de terre</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-28230009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28230009">28230009</a></td><td>volaille</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-227313005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227313005">227313005</a></td><td>légumes secs</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-311846002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=311846002">311846002</a></td><td>insecticide pyréthroïde</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-412153009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412153009">412153009</a></td><td>squame de lapin</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-256303006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256303006">256303006</a></td><td>pollen d'ambroisie</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-227444000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227444000">227444000</a></td><td>framboise</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-226915003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=226915003">226915003</a></td><td>viande rouge</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-67324005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=67324005">67324005</a></td><td>riz</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-43230003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43230003">43230003</a></td><td>caoutchouc</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-412068007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412068007">412068007</a></td><td>seigle</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-264337003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264337003">264337003</a></td><td>graines</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-89707004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89707004">89707004</a></td><td>huile de sésame</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-260167008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260167008">260167008</a></td><td>graine de sésame</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735029006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735029006">735029006</a></td><td>coquillages et crustacés</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-278840001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=278840001">278840001</a></td><td>crevette</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-7791007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=7791007">7791007</a></td><td>protéine de soya</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-256355007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256355007">256355007</a></td><td>graine de soja</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-735006003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=735006003">735006003</a></td><td>calamar</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-102261002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102261002">102261002</a></td><td>fraise</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-105590001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=105590001">105590001</a></td><td>substance</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-373270004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373270004">373270004</a></td><td>pénicilline antibactérienne</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-767406000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=767406000">767406000</a></td><td>sulfite et dérivé de sulfite</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-289964002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=289964002">289964002</a></td><td>matériel chirurgical</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-734881000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=734881000">734881000</a></td><td>tomate</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-256305004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256305004">256305004</a></td><td>résine d'arbre</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-227144008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=227144008">227144008</a></td><td>thon</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-260118006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260118006">260118006</a></td><td>pollen de pariétaire</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-256352005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256352005">256352005</a></td><td>noix simple</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-419420009"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419420009">419420009</a></td><td>pastèque</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-419604006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419604006">419604006</a></td><td>pollen de mauvaise herbe</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-412071004"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412071004">412071004</a></td><td>blé</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-14402002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=14402002">14402002</a></td><td>bois</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-772245002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=772245002">772245002</a></td><td>alcool de laine</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-418266005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418266005">418266005</a></td><td>paraffine jaune</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-716186003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=716186003">716186003</a></td><td>pas d'allergie connue</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-716220001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=716220001">716220001</a></td><td>pas d'allergie aux animaux connue</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-409137002"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=409137002">409137002</a></td><td>pas d'allergie aux drogues et/ou médicaments connue</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-428607008"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=428607008">428607008</a></td><td>pas d'allergie environnementale connue</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-429625007"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=429625007">429625007</a></td><td>pas d'allergie alimentaire connue</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-428197003"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=428197003">428197003</a></td><td>pas d'allergie aux insectes connue</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-716184000"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=716184000">716184000</a></td><td>pas d'allergie au latex connue</td><td/></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>Source</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+  
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020 <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg">HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 25, 2020 01:28+0100">2020-02-25</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

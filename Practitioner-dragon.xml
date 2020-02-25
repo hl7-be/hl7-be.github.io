@@ -2,8 +2,11 @@
 
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="dragon"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+  </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dragon</p><p><b>name</b>: Dragon </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dragon</p><p><b>meta</b>: </p><p><b>name</b>: Dragon </p></div>
   </text>
   <name>
     <given value="Dragon"/>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="dina"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dina</p><p><b>patient</b>: <a href="{{[type]}}-{{[id]}}.html">pia. Generated Summary: id: pia; Pia ; gender: female</a></p><p><b>name</b>: Dina </p></div>
+  </text>
+  <patient>
+    <reference value="Patient/pia"/>
+    <display value="pia"/>
+  </patient>
+  <name>
+    <given value="Dina"/>
+  </name>
+</RelatedPerson>

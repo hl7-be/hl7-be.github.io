@@ -1,0 +1,68 @@
+{
+  "resourceType": "CareTeam",
+  "id": "dzop-team-0002-doctors",
+  "meta": {
+    "versionId": "3",
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dzop-team-0002-doctors</p><p><b>meta</b>: </p><p><b>identifier</b>: DZOP-Pia-2020001</p><p><b>status</b>: active</p><p><b>category</b>: Home &amp; Community Based Services (HCBS)-focused care team <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LA28866-4' = 'Home &amp; Community Based Services (HCBS)-focused care team', given as 'Home &amp; Community Based Services (HCBS)-focused care team'})</span></p><p><b>name</b>: Pia's 2020 Care Team for post-op care - doctors ad-hoc team</p><p><b>subject</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Pia. Generated Summary: id: pia; Pia ; gender: female</a></p><p><b>period</b>: ?? --&gt; 01-Jan-2013 00:00:00</p><blockquote><p><b>participant</b></p><p><b>role</b>: care-coordinator <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>member</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Dr Dragon. Generated Summary: id: dragon; Dragon </a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: specialist <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>member</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Dr David. Generated Summary: id: david; David </a></p></blockquote><p><b>managingOrganization</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: dzop; name: DZOP</a></p></div>"
+  },
+  "identifier": [
+    {
+      "value": "DZOP-Pia-2020001"
+    }
+  ],
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "LA28866-4",
+          "display": "Home & Community Based Services (HCBS)-focused care team"
+        }
+      ]
+    }
+  ],
+  "name": "Pia's 2020 Care Team for post-op care - doctors ad-hoc team",
+  "subject": {
+    "reference": "Patient/pia",
+    "display": "Pia"
+  },
+  "period": {
+    "end": "2013-01-01"
+  },
+  "participant": [
+    {
+      "role": [
+        {
+          "text": "care-coordinator"
+        }
+      ],
+      "member": {
+        "reference": "Practitioner/dragon",
+        "display": "Dr Dragon"
+      }
+    },
+    {
+      "role": [
+        {
+          "text": "specialist"
+        }
+      ],
+      "member": {
+        "reference": "Practitioner/david",
+        "display": "Dr David"
+      }
+    }
+  ],
+  "managingOrganization": [
+    {
+      "reference": "Organization/dzop"
+    }
+  ]
+}

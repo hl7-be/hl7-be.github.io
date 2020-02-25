@@ -1,0 +1,17 @@
+{
+  "resourceType": "Organization",
+  "id": "diensten-gent",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: diensten-gent</p><p><b>meta</b>: </p><p><b>name</b>: Diensten - Gent</p><p><b>alias</b>: Diensten - Stad Gent</p></div>"
+  },
+  "name": "Diensten - Gent",
+  "alias": [
+    "Diensten - Stad Gent"
+  ]
+}

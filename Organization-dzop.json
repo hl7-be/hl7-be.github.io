@@ -1,0 +1,14 @@
+{
+  "resourceType": "Organization",
+  "id": "dzop",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dzop</p><p><b>meta</b>: </p><p><b>name</b>: DZOP</p></div>"
+  },
+  "name": "DZOP"
+}

@@ -1,0 +1,33 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "nurse-gent",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: nurse-gent</p><p><b>meta</b>: </p><p><b>identifier</b>: nurse-dienstencentrum-gent</p><p><b>active</b>: true</p><p><b>organization</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: diensten-gent; name: Diensten - Gent; alias: Diensten - Stad Gent</a></p><p><b>code</b>: Nurse <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'nurse' = 'nurse', given as 'Nurse'})</span></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://www.dzop.be/archive/roles",
+      "value": "nurse-dienstencentrum-gent"
+    }
+  ],
+  "active": true,
+  "organization": {
+    "reference": "Organization/diensten-gent"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "code": "nurse",
+          "display": "Nurse"
+        }
+      ]
+    }
+  ]
+}

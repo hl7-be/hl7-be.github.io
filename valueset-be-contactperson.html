@@ -7,9 +7,10 @@
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
-
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
     <link href="fhir.css" rel="stylesheet"/>
-     
+
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
@@ -18,12 +19,7 @@
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-    <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/hl7.css" rel="stylesheet"/>
-    <link href="assets/css/fhir.css" rel="stylesheet"/>
-
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
-
+  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -35,30 +31,30 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
+    <script src="fhir-table-scripts.js"></script>
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"5.16"}
-    h3,h4,h5,h6{--heading-prefix:"5.16"}</style>
+
+    <style type="text/css">h2{--heading-prefix:"4.1.15"}
+    h3,h4,h5,h6{--heading-prefix:"4.1.15"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
-        <div id="hl7-nav">
-          <a id="hl7-logo" no-external="true" href="http://hl7.org">
-            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+                <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://hl7-be.github.io">
+            <img height="50" alt="Visit the website" src="assets/images/be-flag.png"/>
           </a>
         </div>
-        <div id="family-nav">
-          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        <div id="fhir-nav">
+          <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
         </div>
         <div id="hl7-search">
           <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
 
-
-        <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">FHIR Belgium Base IG</span><br/>0.1.0 - CI build</p>
+        <div id="hl7-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Belgium Base IG</span><br/>0.1.0 - </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -87,47 +83,50 @@
 		<a href="toc.html">Table of Contents</a>
 	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="#">How to use this Publication</a>
+				<a href="howto.html">How to use this Publication</a>
 			</li>
 			<li>
-				<a href="#">Copyright</a>
+				<a href="artifacttypes.html">Artifact types</a>
 			</li>
 			<li>
-				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec 
-					<img src="external.png" style="text-align: baseline"/>
+				<a href="privacy.html">Privacy considerations</a>
+			</li>
+			<li>
+				<a href="security.html">Security considerations</a>
+			</li>
+			<li>
+				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec<img src="external.png" style="text-align: baseline"/>
 				</a>
 			</li>
 		</ul>
 	</li>
-<!--
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="downloads.html">Context and intro</a>
+				<a href="context.html">Context and intro</a>
 			</li>
 			<li>
-				<a target="_blank" href="#">Use Cases</a>
+				<a href="usecases.html">Use Cases</a>
 			</li>
 			<li>
-				<a target="_blank" href="#">Logical Models</a>
+				<a href="logical-models.html">Logical Models</a>
 			</li>
+<!--
 			<li>
 				<a target="_blank" href="#">Services &amp; Transactions</a>
 			</li>
-		</ul>
-	</li>
 -->
+		</ul>
+
+	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
@@ -135,17 +134,16 @@
 			</li>
 		</ul>
 	</li>
-<!--
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="#">Terminology Resources</a>
+				<a href="terminology.html">Terminology Resources</a>
 			</li>
 		</ul>
 	</li>
+<!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Project-specific
 			<b class="caret"></b>
@@ -163,37 +161,16 @@
 			</li>
 		</ul>
 	</li>
+-->
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
-			<b class="caret"></b>
-		</a>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
 		<ul class="dropdown-menu">
-			<li>
-				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">Test Data
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">Test Scripts
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">OpenAPI
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">Test Servers
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a href="downloads.html">Downloads</a>
-			</li>
+			<li><a href="testdata.html">Test Data<img src="external.png" style="text-align: baseline"/></a></li>
+			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
+			<li><a href="testservers.html">Test Servers<img src="external.png" style="text-align: baseline"/></a></li>
+			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
--->
 </ul>      
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -205,7 +182,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>ValueSet - Contact Person</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specification.html'><b>Specification</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>ValueSet - Contact Person</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -218,17 +195,14 @@
   <!--ReleaseHeader--><p id="publish-box">FHIR Belgium Base IG - Local Development build (v0.1.0). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <a name="root"> </a>
   <h2 id="root">ValueSet - Contact Person</h2>
-  
-  
   <p>
     <b>Summary</b>
   </p>
-
   <table class="grid">
  <tbody><tr><td>Defining URL:</td><td>https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson</td></tr>
  <tr><td>Version:</td><td>0.1.0</td></tr>
  <tr><td>Name:</td><td>BeContactPerson</td></tr>
- <tr><td>Status:</td><td>draft</td></tr>
+ <tr><td>Status:</td><td>Active</td></tr>
  <tr><td>Definition:</td><td><p>Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.</p>
 </td></tr>
  <tr><td>Publisher:</td><td>HL7 Belgium</td></tr>
@@ -236,21 +210,28 @@
 </tbody></table>
 
   
+  <p>
+    <b>References</b>
+  </p>
   
 <p>This value set is not used</p>
 
+
+  
+  
 
   <a name="definition"> </a>
   <h3 id="definition">Content Logical Definition</h3>
 
   <div xmlns="http://www.w3.org/1999/xhtml"><h2>BeContactPerson</h2><div><p>Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.</p>
-</div><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from <a href="http://hl7.org/fhir/R4/v2/0131/index.html"><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></a> where concept  is-not-a  <a href="http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-O">O</a></li><li>Include these codes as defined in <a href="CodeSystem-be-contactperson.html"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-father">father</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-mother">mother</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-child">child</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-spouse">spouse</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-husband">husband</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-partner">partner</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-brother">brother</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-sister">sister</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-brotherinlaw">brotherinlaw</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-tutor">tutor</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-notary">notary</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-lawyer">lawyer</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-employer">employer</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-grandparent">grandparent</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-son">son</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-daughter">daughter</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-grandchild">grandchild</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-neighbour">neighbour</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-stepson">stepson</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-stepdaughter">stepdaughter</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-stepfather">stepfather</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-stepmother">stepmother</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-be-contactperson.html#be-contactperson-sisterinlaw">sisterinlaw</a></td><td></td><td></td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td></tr><tr><td>father</td><td>father</td></tr><tr><td>mother</td><td>mother</td></tr><tr><td>child</td><td>child</td></tr><tr><td>spouse</td><td>spouse</td></tr><tr><td>husband</td><td>husband</td></tr><tr><td>partner</td><td>partner</td></tr><tr><td>brother</td><td>brother</td></tr><tr><td>sister</td><td>sister</td></tr><tr><td>brotherinlaw</td><td>brother-in-law</td></tr><tr><td>tutor</td><td>tutor</td></tr><tr><td>notary</td><td>notary</td></tr><tr><td>lawyer</td><td>lawyer</td></tr><tr><td>employer</td><td>employer</td></tr><tr><td>grandparent</td><td>grandparent</td></tr><tr><td>son</td><td>son</td></tr><tr><td>daughter</td><td>daughter</td></tr><tr><td>grandchild</td><td>grandchild</td></tr><tr><td>neighbour</td><td>neighbour</td></tr><tr><td>stepson</td><td>stepson</td></tr><tr><td>stepdaughter</td><td>stepdaughter</td></tr><tr><td>stepfather</td><td>stepfather</td></tr><tr><td>stepmother</td><td>stepmother</td></tr><tr><td>sisterinlaw</td><td>sisterinlaw</td></tr></table></div>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from <a href="http://hl7.org/fhir/R4/v2/0131/index.html"><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></a> where concept  is-not-a  <a href="http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-O">O</a></li><li>Include these codes as defined in <a href="CodeSystem-cd-contact-person.html"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-father">father</a></td><td>father</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-mother">mother</a></td><td>mother</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-child">child</a></td><td>child</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-spouse">spouse</a></td><td>spouse</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-husband">husband</a></td><td>husband</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-partner">partner</a></td><td>partner</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-brother">brother</a></td><td>brother</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-sister">sister</a></td><td>sister</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-brotherinlaw">brotherinlaw</a></td><td>brotherinlaw</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-tutor">tutor</a></td><td>tutor</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-notary">notary</a></td><td>notary</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-lawyer">lawyer</a></td><td>lawyer</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-employer">employer</a></td><td>employer</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-grandparent">grandparent</a></td><td>grandparent</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-son">son</a></td><td>son</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-daughter">daughter</a></td><td>daughter</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-grandchild">grandchild</a></td><td>grandchild</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-neighbour">neighbour</a></td><td>neighbour</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-stepson">stepson</a></td><td>stepson</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-stepdaughter">stepdaughter</a></td><td>stepdaughter</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-stepfather">stepfather</a></td><td>stepfather</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-stepmother">stepmother</a></td><td>stepmother</td><td></td></tr><tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-sisterinlaw">sisterinlaw</a></td><td>sisterinlaw</td><td></td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td></tr><tr><td>father</td><td>father</td></tr><tr><td>mother</td><td>mother</td></tr><tr><td>child</td><td>child</td></tr><tr><td>spouse</td><td>spouse</td></tr><tr><td>husband</td><td>husband</td></tr><tr><td>partner</td><td>partner</td></tr><tr><td>brother</td><td>brother</td></tr><tr><td>sister</td><td>sister</td></tr><tr><td>brotherinlaw</td><td>brother-in-law</td></tr><tr><td>tutor</td><td>tutor</td></tr><tr><td>notary</td><td>notary</td></tr><tr><td>lawyer</td><td>lawyer</td></tr><tr><td>employer</td><td>employer</td></tr><tr><td>grandparent</td><td>grandparent</td></tr><tr><td>son</td><td>son</td></tr><tr><td>daughter</td><td>daughter</td></tr><tr><td>grandchild</td><td>grandchild</td></tr><tr><td>neighbour</td><td>neighbour</td></tr><tr><td>stepson</td><td>stepson</td></tr><tr><td>stepdaughter</td><td>stepdaughter</td></tr><tr><td>stepfather</td><td>stepfather</td></tr><tr><td>stepmother</td><td>stepmother</td></tr><tr><td>sisterinlaw</td><td>sisterinlaw</td></tr></table></div>
   
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 30 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson version 0.1.0, http://terminology.hl7.org/CodeSystem/v2-0131 version 2.9</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v2-0131-C"> </a><a href="http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-C">C</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Emergency Contact</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v2-0131-E"> </a><a href="http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-E">E</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Employer</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v2-0131-F"> </a><a href="http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-F">F</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Federal Agency</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v2-0131-I"> </a><a href="http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-I">I</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Insurance Company</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v2-0131-N"> </a><a href="http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-N">N</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Next-of-Kin</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v2-0131-S"> </a><a href="http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-S">S</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>State Agency</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v2-0131-U"> </a><a href="http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-U">U</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Unknown</td><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-father"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-father">father</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-mother"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-mother">mother</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-child"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-child">child</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-spouse"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-spouse">spouse</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-husband"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-husband">husband</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-partner"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-partner">partner</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-brother"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-brother">brother</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-sister"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-sister">sister</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-brotherinlaw"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-brotherinlaw">brotherinlaw</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-tutor"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-tutor">tutor</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-notary"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-notary">notary</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-lawyer"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-lawyer">lawyer</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-employer"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-employer">employer</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-grandparent"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-grandparent">grandparent</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-son"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-son">son</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-daughter"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-daughter">daughter</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-grandchild"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-grandchild">grandchild</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-neighbour"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-neighbour">neighbour</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-stepson"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-stepson">stepson</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-stepdaughter"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-stepdaughter">stepdaughter</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-stepfather"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-stepfather">stepfather</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-stepmother"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-stepmother">stepmother</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-contactperson-sisterinlaw"> </a><a href="CodeSystem-be-contactperson.html#be-contactperson-sisterinlaw">sisterinlaw</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson</td><td/><td/></tr></table></div>
+  <p><span style="color: maroon; font-weight: bold" title="Publication Tooling Error: Error from server: Unable to provide support for code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person">No Expansion for this valueset (not supported by Publication Tooling)</span></p>
+
 
   <hr/>
   <p>
@@ -297,15 +278,15 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020 <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg">HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 30, 2020 20:40+0100">2020-01-30</span>
+          IG &#169; 2020 <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg">HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 25, 2020 01:28+0100">2020-02-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
-                 | <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change <img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+                 <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img alt="external" style="vertical-align: baseline" src="external.png"/></a>
 
           </span>
         </p>

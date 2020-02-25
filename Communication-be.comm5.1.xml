@@ -7,7 +7,7 @@
   </meta>
   <language value="nl-BE"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm5.1</p><p><b>meta</b>: </p><p><b>language</b>: nl-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000007</p><p><b>status</b>: completed</p><p><b>category</b>: notification <span style="background: LightGoldenRodYellow">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href="{{[type]}}-{{[id]}}.html">peter. Generated Summary: id: peter; Social Beneficiary Identifier = 79121137740 (OFFICIAL); active; Peter Patient (OFFICIAL); gender: male; birthDate: 1979-12-11; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}">Divorced</span></a></p><p><b>sent</b>: 11-Nov-2019 10:00:01</p><p><b>recipient</b>: <a href="Practitioner/david">Dr. David</a></p><p><b>sender</b>: <a href="Practitioner/natalie">Natalie</a></p><blockquote><p><b>payload</b></p><p><b>content</b>: Wound is recovering today</p></blockquote><blockquote><p><b>payload</b></p><p><b>content</b>: </p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl-BE" lang="nl-BE"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm5.1</p><p><b>meta</b>: </p><p><b>language</b>: nl-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000007</p><p><b>status</b>: completed</p><p><b>category</b>: notification <span style="background: LightGoldenRodYellow">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href="{{[type]}}-{{[id]}}.html">pia. Generated Summary: id: pia; Pia ; gender: female</a></p><p><b>sent</b>: 11-Nov-2019 10:00:01</p><p><b>recipient</b>: <a href="{{[type]}}-{{[id]}}.html">Dr. David. Generated Summary: id: david; David </a></p><p><b>sender</b>: <a href="{{[type]}}-{{[id]}}.html">Natalie. Generated Summary: id: nathalie; Nathalie </a></p><blockquote><p><b>payload</b></p><p><b>content</b>: Wound is recovering today</p></blockquote><blockquote><p><b>payload</b></p><p><b>content</b>: </p></blockquote></div>
   </text>
   <identifier>
     <system value="http://www.dzop.be/archive/communication"/>
@@ -20,8 +20,8 @@
     </coding>
   </category>
   <subject>
-    <reference value="Patient/peter"/>
-    <display value="peter"/>
+    <reference value="Patient/pia"/>
+    <display value="pia"/>
   </subject>
   <sent value="2019-11-11T10:00:01+01:00"/>
   <recipient>
@@ -29,7 +29,7 @@
     <display value="Dr. David"/>
   </recipient>
   <sender>
-    <reference value="Practitioner/natalie"/>
+    <reference value="Practitioner/nathalie"/>
     <display value="Natalie"/>
   </sender>
   <payload>

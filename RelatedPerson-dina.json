@@ -1,0 +1,19 @@
+{
+  "resourceType": "RelatedPerson",
+  "id": "dina",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dina</p><p><b>patient</b>: <a href=\"{{[type]}}-{{[id]}}.html\">pia. Generated Summary: id: pia; Pia ; gender: female</a></p><p><b>name</b>: Dina </p></div>"
+  },
+  "patient": {
+    "reference": "Patient/pia",
+    "display": "pia"
+  },
+  "name": [
+    {
+      "given": [
+        "Dina"
+      ]
+    }
+  ]
+}

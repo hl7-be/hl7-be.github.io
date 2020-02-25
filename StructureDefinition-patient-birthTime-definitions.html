@@ -7,9 +7,10 @@
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
-
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
     <link href="fhir.css" rel="stylesheet"/>
-     
+
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
@@ -18,12 +19,7 @@
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-    <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/hl7.css" rel="stylesheet"/>
-    <link href="assets/css/fhir.css" rel="stylesheet"/>
-
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
-
+  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -35,30 +31,30 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
+    <script src="fhir-table-scripts.js"></script>
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"5.42"}
-    h3,h4,h5,h6{--heading-prefix:"5.42"}</style>
+
+    <style type="text/css">h2{--heading-prefix:"4.1.37"}
+    h3,h4,h5,h6{--heading-prefix:"4.1.37"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
-        <div id="hl7-nav">
-          <a id="hl7-logo" no-external="true" href="http://hl7.org">
-            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+                <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://hl7-be.github.io">
+            <img height="50" alt="Visit the website" src="assets/images/be-flag.png"/>
           </a>
         </div>
-        <div id="family-nav">
-          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        <div id="fhir-nav">
+          <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
         </div>
         <div id="hl7-search">
           <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
 
-
-        <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">FHIR Belgium Base IG</span><br/>0.1.0 - CI build</p>
+        <div id="hl7-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Belgium Base IG</span><br/>0.1.0 - </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -87,47 +83,50 @@
 		<a href="toc.html">Table of Contents</a>
 	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="#">How to use this Publication</a>
+				<a href="howto.html">How to use this Publication</a>
 			</li>
 			<li>
-				<a href="#">Copyright</a>
+				<a href="artifacttypes.html">Artifact types</a>
 			</li>
 			<li>
-				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec 
-					<img src="external.png" style="text-align: baseline"/>
+				<a href="privacy.html">Privacy considerations</a>
+			</li>
+			<li>
+				<a href="security.html">Security considerations</a>
+			</li>
+			<li>
+				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec<img src="external.png" style="text-align: baseline"/>
 				</a>
 			</li>
 		</ul>
 	</li>
-<!--
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="downloads.html">Context and intro</a>
+				<a href="context.html">Context and intro</a>
 			</li>
 			<li>
-				<a target="_blank" href="#">Use Cases</a>
+				<a href="usecases.html">Use Cases</a>
 			</li>
 			<li>
-				<a target="_blank" href="#">Logical Models</a>
+				<a href="logical-models.html">Logical Models</a>
 			</li>
+<!--
 			<li>
 				<a target="_blank" href="#">Services &amp; Transactions</a>
 			</li>
-		</ul>
-	</li>
 -->
+		</ul>
+
+	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
@@ -135,17 +134,16 @@
 			</li>
 		</ul>
 	</li>
-<!--
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="#">Terminology Resources</a>
+				<a href="terminology.html">Terminology Resources</a>
 			</li>
 		</ul>
 	</li>
+<!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Project-specific
 			<b class="caret"></b>
@@ -163,37 +161,16 @@
 			</li>
 		</ul>
 	</li>
+-->
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
-			<b class="caret"></b>
-		</a>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
 		<ul class="dropdown-menu">
-			<li>
-				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">Test Data
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">Test Scripts
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">OpenAPI
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">Test Servers
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a href="downloads.html">Downloads</a>
-			</li>
+			<li><a href="testdata.html">Test Data<img src="external.png" style="text-align: baseline"/></a></li>
+			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
+			<li><a href="testservers.html">Test Servers<img src="external.png" style="text-align: baseline"/></a></li>
+			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
--->
 </ul>      
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -205,7 +182,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Birth Time</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specification.html'><b>Specification</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Birth Time</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -343,15 +320,15 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020 <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg">HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 30, 2020 20:40+0100">2020-01-30</span>
+          IG &#169; 2020 <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg">HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 25, 2020 01:28+0100">2020-02-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
-                 | <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change <img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+                 <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img alt="external" style="vertical-align: baseline" src="external.png"/></a>
 
           </span>
         </p>

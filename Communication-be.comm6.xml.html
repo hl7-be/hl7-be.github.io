@@ -7,9 +7,10 @@
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
-
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
     <link href="fhir.css" rel="stylesheet"/>
-     
+
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
@@ -18,12 +19,7 @@
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-    <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/hl7.css" rel="stylesheet"/>
-    <link href="assets/css/fhir.css" rel="stylesheet"/>
-
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
-
+  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -35,30 +31,30 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
+    <script src="fhir-table-scripts.js"></script>
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"5.33"}
-    h3,h4,h5,h6{--heading-prefix:"5.33"}</style>
+
+    <style type="text/css">h2{--heading-prefix:"4.1.67"}
+    h3,h4,h5,h6{--heading-prefix:"4.1.67"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
-        <div id="hl7-nav">
-          <a id="hl7-logo" no-external="true" href="http://hl7.org">
-            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+                <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://hl7-be.github.io">
+            <img height="50" alt="Visit the website" src="assets/images/be-flag.png"/>
           </a>
         </div>
-        <div id="family-nav">
-          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        <div id="fhir-nav">
+          <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
         </div>
         <div id="hl7-search">
           <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
 
-
-        <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">FHIR Belgium Base IG</span><br/>0.1.0 - CI build</p>
+        <div id="hl7-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Belgium Base IG</span><br/>0.1.0 - </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -87,47 +83,50 @@
 		<a href="toc.html">Table of Contents</a>
 	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="#">How to use this Publication</a>
+				<a href="howto.html">How to use this Publication</a>
 			</li>
 			<li>
-				<a href="#">Copyright</a>
+				<a href="artifacttypes.html">Artifact types</a>
 			</li>
 			<li>
-				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec 
-					<img src="external.png" style="text-align: baseline"/>
+				<a href="privacy.html">Privacy considerations</a>
+			</li>
+			<li>
+				<a href="security.html">Security considerations</a>
+			</li>
+			<li>
+				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec<img src="external.png" style="text-align: baseline"/>
 				</a>
 			</li>
 		</ul>
 	</li>
-<!--
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="downloads.html">Context and intro</a>
+				<a href="context.html">Context and intro</a>
 			</li>
 			<li>
-				<a target="_blank" href="#">Use Cases</a>
+				<a href="usecases.html">Use Cases</a>
 			</li>
 			<li>
-				<a target="_blank" href="#">Logical Models</a>
+				<a href="logical-models.html">Logical Models</a>
 			</li>
+<!--
 			<li>
 				<a target="_blank" href="#">Services &amp; Transactions</a>
 			</li>
-		</ul>
-	</li>
 -->
+		</ul>
+
+	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
@@ -135,17 +134,16 @@
 			</li>
 		</ul>
 	</li>
-<!--
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="#">Terminology Resources</a>
+				<a href="terminology.html">Terminology Resources</a>
 			</li>
 		</ul>
 	</li>
+<!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Project-specific
 			<b class="caret"></b>
@@ -163,37 +161,16 @@
 			</li>
 		</ul>
 	</li>
+-->
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
-			<b class="caret"></b>
-		</a>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
 		<ul class="dropdown-menu">
-			<li>
-				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">Test Data
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">Test Scripts
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">OpenAPI
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">Test Servers
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a href="downloads.html">Downloads</a>
-			</li>
+			<li><a href="testdata.html">Test Data<img src="external.png" style="text-align: baseline"/></a></li>
+			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
+			<li><a href="testservers.html">Test Servers<img src="external.png" style="text-align: baseline"/></a></li>
+			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
--->
 </ul>      
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -205,7 +182,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Communication example 11</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specification.html'><b>Specification</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Communication example 11</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -242,7 +219,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/communication.html#Communication.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nl-BE&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/communication.html#Communication.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: be.comm6&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;language&lt;/b&gt;: nl-BE&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: d0000000-0000-0000-0000-000000000009&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: notification &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {[not stated] code 'notification' = 'notification)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: urgent&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Communication-be.comm6.html&quot;&gt;peter. Generated Summary: id: peter; Social Beneficiary Identifier = 79121137740 (OFFICIAL); active; Peter Patient (OFFICIAL); gender: male; birthDate: 1979-12-11; &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}&quot;&gt;Divorced&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sent&lt;/b&gt;: 11-Nov-2019 10:20:00&lt;/p&gt;&lt;p&gt;&lt;b&gt;recipient&lt;/b&gt;: &lt;a href=&quot;CareTeam/doctors&quot;&gt;Doctors&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sender&lt;/b&gt;: &lt;a href=&quot;Communication-be.comm6.html&quot;&gt;Dragon. Generated Summary: id: dragon; Dragon &lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Payloads&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Content[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Please replace the bandage today, I did not do it yesterday in the visit &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;nl-BE&quot; lang=&quot;nl-BE&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: be.comm6&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;language&lt;/b&gt;: nl-BE&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: d0000000-0000-0000-0000-000000000009&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: notification &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {[not stated] code 'notification' = 'notification)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: urgent&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Communication-be.comm6.html&quot;&gt;pia. Generated Summary: id: pia; Pia ; gender: female&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sent&lt;/b&gt;: 11-Nov-2019 10:20:00&lt;/p&gt;&lt;p&gt;&lt;b&gt;recipient&lt;/b&gt;: &lt;a href=&quot;Communication-be.comm6.html&quot;&gt;Doctors. Generated Summary: id: dzop-team-0002-doctors; DZOP-Pia-2020001; status: active; &lt;span title=&quot;Codes: {http://loinc.org LA28866-4}&quot;&gt;Home &amp;amp; Community Based Services (HCBS)-focused care team&lt;/span&gt;; name: Pia's 2020 Care Team for post-op care - doctors ad-hoc team; period: ?? --&amp;gt; 01-Jan-2013 00:00:00&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sender&lt;/b&gt;: &lt;a href=&quot;Communication-be.comm6.html&quot;&gt;Dragon. Generated Summary: id: dragon; Dragon &lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Payloads&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Content[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Please replace the bandage today, I did not do it yesterday in the visit&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/communication.html#Communication.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://www.dzop.be/archive/communication&quot;/&gt;
@@ -256,12 +233,12 @@
   &lt;/category&gt;
   &lt;<a href="http://hl7.org/fhir/R4/communication.html#Communication.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;urgent&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/communication.html#Communication.subject">subject</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/peter&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;peter&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/pia&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;pia&quot;/&gt;
   &lt;/subject&gt;
   &lt;<a href="http://hl7.org/fhir/R4/communication.html#Communication.sent">sent</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2019-11-11T10:20:00+01:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/communication.html#Communication.recipient">recipient</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CareTeam/doctors&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CareTeam/dzop-team-0002-doctors&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Doctors&quot;/&gt;
   &lt;/recipient&gt;
   &lt;<a href="http://hl7.org/fhir/R4/communication.html#Communication.sender">sender</a>&gt;
@@ -270,7 +247,7 @@
   &lt;/sender&gt;
   &lt;<a href="http://hl7.org/fhir/R4/communication.html#Communication.payload">payload</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/communication.html#Communication.payload.content[x]">contentString</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Please replace the bandage today, I did not do it yesterday in the visit &quot;/&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Please replace the bandage today, I did not do it yesterday in the visit&quot;/&gt;
   &lt;/payload&gt;
 &lt;/Communication&gt;</pre>
 
@@ -288,15 +265,15 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020 <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg">HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 30, 2020 20:40+0100">2020-01-30</span>
+          IG &#169; 2020 <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg">HL7 Belgium</a>.  Package hl7.be.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 25, 2020 01:28+0100">2020-02-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
-                 | <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change <img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+                 <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img alt="external" style="vertical-align: baseline" src="external.png"/></a>
 
           </span>
         </p>

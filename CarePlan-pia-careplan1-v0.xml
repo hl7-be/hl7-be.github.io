@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="pia-careplan1-v0"/>
+  <meta>
+    <versionId value="0"/>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: pia-careplan1-v0</p><p><b>meta</b>: </p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>category</b>: homecare <span style="background: LightGoldenRodYellow">(Details : {[not stated] code 'homecare' = 'homecare)</span></p><p><b>title</b>: Careplan Pia 2019-2020</p><p><b>description</b>: Care plan for Pia to manage diabetes.</p><p><b>subject</b>: <a href="{{[type]}}-{{[id]}}.html">Generated Summary: id: pia; Pia ; gender: female</a></p><p><b>period</b>: 02-Nov-2019 00:00:00 --&gt; (ongoing)</p><p><b>created</b>: 02-Nov-2019 10:15:15</p><p><b>author</b>: <a href="{{[type]}}-{{[id]}}.html">Generated Summary: id: dragon; Dragon </a></p><p><b>contributor</b>: <a href="{{[type]}}-{{[id]}}.html">Generated Summary: id: dragon; Dragon </a></p><p><b>careTeam</b>: <a href="{{[type]}}-{{[id]}}.html">Generated Summary: id: dzop-team-0002-v1; DZOP-Pia-2020001; status: active; <span title="Codes: {http://loinc.org LA28866-4}">Home &amp; Community Based Services (HCBS)-focused care team</span>; name: Pia's 2020 Care Team for post-op care; period: 02-Nov-2019 00:00:00 --&gt; 01-Nov-2020 00:00:00</a></p><p><b>addresses</b>: <a href="{{[type]}}-{{[id]}}.html">Generated Summary: id: pia-diabetes; <span title="Codes: ">Diabetes</span></a></p><p><b>supportingInfo</b>: </p><h3>Activities</h3><table class="grid"><tr><td>-</td><td><b>Progress</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td>Planned</td><td>Appointment with nurse</td></tr></table></div>
+  </text>
+  <status value="draft"/>
+  <intent value="proposal"/>
+  <category>
+    <coding>
+      <code value="homecare"/>
+    </coding>
+  </category>
+  <title value="Careplan Pia 2019-2020"/>
+  <description value="Care plan for Pia to manage diabetes."/>
+  <subject>
+    <reference value="Patient/pia"/>
+  </subject>
+  <period>
+    <start value="2019-11-02"/>
+  </period>
+  <created value="2019-11-02T09:15:15Z"/>
+  <author>
+    <reference value="Practitioner/dragon"/>
+  </author>
+  <contributor>
+    <reference value="Practitioner/dragon"/>
+  </contributor>
+  <careTeam>
+    <reference value="CareTeam/dzop-team-0002-v1"/>
+  </careTeam>
+  <addresses>
+    <reference value="Condition/pia-diabetes"/>
+  </addresses>
+  <supportingInfo>
+    <identifier>
+      <type>
+        <coding>
+          <code value="74196-7"/>
+        </coding>
+      </type>
+      <system value="http://belrai.be"/>
+    </identifier>
+  </supportingInfo>
+  <activity>
+    <progress>
+      <text value="Planned"/>
+    </progress>
+    <reference>
+      <display value="Appointment with nurse"/>
+    </reference>
+  </activity>
+</CarePlan>

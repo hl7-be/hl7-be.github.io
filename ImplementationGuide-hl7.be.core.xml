@@ -12,7 +12,7 @@
   <title value="FHIR Belgium Base IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-01-30T20:40:02+01:00"/>
+  <date value="2020-02-25T01:28:53+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -204,9 +204,13 @@
       <name value="Terminology"/>
       <description value="Terminology resources - ValueSets and CodeSystems"/>
     </grouping>
+    <grouping id="capstatements">
+      <name value="Capability Statements"/>
+      <description value="Capability Statements"/>
+    </grouping>
     <grouping id="examples">
-      <name value="Examples"/>
-      <description value="Example resources"/>
+      <name value="Other Examples"/>
+      <description value="Examples of resources defined elsewhere"/>
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -250,7 +254,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Team profile"/>
-      <description value="This is the Belgian profile for Care Plan. A Care Plan contains the activities planned and/or performed by a care team to deliver care for a particular patient, usually targeting a specific condition or set of conditions."/>
+      <description value="Care Plan profile"/>
       <groupingId value="communication"/>
     </resource>
     <resource>
@@ -330,13 +334,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-organization"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Organization core BE profile"/>
+      <description value="The Core BE profile for Organization"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-be-careteam-model.html"/>
+        <valueUri value="StructureDefinition-model-careteam.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/be-careteam-model"/>
+        <reference value="StructureDefinition/model-careteam"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Care Team"/>
@@ -348,10 +367,10 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-lm-be-communication.html"/>
+        <valueUri value="StructureDefinition-model-communication.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/lm-be-communication"/>
+        <reference value="StructureDefinition/model-communication"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Communication"/>
@@ -370,7 +389,8 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Communication Apps"/>
-      <groupingId value="core"/>
+      <description value="Capability Statement (requirements) for systems implementing the Communication client"/>
+      <groupingId value="capstatements"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -384,7 +404,8 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Communication Server"/>
-      <groupingId value="core"/>
+      <description value="Capability Statement (requirements) for servers implementing the Communication features"/>
+      <groupingId value="capstatements"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -526,31 +547,15 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-be-hcparty.html"/>
+        <valueUri value="CodeSystem-cd-hcparty.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/be-hcparty"/>
+        <reference value="CodeSystem/cd-hcparty"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="CodeSystem - Healthcare Party"/>
       <description value="The values for healthcare party types"/>
       <groupingId value="terminology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Communication"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Communication-be.comm1.html"/>
-      </extension>
-      <reference>
-        <reference value="Communication/be.comm1"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Communication example 1"/>
-      <description value="New message from DZOP to nurse"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -584,6 +589,127 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-david.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/david"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Dr. David"/>
+      <description value="Dr. David"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-christa.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/christa"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Christa"/>
+      <description value="Christa"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-nathalie.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/nathalie"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Nurse Nathalie"/>
+      <description value="Nurse Nathalie"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="PractitionerRole-nurse-gent.html"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/nurse-gent"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Nurse"/>
+      <description value="Role - Nurse in Gent"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Organization-diensten-gent.html"/>
+      </extension>
+      <reference>
+        <reference value="Organization/diensten-gent"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Diensten Gent"/>
+      <description value="Diensten Gent"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Organization-dzop.html"/>
+      </extension>
+      <reference>
+        <reference value="Organization/dzop"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="DZOP"/>
+      <description value="DZOP"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="RelatedPerson-dina.html"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/dina"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Dina"/>
+      <description value="Dina"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Communication-be.comm1.html"/>
+      </extension>
+      <reference>
+        <reference value="Communication/be.comm1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 1"/>
+      <description value="New message from DZOP to nurse"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Communication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -596,7 +722,6 @@
       <name value="Communication example 2"/>
       <description value="Long message - part 1"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -612,7 +737,6 @@
       <name value="Communication example 3"/>
       <description value="Long message - part 2"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -628,7 +752,6 @@
       <name value="Communication example 4"/>
       <description value="Long message - part 3"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -644,7 +767,6 @@
       <name value="Communication example 5"/>
       <description value="Send notice / question"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -660,7 +782,6 @@
       <name value="Communication example 6"/>
       <description value="Reply to question"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -676,7 +797,6 @@
       <name value="Communication example 7"/>
       <description value="Send notification"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -692,7 +812,6 @@
       <name value="Communication example 8"/>
       <description value="Send reminder"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -708,7 +827,6 @@
       <name value="Communication example 9"/>
       <description value="Send attachment"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -724,7 +842,6 @@
       <name value="Communication example 10"/>
       <description value="Forward existing attachment"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -740,23 +857,141 @@
       <name value="Communication example 11"/>
       <description value="High-priority notification"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CareTeam"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CareTeam-dzop-team-0002.html"/>
+        <valueUri value="CareTeam-dzop-team-0002-v0.html"/>
       </extension>
       <reference>
-        <reference value="CareTeam/dzop-team-0002"/>
+        <reference value="CareTeam/dzop-team-0002-v0"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Team Pia"/>
-      <description value="The Care Team responsible for Pia&#39;s care"/>
+      <description value="The proposed Care Team for Pia"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
-      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CareTeam-dzop-team-0002-v1.html"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/dzop-team-0002-v1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team Pia"/>
+      <description value="The Care Team assigned to patient Pia"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CareTeam-dzop-team-0002-doctors.html"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/dzop-team-0002-doctors"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team Pia - doctors only"/>
+      <description value="Care Team assigned to Pia - physicians sub-team"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CareTeam-dzop-team-0002-nurses.html"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/dzop-team-0002-nurses"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team Pia - nurses only"/>
+      <description value="Care Team assigned to Pia - Nurses sub-team"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CarePlan-pia-careplan1-v0.html"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/pia-careplan1-v0"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Plan Pia - initial nurse visit"/>
+      <description value="The Care Team created by the physician as a placeholder for the nurse appointment"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CarePlan-pia-careplan1-v1.html"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/pia-careplan1-v1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Plan Pia - details planned by nurse"/>
+      <description value="The Care Team created by the system with the details for the nurse appointment"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CarePlan-pia-careplan2-v1.html"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/pia-careplan2-v1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Plan Pia - details scheduled"/>
+      <description value="The Care Team created by the nurse with the detailed activities for diabetes, loneliness and depression"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Appointment-pia-001-v0.html"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/pia-001-v0"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Appointment suggested by the GP"/>
+      <description value="Appointment request to see the nurse for planning, during the week"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Appointment-pia-001-v1.html"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/pia-001-v1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Appointment scheduled"/>
+      <description value="Appointment scheduled between nurse and patient"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -820,16 +1055,54 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="Binary"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Patient-peter.html"/>
+        <valueUri value="Binary-photo1.html"/>
       </extension>
       <reference>
-        <reference value="Patient/peter"/>
+        <reference value="Binary/photo1"/>
       </reference>
-      <name value="Example Patient - peter"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+      <fhirVersion value="4.0.1"/>
+      <name value="Photo"/>
+      <description value="Photo"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-iso21090-ADXP-houseNumber.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/iso21090-ADXP-houseNumber"/>
+      </reference>
+      <description value="The number of a building, house or lot alongside the street. Also known as &quot;primary street number&quot;. This does not number the street but rather the building."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-iso21090-ADXP-postBox.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/iso21090-ADXP-postBox"/>
+      </reference>
+      <description value="A numbered box located in a post station."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-iso21090-ADXP-streetName.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/iso21090-ADXP-streetName"/>
+      </reference>
+      <description value="streetName."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -888,11 +1161,159 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-be-medicationtreatment.html"/>
+        <valueUri value="StructureDefinition-be-observation.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/be-medicationtreatment"/>
+        <reference value="StructureDefinition/be-observation"/>
       </reference>
+      <description value="Belgian federal profile for an observation. Initially based on the functional description of the NIHDI.&#xD;&#xA;As Observation is used in many instances in FHIR, please refer to the HL7 specs of the base resource for guidance around expression of actual values using UCUM, methods, location on body etc.&#xD;&#xA;&#xD;&#xA;Special remarks for KMEHR users:&#xD;&#xA;The FHIR Observation resource captures many things that are in a KMEHR message structured as an &#39;item&#39;. This includes things like &#39;vital signs such as body weight, blood pressure, and temperature [&#x2026;], personal characteristics such as eye-color [&#x2026;] social history like tobacco use, family support, or cognitive status [&#x2026;]&#39; ( https://www.hl7.org/fhir/R4/observation.html )&#xD;&#xA;For some of these things, HL7 already has worked out profiles and they SHALL be used when such a use case is needed. Specifically, projects SHALL take note of the existing profiles described on https://www.hl7.org/fhir/R4/observation-vitalsigns.html"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-observationcodeableconcept.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-observationcodeableconcept"/>
+      </reference>
+      <description value="This is a supporting profile, only to give guidelines how to express a few of the typical coding systems.&#xD;&#xA;In general, it shall be noted SNOMED-CT is the preferred national terminology. Other coding systems remain allowed or MAY be preferred in specific flows (e.g. the use of LOINC codes to express a laboratory test.)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-provenance.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-provenance"/>
+      </reference>
+      <description value="Belgian federal profile for a provenance. Note this profile does not introduce any changes from the base profile but has been created to mark its importance, specifically when FHIR is used in a non-document approach.&#xD;&#xA;&#xD;&#xA;General use case remarks:&#xD;&#xA;&#39;Provenance of a resource is a record that describes entities and processes involved in producing and delivering or otherwise influencing that resource.&#39; (cfr. the HL7 base specifications)&#xD;&#xA;According to the FHIR specifications, the provenance resource SHALL only be provided when no other resource already plays this role: for a Patient it SHOULD be its managing organization, provenance of an Observation SHOULD be its performer, provenance of an AllergyIntolerance SHOULD be its recorder.&#xD;&#xA;&#39;Many other FHIR resources contain some elements that represent information about how the resource was obtained, and therefore they overlap with the functionality of the Provenance.&#39;&#xD;&#xA;&#xD;&#xA;Special remarks for KMEHR users:&#xD;&#xA;The FHIR Provenance resource in general refers to an entity that had something to do with the creation or updating of something else. In a KMEHR context, this is somewhat different &#x2013; as it is &#x2018;XML document&#x2019; based, each KMEHR message has an &#39;author&#39; element that is responsible.&#xD;&#xA;"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-cd-civilstate.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cd-civilstate"/>
+      </reference>
+      <name value="CivilState"/>
+      <description value="Civil state in Belgium."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-cd-contact-person.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cd-contact-person"/>
+      </reference>
+      <name value="ContactPerson"/>
+      <description value="Contact person in Belgium."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-cd-fed-country.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cd-fed-country"/>
+      </reference>
+      <name value="FedCountry"/>
+      <description value="FHIR code system definition for country codes as they are described on https://www.ehealth.fgov.be/standards/kmehr/en/tables/fedict-country-codes"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="NamingSystem-be-cbe.html"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/be-cbe"/>
+      </reference>
+      <description value="BCE/KBO"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="NamingSystem-be-ehp.html"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/be-ehp"/>
+      </reference>
+      <description value="EHP"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="NamingSystem-be-nihdi.html"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/be-nihdi"/>
+      </reference>
+      <description value="RIZIV/INAMI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="NamingSystem-be-ssin.html"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/be-ssin"/>
+      </reference>
+      <description value="NISS/INSZ"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-be-allergyintolerancecode.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-allergyintolerancecode"/>
+      </reference>
+      <description value="Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-be-exposureroute.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-exposureroute"/>
+      </reference>
+      <description value="Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-be-noallergy.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-noallergy"/>
+      </reference>
+      <description value="Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort."/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -904,44 +1325,124 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="conventions.html"/>
-        <title value="Conventions"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="functional-overview.html"/>
-        <title value="Functional Description"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="logical-models.html"/>
-        <title value="Logical Data Models"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="artifacts.html"/>
-        <title value="Artifacts"/>
+        <nameUrl value="background.html"/>
+        <title value="Background information"/>
         <generation value="html"/>
+        <page>
+          <nameUrl value="conventions.html"/>
+          <title value="Conventions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="howto.html"/>
+          <title value="How to read this document"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="context.html"/>
+          <title value="Functional context"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="artifacttypes.html"/>
+          <title value="Types od artifacts"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="privacy.html"/>
+          <title value="Privacy considerations"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="security.html"/>
+          <title value="Security considerations"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="functional-overview.html"/>
+          <title value="Functional Description"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
-        <nameUrl value="example-resources.html"/>
-        <title value="Example Resources"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="example-scenarios.html"/>
-        <title value="Example Scenarios"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Useful Downloads"/>
+        <nameUrl value="functional.html"/>
+        <title value="Functional Design"/>
         <generation value="html"/>
+        <page>
+          <nameUrl value="logical-models.html"/>
+          <title value="Logical Data Models"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="usecases.html"/>
+          <title value="Use Cases"/>
+          <generation value="html"/>
+        </page>
       </page>
       <page>
-        <nameUrl value="changes.html"/>
-        <title value="IG Change History"/>
+        <nameUrl value="specification.html"/>
+        <title value="Specification"/>
         <generation value="html"/>
+        <page>
+          <nameUrl value="artifacts.html"/>
+          <title value="Artifacts"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="example-resources.html"/>
+          <title value="Example Resources"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example-scenarios.html"/>
+          <title value="Example Scenarios"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology considerations"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="terminologyartefacts.html"/>
+          <title value="Terminology artefacts"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="terminologyservices.html"/>
+          <title value="Terminology services"/>
+          <generation value="html"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="support.html"/>
+        <title value="Support"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="testdata.html"/>
+          <title value="Test Data"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="openapi.html"/>
+          <title value="Swagger / OpenAPI"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="testservers.html"/>
+          <title value="Test Servers"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="downloads.html"/>
+          <title value="Useful Downloads"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="changes.html"/>
+          <title value="IG Change History"/>
+          <generation value="html"/>
+        </page>
       </page>
     </page>
     <parameter>

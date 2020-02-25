@@ -1,0 +1,170 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/CarePlan/pia-careplan2-v1> a fhir:CarePlan;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "pia-careplan2-v1"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: pia-careplan2-v1</p><p><b>meta</b>: </p><p><b>replaces</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: pia-careplan1-v1; status: active; intent: proposal; <span title=\"Codes: \">homecare</span>; title: Careplan Pia 2019-2020; description: Care plan for Pia to manage diabetes.; period: 02-Nov-2019 00:00:00 --&gt; (ongoing); created: 02-Nov-2019 10:15:15</a></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>category</b>: homecare <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'homecare' = 'homecare)</span></p><p><b>title</b>: Careplan Pia 2019-2020</p><p><b>description</b>: Care plan for Pia to manage diabetes, depression and loneliness.</p><p><b>subject</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: pia; Pia ; gender: female</a></p><p><b>period</b>: 02-Nov-2019 00:00:00 --&gt; (ongoing)</p><p><b>created</b>: 02-Nov-2019 10:15:15</p><p><b>author</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: dragon; Dragon </a></p><p><b>contributor</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: dragon; Dragon </a></p><p><b>careTeam</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: dzop-team-0002-v1; DZOP-Pia-2020001; status: active; <span title=\"Codes: {http://loinc.org LA28866-4}\">Home &amp; Community Based Services (HCBS)-focused care team</span>; name: Pia's 2020 Care Team for post-op care; period: 02-Nov-2019 00:00:00 --&gt; 01-Nov-2020 00:00:00</a></p><p><b>addresses</b>: </p><ul><li><a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: pia-diabetes; <span title=\"Codes: \">Diabetes</span></a></li><li><a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: pia-depression; <span title=\"Codes: \">Depression</span></a></li><li><a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: pia-loneliness; <span title=\"Codes: \">Loneliness</span></a></li></ul><p><b>supportingInfo</b>: </p><blockquote><p><b>activity</b></p><p><b>progress</b>: Planned</p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Location</b></td></tr><tr><td>*</td><td>Appointment</td><td>nursingcode1 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'nursingcode1' = 'nursingcode1)</span></td><td>scheduled</td><td>Do Once per 1 days</td><td>Patient's home</td></tr></table></blockquote><blockquote><p><b>activity</b></p><p><b>progress</b>: Planned</p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Kind</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Location</b></td></tr><tr><td>*</td><td>MedicationRequest</td><td>scheduled</td><td>Do Once per 1 days</td><td>Patient's home</td></tr></table></blockquote><blockquote><p><b>activity</b></p><p><b>progress</b>: Planned</p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Kind</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Location</b></td></tr><tr><td>*</td><td>ServiceRequest</td><td>scheduled</td><td>Do 3 per 1 weeks</td><td>Patient's home</td></tr></table></blockquote></div>"
+  ];
+  fhir:CarePlan.replaces [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/CarePlan/pia-careplan1-v1>;
+     fhir:Reference.reference [ fhir:value "CarePlan/pia-careplan1-v1" ]
+  ];
+  fhir:CarePlan.status [ fhir:value "active"];
+  fhir:CarePlan.intent [ fhir:value "plan"];
+  fhir:CarePlan.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "homecare" ]
+     ]
+  ];
+  fhir:CarePlan.title [ fhir:value "Careplan Pia 2019-2020"];
+  fhir:CarePlan.description [ fhir:value "Care plan for Pia to manage diabetes, depression and loneliness."];
+  fhir:CarePlan.subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/pia>;
+     fhir:Reference.reference [ fhir:value "Patient/pia" ]
+  ];
+  fhir:CarePlan.period [
+     fhir:Period.start [ fhir:value "2019-11-02"^^xsd:date ]
+  ];
+  fhir:CarePlan.created [ fhir:value "2019-11-02T09:15:15Z"^^xsd:dateTime];
+  fhir:CarePlan.author [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/dragon>;
+     fhir:Reference.reference [ fhir:value "Practitioner/dragon" ]
+  ];
+  fhir:CarePlan.contributor [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/dragon>;
+     fhir:Reference.reference [ fhir:value "Practitioner/dragon" ]
+  ];
+  fhir:CarePlan.careTeam [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/CareTeam/dzop-team-0002-v1>;
+     fhir:Reference.reference [ fhir:value "CareTeam/dzop-team-0002-v1" ]
+  ];
+  fhir:CarePlan.addresses [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Condition/pia-diabetes>;
+     fhir:Reference.reference [ fhir:value "Condition/pia-diabetes" ]
+  ], [
+     fhir:index 1;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Condition/pia-depression>;
+     fhir:Reference.reference [ fhir:value "Condition/pia-depression" ]
+  ], [
+     fhir:index 2;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Condition/pia-loneliness>;
+     fhir:Reference.reference [ fhir:value "Condition/pia-loneliness" ]
+  ];
+  fhir:CarePlan.supportingInfo [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.code [ fhir:value "74196-7" ]
+         ]
+       ];
+       fhir:Identifier.system [ fhir:value "http://belrai.be" ]
+     ]
+  ];
+  fhir:CarePlan.activity [
+     fhir:index 0;
+     fhir:CarePlan.activity.progress [
+       fhir:index 0;
+       fhir:Annotation.text [ fhir:value "Planned" ]
+     ];
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "Appointment" ];
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.code [ fhir:value "nursingcode1" ]
+         ]
+       ];
+       fhir:CarePlan.activity.detail.status [ fhir:value "scheduled" ];
+       fhir:CarePlan.activity.detail.scheduledTiming [
+         fhir:Timing.repeat [
+           fhir:Timing.repeat.boundsDuration [
+             fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+             fhir:Quantity.unit [ fhir:value "d" ]
+           ];
+           fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ];
+           fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ];
+           fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+         ]
+       ];
+       fhir:CarePlan.activity.detail.location [
+         fhir:Reference.display [ fhir:value "Patient's home" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CarePlan.activity.progress [
+       fhir:index 0;
+       fhir:Annotation.text [ fhir:value "Planned" ]
+     ];
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "MedicationRequest" ];
+       fhir:CarePlan.activity.detail.status [ fhir:value "scheduled" ];
+       fhir:CarePlan.activity.detail.scheduledTiming [
+         fhir:Timing.repeat [
+           fhir:Timing.repeat.boundsRange [
+             fhir:Range.low [
+               fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ];
+               fhir:Quantity.unit [ fhir:value "mo" ]
+             ]
+           ];
+           fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ];
+           fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ];
+           fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+         ]
+       ];
+       fhir:CarePlan.activity.detail.location [
+         fhir:Reference.display [ fhir:value "Patient's home" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CarePlan.activity.progress [
+       fhir:index 0;
+       fhir:Annotation.text [ fhir:value "Planned" ]
+     ];
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "ServiceRequest" ];
+       fhir:CarePlan.activity.detail.status [ fhir:value "scheduled" ];
+       fhir:CarePlan.activity.detail.scheduledTiming [
+         fhir:Timing.repeat [
+           fhir:Timing.repeat.frequency [ fhir:value "3"^^xsd:positiveInteger ];
+           fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ];
+           fhir:Timing.repeat.periodUnit [ fhir:value "wk" ]
+         ]
+       ];
+       fhir:CarePlan.activity.detail.location [
+         fhir:Reference.display [ fhir:value "Patient's home" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/CarePlan/pia-careplan2-v1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

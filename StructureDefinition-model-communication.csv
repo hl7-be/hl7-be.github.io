@@ -1,0 +1,41 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"BECommunication","","","",0,*,"","","","","Communication","The Communication object represents a message sent or note entered in a diary, in the context of care.","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"BECommunication.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"BECommunication.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"BECommunication.identifier","","","",0,*,"Y","","","Identifier {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Identifier]]} {[]}
+","Identifier for this communication","A unique identifier for this communication.","","","","","","","","","",,,,,"",,,,"BECommunication.identifier",0,*,"",""
+"BECommunication.status","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/fhir/StructureDefinition/code]]} {[]}
+","Status of the communication","The status of this communication entry.","","","","","","","","","",,,,,"",,,,"BECommunication.status",1,1,"",""
+"BECommunication.validated","","","",0,1,"Y","","","code {[CanonicalType[http://hl7.org/fhir/StructureDefinition/code]]} {[]}
+","Validation status","The validation status of the communication - whether this note is validated or not.","","","","","","","","","",,,,,"",,,,"BECommunication.validated",0,1,"",""
+"BECommunication.dateTimeEntered","","","",0,*,"Y","","","dateTime {[CanonicalType[http://hl7.org/fhir/StructureDefinition/dateTime]]} {[]}
+","Time and Date of Communication entered","Date or timestamp of entering the communication in its current status","","","","","","","","","",,,,,"",,,,"BECommunication.dateTimeEntered",0,*,"",""
+"BECommunication.basedOn","","","",0,*,"","","","Reference {[]} {[]}
+","The trigger for this communication","What is the trigger data element for this communication - whether it is an updated medication, or an encounter...","","","","","","","","","",,,,,"",,,,"BECommunication.basedOn",0,*,"",""
+"BECommunication.inReponseTo","","","",0,*,"","","","Reference {[]} {[CanonicalType[BeCommunication]]}
+","Communication for which this communication is a response","The message that this communication is responding to. Similar to a ""quote"" in chats, or ""forward/reply"" in mail.","","","","","","","","","",,,,,"",,,,"BECommunication.inReponseTo",0,*,"",""
+"BECommunication.sender","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Person], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
+","Sender of the communication","Sender of the communication","","","","","","","","","",,,,,"",,,,"BECommunication.sender",0,*,"",""
+"BECommunication.recipient","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Group], CanonicalType[http://hl7.org/fhir/StructureDefinition/Person], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole]]}
+","Recipient(s) of the communication","The addressees of this communication, the ones to whom the message is destined.","","","","","","","","","",,,,,"",,,,"BECommunication.recipient",0,*,"",""
+"BECommunication.topic","","","",0,*,"","","","CodeableConcept {[CanonicalType[http://hl7.org/fhir/StructureDefinition/CodeableConcept]]} {[]}
+","Topic of the communication","The topic of this communication. Should be coded e.g. ""medication"", or ""vaccines""","","","","","","","","","",,"example","Communication Topic","http://hl7.org/fhir/ValueSet/communication-topic","",,,,"BECommunication.topic",0,*,"",""
+"BECommunication.context","","","",0,*,"","","","BackboneElement {[]} {[]}
+","The context (e.g. subject) for this communications","Normally the context is a patient, or a plan","","","","","","","","","",,,,,"",,,,"BECommunication.context",0,*,"",""
+"BECommunication.context.patient","","","",0,*,"","","","Reference {[]} {[CanonicalType[BEPatient]]}
+","The patient or subject of care","The Patient or Subject of Care. This is a reference to a Patient resource, following the Logical Model for Belgian Patients.","","","","","","","","","",,,,,"",,,,"BECommunication.context.patient",0,*,"",""
+"BECommunication.content","","","",0,*,"Y","","","BackboneElement {[]} {[]}
+","Message payload","The content of the message","","","","","","","","","",,,,,"",,,,"BECommunication.content",0,*,"",""
+"BECommunication.content.text","","","",0,*,"","","","string {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320]]} {[]}
+","Communication text","The text of the communication. Maximum 320 characters","","","","","","","","","",,,,,"",,,,"BECommunication.content.text",0,*,"",""
+"BECommunication.content.attachment","","","",0,*,"","","","Attachment {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Attachment]]} {[]}
+","Attachment (e.g. image)","An encoded attachment such as an image, video or audio recording","","","","","","","","","",,,,,"",,,,"BECommunication.content.attachment",0,*,"",""
+"BECommunication.content.link","","","",0,*,"","","","Reference {[]} {[]}
+","Link to message content - an attachment, an online video, a document in another server or vault","A link to the message content e.g. an online video or an attachment that resides on a server or content in another vault","","","","","","","","","",,,,,"",,,,"BECommunication.content.link",0,*,"",""

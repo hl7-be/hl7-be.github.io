@@ -3,7 +3,7 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="pia-depression"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: pia-depression</p><p><b>code</b>: Depression <span style="background: LightGoldenRodYellow">(Details : {[not stated] code 'xxxxxxxxxx' = 'xxxxxxxxxx)</span></p><p><b>subject</b>: <a href="{{[type]}}-{{[id]}}.html">Pia. Generated Summary: id: pia; Pia </a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: pia-depression</p><p><b>code</b>: Depression <span style="background: LightGoldenRodYellow">(Details : {[not stated] code 'xxxxxxxxxx' = 'xxxxxxxxxx)</span></p><p><b>subject</b>: <a href="{{[type]}}-{{[id]}}.html">Pia. Generated Summary: id: pia; Pia ; gender: female</a></p></div>
   </text>
   <code>
     <coding>

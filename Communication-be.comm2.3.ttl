@@ -18,7 +18,7 @@
   fhir:Resource.language [ fhir:value "en"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm2.3</p><p><b>meta</b>: </p><p><b>language</b>: en</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000004</p><p><b>partOf</b>: </p><ul><li><a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: be.comm2.1; language: nl-BE; d0000000-0000-0000-0000-000000000002; status: completed; <span title=\"Codes: \">notification</span>; sent: 11-Nov-2019 08:01:00</a></li><li>2</li></ul><p><b>status</b>: completed</p><p><b>category</b>: notification <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href=\"{{[type]}}-{{[id]}}.html\">peter. Generated Summary: id: peter; Social Beneficiary Identifier = 79121137740 (OFFICIAL); active; Peter Patient (OFFICIAL); gender: male; birthDate: 1979-12-11; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}\">Divorced</span></a></p><p><b>sent</b>: 11-Nov-2019 08:15:01</p><p><b>recipient</b>: <a href=\"CareTeam/careteam\">Care Team</a></p><p><b>sender</b>: <a href=\"Practitioner/natalie\">Natalie</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>Dear Team</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm2.3</p><p><b>meta</b>: </p><p><b>language</b>: en</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000004</p><p><b>partOf</b>: </p><ul><li><a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: be.comm2.1; language: nl-BE; d0000000-0000-0000-0000-000000000002; status: completed; <span title=\"Codes: \">notification</span>; sent: 11-Nov-2019 08:01:00</a></li><li>2</li></ul><p><b>status</b>: completed</p><p><b>category</b>: notification <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href=\"{{[type]}}-{{[id]}}.html\">pia. Generated Summary: id: pia; Pia ; gender: female</a></p><p><b>sent</b>: 11-Nov-2019 08:15:01</p><p><b>recipient</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Care Team. Generated Summary: id: dzop-team-0002-v1; DZOP-Pia-2020001; status: active; <span title=\"Codes: {http://loinc.org LA28866-4}\">Home &amp; Community Based Services (HCBS)-focused care team</span>; name: Pia's 2020 Care Team for post-op care; period: 02-Nov-2019 00:00:00 --&gt; 01-Nov-2020 00:00:00</a></p><p><b>sender</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Natalie. Generated Summary: id: nathalie; Nathalie </a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>Dear Team</td></tr></table></div>"
   ];
   fhir:Communication.identifier [
      fhir:index 0;
@@ -42,20 +42,20 @@
      ]
   ];
   fhir:Communication.subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/peter>;
-     fhir:Reference.reference [ fhir:value "Patient/peter" ];
-     fhir:Reference.display [ fhir:value "peter" ]
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/pia>;
+     fhir:Reference.reference [ fhir:value "Patient/pia" ];
+     fhir:Reference.display [ fhir:value "pia" ]
   ];
   fhir:Communication.sent [ fhir:value "2019-11-11T08:15:01+01:00"^^xsd:dateTime];
   fhir:Communication.recipient [
      fhir:index 0;
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/CareTeam/careteam>;
-     fhir:Reference.reference [ fhir:value "CareTeam/careteam" ];
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/CareTeam/dzop-team-0002-v1>;
+     fhir:Reference.reference [ fhir:value "CareTeam/dzop-team-0002-v1" ];
      fhir:Reference.display [ fhir:value "Care Team" ]
   ];
   fhir:Communication.sender [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/natalie>;
-     fhir:Reference.reference [ fhir:value "Practitioner/natalie" ];
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/nathalie>;
+     fhir:Reference.reference [ fhir:value "Practitioner/nathalie" ];
      fhir:Reference.display [ fhir:value "Natalie" ]
   ];
   fhir:Communication.payload [

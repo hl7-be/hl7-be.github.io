@@ -1,0 +1,105 @@
+{
+  "resourceType": "CareTeam",
+  "id": "dzop-team-0002-v0",
+  "meta": {
+    "versionId": "3",
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dzop-team-0002-v0</p><p><b>meta</b>: </p><p><b>identifier</b>: DZOP-Pia-2020001</p><p><b>status</b>: proposed</p><p><b>category</b>: Home &amp; Community Based Services (HCBS)-focused care team <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LA28866-4' = 'Home &amp; Community Based Services (HCBS)-focused care team', given as 'Home &amp; Community Based Services (HCBS)-focused care team'})</span></p><p><b>name</b>: Pia's 2020 Care Team for post-op care</p><p><b>subject</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Pia. Generated Summary: id: pia; Pia ; gender: female</a></p><p><b>period</b>: 02-Nov-2019 00:00:00 --&gt; 01-Nov-2020 00:00:00</p><blockquote><p><b>participant</b></p><p><b>role</b>: care-coordinator <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>member</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Dr Dragon. Generated Summary: id: dragon; Dragon </a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: welfare-actor <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>member</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Caregiver Christa. Generated Summary: id: christa; Christa </a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: healthcare-actor <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>member</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Nurse Nathalie. Generated Summary: id: nathalie; Nathalie </a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: informal care actor <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>member</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Dina (daughter). Generated Summary: id: dina; Dina </a></p><p><b>period</b>: ?? --&gt; 01-Jan-2013 00:00:00</p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: welfare-actor <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>member</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Lokaal dienstencentrum Gent. Generated Summary: id: diensten-gent; name: Diensten - Gent; alias: Diensten - Stad Gent</a></p></blockquote><p><b>managingOrganization</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: dzop; name: DZOP</a></p></div>"
+  },
+  "identifier": [
+    {
+      "value": "DZOP-Pia-2020001"
+    }
+  ],
+  "status": "proposed",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "LA28866-4",
+          "display": "Home & Community Based Services (HCBS)-focused care team"
+        }
+      ]
+    }
+  ],
+  "name": "Pia's 2020 Care Team for post-op care",
+  "subject": {
+    "reference": "Patient/pia",
+    "display": "Pia"
+  },
+  "period": {
+    "start": "2019-11-02",
+    "end": "2020-11-01"
+  },
+  "participant": [
+    {
+      "role": [
+        {
+          "text": "care-coordinator"
+        }
+      ],
+      "member": {
+        "reference": "Practitioner/dragon",
+        "display": "Dr Dragon"
+      }
+    },
+    {
+      "role": [
+        {
+          "text": "welfare-actor"
+        }
+      ],
+      "member": {
+        "reference": "Practitioner/christa",
+        "display": "Caregiver Christa"
+      }
+    },
+    {
+      "role": [
+        {
+          "text": "healthcare-actor"
+        }
+      ],
+      "member": {
+        "reference": "Practitioner/nathalie",
+        "display": "Nurse Nathalie"
+      }
+    },
+    {
+      "role": [
+        {
+          "text": "informal care actor"
+        }
+      ],
+      "member": {
+        "reference": "RelatedPerson/dina",
+        "display": "Dina (daughter)"
+      },
+      "period": {
+        "end": "2013-01-01"
+      }
+    },
+    {
+      "role": [
+        {
+          "text": "welfare-actor"
+        }
+      ],
+      "member": {
+        "reference": "Organization/diensten-gent",
+        "display": "Lokaal dienstencentrum Gent"
+      }
+    }
+  ],
+  "managingOrganization": [
+    {
+      "reference": "Organization/dzop"
+    }
+  ]
+}

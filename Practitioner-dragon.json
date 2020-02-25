@@ -1,9 +1,14 @@
 {
   "resourceType": "Practitioner",
   "id": "dragon",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
+    ]
+  },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dragon</p><p><b>name</b>: Dragon </p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dragon</p><p><b>meta</b>: </p><p><b>name</b>: Dragon </p></div>"
   },
   "name": [
     {

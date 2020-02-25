@@ -8,9 +8,16 @@
 <https://www.ehealth.fgov.be/standards/fhir/Patient/pia> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "pia"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient>
+     ]
+  ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: pia</p><p><b>name</b>: Pia </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: pia</p><p><b>meta</b>: </p><p><b>name</b>: Pia </p><p><b>gender</b>: female</p></div>"
   ];
   fhir:Patient.name [
      fhir:index 0;
@@ -18,7 +25,8 @@
        fhir:value "Pia";
        fhir:index 0
      ]
-  ] .
+  ];
+  fhir:Patient.gender [ fhir:value "female"] .
 
 # - ontology header ------------------------------------------------------------
 

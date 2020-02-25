@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/PractitionerRole/nurse-gent> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "nurse-gent"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: nurse-gent</p><p><b>meta</b>: </p><p><b>identifier</b>: nurse-dienstencentrum-gent</p><p><b>active</b>: true</p><p><b>organization</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: diensten-gent; name: Diensten - Gent; alias: Diensten - Stad Gent</a></p><p><b>code</b>: Nurse <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'nurse' = 'nurse', given as 'Nurse'})</span></p></div>"
+  ];
+  fhir:PractitionerRole.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://www.dzop.be/archive/roles" ];
+     fhir:Identifier.value [ fhir:value "nurse-dienstencentrum-gent" ]
+  ];
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean];
+  fhir:PractitionerRole.organization [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Organization/diensten-gent>;
+     fhir:Reference.reference [ fhir:value "Organization/diensten-gent" ]
+  ];
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "nurse" ];
+       fhir:Coding.display [ fhir:value "Nurse" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/PractitionerRole/nurse-gent.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

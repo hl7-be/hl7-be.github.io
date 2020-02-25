@@ -2,10 +2,14 @@
 
 <Patient xmlns="http://hl7.org/fhir">
   <id value="pia"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+  </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: pia</p><p><b>name</b>: Pia </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: pia</p><p><b>meta</b>: </p><p><b>name</b>: Pia </p><p><b>gender</b>: female</p></div>
   </text>
   <name>
     <given value="Pia"/>
   </name>
+  <gender value="female"/>
 </Patient>

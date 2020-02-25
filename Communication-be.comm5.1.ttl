@@ -18,7 +18,7 @@
   fhir:Resource.language [ fhir:value "nl-BE"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm5.1</p><p><b>meta</b>: </p><p><b>language</b>: nl-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000007</p><p><b>status</b>: completed</p><p><b>category</b>: notification <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href=\"{{[type]}}-{{[id]}}.html\">peter. Generated Summary: id: peter; Social Beneficiary Identifier = 79121137740 (OFFICIAL); active; Peter Patient (OFFICIAL); gender: male; birthDate: 1979-12-11; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}\">Divorced</span></a></p><p><b>sent</b>: 11-Nov-2019 10:00:01</p><p><b>recipient</b>: <a href=\"Practitioner/david\">Dr. David</a></p><p><b>sender</b>: <a href=\"Practitioner/natalie\">Natalie</a></p><blockquote><p><b>payload</b></p><p><b>content</b>: Wound is recovering today</p></blockquote><blockquote><p><b>payload</b></p><p><b>content</b>: </p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"nl-BE\" lang=\"nl-BE\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm5.1</p><p><b>meta</b>: </p><p><b>language</b>: nl-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000007</p><p><b>status</b>: completed</p><p><b>category</b>: notification <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href=\"{{[type]}}-{{[id]}}.html\">pia. Generated Summary: id: pia; Pia ; gender: female</a></p><p><b>sent</b>: 11-Nov-2019 10:00:01</p><p><b>recipient</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Dr. David. Generated Summary: id: david; David </a></p><p><b>sender</b>: <a href=\"{{[type]}}-{{[id]}}.html\">Natalie. Generated Summary: id: nathalie; Nathalie </a></p><blockquote><p><b>payload</b></p><p><b>content</b>: Wound is recovering today</p></blockquote><blockquote><p><b>payload</b></p><p><b>content</b>: </p></blockquote></div>"
   ];
   fhir:Communication.identifier [
      fhir:index 0;
@@ -34,9 +34,9 @@
      ]
   ];
   fhir:Communication.subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/peter>;
-     fhir:Reference.reference [ fhir:value "Patient/peter" ];
-     fhir:Reference.display [ fhir:value "peter" ]
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/pia>;
+     fhir:Reference.reference [ fhir:value "Patient/pia" ];
+     fhir:Reference.display [ fhir:value "pia" ]
   ];
   fhir:Communication.sent [ fhir:value "2019-11-11T10:00:01+01:00"^^xsd:dateTime];
   fhir:Communication.recipient [
@@ -46,8 +46,8 @@
      fhir:Reference.display [ fhir:value "Dr. David" ]
   ];
   fhir:Communication.sender [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/natalie>;
-     fhir:Reference.reference [ fhir:value "Practitioner/natalie" ];
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/nathalie>;
+     fhir:Reference.reference [ fhir:value "Practitioner/nathalie" ];
      fhir:Reference.display [ fhir:value "Natalie" ]
   ];
   fhir:Communication.payload [
