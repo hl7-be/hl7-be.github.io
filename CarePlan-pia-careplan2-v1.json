@@ -4,7 +4,7 @@
   "meta": {
     "versionId": "1",
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare"
     ]
   },
   "text": {

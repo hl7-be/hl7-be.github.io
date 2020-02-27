@@ -12,7 +12,7 @@
   <title value="FHIR Belgium Base IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-02-25T01:28:53+01:00"/>
+  <date value="2020-02-27T05:53:15+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -232,10 +232,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-be-careplan.html"/>
+        <valueUri value="StructureDefinition-be-careplan-homecare.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/be-careplan"/>
+        <reference value="StructureDefinition/be-careplan-homecare"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan profile"/>
@@ -931,7 +931,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan Pia - initial nurse visit"/>
       <description value="The Care Team created by the physician as a placeholder for the nurse appointment"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -946,7 +946,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan Pia - details planned by nurse"/>
       <description value="The Care Team created by the system with the details for the nurse appointment"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -961,7 +961,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan Pia - details scheduled"/>
       <description value="The Care Team created by the nurse with the detailed activities for diabetes, loneliness and depression"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

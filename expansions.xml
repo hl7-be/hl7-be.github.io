@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="48b31a00-8718-4c17-a451-c4d93a9dec37"/>
+  <id value="37e9cbb9-b290-4879-adfa-ac4744ea6d69"/>
   <meta>
-    <lastUpdated value="2020-02-25T01:28:53.286+01:00"/>
+    <lastUpdated value="2020-02-27T05:53:15.198+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -1224,7 +1224,7 @@
         <version value="0.1.0"/>
         <name value="BeAllergyIntoleranceCode"/>
         <status value="active"/>
-        <date value="2020-02-25T01:28:53+01:00"/>
+        <date value="2020-02-27T05:53:15+01:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -1241,8 +1241,8 @@
           <text value="Belgium"/>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a76a0b8e-2f29-4fd6-a88d-3a081ae4e479"/>
-          <timestamp value="2020-02-25T01:30:16+01:00"/>
+          <identifier value="urn:uuid:d942475d-aebb-4d45-bc34-c238d810326f"/>
+          <timestamp value="2020-02-27T05:53:46+01:00"/>
           <total value="148"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3966,7 +3966,7 @@
         <version value="0.1.0"/>
         <name value="BEDiaryTopic"/>
         <status value="draft"/>
-        <date value="2020-02-25T01:28:53+01:00"/>
+        <date value="2020-02-27T05:53:15+01:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -3983,8 +3983,8 @@
           <text value="Belgium"/>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1b4b5c98-13bb-4c6d-a61a-967db703ef1f"/>
-          <timestamp value="2020-02-25T01:30:17+01:00"/>
+          <identifier value="urn:uuid:60b3a8fa-78ff-4526-8761-6887585d7ea0"/>
+          <timestamp value="2020-02-27T05:53:46+01:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>

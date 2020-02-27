@@ -1,9 +1,9 @@
 ﻿BaseIG : Validation Results
 =========================================
 
-err = 140, warn = 50, info = 2
-IG Publisher Version: v1.0.66-SNAPSHOT
-Generated Tue Feb 25 01:31:52 CET 2020. FHIR version 4.0.1 for hl7.be.core#0.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+err = 140, warn = 48, info = 2
+IG Publisher Version: v1.0.66-SNAPSHOT Out of date - current version is v1.0.67-SNAPSHOT
+Generated Thu Feb 27 05:54:25 CET 2020. FHIR version 4.0.1 for hl7.be.core#0.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
  Build Errors : 41 / 0
  C:\ImplementationGuides\be-core\input\be.base.ig : 0 / 1
@@ -54,7 +54,7 @@ Generated Tue Feb 25 01:31:52 CET 2020. FHIR version 4.0.1 for hl7.be.core#0.1.0
  C:\ImplementationGuides\be-core\input\models\structuredefinition-model-communication : 0 / 0
  C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-address : 0 / 1
  C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-allergyintolerance : 0 / 1
- C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-careplan : 0 / 0
+ C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-careplan-homecare : 0 / 0
  C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-careteam : 0 / 0
  C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-communication : 0 / 0
  C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-observation : 0 / 1
@@ -72,7 +72,7 @@ Generated Tue Feb 25 01:31:52 CET 2020. FHIR version 4.0.1 for hl7.be.core#0.1.0
  C:\ImplementationGuides\be-core\input\vocabulary\codesystem-cd-contact-person : 0 / 0
  C:\ImplementationGuides\be-core\input\vocabulary\codesystem-cd-fed-country : 0 / 0
  C:\ImplementationGuides\be-core\input\vocabulary\codesystem-cd-hcparty : 0 / 0
- C:\ImplementationGuides\be-core\input\vocabulary\namingsystem-be-cbe : 0 / 1
+ C:\ImplementationGuides\be-core\input\vocabulary\namingsystem-be-cbe : 0 / 0
  C:\ImplementationGuides\be-core\input\vocabulary\namingsystem-be-ehp : 0 / 0
  C:\ImplementationGuides\be-core\input\vocabulary\namingsystem-be-nihdi : 0 / 0
  C:\ImplementationGuides\be-core\input\vocabulary\namingsystem-be-ssin : 0 / 0
@@ -265,7 +265,7 @@ ERROR: StructureDefinition/model-careteam: StructureDefinition.differential.elem
 WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address: The Implementation Guide contains no examples for this data type profile
 == C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-allergyintolerance.xml ==
 WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance: The Implementation Guide contains no examples for this profile
-== C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-careplan.xml ==
+== C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-careplan-homecare.xml ==
 == C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-careteam.xml ==
 == C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-communication.xml ==
 == C:\ImplementationGuides\be-core\input\profiles\structuredefinition-be-observation.xml ==
@@ -287,7 +287,6 @@ WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-prove
 == C:\ImplementationGuides\be-core\input\vocabulary\codesystem-cd-fed-country.xml ==
 == C:\ImplementationGuides\be-core\input\vocabulary\codesystem-cd-hcparty.xml ==
 == C:\ImplementationGuides\be-core\input\vocabulary\namingsystem-be-cbe.xml ==
-WARNING: NamingSystem/be-cbe: NamingSystem.jurisdiction[0]: Error org.hl7.fhir.r5.utils.client.EFhirClientException: Error sending Http Request: Connect to tx.fhir.org:80 timed out validating CodeableConcept
 == C:\ImplementationGuides\be-core\input\vocabulary\namingsystem-be-ehp.xml ==
 == C:\ImplementationGuides\be-core\input\vocabulary\namingsystem-be-nihdi.xml ==
 == C:\ImplementationGuides\be-core\input\vocabulary\namingsystem-be-ssin.xml ==

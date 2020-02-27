@@ -11,9 +11,9 @@
   fhir:Resource.meta [
      fhir:Meta.versionId [ fhir:value "0" ];
      fhir:Meta.profile [
-       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan";
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare";
        fhir:index 0;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan>
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare>
      ]
   ];
   fhir:DomainResource.text [

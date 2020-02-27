@@ -16,7 +16,7 @@ In general, it shall be noted SNOMED-CT is the preferred national terminology. O
   <version value="0.1.0"/>
   <name value="BeObservation"/>
   <status value="active"/>
-  <date value="2020-02-25T01:28:53+01:00"/>
+  <date value="2020-02-27T05:53:15+01:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
